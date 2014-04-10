@@ -1,0 +1,29 @@
+Clasico{
+	nota 5.0
+	puntuacion 1.0
+	penalizacion 0.5
+	ejercicios{
+		Ejercicio ej1 {
+			enunciado sdf
+			categoria jl
+			order 1
+			respuestas
+				RespuestaUnica{
+					correctas {"sol1"}
+					alternativas {"asf"}
+					seleccionadas {"asf"}
+				}			
+		},
+		Ejercicio ej2 {
+			enunciado sdf
+			categoria jl
+			order 2
+			respuestas
+				RespuestaMultiple{
+					correctas {"sol1","asfadsf"}
+					alternativas {"asf"}
+					seleccionadas {"lkjjk","ad"}
+				}
+		}
+	}
+}

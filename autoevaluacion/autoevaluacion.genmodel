@@ -9,14 +9,16 @@
     <genClasses ecoreClass="autoevaluacion.ecore#//Hoja">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Hoja/nota"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference autoevaluacion.ecore#//Hoja/ejercicios"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Hoja/estilo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Hoja/puntuacion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Hoja/penalizacion"/>
     </genClasses>
     <genClasses ecoreClass="autoevaluacion.ecore#//Ejercicio">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/enunciado"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/puntuacion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/puntuacionEj"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference autoevaluacion.ecore#//Ejercicio/respuestas"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/tematica"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/categoria"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/order"/>
     </genClasses>
     <genClasses image="false" ecoreClass="autoevaluacion.ecore#//Respuestas">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuestas/correctas"/>
@@ -27,5 +29,10 @@
     <genClasses ecoreClass="autoevaluacion.ecore#//RespuestaMultiple"/>
     <genClasses ecoreClass="autoevaluacion.ecore#//TextoLibre"/>
     <genClasses ecoreClass="autoevaluacion.ecore#//Ordenacion"/>
+    <genClasses ecoreClass="autoevaluacion.ecore#//Clasico"/>
+    <genClasses ecoreClass="autoevaluacion.ecore#//Wizard"/>
+    <genClasses ecoreClass="autoevaluacion.ecore#//WizardAdaptativo">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference autoevaluacion.ecore#//WizardAdaptativo/ejerciciosRespondidos"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
