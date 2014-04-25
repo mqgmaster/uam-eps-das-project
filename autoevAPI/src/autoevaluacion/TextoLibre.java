@@ -6,9 +6,10 @@ import javax.swing.JPanel;
 
 public class TextoLibre extends Respuesta {
 
-	public TextoLibre(ArrayList<String> correctas,
-			ArrayList<String> alternativas, ArrayList<String> seleccionadas) {
-		super(correctas, alternativas, seleccionadas);
+	
+
+	public TextoLibre(String[] correctas, String[] alternativas) {
+		super(correctas, alternativas);
 	}
 
 	@Override

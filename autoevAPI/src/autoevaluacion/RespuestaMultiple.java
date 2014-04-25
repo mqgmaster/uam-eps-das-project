@@ -14,9 +14,8 @@ import javax.swing.JPanel;
 public class RespuestaMultiple extends Respuesta implements ActionListener {
 	private ArrayList<JCheckBox> group = new ArrayList<JCheckBox>();
 
-	public RespuestaMultiple(ArrayList<String> correctas,
-			ArrayList<String> alternativas, ArrayList<String> seleccionadas) {
-		super(correctas, alternativas, seleccionadas);
+	public RespuestaMultiple(String[] correctas, String[] alternativas) {
+		super(correctas, alternativas);
 	}
 	
 	@Override

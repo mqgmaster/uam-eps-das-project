@@ -14,9 +14,8 @@ import javax.swing.JRadioButton;
 
 public class RespuestaUnica extends Respuesta implements ActionListener {
 	
-	public RespuestaUnica(ArrayList<String> correctas,
-			ArrayList<String> alternativas, ArrayList<String> seleccionadas) {
-		super(correctas, alternativas, seleccionadas);
+	public RespuestaUnica(String[] correctas, String[] alternativas) {
+		super(correctas, alternativas);
 	}
 
 	@Override

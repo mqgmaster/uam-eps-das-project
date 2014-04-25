@@ -1,6 +1,7 @@
 package autoevaluacion;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.swing.JPanel;
 
@@ -9,12 +10,12 @@ public abstract class Respuesta {
 	private ArrayList<String> alternativas = new ArrayList<String>();
 	private ArrayList<String> seleccionadas = new ArrayList<String>();
 	
-	public Respuesta(ArrayList<String> correctas,
-			ArrayList<String> alternativas, ArrayList<String> seleccionadas) {
+	public Respuesta(String[] correctas,
+			String[] alternativas) {
 		super();
-		this.correctas = correctas;
-		this.alternativas = alternativas;
-		this.seleccionadas = seleccionadas;
+		this.correctas = new ArrayList<String>(Arrays.asList(correctas));
+		this.alternativas = new ArrayList<String>(Arrays.asList(alternativas));
+		this.seleccionadas = new ArrayList<String>();
 	}
 	public ArrayList<String> getCorrectas() {
 		return correctas;

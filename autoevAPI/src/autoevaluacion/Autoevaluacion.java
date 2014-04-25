@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 import javax.swing.*;
 
+import autoevaluacion.Ejercicio.TipoRespuesta;
+import autoevaluacion.PantallaEjercicios.TipoHoja;
 import listeners.*;
 
 @SuppressWarnings("serial")
@@ -12,7 +14,7 @@ public class Autoevaluacion extends JFrame {
 	private double nota;
 	private double puntuacionStandard;
 	private double penalizacion;
-	private ArrayList<Ejercicio> ejercicios;
+	private ArrayList<PantallaEjercicios> pantallasEj = new ArrayList<>();
 	
 	public Autoevaluacion (double puntuacionStandard, final double penalizacion) {
 		super ("New Project");
@@ -27,61 +29,43 @@ public class Autoevaluacion extends JFrame {
 		JPanel botonera;
 		JButton boton;
 		
-		ejercicios = new ArrayList<Ejercicio>();
-		ArrayList<String> correctas;
-		ArrayList<String> alternativas;
-		Respuesta r;
 		Ejercicio e;
 		
 		/**
 		 * Crea la pantalla de ejercicios 
 		 **/
-		pantalla = new JPanel(new GridLayout(3,1)); //num de ejerciccios + 1 para botones!!! 
 
+		
 		//Crea un ejercicio
-		correctas = new ArrayList<String>();
-		alternativas = new ArrayList<String>();
-
-		correctas.add("dos");
-		alternativas.add("uno");
-		alternativas.add("tres");
-		alternativas.add("cien");
-
-		r = new RespuestaUnica(correctas, alternativas, new ArrayList<String>());
-		e = new Ejercicio("Ejercicio", "Calcula 1 + 1 = ?", 1.0, "ninguna", 0,r);
-		ejercicios.add(e);
-		pantalla.add(e.createComponent());
-
-
-		//Crea un ejercicio
-		correctas = new ArrayList<String>();
-		alternativas = new ArrayList<String>();
+		PantallaEjercicios pe = new PantallaEjercicios(TipoHoja.WizardAdaptativo);		
+		e = new Ejercicio("Ejercicio", "Calcula 1 + 1 = ?", 1.0, "ninguna", 5,
+				new String[]{"dos"},new String[]{"tres","uno","cien"},TipoRespuesta.RespuestaUnica);
+		pe.addEjercicio(e);
 		
-		correctas.add("3");
-		alternativas.add("1");
-		alternativas.add("2");
-		alternativas.add("100");
+		e = new Ejercicio("Ejercicio", "Calcula 1 + 2 = ?", 1.0, "ninguna", 0, 
+				new String[]{"3"},new String[]{"2","1","100"},TipoRespuesta.RespuestaUnica);
+		pe.addEjercicio(e);
 		
-		r = new RespuestaUnica(correctas,alternativas,new ArrayList<String>());
-		e = new Ejercicio("Ejercicio", "Calcula 1 + 2 = ?", 1.0, "ninguna", 0, r);
-		ejercicios.add(e);
-		pantalla.add(e.createComponent());
+		pe.show();
+		pantallasEj.add(pe);
 
+		pantalla = new JPanel();
+		pantalla.add(pe);
 		
+		//Boton corregir
 		botonera = new JPanel();
 		boton = new JButton("Corregir");
 		boton.addActionListener(new CambiarPantallaListener(pantallas, "Nota", new Pantalla() {
-			
+			/**
+			 * Crea la pantalla final
+			 **/
 			@Override
 			public JPanel create() {
 				JPanel pantalla = new JPanel();
+				calculaNota(pantalla);
 				JLabel n = new JLabel("Nota : "+nota);
 				pantalla.add(n);
-				for(Ejercicio ej: ejercicios){
-					if(ej.corrige(penalizacion)<=0){
-						pantalla.add(ej.muestraCorreccion());
-					}
-				}
+				
 				JPanel botonera = new JPanel();
 				JButton boton = new JButton("Salir");
 				boton.addActionListener(new FinalizarListener(Autoevaluacion.this));
@@ -96,59 +80,6 @@ public class Autoevaluacion extends JFrame {
 		botonera.add(boton);
 		pantalla.add(botonera);
 		pantallas.add(pantalla, "Inicial");
-		
-		/**
-		 * Crea la pantalla final
-		 **/
-		
-		
-		
-		//pantallas.add(pantalla, "Nota");
-		
-		
-		
-		
-		
-		pantalla = new JPanel();
-		botonera = new JPanel();
-		boton = new JButton("Mensaje");
-		//boton.addActionListener(new  MuestraMsjListener("Hola"));
-		botonera.add(boton);
-		boton = new JButton("Salir");
-		boton.addActionListener(new FinalizarListener(this));
-		botonera.add(boton);
-		boton = new JButton("Atras");
-		boton.addActionListener(new CambiarPantallaListener(pantallas, "Inicial"));
-		botonera.add(boton,0);
-		pantalla.add(botonera);
-		pantallas.add(pantalla, "P2");
-		
-		
-		pantalla = new JPanel();
-		botonera = new JPanel();
-		boton = new JButton("P4");
-		boton.addActionListener(new CambiarPantallaListener(pantallas, "P4"));
-		botonera.add(boton);
-		boton = new JButton("Mensaje");
-		//boton.addActionListener(new  MuestraMsjListener("Mensaje creado con en la pantalla 3"));
-		botonera.add(boton);
-		pantalla.add(botonera);
-		pantallas.add(pantalla, "P3");
-		
-		
-		pantalla = new JPanel();
-		botonera = new JPanel();
-		boton = new JButton("Mensaje");
-		//boton.addActionListener(new  MuestraMsjListener("Atras vuelve a la pantalla inicial"));
-		botonera.add(boton);
-		boton = new JButton("Atras");
-		boton.addActionListener(new CambiarPantallaListener(pantallas, "Inicial"));
-		botonera.add(boton,0);
-		boton = new JButton("Finalizar");
-		boton.addActionListener(new FinalizarListener(this));
-		botonera.add(boton);
-		pantalla.add(botonera);
-		pantallas.add(pantalla, "P4");
 		
 		
 		//Comienza en la pantalla inicial
@@ -165,12 +96,20 @@ public class Autoevaluacion extends JFrame {
 	 	this.setVisible(true);
 	 }
 	 
-	 public void calculaNota(ArrayList<Ejercicio> ejercicios){
-		 nota = 0.0;
-		 for(Ejercicio e: ejercicios){
-			 nota += e.corrige(penalizacion);
-		 }
-	 }
+	public void calculaNota(JPanel pantalla) {
+		nota = 0.0;
+		for (PantallaEjercicios pe : pantallasEj) {
+			for (Ejercicio e : pe.getEjercicios()) {
+				if(e.isAnswered()){
+					double c = e.corrige(penalizacion);
+					nota += c;
+					if (c <= 0) {
+						pantalla.add(e.muestraCorreccion());
+					}
+				}
+			}
+		}
+	}
 	/*public void addEjercicio(JPanel pantalla, Ejercicio e) {
 		Container c = new Container();
 		
