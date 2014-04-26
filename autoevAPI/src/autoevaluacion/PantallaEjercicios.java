@@ -1,20 +1,25 @@
 package autoevaluacion;
 
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 
+@SuppressWarnings("serial")
 public class PantallaEjercicios extends JPanel{
 	//private JScrollPane scrollP;
-	private TipoHoja tipo;
-	public static enum TipoHoja {Wizard,WizardAdaptativo};
+	private TipoHoja type;
+	private String name;
+	public static enum TipoHoja {Classic,Wizard,WizardAdaptativo};
 	private ArrayList<Ejercicio> ejercicios = new ArrayList<>();
 	private ArrayList<Integer> respondidos = new ArrayList<>();
+	private JButton nextButton;
 
-	public PantallaEjercicios(TipoHoja tipo) {
-		this.tipo = tipo;
+	public PantallaEjercicios(String name, TipoHoja type) {
+		this.type = type;
+		this.name = name;
 	}
 	
 	public ArrayList<Ejercicio> getEjercicios() {
@@ -26,7 +31,9 @@ public class PantallaEjercicios extends JPanel{
 	}
 	
 	public void show(){
-		switch(tipo){
+		switch(type){
+		case Classic :
+			break;
 		case Wizard:
 			Collections.sort(ejercicios);
 			for(Ejercicio e: ejercicios)
@@ -42,5 +49,13 @@ public class PantallaEjercicios extends JPanel{
 
 	public Ejercicio getLastAnswered() {
 		return ejercicios.get(respondidos.get(respondidos.size()-1));
+	}
+	
+	public void setNextButton(String buttonLabel, ActionListener action) {
+		JPanel buttonContainer = new JPanel();
+		nextButton = new JButton(buttonLabel);
+		buttonContainer.add(nextButton);
+		this.add(buttonContainer);
+		nextButton.addActionListener(action);
 	}
 }

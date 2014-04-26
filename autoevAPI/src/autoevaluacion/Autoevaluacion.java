@@ -1,19 +1,26 @@
 package autoevaluacion;
+
 import java.awt.CardLayout;
-import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
+import listeners.CambiarPantallaListener;
+import listeners.FinalizarListener;
 import autoevaluacion.Ejercicio.TipoRespuesta;
 import autoevaluacion.PantallaEjercicios.TipoHoja;
-import listeners.*;
 
 @SuppressWarnings("serial")
 public class Autoevaluacion extends JFrame {
 	private double nota;
 	private double puntuacionStandard;
 	private double penalizacion;
+	private JPanel mainContainer = new JPanel(new CardLayout());
 	private ArrayList<PantallaEjercicios> pantallasEj = new ArrayList<>();
 	
 	public Autoevaluacion (double puntuacionStandard, final double penalizacion) {
@@ -21,41 +28,68 @@ public class Autoevaluacion extends JFrame {
 		this.puntuacionStandard = puntuacionStandard;
 		this.penalizacion = penalizacion;
 		
-		// panel con todas las pantallas
-		JPanel pantallas = new JPanel(new CardLayout());
-		
-		//Anade pantallas
-		JPanel pantalla;
-		JPanel botonera;
-		JButton boton;
-		
-		Ejercicio e;
-		
 		/**
 		 * Crea la pantalla de ejercicios 
 		 **/
-
-		
 		//Crea un ejercicio
-		PantallaEjercicios pe = new PantallaEjercicios(TipoHoja.WizardAdaptativo);		
-		e = new Ejercicio("Ejercicio", "Calcula 1 + 1 = ?", 1.0, "ninguna", 5,
-				new String[]{"dos"},new String[]{"tres","uno","cien"},TipoRespuesta.RespuestaUnica);
-		pe.addEjercicio(e);
+		PantallaEjercicios pe = new PantallaEjercicios("matematica", TipoHoja.Wizard);		
+		pe.addEjercicio(new Ejercicio(
+				"Ejercicio 1", 
+				"Calcula 1 + 1 = ?", 
+				1.0, 
+				"matematica",
+				5,
+				new String[]{"dos"},
+				new String[]{"tres","uno","cien"},
+				TipoRespuesta.RespuestaUnica));
 		
-		e = new Ejercicio("Ejercicio", "Calcula 1 + 2 = ?", 1.0, "ninguna", 0, 
-				new String[]{"3"},new String[]{"2","1","100"},TipoRespuesta.RespuestaUnica);
-		pe.addEjercicio(e);
+		pe.addEjercicio(new Ejercicio(
+				"Ejercicio 2", 
+				"Calcula 1 + 2 = ?",
+				1.0, 
+				"matematica", 
+				0, 
+				new String[]{"3"},
+				new String[]{"2","1","100"},
+				TipoRespuesta.RespuestaUnica));
+		
+		PantallaEjercicios pe2 = new PantallaEjercicios("fisica", TipoHoja.Wizard);		
+		pe2.addEjercicio(new Ejercicio(
+				"Ejercicio 3", 
+				"Calcula 1 + 1 = ?", 
+				1.0, 
+				"matematica",
+				5,
+				new String[]{"dos"},
+				new String[]{"tres","uno","cien"},
+				TipoRespuesta.RespuestaUnica));
+		
+		pe2.addEjercicio(new Ejercicio(
+				"Ejercicio 4", 
+				"Calcula 1 + 2 = ?",
+				1.0, 
+				"matematica", 
+				0, 
+				new String[]{"3"},
+				new String[]{"2","1","100"},
+				TipoRespuesta.RespuestaUnica));
 		
 		pe.show();
+		pe2.show();
 		pantallasEj.add(pe);
+		pantallasEj.add(pe2);
 
-		pantalla = new JPanel();
-		pantalla.add(pe);
+		mainContainer.add(pe, "Inicial");
+		mainContainer.add(pe2, "Fisica");
+		pe.setNextButton("Vamo", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Autoevaluacion.this.showPanel("Fisica");
+			}
+		});
 		
-		//Boton corregir
-		botonera = new JPanel();
-		boton = new JButton("Corregir");
-		boton.addActionListener(new CambiarPantallaListener(pantallas, "Nota", new Pantalla() {
+		JButton boton = new JButton("Corregir");
+		boton.addActionListener(new CambiarPantallaListener(mainContainer, "Nota", new Pantalla() {
 			/**
 			 * Crea la pantalla final
 			 **/
@@ -74,18 +108,17 @@ public class Autoevaluacion extends JFrame {
 				return pantalla;
 			}
 		}));
-		botonera.add(boton);
+		
 		boton = new JButton("Salir");
 		boton.addActionListener(new FinalizarListener(this));
-		botonera.add(boton);
-		pantalla.add(botonera);
-		pantallas.add(pantalla, "Inicial");
-		
 		
 		//Comienza en la pantalla inicial
-		((CardLayout)pantallas.getLayout()).show(pantallas,"Inicial");
+		showPanel("Inicial");
 		// añadir panel a la ventana
-		getContentPane().add(pantallas);
+		getContentPane().add(mainContainer);
+	}
+	private void showPanel(String name) {
+		((CardLayout)mainContainer.getLayout()).show(mainContainer, name);
 	}
 	/**
 	 * muestra el wizard

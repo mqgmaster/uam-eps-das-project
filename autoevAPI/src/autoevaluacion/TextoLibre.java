@@ -1,7 +1,5 @@
 package autoevaluacion;
 
-import java.util.ArrayList;
-
 import javax.swing.JPanel;
 
 public class TextoLibre extends Respuesta {
