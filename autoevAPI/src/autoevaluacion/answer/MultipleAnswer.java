@@ -1,4 +1,4 @@
-package autoevaluacion;
+package autoevaluacion.answer;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -11,10 +11,10 @@ import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class RespuestaMultiple extends Respuesta implements ActionListener {
+public class MultipleAnswer extends Answer implements ActionListener {
 	private ArrayList<JCheckBox> group = new ArrayList<JCheckBox>();
 
-	public RespuestaMultiple(String[] correctas, String[] alternativas) {
+	public MultipleAnswer(String[] correctas, String[] alternativas) {
 		super(correctas, alternativas);
 	}
 	

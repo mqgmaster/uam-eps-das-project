@@ -1,4 +1,4 @@
-package autoevaluacion;
+package autoevaluacion.answer;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -12,9 +12,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-public class RespuestaUnica extends Respuesta implements ActionListener {
+public class UniqueAnswer extends Answer implements ActionListener {
 	
-	public RespuestaUnica(String[] correctas, String[] alternativas) {
+	public UniqueAnswer(String[] correctas, String[] alternativas) {
 		super(correctas, alternativas);
 	}
 

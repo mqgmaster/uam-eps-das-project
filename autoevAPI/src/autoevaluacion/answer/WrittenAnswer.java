@@ -1,12 +1,12 @@
-package autoevaluacion;
+package autoevaluacion.answer;
 
 import javax.swing.JPanel;
 
-public class TextoLibre extends Respuesta {
+public class WrittenAnswer extends Answer {
 
 	
 
-	public TextoLibre(String[] correctas, String[] alternativas) {
+	public WrittenAnswer(String[] correctas, String[] alternativas) {
 		super(correctas, alternativas);
 	}
 

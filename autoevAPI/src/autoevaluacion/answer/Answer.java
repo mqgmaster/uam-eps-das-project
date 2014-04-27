@@ -1,16 +1,22 @@
-package autoevaluacion;
+package autoevaluacion.answer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.swing.JPanel;
 
-public abstract class Respuesta {
+public abstract class Answer {
 	private ArrayList<String> correctas = new ArrayList<String>();
 	private ArrayList<String> alternativas = new ArrayList<String>();
 	private ArrayList<String> seleccionadas = new ArrayList<String>();
 	
-	public Respuesta(String[] correctas,
+	public static enum AnswerType {
+		UNIQUE,
+		MULTIPLE,
+		WRITTEN,
+		ORDINATION};
+	
+	public Answer(String[] correctas,
 			String[] alternativas) {
 		super();
 		this.correctas = new ArrayList<String>(Arrays.asList(correctas));

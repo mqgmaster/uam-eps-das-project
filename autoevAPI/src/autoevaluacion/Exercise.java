@@ -5,22 +5,23 @@ import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Ejercicio implements Comparable<Ejercicio>{
+import autoevaluacion.answer.Answer;
+import autoevaluacion.answer.MultipleAnswer;
+import autoevaluacion.answer.UniqueAnswer;
+import autoevaluacion.answer.WrittenAnswer;
+import autoevaluacion.answer.Answer.AnswerType;
+
+public class Exercise implements Comparable<Exercise> {
+	
 	private String name;
 	private String enunciado;
 	private double puntuacionEj;
 	private String categoria;
 	private Integer orden;
-	private Respuesta respuestas;
+	private Answer respuestas;
 	
-	public static enum TipoRespuesta {
-		RespuestaUnica,
-		RespuestaMultiple,
-		TextoLibre,
-		Ordenacion};
-	
-	public Ejercicio(String name, String enunciado, double puntuacionEj,
-			String categoria, int orden,String[] correctas,String[] alternativas, TipoRespuesta tipo) {
+	public Exercise(String name, String enunciado, double puntuacionEj,
+			String categoria, int orden,String[] correctas,String[] alternativas, AnswerType tipo) {
 		super();
 		this.name = name;
 		this.enunciado = enunciado;
@@ -28,14 +29,14 @@ public class Ejercicio implements Comparable<Ejercicio>{
 		this.categoria = categoria;
 		this.orden = orden;
 		switch(tipo){
-		case RespuestaUnica:
-			this.respuestas = new RespuestaUnica(correctas, alternativas);
+		case UNIQUE:
+			this.respuestas = new UniqueAnswer(correctas, alternativas);
 			break;
-		case RespuestaMultiple:
-			this.respuestas = new RespuestaMultiple(correctas, alternativas);
+		case MULTIPLE:
+			this.respuestas = new MultipleAnswer(correctas, alternativas);
 			break;
-		case TextoLibre:
-			this.respuestas = new TextoLibre(correctas, alternativas);
+		case WRITTEN:
+			this.respuestas = new WrittenAnswer(correctas, alternativas);
 			break;
 		/*case Ordenacion:
 			this.respuestas = new Ordenacion(correctas, alternativas);
@@ -79,8 +80,8 @@ public class Ejercicio implements Comparable<Ejercicio>{
 	}
 
 	@Override
-	public int compareTo(Ejercicio o) {
-		return (Integer) orden.compareTo(o.orden);
+	public int compareTo(Exercise o) {
+		return orden.compareTo(o.orden);
 	}
 	
 	public boolean isAnswered(){

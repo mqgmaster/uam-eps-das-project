@@ -5,15 +5,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import listeners.CambiarPantallaListener;
-import listeners.FinalizarListener;
-import autoevaluacion.Ejercicio.TipoRespuesta;
-import autoevaluacion.PantallaEjercicios.TipoHoja;
+import autoevaluacion.ExercisePanel.PanelType;
+import autoevaluacion.answer.Answer.AnswerType;
 
 @SuppressWarnings("serial")
 public class Autoevaluacion extends JFrame {
@@ -21,19 +18,18 @@ public class Autoevaluacion extends JFrame {
 	private double puntuacionStandard;
 	private double penalizacion;
 	private JPanel mainContainer = new JPanel(new CardLayout());
-	private ArrayList<PantallaEjercicios> pantallasEj = new ArrayList<>();
+	private ArrayList<ExercisePanel> exercisePanels = new ArrayList<>();
 	
 	public Autoevaluacion (double puntuacionStandard, final double penalizacion) {
-		super ("New Project");
+		super ("Autoevaluacion");
 		this.puntuacionStandard = puntuacionStandard;
 		this.penalizacion = penalizacion;
 		
-		/**
-		 * Crea la pantalla de ejercicios 
-		 **/
 		//Crea un ejercicio
-		PantallaEjercicios pe = new PantallaEjercicios("matematica", TipoHoja.Wizard);		
-		pe.addEjercicio(new Ejercicio(
+		final ExercisePanel pe = new ExercisePanel("matematica", PanelType.WIZARD);
+		final ExercisePanel pe2 = new ExercisePanel("fisica", PanelType.WIZARD);
+		
+		pe.addExercise(new Exercise(
 				"Ejercicio 1", 
 				"Calcula 1 + 1 = ?", 
 				1.0, 
@@ -41,9 +37,9 @@ public class Autoevaluacion extends JFrame {
 				5,
 				new String[]{"dos"},
 				new String[]{"tres","uno","cien"},
-				TipoRespuesta.RespuestaUnica));
+				AnswerType.UNIQUE));
 		
-		pe.addEjercicio(new Ejercicio(
+		pe.addExercise(new Exercise(
 				"Ejercicio 2", 
 				"Calcula 1 + 2 = ?",
 				1.0, 
@@ -51,88 +47,93 @@ public class Autoevaluacion extends JFrame {
 				0, 
 				new String[]{"3"},
 				new String[]{"2","1","100"},
-				TipoRespuesta.RespuestaUnica));
+				AnswerType.UNIQUE));
 		
-		PantallaEjercicios pe2 = new PantallaEjercicios("fisica", TipoHoja.Wizard);		
-		pe2.addEjercicio(new Ejercicio(
+		pe2.addExercise(new Exercise(
 				"Ejercicio 3", 
 				"Calcula 1 + 1 = ?", 
 				1.0, 
-				"matematica",
+				"fisica",
 				5,
 				new String[]{"dos"},
 				new String[]{"tres","uno","cien"},
-				TipoRespuesta.RespuestaUnica));
+				AnswerType.UNIQUE));
 		
-		pe2.addEjercicio(new Ejercicio(
+		pe2.addExercise(new Exercise(
 				"Ejercicio 4", 
 				"Calcula 1 + 2 = ?",
 				1.0, 
-				"matematica", 
+				"fisica", 
 				0, 
 				new String[]{"3"},
 				new String[]{"2","1","100"},
-				TipoRespuesta.RespuestaUnica));
+				AnswerType.UNIQUE));
 		
-		pe.show();
-		pe2.show();
-		pantallasEj.add(pe);
-		pantallasEj.add(pe2);
-
-		mainContainer.add(pe, "Inicial");
-		mainContainer.add(pe2, "Fisica");
-		pe.setNextButton("Vamo", new ActionListener() {
+		pe.addNextButton("Proxima", new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				Autoevaluacion.this.showPanel("Fisica");
+				showPanel(pe2);
 			}
 		});
 		
-		JButton boton = new JButton("Corregir");
-		boton.addActionListener(new CambiarPantallaListener(mainContainer, "Nota", new Pantalla() {
-			/**
-			 * Crea la pantalla final
-			 **/
-			@Override
-			public JPanel create() {
-				JPanel pantalla = new JPanel();
-				calculaNota(pantalla);
-				JLabel n = new JLabel("Nota : "+nota);
-				pantalla.add(n);
-				
-				JPanel botonera = new JPanel();
-				JButton boton = new JButton("Salir");
-				boton.addActionListener(new FinalizarListener(Autoevaluacion.this));
-				botonera.add(boton);
-				pantalla.add(botonera);
-				return pantalla;
-			}
-		}));
 		
-		boton = new JButton("Salir");
-		boton.addActionListener(new FinalizarListener(this));
+		pe2.addNextButton("Corregir", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Panel panel = createFinalPanel();
+				addPanel(panel);
+				showPanel(panel);
+			}
+		});
+		
+		addExercisePanel(pe);
+		addExercisePanel(pe2);
 		
 		//Comienza en la pantalla inicial
-		showPanel("Inicial");
+		showPanel(pe);
 		// añadir panel a la ventana
 		getContentPane().add(mainContainer);
 	}
-	private void showPanel(String name) {
-		((CardLayout)mainContainer.getLayout()).show(mainContainer, name);
+	
+	public Panel createFinalPanel() {
+		Panel panel = new Panel("Nota");
+		calculaNota(panel);
+		JLabel n = new JLabel("Nota : "+nota);
+		panel.add(n);
+		panel.addButton("Salir", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Autoevaluacion.this.setVisible(false);
+				Autoevaluacion.this.dispose();
+			}
+		});
+		return panel;
 	}
-	/**
-	 * muestra el wizard
-	 */
-	 public void mostrar() {
-	 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	 	this.pack();
-	 	this.setVisible(true);
-	 }
+	
+	public void addExercisePanel(ExercisePanel ep) {
+		exercisePanels.add(ep);
+		addPanel(ep);
+	}
+	
+	public void addPanel(Panel panel) {
+		panel.setupView();
+		mainContainer.add(panel, panel.getName());
+	}
+	
+	public void showPanel(Panel panel) {
+		((CardLayout)mainContainer.getLayout()).show(mainContainer, panel.getName());
+	}
+
+	public void mostrar() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.pack();
+		this.setVisible(true);
+	}
 	 
-	public void calculaNota(JPanel pantalla) {
+	public void calculaNota(Panel pantalla) {
 		nota = 0.0;
-		for (PantallaEjercicios pe : pantallasEj) {
-			for (Ejercicio e : pe.getEjercicios()) {
+		for (ExercisePanel pe : exercisePanels) {
+			for (Exercise e : pe.getAllExercises()) {
 				if(e.isAnswered()){
 					double c = e.corrige(penalizacion);
 					nota += c;
@@ -143,25 +144,4 @@ public class Autoevaluacion extends JFrame {
 			}
 		}
 	}
-	/*public void addEjercicio(JPanel pantalla, Ejercicio e) {
-		Container c = new Container();
-		
-		ArrayList<String> correctas;
-		ArrayList<String> alternativas;
-		Respuesta r;
-		Ejercicio e;
-
-		correctas = new ArrayList<String>();
-		alternativas = new ArrayList<String>();
-
-		correctas.add("dos");
-		alternativas.add("uno");
-		alternativas.add("tres");
-		alternativas.add("cien");
-
-		r = new RespuestaUnica(correctas, alternativas, new ArrayList<String>());
-		e = new Ejercicio("Ejercicio", "Calcula 1 + 1 = ?", 1.0, "ninguna", 0,
-				r);
-		pantalla.add(e.createComponent());
-	}*/
 }
