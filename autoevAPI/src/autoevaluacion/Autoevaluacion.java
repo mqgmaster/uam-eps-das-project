@@ -26,8 +26,8 @@ public class Autoevaluacion extends JFrame {
 		this.penalizacion = penalizacion;
 		
 		//Crea un ejercicio
-		final ExercisePanel pe = new ExercisePanel("matematica", PanelType.WIZARD);
-		final ExercisePanel pe2 = new ExercisePanel("fisica", PanelType.WIZARD);
+		final ExercisePanel pe = new ExercisePanel("matematica", PanelType.WIZARD_ADAPTATIVE);
+		final ExercisePanel pe2 = new ExercisePanel("fisica", PanelType.WIZARD_ADAPTATIVE);
 		
 		pe.addExercise(new Exercise(
 				"Ejercicio 1", 
