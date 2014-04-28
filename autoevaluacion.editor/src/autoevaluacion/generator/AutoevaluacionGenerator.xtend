@@ -715,10 +715,87 @@ public class Autoevaluacion extends JFrame {
 		
 		//Comienza en la pantalla inicial
 		showPanel(p«categoria.get(0)»);
-		// aÃ±adir panel a la ventana
+		// aÃƒÆ’Ã†€™±adir panel a la ventana
 		getContentPane().add(mainContainer);
 		
 		«ELSEIF h instanceof WizardAdaptativo»
+		//Crea pantallas
+		«FOR c : categoria»		
+		final ExercisePanel p«c» = new ExercisePanel("«c»", PanelType.WIZARD_ADAPTATIVE);
+		«ENDFOR»
+		
+		//Anade ejercicios
+		«FOR e : h.ejercicios»
+		p«e.categoria».addExercise(new Exercise(
+				"«e.name»", 
+				"«e.enunciado»", 
+				«IF e.puntuacionEj.naN»
+				«h.puntuacion»,
+				«ELSE»
+				«e.puntuacionEj»,
+				«ENDIF»
+				"«e.categoria»",
+				«e.order»,
+				new String[]{
+				«FOR c : e.respuesta.correctas»
+				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»
+				"«c»"
+				«ELSE»
+				"«c»",
+				«ENDIF»
+				«ENDFOR»
+				},
+				new String[]{
+				«FOR a : e.respuesta.alternativas»
+				«IF e.respuesta.alternativas.indexOf(a) == e.respuesta.alternativas.size-1»
+				"«a»"
+				«ELSE»
+				"«a»",
+				«ENDIF»
+				«ENDFOR»
+				},
+				«IF e.respuesta instanceof RespuestaUnica»
+				AnswerType.UNIQUE
+				«ELSEIF e.respuesta instanceof RespuestaMultiple»
+				AnswerType.MULTIPLE
+				«ELSEIF e.respuesta instanceof TextoLibre»
+				AnswerType.WRITTEN
+				«ELSEIF e.respuesta instanceof Ordenacion»
+				AnswerType.ORDINATION
+				«ENDIF»
+				));
+		«ENDFOR»
+		
+		//Anade boton siguiente
+		«FOR c : categoria»
+		«IF categoria.indexOf(c)==categoria.size-1»
+		p«c».addNextButton("Corregir", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Panel panel = createFinalPanel();
+				addPanel(panel);
+				showPanel(panel);
+			}
+		});
+		«ELSE»
+		p«c».addNextButton("Proxima", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				showPanel(p«categoria.get(categoria.indexOf(c)+1)»);
+			}
+		});
+		«ENDIF»
+		«ENDFOR»
+		
+		«FOR c : categoria»
+		addExercisePanel(p«c»);
+		«ENDFOR»
+		
+		//Comienza en la pantalla inicial
+		showPanel(p«categoria.get(0)»);
+		// anadir panel a la ventana
+		getContentPane().add(mainContainer);
+		
 		«ENDIF»
 		
 	}

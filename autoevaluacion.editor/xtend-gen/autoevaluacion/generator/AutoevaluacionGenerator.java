@@ -1963,7 +1963,7 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.append(");");
           _builder.newLineIfNotEmpty();
           _builder.append("\t\t");
-          _builder.append("// aÃ±adir panel a la ventana");
+          _builder.append("// aÃƒÆ’Ã†€™±adir panel a la ventana");
           _builder.newLine();
           _builder.append("\t\t");
           _builder.append("getContentPane().add(mainContainer);");
@@ -1972,6 +1972,306 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.newLine();
         } else {
           if ((h instanceof WizardAdaptativo)) {
+            _builder.append("\t\t");
+            _builder.append("//Crea pantallas");
+            _builder.newLine();
+            {
+              for(final Object c_5 : categoria) {
+                _builder.append("\t\t");
+                _builder.append("final ExercisePanel p");
+                _builder.append(c_5, "\t\t");
+                _builder.append(" = new ExercisePanel(\"");
+                _builder.append(c_5, "\t\t");
+                _builder.append("\", PanelType.WIZARD_ADAPTATIVE);");
+                _builder.newLineIfNotEmpty();
+              }
+            }
+            _builder.append("\t\t");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("//Anade ejercicios");
+            _builder.newLine();
+            {
+              EList<Ejercicio> _ejercicios_2 = h.getEjercicios();
+              for(final Ejercicio e_2 : _ejercicios_2) {
+                _builder.append("\t\t");
+                _builder.append("p");
+                String _categoria_3 = e_2.getCategoria();
+                _builder.append(_categoria_3, "\t\t");
+                _builder.append(".addExercise(new Exercise(");
+                _builder.newLineIfNotEmpty();
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("\"");
+                String _name_2 = e_2.getName();
+                _builder.append(_name_2, "\t\t\t\t");
+                _builder.append("\", ");
+                _builder.newLineIfNotEmpty();
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("\"");
+                String _enunciado_2 = e_2.getEnunciado();
+                _builder.append(_enunciado_2, "\t\t\t\t");
+                _builder.append("\", ");
+                _builder.newLineIfNotEmpty();
+                {
+                  double _puntuacionEj_4 = e_2.getPuntuacionEj();
+                  boolean _isNaN_1 = Double.valueOf(_puntuacionEj_4).isNaN();
+                  if (_isNaN_1) {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    double _puntuacion_2 = h.getPuntuacion();
+                    _builder.append(_puntuacion_2, "\t\t\t\t");
+                    _builder.append(",");
+                    _builder.newLineIfNotEmpty();
+                  } else {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    double _puntuacionEj_5 = e_2.getPuntuacionEj();
+                    _builder.append(_puntuacionEj_5, "\t\t\t\t");
+                    _builder.append(",");
+                    _builder.newLineIfNotEmpty();
+                  }
+                }
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("\"");
+                String _categoria_4 = e_2.getCategoria();
+                _builder.append(_categoria_4, "\t\t\t\t");
+                _builder.append("\",");
+                _builder.newLineIfNotEmpty();
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                int _order_2 = e_2.getOrder();
+                _builder.append(_order_2, "\t\t\t\t");
+                _builder.append(",");
+                _builder.newLineIfNotEmpty();
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("new String[]{");
+                _builder.newLine();
+                {
+                  Respuesta _respuesta_20 = e_2.getRespuesta();
+                  EList<String> _correctas_6 = _respuesta_20.getCorrectas();
+                  for(final String c_6 : _correctas_6) {
+                    {
+                      Respuesta _respuesta_21 = e_2.getRespuesta();
+                      EList<String> _correctas_7 = _respuesta_21.getCorrectas();
+                      int _indexOf_6 = _correctas_7.indexOf(c_6);
+                      Respuesta _respuesta_22 = e_2.getRespuesta();
+                      EList<String> _correctas_8 = _respuesta_22.getCorrectas();
+                      int _size_5 = _correctas_8.size();
+                      int _minus_5 = (_size_5 - 1);
+                      boolean _equals_6 = (_indexOf_6 == _minus_5);
+                      if (_equals_6) {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(c_6, "\t\t\t\t");
+                        _builder.append("\"");
+                        _builder.newLineIfNotEmpty();
+                      } else {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(c_6, "\t\t\t\t");
+                        _builder.append("\",");
+                        _builder.newLineIfNotEmpty();
+                      }
+                    }
+                  }
+                }
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("},");
+                _builder.newLine();
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("new String[]{");
+                _builder.newLine();
+                {
+                  Respuesta _respuesta_23 = e_2.getRespuesta();
+                  EList<String> _alternativas_6 = _respuesta_23.getAlternativas();
+                  for(final String a_2 : _alternativas_6) {
+                    {
+                      Respuesta _respuesta_24 = e_2.getRespuesta();
+                      EList<String> _alternativas_7 = _respuesta_24.getAlternativas();
+                      int _indexOf_7 = _alternativas_7.indexOf(a_2);
+                      Respuesta _respuesta_25 = e_2.getRespuesta();
+                      EList<String> _alternativas_8 = _respuesta_25.getAlternativas();
+                      int _size_6 = _alternativas_8.size();
+                      int _minus_6 = (_size_6 - 1);
+                      boolean _equals_7 = (_indexOf_7 == _minus_6);
+                      if (_equals_7) {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(a_2, "\t\t\t\t");
+                        _builder.append("\"");
+                        _builder.newLineIfNotEmpty();
+                      } else {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(a_2, "\t\t\t\t");
+                        _builder.append("\",");
+                        _builder.newLineIfNotEmpty();
+                      }
+                    }
+                  }
+                }
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("},");
+                _builder.newLine();
+                {
+                  Respuesta _respuesta_26 = e_2.getRespuesta();
+                  if ((_respuesta_26 instanceof RespuestaUnica)) {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("AnswerType.UNIQUE");
+                    _builder.newLine();
+                  } else {
+                    Respuesta _respuesta_27 = e_2.getRespuesta();
+                    if ((_respuesta_27 instanceof RespuestaMultiple)) {
+                      _builder.append("\t\t");
+                      _builder.append("\t\t");
+                      _builder.append("AnswerType.MULTIPLE");
+                      _builder.newLine();
+                    } else {
+                      Respuesta _respuesta_28 = e_2.getRespuesta();
+                      if ((_respuesta_28 instanceof TextoLibre)) {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("AnswerType.WRITTEN");
+                        _builder.newLine();
+                      } else {
+                        Respuesta _respuesta_29 = e_2.getRespuesta();
+                        if ((_respuesta_29 instanceof Ordenacion)) {
+                          _builder.append("\t\t");
+                          _builder.append("\t\t");
+                          _builder.append("AnswerType.ORDINATION");
+                          _builder.newLine();
+                        }
+                      }
+                    }
+                  }
+                }
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("));");
+                _builder.newLine();
+              }
+            }
+            _builder.append("\t\t");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("//Anade boton siguiente");
+            _builder.newLine();
+            {
+              for(final Object c_7 : categoria) {
+                {
+                  int _indexOf_8 = categoria.indexOf(c_7);
+                  int _size_7 = categoria.size();
+                  int _minus_7 = (_size_7 - 1);
+                  boolean _equals_8 = (_indexOf_8 == _minus_7);
+                  if (_equals_8) {
+                    _builder.append("\t\t");
+                    _builder.append("p");
+                    _builder.append(c_7, "\t\t");
+                    _builder.append(".addNextButton(\"Corregir\", new ActionListener() {");
+                    _builder.newLineIfNotEmpty();
+                    _builder.append("\t\t");
+                    _builder.append("\t");
+                    _builder.append("@Override");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("\t");
+                    _builder.append("public void actionPerformed(ActionEvent arg0) {");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("Panel panel = createFinalPanel();");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("addPanel(panel);");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("showPanel(panel);");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("\t");
+                    _builder.append("}");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("});");
+                    _builder.newLine();
+                  } else {
+                    _builder.append("\t\t");
+                    _builder.append("p");
+                    _builder.append(c_7, "\t\t");
+                    _builder.append(".addNextButton(\"Proxima\", new ActionListener() {");
+                    _builder.newLineIfNotEmpty();
+                    _builder.append("\t\t");
+                    _builder.append("\t");
+                    _builder.append("@Override");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("\t");
+                    _builder.append("public void actionPerformed(ActionEvent arg0) {");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("showPanel(p");
+                    int _indexOf_9 = categoria.indexOf(c_7);
+                    int _plus_1 = (_indexOf_9 + 1);
+                    Object _get_2 = categoria.get(_plus_1);
+                    _builder.append(_get_2, "\t\t\t\t");
+                    _builder.append(");");
+                    _builder.newLineIfNotEmpty();
+                    _builder.append("\t\t");
+                    _builder.append("\t");
+                    _builder.append("}");
+                    _builder.newLine();
+                    _builder.append("\t\t");
+                    _builder.append("});");
+                    _builder.newLine();
+                  }
+                }
+              }
+            }
+            _builder.append("\t\t");
+            _builder.newLine();
+            {
+              for(final Object c_8 : categoria) {
+                _builder.append("\t\t");
+                _builder.append("addExercisePanel(p");
+                _builder.append(c_8, "\t\t");
+                _builder.append(");");
+                _builder.newLineIfNotEmpty();
+              }
+            }
+            _builder.append("\t\t");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("//Comienza en la pantalla inicial");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("showPanel(p");
+            Object _get_3 = categoria.get(0);
+            _builder.append(_get_3, "\t\t");
+            _builder.append(");");
+            _builder.newLineIfNotEmpty();
+            _builder.append("\t\t");
+            _builder.append("// anadir panel a la ventana");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("getContentPane().add(mainContainer);");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.newLine();
           }
         }
       }
