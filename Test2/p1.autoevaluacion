@@ -1,0 +1,21 @@
+Wizard {
+	puntuacion 2.0
+	penalizacion 2.23
+	ejercicios {
+		Ejercicio "sada" {
+			enunciado "sda"
+			puntuacionEj 2.2
+			categoria "sda"
+			order 5
+			respuesta 
+				RespuestaUnica {
+					correctas {
+						"sdas"
+					}
+					alternativas {
+						"ASD","SAD"
+					}
+				}
+		}
+	}
+}

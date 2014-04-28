@@ -24,60 +24,31 @@ public class Autoevaluacion extends JFrame {
 		super ("Autoevaluacion");
 		this.puntuacionStandard = puntuacionStandard;
 		this.penalizacion = penalizacion;
+		//Crea pantallas
+		final ExercisePanel pAutoevaluacion.impl.EjercicioImpl@1bedcf4 (enunciado: sda, puntuacionEj: 2.2, categoria: sda, name: sada, order: 5) = new ExercisePanel("Autoevaluacion.impl.EjercicioImpl@1bedcf4 (enunciado: sda, puntuacionEj: 2.2, categoria: sda, name: sada, order: 5)", PanelType.WIZARD);
+		addExercisePanel(pAutoevaluacion.impl.EjercicioImpl@1bedcf4 (enunciado: sda, puntuacionEj: 2.2, categoria: sda, name: sada, order: 5));
 		
-		//Crea un ejercicio
-		final ExercisePanel pe = new ExercisePanel("matematica", PanelType.WIZARD);
-		//final ExercisePanel pe2 = new ExercisePanel("fisica", PanelType.WIZARD_ADAPTATIVE);
+		//Anade ejercicios
+		psda.addExercise(new Exercise(
+				"sada", 
+				"sda", 
+				5, 
+				"sda",
+				2.2,
+				
+				new String[]{
+				"sdas"
+				},
+				new String[]{
+				"ASD",
+				"SAD"
+				},
+				
+				AnswerType.UNIQUE
+				));
 		
-		pe.addExercise(new Exercise(
-				"Ejercicio 1", 
-				"Calcula 1 + 1 = ?", 
-				1.0, 
-				"matematica",
-				5,
-				new String[]{"dos", "2"},
-				new String[]{"tres","uno","cien"},
-				AnswerType.WRITTEN));
-		
-		pe.addExercise(new Exercise(
-				"Ejercicio 2", 
-				"Calcula 1 + 2 = ?",
-				1.0, 
-				"matematica", 
-				0, 
-				new String[]{"3"},
-				new String[]{"2","1","100"},
-				AnswerType.WRITTEN));
-		
-	/*	pe2.addExercise(new Exercise(
-				"Ejercicio 3", 
-				"Calcula 1 + 1 = ?", 
-				1.0, 
-				"fisica",
-				5,
-				new String[]{"dos"},
-				new String[]{"tres","uno","cien"},
-				AnswerType.UNIQUE));
-		
-		pe2.addExercise(new Exercise(
-				"Ejercicio 4", 
-				"Calcula 1 + 2 = ?",
-				1.0, 
-				"fisica", 
-				0, 
-				new String[]{"3"},
-				new String[]{"2","1","100"},
-				AnswerType.UNIQUE));
-		
-		pe.addNextButton("Proxima", new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				showPanel(pe2);
-			}
-		});
-		
-		
-		*/pe.addNextButton("Corregir", new ActionListener() {
+		//Anade boton siguiente
+		pAutoevaluacion.impl.EjercicioImpl@1bedcf4 (enunciado: sda, puntuacionEj: 2.2, categoria: sda, name: sada, order: 5).addNextButton("Corregir", new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				Panel panel = createFinalPanel();
@@ -86,13 +57,13 @@ public class Autoevaluacion extends JFrame {
 			}
 		});
 		
-		addExercisePanel(pe);
-		//addExercisePanel(pe2);
 		
 		//Comienza en la pantalla inicial
-		showPanel(pe);
+		showPanel(pAutoevaluacion.impl.EjercicioImpl@1bedcf4 (enunciado: sda, puntuacionEj: 2.2, categoria: sda, name: sada, order: 5));
 		// añadir panel a la ventana
 		getContentPane().add(mainContainer);
+		
+		
 	}
 	
 	public Panel createFinalPanel() {

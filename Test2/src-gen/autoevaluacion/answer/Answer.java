@@ -41,13 +41,6 @@ public abstract class Answer {
 	public void setSeleccionadas(ArrayList<String> seleccionadas) {
 		this.seleccionadas = seleccionadas;
 	}
-	
-	public boolean isAnswered() {
-		if(seleccionadas.isEmpty())
-			return false;
-		return true;
-	}
-	
 	public abstract JPanel createComponent();
 	public abstract boolean corrige();
 	public abstract JPanel muestraCorreccion();

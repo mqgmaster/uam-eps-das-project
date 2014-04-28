@@ -7,7 +7,6 @@ import javax.swing.JPanel;
 
 import autoevaluacion.answer.Answer;
 import autoevaluacion.answer.MultipleAnswer;
-import autoevaluacion.answer.OrdinationAnswer;
 import autoevaluacion.answer.UniqueAnswer;
 import autoevaluacion.answer.WrittenAnswer;
 import autoevaluacion.answer.Answer.AnswerType;
@@ -39,9 +38,9 @@ public class Exercise implements Comparable<Exercise> {
 		case WRITTEN:
 			this.respuestas = new WrittenAnswer(correctas, alternativas);
 			break;
-		case ORDINATION:
-			this.respuestas = new OrdinationAnswer(correctas, alternativas);
-			break;
+		/*case Ordenacion:
+			this.respuestas = new Ordenacion(correctas, alternativas);
+			break;*/
 		default:
 			
 		}
@@ -86,7 +85,9 @@ public class Exercise implements Comparable<Exercise> {
 	}
 	
 	public boolean isAnswered(){
-		return respuestas.isAnswered();
+		if(respuestas.getSeleccionadas().isEmpty())
+			return false;
+		return true;
 	}
 	
 	public boolean isCorrect() {

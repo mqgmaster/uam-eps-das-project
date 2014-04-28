@@ -44,7 +44,7 @@ public class ExercisePanel extends Panel {
 				showAllExercises();
 				break;
 			case WIZARD_ADAPTATIVE:
-				showNewExercise();
+				showRamdomExercise();
 		}
 		
 		super.setupView();
@@ -56,7 +56,7 @@ public class ExercisePanel extends Panel {
 			exercisesContainer.add(e.createComponent());
 	}
 	
-	private boolean showNewExercise() {
+	private boolean showRamdomExercise() {
 		for (int i=0; i<exercises.size(); i++) {
 			if (!answeredExercises.contains(i)) {
 				exercisesContainer.add(exercises.get(i).createComponent());
@@ -90,7 +90,7 @@ public class ExercisePanel extends Panel {
 							action.actionPerformed(e);
 						} else {
 							ExercisePanel.this.clearExercisesView();
-							if (!ExercisePanel.this.showNewExercise()) {
+							if (!ExercisePanel.this.showRamdomExercise()) {
 								action.actionPerformed(e);
 							}
 						}
