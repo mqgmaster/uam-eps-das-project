@@ -32,17 +32,19 @@ import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 @SuppressWarnings("all")
 public class AutoevaluacionGenerator implements IGenerator {
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
-    final ArrayList<Ejercicio> lista = CollectionLiterals.<Ejercicio>newArrayList();
+    final ArrayList<String> lista = CollectionLiterals.<String>newArrayList();
     EList<EObject> _contents = resource.getContents();
     EObject _head = IterableExtensions.<EObject>head(_contents);
     Hoja hoja = ((Hoja) _head);
     EList<Ejercicio> _ejercicios = hoja.getEjercicios();
     final Procedure2<Ejercicio,Integer> _function = new Procedure2<Ejercicio,Integer>() {
       public void apply(final Ejercicio elem, final Integer index) {
-        boolean _contains = lista.contains(elem);
+        String _categoria = elem.getCategoria();
+        boolean _contains = lista.contains(_categoria);
         boolean _not = (!_contains);
         if (_not) {
-          lista.add(elem);
+          String _categoria_1 = elem.getCategoria();
+          lista.add(_categoria_1);
         }
       }
     };
@@ -1454,25 +1456,12 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.append("\"");
             String _enunciado = e.getEnunciado();
             _builder.append(_enunciado, "\t\t\t\t");
-            _builder.append("\", ");
-            _builder.newLineIfNotEmpty();
-            _builder.append("\t\t");
-            _builder.append("\t\t");
-            int _order = e.getOrder();
-            _builder.append(_order, "\t\t\t\t");
-            _builder.append(", ");
-            _builder.newLineIfNotEmpty();
-            _builder.append("\t\t");
-            _builder.append("\t\t");
-            _builder.append("\"");
-            String _categoria = e.getCategoria();
-            _builder.append(_categoria, "\t\t\t\t");
             _builder.append("\",");
             _builder.newLineIfNotEmpty();
             {
               double _puntuacionEj = e.getPuntuacionEj();
-              boolean _isNaN = Double.valueOf(_puntuacionEj).isNaN();
-              if (_isNaN) {
+              boolean _equals = Double.valueOf(_puntuacionEj).equals(Double.valueOf(0.0));
+              if (_equals) {
                 _builder.append("\t\t");
                 _builder.append("\t\t");
                 double _puntuacion = ((Clasico)h).getPuntuacion();
@@ -1490,7 +1479,17 @@ public class AutoevaluacionGenerator implements IGenerator {
             }
             _builder.append("\t\t");
             _builder.append("\t\t");
-            _builder.newLine();
+            _builder.append("\"");
+            String _categoria = e.getCategoria();
+            _builder.append(_categoria, "\t\t\t\t");
+            _builder.append("\",");
+            _builder.newLineIfNotEmpty();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            int _order = e.getOrder();
+            _builder.append(_order, "\t\t\t\t");
+            _builder.append(", ");
+            _builder.newLineIfNotEmpty();
             _builder.append("\t\t");
             _builder.append("\t\t");
             _builder.append("new String[]{");
@@ -1507,8 +1506,8 @@ public class AutoevaluacionGenerator implements IGenerator {
                   EList<String> _correctas_2 = _respuesta_2.getCorrectas();
                   int _size = _correctas_2.size();
                   int _minus = (_size - 1);
-                  boolean _equals = (_indexOf == _minus);
-                  if (_equals) {
+                  boolean _equals_1 = (_indexOf == _minus);
+                  if (_equals_1) {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("\"");
@@ -1546,8 +1545,8 @@ public class AutoevaluacionGenerator implements IGenerator {
                   EList<String> _alternativas_2 = _respuesta_5.getAlternativas();
                   int _size_1 = _alternativas_2.size();
                   int _minus_1 = (_size_1 - 1);
-                  boolean _equals_1 = (_indexOf_1 == _minus_1);
-                  if (_equals_1) {
+                  boolean _equals_2 = (_indexOf_1 == _minus_1);
+                  if (_equals_2) {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("\"");
@@ -1660,7 +1659,7 @@ public class AutoevaluacionGenerator implements IGenerator {
         _builder.append("showPanel(pe);");
         _builder.newLine();
         _builder.append("\t\t");
-        _builder.append("// añadir panel a la ventana");
+        _builder.append("// anadir panel a la ventana");
         _builder.newLine();
         _builder.append("\t\t");
         _builder.append("getContentPane().add(mainContainer);");
@@ -1682,11 +1681,6 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append(" = new ExercisePanel(\"");
               _builder.append(c_1, "\t\t");
               _builder.append("\", PanelType.WIZARD);");
-              _builder.newLineIfNotEmpty();
-              _builder.append("\t\t");
-              _builder.append("addExercisePanel(p");
-              _builder.append(c_1, "\t\t");
-              _builder.append(");");
               _builder.newLineIfNotEmpty();
             }
           }
@@ -1718,23 +1712,10 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append(_enunciado_1, "\t\t\t\t");
               _builder.append("\", ");
               _builder.newLineIfNotEmpty();
-              _builder.append("\t\t");
-              _builder.append("\t\t");
-              int _order_1 = e_1.getOrder();
-              _builder.append(_order_1, "\t\t\t\t");
-              _builder.append(", ");
-              _builder.newLineIfNotEmpty();
-              _builder.append("\t\t");
-              _builder.append("\t\t");
-              _builder.append("\"");
-              String _categoria_2 = e_1.getCategoria();
-              _builder.append(_categoria_2, "\t\t\t\t");
-              _builder.append("\",");
-              _builder.newLineIfNotEmpty();
               {
                 double _puntuacionEj_2 = e_1.getPuntuacionEj();
-                boolean _isNaN_1 = Double.valueOf(_puntuacionEj_2).isNaN();
-                if (_isNaN_1) {
+                boolean _isNaN = Double.valueOf(_puntuacionEj_2).isNaN();
+                if (_isNaN) {
                   _builder.append("\t\t");
                   _builder.append("\t\t");
                   double _puntuacion_1 = h.getPuntuacion();
@@ -1752,7 +1733,17 @@ public class AutoevaluacionGenerator implements IGenerator {
               }
               _builder.append("\t\t");
               _builder.append("\t\t");
-              _builder.newLine();
+              _builder.append("\"");
+              String _categoria_2 = e_1.getCategoria();
+              _builder.append(_categoria_2, "\t\t\t\t");
+              _builder.append("\",");
+              _builder.newLineIfNotEmpty();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              int _order_1 = e_1.getOrder();
+              _builder.append(_order_1, "\t\t\t\t");
+              _builder.append(",");
+              _builder.newLineIfNotEmpty();
               _builder.append("\t\t");
               _builder.append("\t\t");
               _builder.append("new String[]{");
@@ -1769,8 +1760,8 @@ public class AutoevaluacionGenerator implements IGenerator {
                     EList<String> _correctas_5 = _respuesta_12.getCorrectas();
                     int _size_2 = _correctas_5.size();
                     int _minus_2 = (_size_2 - 1);
-                    boolean _equals_2 = (_indexOf_2 == _minus_2);
-                    if (_equals_2) {
+                    boolean _equals_3 = (_indexOf_2 == _minus_2);
+                    if (_equals_3) {
                       _builder.append("\t\t");
                       _builder.append("\t\t");
                       _builder.append("\"");
@@ -1808,8 +1799,8 @@ public class AutoevaluacionGenerator implements IGenerator {
                     EList<String> _alternativas_5 = _respuesta_15.getAlternativas();
                     int _size_3 = _alternativas_5.size();
                     int _minus_3 = (_size_3 - 1);
-                    boolean _equals_3 = (_indexOf_3 == _minus_3);
-                    if (_equals_3) {
+                    boolean _equals_4 = (_indexOf_3 == _minus_3);
+                    if (_equals_4) {
                       _builder.append("\t\t");
                       _builder.append("\t\t");
                       _builder.append("\"");
@@ -1830,9 +1821,6 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append("\t\t");
               _builder.append("\t\t");
               _builder.append("},");
-              _builder.newLine();
-              _builder.append("\t\t");
-              _builder.append("\t\t");
               _builder.newLine();
               {
                 Respuesta _respuesta_16 = e_1.getRespuesta();
@@ -1884,8 +1872,8 @@ public class AutoevaluacionGenerator implements IGenerator {
                 int _indexOf_4 = categoria.indexOf(c_3);
                 int _size_4 = categoria.size();
                 int _minus_4 = (_size_4 - 1);
-                boolean _equals_4 = (_indexOf_4 == _minus_4);
-                if (_equals_4) {
+                boolean _equals_5 = (_indexOf_4 == _minus_4);
+                if (_equals_5) {
                   _builder.append("\t\t");
                   _builder.append("p");
                   _builder.append(c_3, "\t\t");
@@ -1954,6 +1942,15 @@ public class AutoevaluacionGenerator implements IGenerator {
           }
           _builder.append("\t\t");
           _builder.newLine();
+          {
+            for(final Object c_4 : categoria) {
+              _builder.append("\t\t");
+              _builder.append("addExercisePanel(p");
+              _builder.append(c_4, "\t\t");
+              _builder.append(");");
+              _builder.newLineIfNotEmpty();
+            }
+          }
           _builder.append("\t\t");
           _builder.newLine();
           _builder.append("\t\t");
@@ -1966,7 +1963,7 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.append(");");
           _builder.newLineIfNotEmpty();
           _builder.append("\t\t");
-          _builder.append("// añadir panel a la ventana");
+          _builder.append("// aÃ±adir panel a la ventana");
           _builder.newLine();
           _builder.append("\t\t");
           _builder.append("getContentPane().add(mainContainer);");
