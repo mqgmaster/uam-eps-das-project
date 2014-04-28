@@ -224,22 +224,13 @@ public interface AutoevaluacionPackage extends EPackage {
 	int RESPUESTA__ALTERNATIVAS = 1;
 
 	/**
-	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESPUESTA__SELECCIONADAS = 2;
-
-	/**
 	 * The number of structural features of the '<em>Respuesta</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_FEATURE_COUNT = 3;
+	int RESPUESTA_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Respuesta</em>' class.
@@ -277,15 +268,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @ordered
 	 */
 	int RESPUESTA_UNICA__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
-
-	/**
-	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESPUESTA_UNICA__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
 
 	/**
 	 * The number of structural features of the '<em>Respuesta Unica</em>' class.
@@ -334,15 +316,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	int RESPUESTA_MULTIPLE__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
 
 	/**
-	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESPUESTA_MULTIPLE__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
-
-	/**
 	 * The number of structural features of the '<em>Respuesta Multiple</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,15 +362,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	int TEXTO_LIBRE__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
 
 	/**
-	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TEXTO_LIBRE__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
-
-	/**
 	 * The number of structural features of the '<em>Texto Libre</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -442,15 +406,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @ordered
 	 */
 	int ORDENACION__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
-
-	/**
-	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDENACION__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
 
 	/**
 	 * The number of structural features of the '<em>Ordenacion</em>' class.
@@ -618,22 +573,13 @@ public interface AutoevaluacionPackage extends EPackage {
 	int WIZARD_ADAPTATIVO__PENALIZACION = HOJA__PENALIZACION;
 
 	/**
-	 * The feature id for the '<em><b>Ejercicios Respondidos</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WIZARD_ADAPTATIVO__EJERCICIOS_RESPONDIDOS = HOJA_FEATURE_COUNT + 0;
-
-	/**
 	 * The number of structural features of the '<em>Wizard Adaptativo</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WIZARD_ADAPTATIVO_FEATURE_COUNT = HOJA_FEATURE_COUNT + 1;
+	int WIZARD_ADAPTATIVO_FEATURE_COUNT = HOJA_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Wizard Adaptativo</em>' class.
@@ -797,17 +743,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	EAttribute getRespuesta_Alternativas();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link Autoevaluacion.Respuesta#getSeleccionadas <em>Seleccionadas</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Seleccionadas</em>'.
-	 * @see Autoevaluacion.Respuesta#getSeleccionadas()
-	 * @see #getRespuesta()
-	 * @generated
-	 */
-	EAttribute getRespuesta_Seleccionadas();
-
-	/**
 	 * Returns the meta object for class '{@link Autoevaluacion.RespuestaUnica <em>Respuesta Unica</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -876,17 +811,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getWizardAdaptativo();
-
-	/**
-	 * Returns the meta object for the reference list '{@link Autoevaluacion.WizardAdaptativo#getEjerciciosRespondidos <em>Ejercicios Respondidos</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Ejercicios Respondidos</em>'.
-	 * @see Autoevaluacion.WizardAdaptativo#getEjerciciosRespondidos()
-	 * @see #getWizardAdaptativo()
-	 * @generated
-	 */
-	EReference getWizardAdaptativo_EjerciciosRespondidos();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1030,14 +954,6 @@ public interface AutoevaluacionPackage extends EPackage {
 		EAttribute RESPUESTA__ALTERNATIVAS = eINSTANCE.getRespuesta_Alternativas();
 
 		/**
-		 * The meta object literal for the '<em><b>Seleccionadas</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute RESPUESTA__SELECCIONADAS = eINSTANCE.getRespuesta_Seleccionadas();
-
-		/**
 		 * The meta object literal for the '{@link Autoevaluacion.impl.RespuestaUnicaImpl <em>Respuesta Unica</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1106,14 +1022,6 @@ public interface AutoevaluacionPackage extends EPackage {
 		 * @generated
 		 */
 		EClass WIZARD_ADAPTATIVO = eINSTANCE.getWizardAdaptativo();
-
-		/**
-		 * The meta object literal for the '<em><b>Ejercicios Respondidos</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WIZARD_ADAPTATIVO__EJERCICIOS_RESPONDIDOS = eINSTANCE.getWizardAdaptativo_EjerciciosRespondidos();
 
 	}
 

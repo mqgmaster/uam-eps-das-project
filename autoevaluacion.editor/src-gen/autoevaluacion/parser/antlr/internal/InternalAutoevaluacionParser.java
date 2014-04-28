@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_INT", "RULE_STRING", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Ejercicio'", "'{'", "'enunciado'", "'puntuacionEj'", "'categoria'", "'order'", "'respuesta'", "'}'", "'-'", "'.'", "'E'", "'e'", "'Clasico'", "'puntuacion'", "'penalizacion'", "'ejercicios'", "','", "'Wizard'", "'WizardAdaptativo'", "'ejerciciosRespondidos'", "'('", "')'", "'RespuestaUnica'", "'correctas'", "'alternativas'", "'seleccionadas'", "'RespuestaMultiple'", "'TextoLibre'", "'Ordenacion'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_INT", "RULE_STRING", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Ejercicio'", "'{'", "'enunciado'", "'puntuacionEj'", "'categoria'", "'order'", "'respuesta'", "'}'", "'-'", "'.'", "'E'", "'e'", "'Clasico'", "'puntuacion'", "'penalizacion'", "'ejercicios'", "','", "'Wizard'", "'WizardAdaptativo'", "'RespuestaUnica'", "'correctas'", "'alternativas'", "'RespuestaMultiple'", "'TextoLibre'", "'Ordenacion'"
     };
     public static final int RULE_ID=6;
     public static final int T__29=29;
@@ -49,13 +49,9 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
     public static final int T__15=15;
     public static final int T__35=35;
     public static final int T__18=18;
-    public static final int T__36=36;
     public static final int T__17=17;
-    public static final int T__37=37;
     public static final int T__12=12;
-    public static final int T__38=38;
     public static final int T__11=11;
-    public static final int T__39=39;
     public static final int T__14=14;
     public static final int T__13=13;
     public static final int RULE_INT=4;
@@ -312,22 +308,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
             // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:130:1: (this_RespuestaUnica_0= ruleRespuestaUnica | this_RespuestaMultiple_1= ruleRespuestaMultiple | this_TextoLibre_2= ruleTextoLibre | this_Ordenacion_3= ruleOrdenacion )
             int alt2=4;
             switch ( input.LA(1) ) {
-            case 33:
+            case 30:
                 {
                 alt2=1;
                 }
                 break;
-            case 37:
+            case 33:
                 {
                 alt2=2;
                 }
                 break;
-            case 38:
+            case 34:
                 {
                 alt2=3;
                 }
                 break;
-            case 39:
+            case 35:
                 {
                 alt2=4;
                 }
@@ -1560,7 +1556,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleWizardAdaptativo"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:678:1: ruleWizardAdaptativo returns [EObject current=null] : (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) (otherlv_6= 'ejerciciosRespondidos' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' )? otherlv_12= 'ejercicios' otherlv_13= '{' ( (lv_ejercicios_14_0= ruleEjercicio ) ) (otherlv_15= ',' ( (lv_ejercicios_16_0= ruleEjercicio ) ) )* otherlv_17= '}' otherlv_18= '}' ) ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:678:1: ruleWizardAdaptativo returns [EObject current=null] : (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) otherlv_6= 'ejercicios' otherlv_7= '{' ( (lv_ejercicios_8_0= ruleEjercicio ) ) (otherlv_9= ',' ( (lv_ejercicios_10_0= ruleEjercicio ) ) )* otherlv_11= '}' otherlv_12= '}' ) ;
     public final EObject ruleWizardAdaptativo() throws RecognitionException {
         EObject current = null;
 
@@ -1573,27 +1569,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
         Token otherlv_9=null;
         Token otherlv_11=null;
         Token otherlv_12=null;
-        Token otherlv_13=null;
-        Token otherlv_15=null;
-        Token otherlv_17=null;
-        Token otherlv_18=null;
         AntlrDatatypeRuleToken lv_puntuacion_3_0 = null;
 
         AntlrDatatypeRuleToken lv_penalizacion_5_0 = null;
 
-        EObject lv_ejercicios_14_0 = null;
+        EObject lv_ejercicios_8_0 = null;
 
-        EObject lv_ejercicios_16_0 = null;
+        EObject lv_ejercicios_10_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:681:28: ( (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) (otherlv_6= 'ejerciciosRespondidos' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' )? otherlv_12= 'ejercicios' otherlv_13= '{' ( (lv_ejercicios_14_0= ruleEjercicio ) ) (otherlv_15= ',' ( (lv_ejercicios_16_0= ruleEjercicio ) ) )* otherlv_17= '}' otherlv_18= '}' ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:682:1: (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) (otherlv_6= 'ejerciciosRespondidos' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' )? otherlv_12= 'ejercicios' otherlv_13= '{' ( (lv_ejercicios_14_0= ruleEjercicio ) ) (otherlv_15= ',' ( (lv_ejercicios_16_0= ruleEjercicio ) ) )* otherlv_17= '}' otherlv_18= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:681:28: ( (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) otherlv_6= 'ejercicios' otherlv_7= '{' ( (lv_ejercicios_8_0= ruleEjercicio ) ) (otherlv_9= ',' ( (lv_ejercicios_10_0= ruleEjercicio ) ) )* otherlv_11= '}' otherlv_12= '}' ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:682:1: (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) otherlv_6= 'ejercicios' otherlv_7= '{' ( (lv_ejercicios_8_0= ruleEjercicio ) ) (otherlv_9= ',' ( (lv_ejercicios_10_0= ruleEjercicio ) ) )* otherlv_11= '}' otherlv_12= '}' )
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:682:1: (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) (otherlv_6= 'ejerciciosRespondidos' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' )? otherlv_12= 'ejercicios' otherlv_13= '{' ( (lv_ejercicios_14_0= ruleEjercicio ) ) (otherlv_15= ',' ( (lv_ejercicios_16_0= ruleEjercicio ) ) )* otherlv_17= '}' otherlv_18= '}' )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:682:3: otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) (otherlv_6= 'ejerciciosRespondidos' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' )? otherlv_12= 'ejercicios' otherlv_13= '{' ( (lv_ejercicios_14_0= ruleEjercicio ) ) (otherlv_15= ',' ( (lv_ejercicios_16_0= ruleEjercicio ) ) )* otherlv_17= '}' otherlv_18= '}'
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:682:1: (otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) otherlv_6= 'ejercicios' otherlv_7= '{' ( (lv_ejercicios_8_0= ruleEjercicio ) ) (otherlv_9= ',' ( (lv_ejercicios_10_0= ruleEjercicio ) ) )* otherlv_11= '}' otherlv_12= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:682:3: otherlv_0= 'WizardAdaptativo' otherlv_1= '{' otherlv_2= 'puntuacion' ( (lv_puntuacion_3_0= ruleEDouble ) ) otherlv_4= 'penalizacion' ( (lv_penalizacion_5_0= ruleEDouble ) ) otherlv_6= 'ejercicios' otherlv_7= '{' ( (lv_ejercicios_8_0= ruleEjercicio ) ) (otherlv_9= ',' ( (lv_ejercicios_10_0= ruleEjercicio ) ) )* otherlv_11= '}' otherlv_12= '}'
             {
             otherlv_0=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleWizardAdaptativo1491); 
 
@@ -1673,138 +1665,25 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:734:2: (otherlv_6= 'ejerciciosRespondidos' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')' )?
-            int alt12=2;
-            int LA12_0 = input.LA(1);
+            otherlv_6=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleWizardAdaptativo1581); 
 
-            if ( (LA12_0==30) ) {
-                alt12=1;
-            }
-            switch (alt12) {
-                case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:734:4: otherlv_6= 'ejerciciosRespondidos' otherlv_7= '(' ( ( ruleEString ) ) (otherlv_9= ',' ( ( ruleEString ) ) )* otherlv_11= ')'
-                    {
-                    otherlv_6=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleWizardAdaptativo1582); 
-
-                        	newLeafNode(otherlv_6, grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosKeyword_6_0());
-                        
-                    otherlv_7=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleWizardAdaptativo1594); 
-
-                        	newLeafNode(otherlv_7, grammarAccess.getWizardAdaptativoAccess().getLeftParenthesisKeyword_6_1());
-                        
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:742:1: ( ( ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:743:1: ( ruleEString )
-                    {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:743:1: ( ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:744:3: ruleEString
-                    {
-
-                    			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getWizardAdaptativoRule());
-                    	        }
-                            
-                     
-                    	        newCompositeNode(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioCrossReference_6_2_0()); 
-                    	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleWizardAdaptativo1617);
-                    ruleEString();
-
-                    state._fsp--;
-
-                     
-                    	        afterParserOrEnumRuleCall();
-                    	    
-
-                    }
-
-
-                    }
-
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:757:2: (otherlv_9= ',' ( ( ruleEString ) ) )*
-                    loop11:
-                    do {
-                        int alt11=2;
-                        int LA11_0 = input.LA(1);
-
-                        if ( (LA11_0==27) ) {
-                            alt11=1;
-                        }
-
-
-                        switch (alt11) {
-                    	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:757:4: otherlv_9= ',' ( ( ruleEString ) )
-                    	    {
-                    	    otherlv_9=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleWizardAdaptativo1630); 
-
-                    	        	newLeafNode(otherlv_9, grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_6_3_0());
-                    	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:761:1: ( ( ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:762:1: ( ruleEString )
-                    	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:762:1: ( ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:763:3: ruleEString
-                    	    {
-
-                    	    			if (current==null) {
-                    	    	            current = createModelElement(grammarAccess.getWizardAdaptativoRule());
-                    	    	        }
-                    	            
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioCrossReference_6_3_1_0()); 
-                    	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleWizardAdaptativo1653);
-                    	    ruleEString();
-
-                    	    state._fsp--;
-
-                    	     
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop11;
-                        }
-                    } while (true);
-
-                    otherlv_11=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleWizardAdaptativo1667); 
-
-                        	newLeafNode(otherlv_11, grammarAccess.getWizardAdaptativoAccess().getRightParenthesisKeyword_6_4());
-                        
-
-                    }
-                    break;
-
-            }
-
-            otherlv_12=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleWizardAdaptativo1681); 
-
-                	newLeafNode(otherlv_12, grammarAccess.getWizardAdaptativoAccess().getEjerciciosKeyword_7());
+                	newLeafNode(otherlv_6, grammarAccess.getWizardAdaptativoAccess().getEjerciciosKeyword_6());
                 
-            otherlv_13=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleWizardAdaptativo1693); 
+            otherlv_7=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleWizardAdaptativo1593); 
 
-                	newLeafNode(otherlv_13, grammarAccess.getWizardAdaptativoAccess().getLeftCurlyBracketKeyword_8());
+                	newLeafNode(otherlv_7, grammarAccess.getWizardAdaptativoAccess().getLeftCurlyBracketKeyword_7());
                 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:788:1: ( (lv_ejercicios_14_0= ruleEjercicio ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:789:1: (lv_ejercicios_14_0= ruleEjercicio )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:742:1: ( (lv_ejercicios_8_0= ruleEjercicio ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:743:1: (lv_ejercicios_8_0= ruleEjercicio )
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:789:1: (lv_ejercicios_14_0= ruleEjercicio )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:790:3: lv_ejercicios_14_0= ruleEjercicio
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:743:1: (lv_ejercicios_8_0= ruleEjercicio )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:744:3: lv_ejercicios_8_0= ruleEjercicio
             {
              
-            	        newCompositeNode(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_9_0()); 
+            	        newCompositeNode(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_8_0()); 
             	    
-            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1714);
-            lv_ejercicios_14_0=ruleEjercicio();
+            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1614);
+            lv_ejercicios_8_0=ruleEjercicio();
 
             state._fsp--;
 
@@ -1815,7 +1694,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                    		add(
                    			current, 
                    			"ejercicios",
-                    		lv_ejercicios_14_0, 
+                    		lv_ejercicios_8_0, 
                     		"Ejercicio");
             	        afterParserOrEnumRuleCall();
             	    
@@ -1825,36 +1704,36 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:806:2: (otherlv_15= ',' ( (lv_ejercicios_16_0= ruleEjercicio ) ) )*
-            loop13:
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:760:2: (otherlv_9= ',' ( (lv_ejercicios_10_0= ruleEjercicio ) ) )*
+            loop11:
             do {
-                int alt13=2;
-                int LA13_0 = input.LA(1);
+                int alt11=2;
+                int LA11_0 = input.LA(1);
 
-                if ( (LA13_0==27) ) {
-                    alt13=1;
+                if ( (LA11_0==27) ) {
+                    alt11=1;
                 }
 
 
-                switch (alt13) {
+                switch (alt11) {
             	case 1 :
-            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:806:4: otherlv_15= ',' ( (lv_ejercicios_16_0= ruleEjercicio ) )
+            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:760:4: otherlv_9= ',' ( (lv_ejercicios_10_0= ruleEjercicio ) )
             	    {
-            	    otherlv_15=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleWizardAdaptativo1727); 
+            	    otherlv_9=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleWizardAdaptativo1627); 
 
-            	        	newLeafNode(otherlv_15, grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_10_0());
+            	        	newLeafNode(otherlv_9, grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_9_0());
             	        
-            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:810:1: ( (lv_ejercicios_16_0= ruleEjercicio ) )
-            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:811:1: (lv_ejercicios_16_0= ruleEjercicio )
+            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:764:1: ( (lv_ejercicios_10_0= ruleEjercicio ) )
+            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:765:1: (lv_ejercicios_10_0= ruleEjercicio )
             	    {
-            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:811:1: (lv_ejercicios_16_0= ruleEjercicio )
-            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:812:3: lv_ejercicios_16_0= ruleEjercicio
+            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:765:1: (lv_ejercicios_10_0= ruleEjercicio )
+            	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:766:3: lv_ejercicios_10_0= ruleEjercicio
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_10_1_0()); 
+            	    	        newCompositeNode(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_9_1_0()); 
             	    	    
-            	    pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1748);
-            	    lv_ejercicios_16_0=ruleEjercicio();
+            	    pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1648);
+            	    lv_ejercicios_10_0=ruleEjercicio();
 
             	    state._fsp--;
 
@@ -1865,7 +1744,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"ejercicios",
-            	            		lv_ejercicios_16_0, 
+            	            		lv_ejercicios_10_0, 
             	            		"Ejercicio");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -1880,17 +1759,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop13;
+            	    break loop11;
                 }
             } while (true);
 
-            otherlv_17=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleWizardAdaptativo1762); 
+            otherlv_11=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleWizardAdaptativo1662); 
 
-                	newLeafNode(otherlv_17, grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_11());
+                	newLeafNode(otherlv_11, grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_10());
                 
-            otherlv_18=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleWizardAdaptativo1774); 
+            otherlv_12=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleWizardAdaptativo1674); 
 
-                	newLeafNode(otherlv_18, grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_12());
+                	newLeafNode(otherlv_12, grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_11());
                 
 
             }
@@ -1913,7 +1792,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEString"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:844:1: entryRuleEString returns [String current=null] : iv_ruleEString= ruleEString EOF ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:798:1: entryRuleEString returns [String current=null] : iv_ruleEString= ruleEString EOF ;
     public final String entryRuleEString() throws RecognitionException {
         String current = null;
 
@@ -1921,17 +1800,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:845:2: (iv_ruleEString= ruleEString EOF )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:846:2: iv_ruleEString= ruleEString EOF
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:799:2: (iv_ruleEString= ruleEString EOF )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:800:2: iv_ruleEString= ruleEString EOF
             {
              newCompositeNode(grammarAccess.getEStringRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_entryRuleEString1811);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_entryRuleEString1711);
             iv_ruleEString=ruleEString();
 
             state._fsp--;
 
              current =iv_ruleEString.getText(); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEString1822); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEString1722); 
 
             }
 
@@ -1949,7 +1828,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEString"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:853:1: ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:807:1: ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) ;
     public final AntlrDatatypeRuleToken ruleEString() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -1959,30 +1838,30 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:856:28: ( (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:857:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:810:28: ( (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:811:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:857:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
-            int alt14=2;
-            int LA14_0 = input.LA(1);
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:811:1: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
+            int alt12=2;
+            int LA12_0 = input.LA(1);
 
-            if ( (LA14_0==RULE_STRING) ) {
-                alt14=1;
+            if ( (LA12_0==RULE_STRING) ) {
+                alt12=1;
             }
-            else if ( (LA14_0==RULE_ID) ) {
-                alt14=2;
+            else if ( (LA12_0==RULE_ID) ) {
+                alt12=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 14, 0, input);
+                    new NoViableAltException("", 12, 0, input);
 
                 throw nvae;
             }
-            switch (alt14) {
+            switch (alt12) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:857:6: this_STRING_0= RULE_STRING
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:811:6: this_STRING_0= RULE_STRING
                     {
-                    this_STRING_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleEString1862); 
+                    this_STRING_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleEString1762); 
 
                     		current.merge(this_STRING_0);
                         
@@ -1993,9 +1872,9 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:865:10: this_ID_1= RULE_ID
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:819:10: this_ID_1= RULE_ID
                     {
-                    this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEString1888); 
+                    this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEString1788); 
 
                     		current.merge(this_ID_1);
                         
@@ -2026,7 +1905,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEInt"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:880:1: entryRuleEInt returns [String current=null] : iv_ruleEInt= ruleEInt EOF ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:834:1: entryRuleEInt returns [String current=null] : iv_ruleEInt= ruleEInt EOF ;
     public final String entryRuleEInt() throws RecognitionException {
         String current = null;
 
@@ -2034,17 +1913,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:881:2: (iv_ruleEInt= ruleEInt EOF )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:882:2: iv_ruleEInt= ruleEInt EOF
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:835:2: (iv_ruleEInt= ruleEInt EOF )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:836:2: iv_ruleEInt= ruleEInt EOF
             {
              newCompositeNode(grammarAccess.getEIntRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_entryRuleEInt1934);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_entryRuleEInt1834);
             iv_ruleEInt=ruleEInt();
 
             state._fsp--;
 
              current =iv_ruleEInt.getText(); 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEInt1945); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEInt1845); 
 
             }
 
@@ -2062,7 +1941,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEInt"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:889:1: ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? this_INT_1= RULE_INT ) ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:843:1: ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? this_INT_1= RULE_INT ) ;
     public final AntlrDatatypeRuleToken ruleEInt() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -2072,24 +1951,24 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:892:28: ( ( (kw= '-' )? this_INT_1= RULE_INT ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:893:1: ( (kw= '-' )? this_INT_1= RULE_INT )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:846:28: ( ( (kw= '-' )? this_INT_1= RULE_INT ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:847:1: ( (kw= '-' )? this_INT_1= RULE_INT )
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:893:1: ( (kw= '-' )? this_INT_1= RULE_INT )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:893:2: (kw= '-' )? this_INT_1= RULE_INT
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:847:1: ( (kw= '-' )? this_INT_1= RULE_INT )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:847:2: (kw= '-' )? this_INT_1= RULE_INT
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:893:2: (kw= '-' )?
-            int alt15=2;
-            int LA15_0 = input.LA(1);
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:847:2: (kw= '-' )?
+            int alt13=2;
+            int LA13_0 = input.LA(1);
 
-            if ( (LA15_0==19) ) {
-                alt15=1;
+            if ( (LA13_0==19) ) {
+                alt13=1;
             }
-            switch (alt15) {
+            switch (alt13) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:894:2: kw= '-'
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:848:2: kw= '-'
                     {
-                    kw=(Token)match(input,19,FollowSets000.FOLLOW_19_in_ruleEInt1984); 
+                    kw=(Token)match(input,19,FollowSets000.FOLLOW_19_in_ruleEInt1884); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
@@ -2100,7 +1979,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            this_INT_1=(Token)match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_ruleEInt2001); 
+            this_INT_1=(Token)match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_ruleEInt1901); 
 
             		current.merge(this_INT_1);
                 
@@ -2128,7 +2007,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRespuestaUnica"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:914:1: entryRuleRespuestaUnica returns [EObject current=null] : iv_ruleRespuestaUnica= ruleRespuestaUnica EOF ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:868:1: entryRuleRespuestaUnica returns [EObject current=null] : iv_ruleRespuestaUnica= ruleRespuestaUnica EOF ;
     public final EObject entryRuleRespuestaUnica() throws RecognitionException {
         EObject current = null;
 
@@ -2136,17 +2015,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:915:2: (iv_ruleRespuestaUnica= ruleRespuestaUnica EOF )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:916:2: iv_ruleRespuestaUnica= ruleRespuestaUnica EOF
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:869:2: (iv_ruleRespuestaUnica= ruleRespuestaUnica EOF )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:870:2: iv_ruleRespuestaUnica= ruleRespuestaUnica EOF
             {
              newCompositeNode(grammarAccess.getRespuestaUnicaRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRespuestaUnica_in_entryRuleRespuestaUnica2046);
+            pushFollow(FollowSets000.FOLLOW_ruleRespuestaUnica_in_entryRuleRespuestaUnica1946);
             iv_ruleRespuestaUnica=ruleRespuestaUnica();
 
             state._fsp--;
 
              current =iv_ruleRespuestaUnica; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRespuestaUnica2056); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRespuestaUnica1956); 
 
             }
 
@@ -2164,7 +2043,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRespuestaUnica"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:923:1: ruleRespuestaUnica returns [EObject current=null] : ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:877:1: ruleRespuestaUnica returns [EObject current=null] : ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) ;
     public final EObject ruleRespuestaUnica() throws RecognitionException {
         EObject current = null;
 
@@ -2179,10 +2058,6 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
         Token otherlv_12=null;
         Token otherlv_14=null;
         Token otherlv_15=null;
-        Token otherlv_16=null;
-        Token otherlv_18=null;
-        Token otherlv_20=null;
-        Token otherlv_21=null;
         AntlrDatatypeRuleToken lv_correctas_5_0 = null;
 
         AntlrDatatypeRuleToken lv_correctas_7_0 = null;
@@ -2191,22 +2066,18 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
         AntlrDatatypeRuleToken lv_alternativas_13_0 = null;
 
-        AntlrDatatypeRuleToken lv_seleccionadas_17_0 = null;
-
-        AntlrDatatypeRuleToken lv_seleccionadas_19_0 = null;
-
 
          enterRule(); 
             
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:926:28: ( ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:927:1: ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:880:28: ( ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:881:1: ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:927:1: ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:927:2: () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}'
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:881:1: ( () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:881:2: () otherlv_1= 'RespuestaUnica' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}'
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:927:2: ()
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:928:5: 
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:881:2: ()
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:882:5: 
             {
 
                     current = forceCreateModelElement(
@@ -2216,43 +2087,43 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleRespuestaUnica2102); 
+            otherlv_1=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleRespuestaUnica2002); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getRespuestaUnicaAccess().getRespuestaUnicaKeyword_1());
                 
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaUnica2114); 
+            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaUnica2014); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:941:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
-            int alt17=2;
-            int LA17_0 = input.LA(1);
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:895:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
+            int alt15=2;
+            int LA15_0 = input.LA(1);
 
-            if ( (LA17_0==34) ) {
-                alt17=1;
+            if ( (LA15_0==31) ) {
+                alt15=1;
             }
-            switch (alt17) {
+            switch (alt15) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:941:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:895:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
                     {
-                    otherlv_3=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleRespuestaUnica2127); 
+                    otherlv_3=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleRespuestaUnica2027); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getRespuestaUnicaAccess().getCorrectasKeyword_3_0());
                         
-                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaUnica2139); 
+                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaUnica2039); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_3_1());
                         
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:949:1: ( (lv_correctas_5_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:950:1: (lv_correctas_5_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:903:1: ( (lv_correctas_5_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:904:1: (lv_correctas_5_0= ruleEString )
                     {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:950:1: (lv_correctas_5_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:951:3: lv_correctas_5_0= ruleEString
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:904:1: (lv_correctas_5_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:905:3: lv_correctas_5_0= ruleEString
                     {
                      
                     	        newCompositeNode(grammarAccess.getRespuestaUnicaAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2160);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2060);
                     lv_correctas_5_0=ruleEString();
 
                     state._fsp--;
@@ -2274,35 +2145,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:967:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
-                    loop16:
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:921:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
+                    loop14:
                     do {
-                        int alt16=2;
-                        int LA16_0 = input.LA(1);
+                        int alt14=2;
+                        int LA14_0 = input.LA(1);
 
-                        if ( (LA16_0==27) ) {
-                            alt16=1;
+                        if ( (LA14_0==27) ) {
+                            alt14=1;
                         }
 
 
-                        switch (alt16) {
+                        switch (alt14) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:967:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:921:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
                     	    {
-                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaUnica2173); 
+                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaUnica2073); 
 
                     	        	newLeafNode(otherlv_6, grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_3_3_0());
                     	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:971:1: ( (lv_correctas_7_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:972:1: (lv_correctas_7_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:925:1: ( (lv_correctas_7_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:926:1: (lv_correctas_7_0= ruleEString )
                     	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:972:1: (lv_correctas_7_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:973:3: lv_correctas_7_0= ruleEString
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:926:1: (lv_correctas_7_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:927:3: lv_correctas_7_0= ruleEString
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getRespuestaUnicaAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2194);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2094);
                     	    lv_correctas_7_0=ruleEString();
 
                     	    state._fsp--;
@@ -2329,11 +2200,11 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop16;
+                    	    break loop14;
                         }
                     } while (true);
 
-                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaUnica2208); 
+                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaUnica2108); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_3_4());
                         
@@ -2343,35 +2214,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:993:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
-            int alt19=2;
-            int LA19_0 = input.LA(1);
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:947:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
+            int alt17=2;
+            int LA17_0 = input.LA(1);
 
-            if ( (LA19_0==35) ) {
-                alt19=1;
+            if ( (LA17_0==32) ) {
+                alt17=1;
             }
-            switch (alt19) {
+            switch (alt17) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:993:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:947:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
                     {
-                    otherlv_9=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleRespuestaUnica2223); 
+                    otherlv_9=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleRespuestaUnica2123); 
 
                         	newLeafNode(otherlv_9, grammarAccess.getRespuestaUnicaAccess().getAlternativasKeyword_4_0());
                         
-                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaUnica2235); 
+                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaUnica2135); 
 
                         	newLeafNode(otherlv_10, grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_4_1());
                         
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1001:1: ( (lv_alternativas_11_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1002:1: (lv_alternativas_11_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:955:1: ( (lv_alternativas_11_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:956:1: (lv_alternativas_11_0= ruleEString )
                     {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1002:1: (lv_alternativas_11_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1003:3: lv_alternativas_11_0= ruleEString
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:956:1: (lv_alternativas_11_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:957:3: lv_alternativas_11_0= ruleEString
                     {
                      
                     	        newCompositeNode(grammarAccess.getRespuestaUnicaAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2256);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2156);
                     lv_alternativas_11_0=ruleEString();
 
                     state._fsp--;
@@ -2393,35 +2264,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1019:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
-                    loop18:
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:973:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
+                    loop16:
                     do {
-                        int alt18=2;
-                        int LA18_0 = input.LA(1);
+                        int alt16=2;
+                        int LA16_0 = input.LA(1);
 
-                        if ( (LA18_0==27) ) {
-                            alt18=1;
+                        if ( (LA16_0==27) ) {
+                            alt16=1;
                         }
 
 
-                        switch (alt18) {
+                        switch (alt16) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1019:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:973:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
                     	    {
-                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaUnica2269); 
+                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaUnica2169); 
 
                     	        	newLeafNode(otherlv_12, grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_4_3_0());
                     	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1023:1: ( (lv_alternativas_13_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1024:1: (lv_alternativas_13_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:977:1: ( (lv_alternativas_13_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:978:1: (lv_alternativas_13_0= ruleEString )
                     	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1024:1: (lv_alternativas_13_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1025:3: lv_alternativas_13_0= ruleEString
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:978:1: (lv_alternativas_13_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:979:3: lv_alternativas_13_0= ruleEString
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getRespuestaUnicaAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2290);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2190);
                     	    lv_alternativas_13_0=ruleEString();
 
                     	    state._fsp--;
@@ -2448,11 +2319,11 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop18;
+                    	    break loop16;
                         }
                     } while (true);
 
-                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaUnica2304); 
+                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaUnica2204); 
 
                         	newLeafNode(otherlv_14, grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_4_4());
                         
@@ -2462,128 +2333,9 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1045:3: (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )?
-            int alt21=2;
-            int LA21_0 = input.LA(1);
+            otherlv_15=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaUnica2218); 
 
-            if ( (LA21_0==36) ) {
-                alt21=1;
-            }
-            switch (alt21) {
-                case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1045:5: otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}'
-                    {
-                    otherlv_15=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleRespuestaUnica2319); 
-
-                        	newLeafNode(otherlv_15, grammarAccess.getRespuestaUnicaAccess().getSeleccionadasKeyword_5_0());
-                        
-                    otherlv_16=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaUnica2331); 
-
-                        	newLeafNode(otherlv_16, grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_5_1());
-                        
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1053:1: ( (lv_seleccionadas_17_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1054:1: (lv_seleccionadas_17_0= ruleEString )
-                    {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1054:1: (lv_seleccionadas_17_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1055:3: lv_seleccionadas_17_0= ruleEString
-                    {
-                     
-                    	        newCompositeNode(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-                    	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2352);
-                    lv_seleccionadas_17_0=ruleEString();
-
-                    state._fsp--;
-
-
-                    	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getRespuestaUnicaRule());
-                    	        }
-                           		add(
-                           			current, 
-                           			"seleccionadas",
-                            		lv_seleccionadas_17_0, 
-                            		"EString");
-                    	        afterParserOrEnumRuleCall();
-                    	    
-
-                    }
-
-
-                    }
-
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1071:2: (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )*
-                    loop20:
-                    do {
-                        int alt20=2;
-                        int LA20_0 = input.LA(1);
-
-                        if ( (LA20_0==27) ) {
-                            alt20=1;
-                        }
-
-
-                        switch (alt20) {
-                    	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1071:4: otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    {
-                    	    otherlv_18=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaUnica2365); 
-
-                    	        	newLeafNode(otherlv_18, grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_5_3_0());
-                    	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1075:1: ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1076:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1076:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1077:3: lv_seleccionadas_19_0= ruleEString
-                    	    {
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-                    	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaUnica2386);
-                    	    lv_seleccionadas_19_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getRespuestaUnicaRule());
-                    	    	        }
-                    	           		add(
-                    	           			current, 
-                    	           			"seleccionadas",
-                    	            		lv_seleccionadas_19_0, 
-                    	            		"EString");
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop20;
-                        }
-                    } while (true);
-
-                    otherlv_20=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaUnica2400); 
-
-                        	newLeafNode(otherlv_20, grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_5_4());
-                        
-
-                    }
-                    break;
-
-            }
-
-            otherlv_21=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaUnica2414); 
-
-                	newLeafNode(otherlv_21, grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_6());
+                	newLeafNode(otherlv_15, grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_5());
                 
 
             }
@@ -2606,7 +2358,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRespuestaMultiple"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1109:1: entryRuleRespuestaMultiple returns [EObject current=null] : iv_ruleRespuestaMultiple= ruleRespuestaMultiple EOF ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1011:1: entryRuleRespuestaMultiple returns [EObject current=null] : iv_ruleRespuestaMultiple= ruleRespuestaMultiple EOF ;
     public final EObject entryRuleRespuestaMultiple() throws RecognitionException {
         EObject current = null;
 
@@ -2614,17 +2366,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1110:2: (iv_ruleRespuestaMultiple= ruleRespuestaMultiple EOF )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1111:2: iv_ruleRespuestaMultiple= ruleRespuestaMultiple EOF
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1012:2: (iv_ruleRespuestaMultiple= ruleRespuestaMultiple EOF )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1013:2: iv_ruleRespuestaMultiple= ruleRespuestaMultiple EOF
             {
              newCompositeNode(grammarAccess.getRespuestaMultipleRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRespuestaMultiple_in_entryRuleRespuestaMultiple2450);
+            pushFollow(FollowSets000.FOLLOW_ruleRespuestaMultiple_in_entryRuleRespuestaMultiple2254);
             iv_ruleRespuestaMultiple=ruleRespuestaMultiple();
 
             state._fsp--;
 
              current =iv_ruleRespuestaMultiple; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRespuestaMultiple2460); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRespuestaMultiple2264); 
 
             }
 
@@ -2642,7 +2394,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRespuestaMultiple"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1118:1: ruleRespuestaMultiple returns [EObject current=null] : ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1020:1: ruleRespuestaMultiple returns [EObject current=null] : ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) ;
     public final EObject ruleRespuestaMultiple() throws RecognitionException {
         EObject current = null;
 
@@ -2657,10 +2409,6 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
         Token otherlv_12=null;
         Token otherlv_14=null;
         Token otherlv_15=null;
-        Token otherlv_16=null;
-        Token otherlv_18=null;
-        Token otherlv_20=null;
-        Token otherlv_21=null;
         AntlrDatatypeRuleToken lv_correctas_5_0 = null;
 
         AntlrDatatypeRuleToken lv_correctas_7_0 = null;
@@ -2669,22 +2417,18 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
         AntlrDatatypeRuleToken lv_alternativas_13_0 = null;
 
-        AntlrDatatypeRuleToken lv_seleccionadas_17_0 = null;
-
-        AntlrDatatypeRuleToken lv_seleccionadas_19_0 = null;
-
 
          enterRule(); 
             
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1121:28: ( ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1122:1: ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1023:28: ( ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1024:1: ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1122:1: ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1122:2: () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}'
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1024:1: ( () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1024:2: () otherlv_1= 'RespuestaMultiple' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}'
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1122:2: ()
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1123:5: 
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1024:2: ()
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1025:5: 
             {
 
                     current = forceCreateModelElement(
@@ -2694,43 +2438,43 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,37,FollowSets000.FOLLOW_37_in_ruleRespuestaMultiple2506); 
+            otherlv_1=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleRespuestaMultiple2310); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getRespuestaMultipleAccess().getRespuestaMultipleKeyword_1());
                 
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaMultiple2518); 
+            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaMultiple2322); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1136:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1038:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
+            int alt19=2;
+            int LA19_0 = input.LA(1);
 
-            if ( (LA23_0==34) ) {
-                alt23=1;
+            if ( (LA19_0==31) ) {
+                alt19=1;
             }
-            switch (alt23) {
+            switch (alt19) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1136:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1038:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
                     {
-                    otherlv_3=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleRespuestaMultiple2531); 
+                    otherlv_3=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleRespuestaMultiple2335); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getRespuestaMultipleAccess().getCorrectasKeyword_3_0());
                         
-                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaMultiple2543); 
+                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaMultiple2347); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_3_1());
                         
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1144:1: ( (lv_correctas_5_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1145:1: (lv_correctas_5_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1046:1: ( (lv_correctas_5_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1047:1: (lv_correctas_5_0= ruleEString )
                     {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1145:1: (lv_correctas_5_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1146:3: lv_correctas_5_0= ruleEString
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1047:1: (lv_correctas_5_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1048:3: lv_correctas_5_0= ruleEString
                     {
                      
                     	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2564);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2368);
                     lv_correctas_5_0=ruleEString();
 
                     state._fsp--;
@@ -2752,7 +2496,358 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1162:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1064:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
+                    loop18:
+                    do {
+                        int alt18=2;
+                        int LA18_0 = input.LA(1);
+
+                        if ( (LA18_0==27) ) {
+                            alt18=1;
+                        }
+
+
+                        switch (alt18) {
+                    	case 1 :
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1064:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
+                    	    {
+                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaMultiple2381); 
+
+                    	        	newLeafNode(otherlv_6, grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_3_3_0());
+                    	        
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1068:1: ( (lv_correctas_7_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1069:1: (lv_correctas_7_0= ruleEString )
+                    	    {
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1069:1: (lv_correctas_7_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1070:3: lv_correctas_7_0= ruleEString
+                    	    {
+                    	     
+                    	    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
+                    	    	    
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2402);
+                    	    lv_correctas_7_0=ruleEString();
+
+                    	    state._fsp--;
+
+
+                    	    	        if (current==null) {
+                    	    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
+                    	    	        }
+                    	           		add(
+                    	           			current, 
+                    	           			"correctas",
+                    	            		lv_correctas_7_0, 
+                    	            		"EString");
+                    	    	        afterParserOrEnumRuleCall();
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    break loop18;
+                        }
+                    } while (true);
+
+                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaMultiple2416); 
+
+                        	newLeafNode(otherlv_8, grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_3_4());
+                        
+
+                    }
+                    break;
+
+            }
+
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1090:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
+            int alt21=2;
+            int LA21_0 = input.LA(1);
+
+            if ( (LA21_0==32) ) {
+                alt21=1;
+            }
+            switch (alt21) {
+                case 1 :
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1090:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
+                    {
+                    otherlv_9=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleRespuestaMultiple2431); 
+
+                        	newLeafNode(otherlv_9, grammarAccess.getRespuestaMultipleAccess().getAlternativasKeyword_4_0());
+                        
+                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaMultiple2443); 
+
+                        	newLeafNode(otherlv_10, grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_4_1());
+                        
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1098:1: ( (lv_alternativas_11_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1099:1: (lv_alternativas_11_0= ruleEString )
+                    {
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1099:1: (lv_alternativas_11_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1100:3: lv_alternativas_11_0= ruleEString
+                    {
+                     
+                    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
+                    	    
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2464);
+                    lv_alternativas_11_0=ruleEString();
+
+                    state._fsp--;
+
+
+                    	        if (current==null) {
+                    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
+                    	        }
+                           		add(
+                           			current, 
+                           			"alternativas",
+                            		lv_alternativas_11_0, 
+                            		"EString");
+                    	        afterParserOrEnumRuleCall();
+                    	    
+
+                    }
+
+
+                    }
+
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1116:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
+                    loop20:
+                    do {
+                        int alt20=2;
+                        int LA20_0 = input.LA(1);
+
+                        if ( (LA20_0==27) ) {
+                            alt20=1;
+                        }
+
+
+                        switch (alt20) {
+                    	case 1 :
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1116:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
+                    	    {
+                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaMultiple2477); 
+
+                    	        	newLeafNode(otherlv_12, grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_4_3_0());
+                    	        
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1120:1: ( (lv_alternativas_13_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1121:1: (lv_alternativas_13_0= ruleEString )
+                    	    {
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1121:1: (lv_alternativas_13_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1122:3: lv_alternativas_13_0= ruleEString
+                    	    {
+                    	     
+                    	    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
+                    	    	    
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2498);
+                    	    lv_alternativas_13_0=ruleEString();
+
+                    	    state._fsp--;
+
+
+                    	    	        if (current==null) {
+                    	    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
+                    	    	        }
+                    	           		add(
+                    	           			current, 
+                    	           			"alternativas",
+                    	            		lv_alternativas_13_0, 
+                    	            		"EString");
+                    	    	        afterParserOrEnumRuleCall();
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    break loop20;
+                        }
+                    } while (true);
+
+                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaMultiple2512); 
+
+                        	newLeafNode(otherlv_14, grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_4_4());
+                        
+
+                    }
+                    break;
+
+            }
+
+            otherlv_15=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaMultiple2526); 
+
+                	newLeafNode(otherlv_15, grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_5());
+                
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleRespuestaMultiple"
+
+
+    // $ANTLR start "entryRuleTextoLibre"
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1154:1: entryRuleTextoLibre returns [EObject current=null] : iv_ruleTextoLibre= ruleTextoLibre EOF ;
+    public final EObject entryRuleTextoLibre() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleTextoLibre = null;
+
+
+        try {
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1155:2: (iv_ruleTextoLibre= ruleTextoLibre EOF )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1156:2: iv_ruleTextoLibre= ruleTextoLibre EOF
+            {
+             newCompositeNode(grammarAccess.getTextoLibreRule()); 
+            pushFollow(FollowSets000.FOLLOW_ruleTextoLibre_in_entryRuleTextoLibre2562);
+            iv_ruleTextoLibre=ruleTextoLibre();
+
+            state._fsp--;
+
+             current =iv_ruleTextoLibre; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTextoLibre2572); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleTextoLibre"
+
+
+    // $ANTLR start "ruleTextoLibre"
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1163:1: ruleTextoLibre returns [EObject current=null] : ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) ;
+    public final EObject ruleTextoLibre() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_1=null;
+        Token otherlv_2=null;
+        Token otherlv_3=null;
+        Token otherlv_4=null;
+        Token otherlv_6=null;
+        Token otherlv_8=null;
+        Token otherlv_9=null;
+        Token otherlv_10=null;
+        Token otherlv_12=null;
+        Token otherlv_14=null;
+        Token otherlv_15=null;
+        AntlrDatatypeRuleToken lv_correctas_5_0 = null;
+
+        AntlrDatatypeRuleToken lv_correctas_7_0 = null;
+
+        AntlrDatatypeRuleToken lv_alternativas_11_0 = null;
+
+        AntlrDatatypeRuleToken lv_alternativas_13_0 = null;
+
+
+         enterRule(); 
+            
+        try {
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1166:28: ( ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1167:1: ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
+            {
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1167:1: ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1167:2: () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}'
+            {
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1167:2: ()
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1168:5: 
+            {
+
+                    current = forceCreateModelElement(
+                        grammarAccess.getTextoLibreAccess().getTextoLibreAction_0(),
+                        current);
+                
+
+            }
+
+            otherlv_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleTextoLibre2618); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getTextoLibreAccess().getTextoLibreKeyword_1());
+                
+            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleTextoLibre2630); 
+
+                	newLeafNode(otherlv_2, grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_2());
+                
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1181:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
+            int alt23=2;
+            int LA23_0 = input.LA(1);
+
+            if ( (LA23_0==31) ) {
+                alt23=1;
+            }
+            switch (alt23) {
+                case 1 :
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1181:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
+                    {
+                    otherlv_3=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleTextoLibre2643); 
+
+                        	newLeafNode(otherlv_3, grammarAccess.getTextoLibreAccess().getCorrectasKeyword_3_0());
+                        
+                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleTextoLibre2655); 
+
+                        	newLeafNode(otherlv_4, grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_3_1());
+                        
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1189:1: ( (lv_correctas_5_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1190:1: (lv_correctas_5_0= ruleEString )
+                    {
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1190:1: (lv_correctas_5_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1191:3: lv_correctas_5_0= ruleEString
+                    {
+                     
+                    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
+                    	    
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre2676);
+                    lv_correctas_5_0=ruleEString();
+
+                    state._fsp--;
+
+
+                    	        if (current==null) {
+                    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
+                    	        }
+                           		add(
+                           			current, 
+                           			"correctas",
+                            		lv_correctas_5_0, 
+                            		"EString");
+                    	        afterParserOrEnumRuleCall();
+                    	    
+
+                    }
+
+
+                    }
+
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1207:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
                     loop22:
                     do {
                         int alt22=2;
@@ -2765,29 +2860,29 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                         switch (alt22) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1162:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1207:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
                     	    {
-                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaMultiple2577); 
+                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleTextoLibre2689); 
 
-                    	        	newLeafNode(otherlv_6, grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_3_3_0());
+                    	        	newLeafNode(otherlv_6, grammarAccess.getTextoLibreAccess().getCommaKeyword_3_3_0());
                     	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1166:1: ( (lv_correctas_7_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1167:1: (lv_correctas_7_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1211:1: ( (lv_correctas_7_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1212:1: (lv_correctas_7_0= ruleEString )
                     	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1167:1: (lv_correctas_7_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1168:3: lv_correctas_7_0= ruleEString
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1212:1: (lv_correctas_7_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1213:3: lv_correctas_7_0= ruleEString
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
+                    	    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2598);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre2710);
                     	    lv_correctas_7_0=ruleEString();
 
                     	    state._fsp--;
 
 
                     	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
+                    	    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
                     	    	        }
                     	           		add(
                     	           			current, 
@@ -2811,9 +2906,9 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaMultiple2612); 
+                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleTextoLibre2724); 
 
-                        	newLeafNode(otherlv_8, grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_3_4());
+                        	newLeafNode(otherlv_8, grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_3_4());
                         
 
                     }
@@ -2821,42 +2916,42 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1188:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1233:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
-            if ( (LA25_0==35) ) {
+            if ( (LA25_0==32) ) {
                 alt25=1;
             }
             switch (alt25) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1188:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1233:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
                     {
-                    otherlv_9=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleRespuestaMultiple2627); 
+                    otherlv_9=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleTextoLibre2739); 
 
-                        	newLeafNode(otherlv_9, grammarAccess.getRespuestaMultipleAccess().getAlternativasKeyword_4_0());
+                        	newLeafNode(otherlv_9, grammarAccess.getTextoLibreAccess().getAlternativasKeyword_4_0());
                         
-                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaMultiple2639); 
+                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleTextoLibre2751); 
 
-                        	newLeafNode(otherlv_10, grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_4_1());
+                        	newLeafNode(otherlv_10, grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_4_1());
                         
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1196:1: ( (lv_alternativas_11_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1197:1: (lv_alternativas_11_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1241:1: ( (lv_alternativas_11_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1242:1: (lv_alternativas_11_0= ruleEString )
                     {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1197:1: (lv_alternativas_11_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1198:3: lv_alternativas_11_0= ruleEString
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1242:1: (lv_alternativas_11_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1243:3: lv_alternativas_11_0= ruleEString
                     {
                      
-                    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
+                    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2660);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre2772);
                     lv_alternativas_11_0=ruleEString();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
+                    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
                     	        }
                            		add(
                            			current, 
@@ -2871,7 +2966,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1214:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1259:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
                     loop24:
                     do {
                         int alt24=2;
@@ -2884,29 +2979,29 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                         switch (alt24) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1214:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1259:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
                     	    {
-                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaMultiple2673); 
+                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleTextoLibre2785); 
 
-                    	        	newLeafNode(otherlv_12, grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_4_3_0());
+                    	        	newLeafNode(otherlv_12, grammarAccess.getTextoLibreAccess().getCommaKeyword_4_3_0());
                     	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1218:1: ( (lv_alternativas_13_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1219:1: (lv_alternativas_13_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1263:1: ( (lv_alternativas_13_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1264:1: (lv_alternativas_13_0= ruleEString )
                     	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1219:1: (lv_alternativas_13_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1220:3: lv_alternativas_13_0= ruleEString
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1264:1: (lv_alternativas_13_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1265:3: lv_alternativas_13_0= ruleEString
                     	    {
                     	     
-                    	    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
+                    	    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2694);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre2806);
                     	    lv_alternativas_13_0=ruleEString();
 
                     	    state._fsp--;
 
 
                     	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
+                    	    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
                     	    	        }
                     	           		add(
                     	           			current, 
@@ -2930,485 +3025,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaMultiple2708); 
-
-                        	newLeafNode(otherlv_14, grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_4_4());
-                        
-
-                    }
-                    break;
-
-            }
-
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1240:3: (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )?
-            int alt27=2;
-            int LA27_0 = input.LA(1);
-
-            if ( (LA27_0==36) ) {
-                alt27=1;
-            }
-            switch (alt27) {
-                case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1240:5: otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}'
-                    {
-                    otherlv_15=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleRespuestaMultiple2723); 
-
-                        	newLeafNode(otherlv_15, grammarAccess.getRespuestaMultipleAccess().getSeleccionadasKeyword_5_0());
-                        
-                    otherlv_16=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleRespuestaMultiple2735); 
-
-                        	newLeafNode(otherlv_16, grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_5_1());
-                        
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1248:1: ( (lv_seleccionadas_17_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1249:1: (lv_seleccionadas_17_0= ruleEString )
-                    {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1249:1: (lv_seleccionadas_17_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1250:3: lv_seleccionadas_17_0= ruleEString
-                    {
-                     
-                    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-                    	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2756);
-                    lv_seleccionadas_17_0=ruleEString();
-
-                    state._fsp--;
-
-
-                    	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
-                    	        }
-                           		add(
-                           			current, 
-                           			"seleccionadas",
-                            		lv_seleccionadas_17_0, 
-                            		"EString");
-                    	        afterParserOrEnumRuleCall();
-                    	    
-
-                    }
-
-
-                    }
-
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1266:2: (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )*
-                    loop26:
-                    do {
-                        int alt26=2;
-                        int LA26_0 = input.LA(1);
-
-                        if ( (LA26_0==27) ) {
-                            alt26=1;
-                        }
-
-
-                        switch (alt26) {
-                    	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1266:4: otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    {
-                    	    otherlv_18=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRespuestaMultiple2769); 
-
-                    	        	newLeafNode(otherlv_18, grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_5_3_0());
-                    	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1270:1: ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1271:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1271:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1272:3: lv_seleccionadas_19_0= ruleEString
-                    	    {
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-                    	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleRespuestaMultiple2790);
-                    	    lv_seleccionadas_19_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getRespuestaMultipleRule());
-                    	    	        }
-                    	           		add(
-                    	           			current, 
-                    	           			"seleccionadas",
-                    	            		lv_seleccionadas_19_0, 
-                    	            		"EString");
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop26;
-                        }
-                    } while (true);
-
-                    otherlv_20=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaMultiple2804); 
-
-                        	newLeafNode(otherlv_20, grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_5_4());
-                        
-
-                    }
-                    break;
-
-            }
-
-            otherlv_21=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleRespuestaMultiple2818); 
-
-                	newLeafNode(otherlv_21, grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_6());
-                
-
-            }
-
-
-            }
-
-             leaveRule(); 
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleRespuestaMultiple"
-
-
-    // $ANTLR start "entryRuleTextoLibre"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1304:1: entryRuleTextoLibre returns [EObject current=null] : iv_ruleTextoLibre= ruleTextoLibre EOF ;
-    public final EObject entryRuleTextoLibre() throws RecognitionException {
-        EObject current = null;
-
-        EObject iv_ruleTextoLibre = null;
-
-
-        try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1305:2: (iv_ruleTextoLibre= ruleTextoLibre EOF )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1306:2: iv_ruleTextoLibre= ruleTextoLibre EOF
-            {
-             newCompositeNode(grammarAccess.getTextoLibreRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTextoLibre_in_entryRuleTextoLibre2854);
-            iv_ruleTextoLibre=ruleTextoLibre();
-
-            state._fsp--;
-
-             current =iv_ruleTextoLibre; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTextoLibre2864); 
-
-            }
-
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleTextoLibre"
-
-
-    // $ANTLR start "ruleTextoLibre"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1313:1: ruleTextoLibre returns [EObject current=null] : ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) ;
-    public final EObject ruleTextoLibre() throws RecognitionException {
-        EObject current = null;
-
-        Token otherlv_1=null;
-        Token otherlv_2=null;
-        Token otherlv_3=null;
-        Token otherlv_4=null;
-        Token otherlv_6=null;
-        Token otherlv_8=null;
-        Token otherlv_9=null;
-        Token otherlv_10=null;
-        Token otherlv_12=null;
-        Token otherlv_14=null;
-        Token otherlv_15=null;
-        Token otherlv_16=null;
-        Token otherlv_18=null;
-        Token otherlv_20=null;
-        Token otherlv_21=null;
-        AntlrDatatypeRuleToken lv_correctas_5_0 = null;
-
-        AntlrDatatypeRuleToken lv_correctas_7_0 = null;
-
-        AntlrDatatypeRuleToken lv_alternativas_11_0 = null;
-
-        AntlrDatatypeRuleToken lv_alternativas_13_0 = null;
-
-        AntlrDatatypeRuleToken lv_seleccionadas_17_0 = null;
-
-        AntlrDatatypeRuleToken lv_seleccionadas_19_0 = null;
-
-
-         enterRule(); 
-            
-        try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1316:28: ( ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1317:1: ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
-            {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1317:1: ( () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1317:2: () otherlv_1= 'TextoLibre' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}'
-            {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1317:2: ()
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1318:5: 
-            {
-
-                    current = forceCreateModelElement(
-                        grammarAccess.getTextoLibreAccess().getTextoLibreAction_0(),
-                        current);
-                
-
-            }
-
-            otherlv_1=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleTextoLibre2910); 
-
-                	newLeafNode(otherlv_1, grammarAccess.getTextoLibreAccess().getTextoLibreKeyword_1());
-                
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleTextoLibre2922); 
-
-                	newLeafNode(otherlv_2, grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_2());
-                
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1331:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
-            int alt29=2;
-            int LA29_0 = input.LA(1);
-
-            if ( (LA29_0==34) ) {
-                alt29=1;
-            }
-            switch (alt29) {
-                case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1331:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
-                    {
-                    otherlv_3=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleTextoLibre2935); 
-
-                        	newLeafNode(otherlv_3, grammarAccess.getTextoLibreAccess().getCorrectasKeyword_3_0());
-                        
-                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleTextoLibre2947); 
-
-                        	newLeafNode(otherlv_4, grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_3_1());
-                        
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1339:1: ( (lv_correctas_5_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1340:1: (lv_correctas_5_0= ruleEString )
-                    {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1340:1: (lv_correctas_5_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1341:3: lv_correctas_5_0= ruleEString
-                    {
-                     
-                    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
-                    	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre2968);
-                    lv_correctas_5_0=ruleEString();
-
-                    state._fsp--;
-
-
-                    	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
-                    	        }
-                           		add(
-                           			current, 
-                           			"correctas",
-                            		lv_correctas_5_0, 
-                            		"EString");
-                    	        afterParserOrEnumRuleCall();
-                    	    
-
-                    }
-
-
-                    }
-
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1357:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
-                    loop28:
-                    do {
-                        int alt28=2;
-                        int LA28_0 = input.LA(1);
-
-                        if ( (LA28_0==27) ) {
-                            alt28=1;
-                        }
-
-
-                        switch (alt28) {
-                    	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1357:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
-                    	    {
-                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleTextoLibre2981); 
-
-                    	        	newLeafNode(otherlv_6, grammarAccess.getTextoLibreAccess().getCommaKeyword_3_3_0());
-                    	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1361:1: ( (lv_correctas_7_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1362:1: (lv_correctas_7_0= ruleEString )
-                    	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1362:1: (lv_correctas_7_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1363:3: lv_correctas_7_0= ruleEString
-                    	    {
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
-                    	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre3002);
-                    	    lv_correctas_7_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
-                    	    	        }
-                    	           		add(
-                    	           			current, 
-                    	           			"correctas",
-                    	            		lv_correctas_7_0, 
-                    	            		"EString");
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop28;
-                        }
-                    } while (true);
-
-                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleTextoLibre3016); 
-
-                        	newLeafNode(otherlv_8, grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_3_4());
-                        
-
-                    }
-                    break;
-
-            }
-
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1383:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
-            int alt31=2;
-            int LA31_0 = input.LA(1);
-
-            if ( (LA31_0==35) ) {
-                alt31=1;
-            }
-            switch (alt31) {
-                case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1383:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
-                    {
-                    otherlv_9=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleTextoLibre3031); 
-
-                        	newLeafNode(otherlv_9, grammarAccess.getTextoLibreAccess().getAlternativasKeyword_4_0());
-                        
-                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleTextoLibre3043); 
-
-                        	newLeafNode(otherlv_10, grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_4_1());
-                        
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1391:1: ( (lv_alternativas_11_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1392:1: (lv_alternativas_11_0= ruleEString )
-                    {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1392:1: (lv_alternativas_11_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1393:3: lv_alternativas_11_0= ruleEString
-                    {
-                     
-                    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
-                    	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre3064);
-                    lv_alternativas_11_0=ruleEString();
-
-                    state._fsp--;
-
-
-                    	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
-                    	        }
-                           		add(
-                           			current, 
-                           			"alternativas",
-                            		lv_alternativas_11_0, 
-                            		"EString");
-                    	        afterParserOrEnumRuleCall();
-                    	    
-
-                    }
-
-
-                    }
-
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1409:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
-                    loop30:
-                    do {
-                        int alt30=2;
-                        int LA30_0 = input.LA(1);
-
-                        if ( (LA30_0==27) ) {
-                            alt30=1;
-                        }
-
-
-                        switch (alt30) {
-                    	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1409:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
-                    	    {
-                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleTextoLibre3077); 
-
-                    	        	newLeafNode(otherlv_12, grammarAccess.getTextoLibreAccess().getCommaKeyword_4_3_0());
-                    	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1413:1: ( (lv_alternativas_13_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1414:1: (lv_alternativas_13_0= ruleEString )
-                    	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1414:1: (lv_alternativas_13_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1415:3: lv_alternativas_13_0= ruleEString
-                    	    {
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
-                    	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre3098);
-                    	    lv_alternativas_13_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
-                    	    	        }
-                    	           		add(
-                    	           			current, 
-                    	           			"alternativas",
-                    	            		lv_alternativas_13_0, 
-                    	            		"EString");
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop30;
-                        }
-                    } while (true);
-
-                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleTextoLibre3112); 
+                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleTextoLibre2820); 
 
                         	newLeafNode(otherlv_14, grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_4_4());
                         
@@ -3418,128 +3035,9 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1435:3: (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )?
-            int alt33=2;
-            int LA33_0 = input.LA(1);
+            otherlv_15=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleTextoLibre2834); 
 
-            if ( (LA33_0==36) ) {
-                alt33=1;
-            }
-            switch (alt33) {
-                case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1435:5: otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}'
-                    {
-                    otherlv_15=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleTextoLibre3127); 
-
-                        	newLeafNode(otherlv_15, grammarAccess.getTextoLibreAccess().getSeleccionadasKeyword_5_0());
-                        
-                    otherlv_16=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleTextoLibre3139); 
-
-                        	newLeafNode(otherlv_16, grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_5_1());
-                        
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1443:1: ( (lv_seleccionadas_17_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1444:1: (lv_seleccionadas_17_0= ruleEString )
-                    {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1444:1: (lv_seleccionadas_17_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1445:3: lv_seleccionadas_17_0= ruleEString
-                    {
-                     
-                    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-                    	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre3160);
-                    lv_seleccionadas_17_0=ruleEString();
-
-                    state._fsp--;
-
-
-                    	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
-                    	        }
-                           		add(
-                           			current, 
-                           			"seleccionadas",
-                            		lv_seleccionadas_17_0, 
-                            		"EString");
-                    	        afterParserOrEnumRuleCall();
-                    	    
-
-                    }
-
-
-                    }
-
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1461:2: (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )*
-                    loop32:
-                    do {
-                        int alt32=2;
-                        int LA32_0 = input.LA(1);
-
-                        if ( (LA32_0==27) ) {
-                            alt32=1;
-                        }
-
-
-                        switch (alt32) {
-                    	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1461:4: otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    {
-                    	    otherlv_18=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleTextoLibre3173); 
-
-                    	        	newLeafNode(otherlv_18, grammarAccess.getTextoLibreAccess().getCommaKeyword_5_3_0());
-                    	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1465:1: ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1466:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1466:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1467:3: lv_seleccionadas_19_0= ruleEString
-                    	    {
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getTextoLibreAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-                    	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleTextoLibre3194);
-                    	    lv_seleccionadas_19_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getTextoLibreRule());
-                    	    	        }
-                    	           		add(
-                    	           			current, 
-                    	           			"seleccionadas",
-                    	            		lv_seleccionadas_19_0, 
-                    	            		"EString");
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop32;
-                        }
-                    } while (true);
-
-                    otherlv_20=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleTextoLibre3208); 
-
-                        	newLeafNode(otherlv_20, grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_5_4());
-                        
-
-                    }
-                    break;
-
-            }
-
-            otherlv_21=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleTextoLibre3222); 
-
-                	newLeafNode(otherlv_21, grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_6());
+                	newLeafNode(otherlv_15, grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_5());
                 
 
             }
@@ -3562,7 +3060,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleOrdenacion"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1499:1: entryRuleOrdenacion returns [EObject current=null] : iv_ruleOrdenacion= ruleOrdenacion EOF ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1297:1: entryRuleOrdenacion returns [EObject current=null] : iv_ruleOrdenacion= ruleOrdenacion EOF ;
     public final EObject entryRuleOrdenacion() throws RecognitionException {
         EObject current = null;
 
@@ -3570,17 +3068,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1500:2: (iv_ruleOrdenacion= ruleOrdenacion EOF )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1501:2: iv_ruleOrdenacion= ruleOrdenacion EOF
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1298:2: (iv_ruleOrdenacion= ruleOrdenacion EOF )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1299:2: iv_ruleOrdenacion= ruleOrdenacion EOF
             {
              newCompositeNode(grammarAccess.getOrdenacionRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleOrdenacion_in_entryRuleOrdenacion3258);
+            pushFollow(FollowSets000.FOLLOW_ruleOrdenacion_in_entryRuleOrdenacion2870);
             iv_ruleOrdenacion=ruleOrdenacion();
 
             state._fsp--;
 
              current =iv_ruleOrdenacion; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleOrdenacion3268); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleOrdenacion2880); 
 
             }
 
@@ -3598,7 +3096,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOrdenacion"
-    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1508:1: ruleOrdenacion returns [EObject current=null] : ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) ;
+    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1306:1: ruleOrdenacion returns [EObject current=null] : ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) ;
     public final EObject ruleOrdenacion() throws RecognitionException {
         EObject current = null;
 
@@ -3613,10 +3111,6 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
         Token otherlv_12=null;
         Token otherlv_14=null;
         Token otherlv_15=null;
-        Token otherlv_16=null;
-        Token otherlv_18=null;
-        Token otherlv_20=null;
-        Token otherlv_21=null;
         AntlrDatatypeRuleToken lv_correctas_5_0 = null;
 
         AntlrDatatypeRuleToken lv_correctas_7_0 = null;
@@ -3625,22 +3119,18 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
         AntlrDatatypeRuleToken lv_alternativas_13_0 = null;
 
-        AntlrDatatypeRuleToken lv_seleccionadas_17_0 = null;
-
-        AntlrDatatypeRuleToken lv_seleccionadas_19_0 = null;
-
 
          enterRule(); 
             
         try {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1511:28: ( ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' ) )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1512:1: ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1309:28: ( ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' ) )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1310:1: ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1512:1: ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}' )
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1512:2: () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )? otherlv_21= '}'
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1310:1: ( () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}' )
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1310:2: () otherlv_1= 'Ordenacion' otherlv_2= '{' (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )? (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )? otherlv_15= '}'
             {
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1512:2: ()
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1513:5: 
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1310:2: ()
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1311:5: 
             {
 
                     current = forceCreateModelElement(
@@ -3650,43 +3140,43 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleOrdenacion3314); 
+            otherlv_1=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleOrdenacion2926); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getOrdenacionAccess().getOrdenacionKeyword_1());
                 
-            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleOrdenacion3326); 
+            otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleOrdenacion2938); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1526:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
-            int alt35=2;
-            int LA35_0 = input.LA(1);
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1324:1: (otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}' )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA35_0==34) ) {
-                alt35=1;
+            if ( (LA27_0==31) ) {
+                alt27=1;
             }
-            switch (alt35) {
+            switch (alt27) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1526:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1324:3: otherlv_3= 'correctas' otherlv_4= '{' ( (lv_correctas_5_0= ruleEString ) ) (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )* otherlv_8= '}'
                     {
-                    otherlv_3=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleOrdenacion3339); 
+                    otherlv_3=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleOrdenacion2951); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getOrdenacionAccess().getCorrectasKeyword_3_0());
                         
-                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleOrdenacion3351); 
+                    otherlv_4=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleOrdenacion2963); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_3_1());
                         
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1534:1: ( (lv_correctas_5_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1535:1: (lv_correctas_5_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1332:1: ( (lv_correctas_5_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1333:1: (lv_correctas_5_0= ruleEString )
                     {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1535:1: (lv_correctas_5_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1536:3: lv_correctas_5_0= ruleEString
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1333:1: (lv_correctas_5_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1334:3: lv_correctas_5_0= ruleEString
                     {
                      
                     	        newCompositeNode(grammarAccess.getOrdenacionAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3372);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion2984);
                     lv_correctas_5_0=ruleEString();
 
                     state._fsp--;
@@ -3708,35 +3198,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1552:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
-                    loop34:
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1350:2: (otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) ) )*
+                    loop26:
                     do {
-                        int alt34=2;
-                        int LA34_0 = input.LA(1);
+                        int alt26=2;
+                        int LA26_0 = input.LA(1);
 
-                        if ( (LA34_0==27) ) {
-                            alt34=1;
+                        if ( (LA26_0==27) ) {
+                            alt26=1;
                         }
 
 
-                        switch (alt34) {
+                        switch (alt26) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1552:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1350:4: otherlv_6= ',' ( (lv_correctas_7_0= ruleEString ) )
                     	    {
-                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleOrdenacion3385); 
+                    	    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleOrdenacion2997); 
 
                     	        	newLeafNode(otherlv_6, grammarAccess.getOrdenacionAccess().getCommaKeyword_3_3_0());
                     	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1556:1: ( (lv_correctas_7_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1557:1: (lv_correctas_7_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1354:1: ( (lv_correctas_7_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1355:1: (lv_correctas_7_0= ruleEString )
                     	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1557:1: (lv_correctas_7_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1558:3: lv_correctas_7_0= ruleEString
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1355:1: (lv_correctas_7_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1356:3: lv_correctas_7_0= ruleEString
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getOrdenacionAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3406);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3018);
                     	    lv_correctas_7_0=ruleEString();
 
                     	    state._fsp--;
@@ -3763,11 +3253,11 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop34;
+                    	    break loop26;
                         }
                     } while (true);
 
-                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleOrdenacion3420); 
+                    otherlv_8=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleOrdenacion3032); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_3_4());
                         
@@ -3777,35 +3267,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1578:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
-            int alt37=2;
-            int LA37_0 = input.LA(1);
+            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1376:3: (otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}' )?
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA37_0==35) ) {
-                alt37=1;
+            if ( (LA29_0==32) ) {
+                alt29=1;
             }
-            switch (alt37) {
+            switch (alt29) {
                 case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1578:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1376:5: otherlv_9= 'alternativas' otherlv_10= '{' ( (lv_alternativas_11_0= ruleEString ) ) (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )* otherlv_14= '}'
                     {
-                    otherlv_9=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleOrdenacion3435); 
+                    otherlv_9=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleOrdenacion3047); 
 
                         	newLeafNode(otherlv_9, grammarAccess.getOrdenacionAccess().getAlternativasKeyword_4_0());
                         
-                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleOrdenacion3447); 
+                    otherlv_10=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleOrdenacion3059); 
 
                         	newLeafNode(otherlv_10, grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_4_1());
                         
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1586:1: ( (lv_alternativas_11_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1587:1: (lv_alternativas_11_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1384:1: ( (lv_alternativas_11_0= ruleEString ) )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1385:1: (lv_alternativas_11_0= ruleEString )
                     {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1587:1: (lv_alternativas_11_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1588:3: lv_alternativas_11_0= ruleEString
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1385:1: (lv_alternativas_11_0= ruleEString )
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1386:3: lv_alternativas_11_0= ruleEString
                     {
                      
                     	        newCompositeNode(grammarAccess.getOrdenacionAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3468);
+                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3080);
                     lv_alternativas_11_0=ruleEString();
 
                     state._fsp--;
@@ -3827,35 +3317,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1604:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
-                    loop36:
+                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1402:2: (otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) ) )*
+                    loop28:
                     do {
-                        int alt36=2;
-                        int LA36_0 = input.LA(1);
+                        int alt28=2;
+                        int LA28_0 = input.LA(1);
 
-                        if ( (LA36_0==27) ) {
-                            alt36=1;
+                        if ( (LA28_0==27) ) {
+                            alt28=1;
                         }
 
 
-                        switch (alt36) {
+                        switch (alt28) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1604:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1402:4: otherlv_12= ',' ( (lv_alternativas_13_0= ruleEString ) )
                     	    {
-                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleOrdenacion3481); 
+                    	    otherlv_12=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleOrdenacion3093); 
 
                     	        	newLeafNode(otherlv_12, grammarAccess.getOrdenacionAccess().getCommaKeyword_4_3_0());
                     	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1608:1: ( (lv_alternativas_13_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1609:1: (lv_alternativas_13_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1406:1: ( (lv_alternativas_13_0= ruleEString ) )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1407:1: (lv_alternativas_13_0= ruleEString )
                     	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1609:1: (lv_alternativas_13_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1610:3: lv_alternativas_13_0= ruleEString
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1407:1: (lv_alternativas_13_0= ruleEString )
+                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1408:3: lv_alternativas_13_0= ruleEString
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getOrdenacionAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
                     	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3502);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3114);
                     	    lv_alternativas_13_0=ruleEString();
 
                     	    state._fsp--;
@@ -3882,11 +3372,11 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop36;
+                    	    break loop28;
                         }
                     } while (true);
 
-                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleOrdenacion3516); 
+                    otherlv_14=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleOrdenacion3128); 
 
                         	newLeafNode(otherlv_14, grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_4_4());
                         
@@ -3896,128 +3386,9 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1630:3: (otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}' )?
-            int alt39=2;
-            int LA39_0 = input.LA(1);
+            otherlv_15=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleOrdenacion3142); 
 
-            if ( (LA39_0==36) ) {
-                alt39=1;
-            }
-            switch (alt39) {
-                case 1 :
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1630:5: otherlv_15= 'seleccionadas' otherlv_16= '{' ( (lv_seleccionadas_17_0= ruleEString ) ) (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )* otherlv_20= '}'
-                    {
-                    otherlv_15=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleOrdenacion3531); 
-
-                        	newLeafNode(otherlv_15, grammarAccess.getOrdenacionAccess().getSeleccionadasKeyword_5_0());
-                        
-                    otherlv_16=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleOrdenacion3543); 
-
-                        	newLeafNode(otherlv_16, grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_5_1());
-                        
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1638:1: ( (lv_seleccionadas_17_0= ruleEString ) )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1639:1: (lv_seleccionadas_17_0= ruleEString )
-                    {
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1639:1: (lv_seleccionadas_17_0= ruleEString )
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1640:3: lv_seleccionadas_17_0= ruleEString
-                    {
-                     
-                    	        newCompositeNode(grammarAccess.getOrdenacionAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-                    	    
-                    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3564);
-                    lv_seleccionadas_17_0=ruleEString();
-
-                    state._fsp--;
-
-
-                    	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getOrdenacionRule());
-                    	        }
-                           		add(
-                           			current, 
-                           			"seleccionadas",
-                            		lv_seleccionadas_17_0, 
-                            		"EString");
-                    	        afterParserOrEnumRuleCall();
-                    	    
-
-                    }
-
-
-                    }
-
-                    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1656:2: (otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) ) )*
-                    loop38:
-                    do {
-                        int alt38=2;
-                        int LA38_0 = input.LA(1);
-
-                        if ( (LA38_0==27) ) {
-                            alt38=1;
-                        }
-
-
-                        switch (alt38) {
-                    	case 1 :
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1656:4: otherlv_18= ',' ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    {
-                    	    otherlv_18=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleOrdenacion3577); 
-
-                    	        	newLeafNode(otherlv_18, grammarAccess.getOrdenacionAccess().getCommaKeyword_5_3_0());
-                    	        
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1660:1: ( (lv_seleccionadas_19_0= ruleEString ) )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1661:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    {
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1661:1: (lv_seleccionadas_19_0= ruleEString )
-                    	    // ../autoevaluacion.editor/src-gen/autoevaluacion/parser/antlr/internal/InternalAutoevaluacion.g:1662:3: lv_seleccionadas_19_0= ruleEString
-                    	    {
-                    	     
-                    	    	        newCompositeNode(grammarAccess.getOrdenacionAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-                    	    	    
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEString_in_ruleOrdenacion3598);
-                    	    lv_seleccionadas_19_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    	        if (current==null) {
-                    	    	            current = createModelElementForParent(grammarAccess.getOrdenacionRule());
-                    	    	        }
-                    	           		add(
-                    	           			current, 
-                    	           			"seleccionadas",
-                    	            		lv_seleccionadas_19_0, 
-                    	            		"EString");
-                    	    	        afterParserOrEnumRuleCall();
-                    	    	    
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop38;
-                        }
-                    } while (true);
-
-                    otherlv_20=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleOrdenacion3612); 
-
-                        	newLeafNode(otherlv_20, grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_5_4());
-                        
-
-                    }
-                    break;
-
-            }
-
-            otherlv_21=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleOrdenacion3626); 
-
-                	newLeafNode(otherlv_21, grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_6());
+                	newLeafNode(otherlv_15, grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_5());
                 
 
             }
@@ -4069,7 +3440,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
         public static final BitSet FOLLOW_ruleEString_in_ruleEjercicio576 = new BitSet(new long[]{0x0000000000010000L});
         public static final BitSet FOLLOW_16_in_ruleEjercicio588 = new BitSet(new long[]{0x0000000000080010L});
         public static final BitSet FOLLOW_ruleEInt_in_ruleEjercicio609 = new BitSet(new long[]{0x0000000000020000L});
-        public static final BitSet FOLLOW_17_in_ruleEjercicio621 = new BitSet(new long[]{0x000000E200000000L});
+        public static final BitSet FOLLOW_17_in_ruleEjercicio621 = new BitSet(new long[]{0x0000000E40000000L});
         public static final BitSet FOLLOW_ruleRespuesta_in_ruleEjercicio642 = new BitSet(new long[]{0x0000000000040000L});
         public static final BitSet FOLLOW_18_in_ruleEjercicio654 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleEDouble_in_entryRuleEDouble691 = new BitSet(new long[]{0x0000000000000000L});
@@ -4119,120 +3490,90 @@ public class InternalAutoevaluacionParser extends AbstractInternalAntlrParser {
         public static final BitSet FOLLOW_24_in_ruleWizardAdaptativo1515 = new BitSet(new long[]{0x0000000000180010L});
         public static final BitSet FOLLOW_ruleEDouble_in_ruleWizardAdaptativo1536 = new BitSet(new long[]{0x0000000002000000L});
         public static final BitSet FOLLOW_25_in_ruleWizardAdaptativo1548 = new BitSet(new long[]{0x0000000000180010L});
-        public static final BitSet FOLLOW_ruleEDouble_in_ruleWizardAdaptativo1569 = new BitSet(new long[]{0x0000000044000000L});
-        public static final BitSet FOLLOW_30_in_ruleWizardAdaptativo1582 = new BitSet(new long[]{0x0000000080000000L});
-        public static final BitSet FOLLOW_31_in_ruleWizardAdaptativo1594 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleWizardAdaptativo1617 = new BitSet(new long[]{0x0000000108000000L});
-        public static final BitSet FOLLOW_27_in_ruleWizardAdaptativo1630 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleWizardAdaptativo1653 = new BitSet(new long[]{0x0000000108000000L});
-        public static final BitSet FOLLOW_32_in_ruleWizardAdaptativo1667 = new BitSet(new long[]{0x0000000004000000L});
-        public static final BitSet FOLLOW_26_in_ruleWizardAdaptativo1681 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleWizardAdaptativo1693 = new BitSet(new long[]{0x0000000000000800L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1714 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleWizardAdaptativo1727 = new BitSet(new long[]{0x0000000000000800L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1748 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleWizardAdaptativo1762 = new BitSet(new long[]{0x0000000000040000L});
-        public static final BitSet FOLLOW_18_in_ruleWizardAdaptativo1774 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_entryRuleEString1811 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEString1822 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleEString1862 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleEString1888 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_entryRuleEInt1934 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEInt1945 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_ruleEInt1984 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_INT_in_ruleEInt2001 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRespuestaUnica_in_entryRuleRespuestaUnica2046 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleRespuestaUnica2056 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_ruleRespuestaUnica2102 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaUnica2114 = new BitSet(new long[]{0x0000001C00040000L});
-        public static final BitSet FOLLOW_34_in_ruleRespuestaUnica2127 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaUnica2139 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2160 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleRespuestaUnica2173 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2194 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaUnica2208 = new BitSet(new long[]{0x0000001800040000L});
-        public static final BitSet FOLLOW_35_in_ruleRespuestaUnica2223 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaUnica2235 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2256 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleRespuestaUnica2269 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2290 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaUnica2304 = new BitSet(new long[]{0x0000001000040000L});
-        public static final BitSet FOLLOW_36_in_ruleRespuestaUnica2319 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaUnica2331 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2352 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleRespuestaUnica2365 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2386 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaUnica2400 = new BitSet(new long[]{0x0000000000040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaUnica2414 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRespuestaMultiple_in_entryRuleRespuestaMultiple2450 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleRespuestaMultiple2460 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_37_in_ruleRespuestaMultiple2506 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaMultiple2518 = new BitSet(new long[]{0x0000001C00040000L});
-        public static final BitSet FOLLOW_34_in_ruleRespuestaMultiple2531 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaMultiple2543 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2564 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleRespuestaMultiple2577 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2598 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaMultiple2612 = new BitSet(new long[]{0x0000001800040000L});
-        public static final BitSet FOLLOW_35_in_ruleRespuestaMultiple2627 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaMultiple2639 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2660 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleRespuestaMultiple2673 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2694 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaMultiple2708 = new BitSet(new long[]{0x0000001000040000L});
-        public static final BitSet FOLLOW_36_in_ruleRespuestaMultiple2723 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleRespuestaMultiple2735 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2756 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleRespuestaMultiple2769 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2790 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaMultiple2804 = new BitSet(new long[]{0x0000000000040000L});
-        public static final BitSet FOLLOW_18_in_ruleRespuestaMultiple2818 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTextoLibre_in_entryRuleTextoLibre2854 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTextoLibre2864 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_ruleTextoLibre2910 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleTextoLibre2922 = new BitSet(new long[]{0x0000001C00040000L});
-        public static final BitSet FOLLOW_34_in_ruleTextoLibre2935 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleTextoLibre2947 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre2968 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleTextoLibre2981 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre3002 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleTextoLibre3016 = new BitSet(new long[]{0x0000001800040000L});
-        public static final BitSet FOLLOW_35_in_ruleTextoLibre3031 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleTextoLibre3043 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre3064 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleTextoLibre3077 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre3098 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleTextoLibre3112 = new BitSet(new long[]{0x0000001000040000L});
-        public static final BitSet FOLLOW_36_in_ruleTextoLibre3127 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleTextoLibre3139 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre3160 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleTextoLibre3173 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre3194 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleTextoLibre3208 = new BitSet(new long[]{0x0000000000040000L});
-        public static final BitSet FOLLOW_18_in_ruleTextoLibre3222 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleOrdenacion_in_entryRuleOrdenacion3258 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleOrdenacion3268 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_ruleOrdenacion3314 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleOrdenacion3326 = new BitSet(new long[]{0x0000001C00040000L});
-        public static final BitSet FOLLOW_34_in_ruleOrdenacion3339 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleOrdenacion3351 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3372 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleOrdenacion3385 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3406 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleOrdenacion3420 = new BitSet(new long[]{0x0000001800040000L});
-        public static final BitSet FOLLOW_35_in_ruleOrdenacion3435 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleOrdenacion3447 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3468 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleOrdenacion3481 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3502 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleOrdenacion3516 = new BitSet(new long[]{0x0000001000040000L});
-        public static final BitSet FOLLOW_36_in_ruleOrdenacion3531 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_12_in_ruleOrdenacion3543 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3564 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_27_in_ruleOrdenacion3577 = new BitSet(new long[]{0x0000000000000060L});
-        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3598 = new BitSet(new long[]{0x0000000008040000L});
-        public static final BitSet FOLLOW_18_in_ruleOrdenacion3612 = new BitSet(new long[]{0x0000000000040000L});
-        public static final BitSet FOLLOW_18_in_ruleOrdenacion3626 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_ruleWizardAdaptativo1569 = new BitSet(new long[]{0x0000000004000000L});
+        public static final BitSet FOLLOW_26_in_ruleWizardAdaptativo1581 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleWizardAdaptativo1593 = new BitSet(new long[]{0x0000000000000800L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1614 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleWizardAdaptativo1627 = new BitSet(new long[]{0x0000000000000800L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_ruleWizardAdaptativo1648 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleWizardAdaptativo1662 = new BitSet(new long[]{0x0000000000040000L});
+        public static final BitSet FOLLOW_18_in_ruleWizardAdaptativo1674 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_entryRuleEString1711 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEString1722 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleEString1762 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleEString1788 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_entryRuleEInt1834 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEInt1845 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_ruleEInt1884 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_INT_in_ruleEInt1901 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRespuestaUnica_in_entryRuleRespuestaUnica1946 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleRespuestaUnica1956 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_30_in_ruleRespuestaUnica2002 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleRespuestaUnica2014 = new BitSet(new long[]{0x0000000180040000L});
+        public static final BitSet FOLLOW_31_in_ruleRespuestaUnica2027 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleRespuestaUnica2039 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2060 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleRespuestaUnica2073 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2094 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleRespuestaUnica2108 = new BitSet(new long[]{0x0000000100040000L});
+        public static final BitSet FOLLOW_32_in_ruleRespuestaUnica2123 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleRespuestaUnica2135 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2156 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleRespuestaUnica2169 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaUnica2190 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleRespuestaUnica2204 = new BitSet(new long[]{0x0000000000040000L});
+        public static final BitSet FOLLOW_18_in_ruleRespuestaUnica2218 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRespuestaMultiple_in_entryRuleRespuestaMultiple2254 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleRespuestaMultiple2264 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_ruleRespuestaMultiple2310 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleRespuestaMultiple2322 = new BitSet(new long[]{0x0000000180040000L});
+        public static final BitSet FOLLOW_31_in_ruleRespuestaMultiple2335 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleRespuestaMultiple2347 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2368 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleRespuestaMultiple2381 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2402 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleRespuestaMultiple2416 = new BitSet(new long[]{0x0000000100040000L});
+        public static final BitSet FOLLOW_32_in_ruleRespuestaMultiple2431 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleRespuestaMultiple2443 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2464 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleRespuestaMultiple2477 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleRespuestaMultiple2498 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleRespuestaMultiple2512 = new BitSet(new long[]{0x0000000000040000L});
+        public static final BitSet FOLLOW_18_in_ruleRespuestaMultiple2526 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTextoLibre_in_entryRuleTextoLibre2562 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTextoLibre2572 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_34_in_ruleTextoLibre2618 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleTextoLibre2630 = new BitSet(new long[]{0x0000000180040000L});
+        public static final BitSet FOLLOW_31_in_ruleTextoLibre2643 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleTextoLibre2655 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre2676 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleTextoLibre2689 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre2710 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleTextoLibre2724 = new BitSet(new long[]{0x0000000100040000L});
+        public static final BitSet FOLLOW_32_in_ruleTextoLibre2739 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleTextoLibre2751 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre2772 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleTextoLibre2785 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleTextoLibre2806 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleTextoLibre2820 = new BitSet(new long[]{0x0000000000040000L});
+        public static final BitSet FOLLOW_18_in_ruleTextoLibre2834 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleOrdenacion_in_entryRuleOrdenacion2870 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleOrdenacion2880 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_35_in_ruleOrdenacion2926 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleOrdenacion2938 = new BitSet(new long[]{0x0000000180040000L});
+        public static final BitSet FOLLOW_31_in_ruleOrdenacion2951 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleOrdenacion2963 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion2984 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleOrdenacion2997 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3018 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleOrdenacion3032 = new BitSet(new long[]{0x0000000100040000L});
+        public static final BitSet FOLLOW_32_in_ruleOrdenacion3047 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_12_in_ruleOrdenacion3059 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3080 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_27_in_ruleOrdenacion3093 = new BitSet(new long[]{0x0000000000000060L});
+        public static final BitSet FOLLOW_ruleEString_in_ruleOrdenacion3114 = new BitSet(new long[]{0x0000000008040000L});
+        public static final BitSet FOLLOW_18_in_ruleOrdenacion3128 = new BitSet(new long[]{0x0000000000040000L});
+        public static final BitSet FOLLOW_18_in_ruleOrdenacion3142 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

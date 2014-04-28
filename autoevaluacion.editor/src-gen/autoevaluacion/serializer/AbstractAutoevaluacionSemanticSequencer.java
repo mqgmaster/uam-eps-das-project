@@ -115,7 +115,7 @@ public abstract class AbstractAutoevaluacionSemanticSequencer extends AbstractDe
 	
 	/**
 	 * Constraint:
-	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)? (seleccionadas+=EString seleccionadas+=EString*)?)
+	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)?)
 	 */
 	protected void sequence_Ordenacion(EObject context, Ordenacion semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -124,7 +124,7 @@ public abstract class AbstractAutoevaluacionSemanticSequencer extends AbstractDe
 	
 	/**
 	 * Constraint:
-	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)? (seleccionadas+=EString seleccionadas+=EString*)?)
+	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)?)
 	 */
 	protected void sequence_RespuestaMultiple(EObject context, RespuestaMultiple semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -133,7 +133,7 @@ public abstract class AbstractAutoevaluacionSemanticSequencer extends AbstractDe
 	
 	/**
 	 * Constraint:
-	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)? (seleccionadas+=EString seleccionadas+=EString*)?)
+	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)?)
 	 */
 	protected void sequence_RespuestaUnica(EObject context, RespuestaUnica semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -142,7 +142,7 @@ public abstract class AbstractAutoevaluacionSemanticSequencer extends AbstractDe
 	
 	/**
 	 * Constraint:
-	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)? (seleccionadas+=EString seleccionadas+=EString*)?)
+	 *     ((correctas+=EString correctas+=EString*)? (alternativas+=EString alternativas+=EString*)?)
 	 */
 	protected void sequence_TextoLibre(EObject context, TextoLibre semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -151,13 +151,7 @@ public abstract class AbstractAutoevaluacionSemanticSequencer extends AbstractDe
 	
 	/**
 	 * Constraint:
-	 *     (
-	 *         puntuacion=EDouble 
-	 *         penalizacion=EDouble 
-	 *         (ejerciciosRespondidos+=[Ejercicio|EString] ejerciciosRespondidos+=[Ejercicio|EString]*)? 
-	 *         ejercicios+=Ejercicio 
-	 *         ejercicios+=Ejercicio*
-	 *     )
+	 *     (puntuacion=EDouble penalizacion=EDouble ejercicios+=Ejercicio ejercicios+=Ejercicio*)
 	 */
 	protected void sequence_WizardAdaptativo(EObject context, WizardAdaptativo semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

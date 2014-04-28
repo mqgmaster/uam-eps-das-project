@@ -24,7 +24,6 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  * <ul>
  *   <li>{@link Autoevaluacion.impl.RespuestaImpl#getCorrectas <em>Correctas</em>}</li>
  *   <li>{@link Autoevaluacion.impl.RespuestaImpl#getAlternativas <em>Alternativas</em>}</li>
- *   <li>{@link Autoevaluacion.impl.RespuestaImpl#getSeleccionadas <em>Seleccionadas</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,16 +49,6 @@ public abstract class RespuestaImpl extends MinimalEObjectImpl.Container impleme
 	 * @ordered
 	 */
 	protected EList<String> alternativas;
-
-	/**
-	 * The cached value of the '{@link #getSeleccionadas() <em>Seleccionadas</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSeleccionadas()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<String> seleccionadas;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,18 +98,6 @@ public abstract class RespuestaImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getSeleccionadas() {
-		if (seleccionadas == null) {
-			seleccionadas = new EDataTypeUniqueEList<String>(String.class, this, AutoevaluacionPackage.RESPUESTA__SELECCIONADAS);
-		}
-		return seleccionadas;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -128,8 +105,6 @@ public abstract class RespuestaImpl extends MinimalEObjectImpl.Container impleme
 				return getCorrectas();
 			case AutoevaluacionPackage.RESPUESTA__ALTERNATIVAS:
 				return getAlternativas();
-			case AutoevaluacionPackage.RESPUESTA__SELECCIONADAS:
-				return getSeleccionadas();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -151,10 +126,6 @@ public abstract class RespuestaImpl extends MinimalEObjectImpl.Container impleme
 				getAlternativas().clear();
 				getAlternativas().addAll((Collection<? extends String>)newValue);
 				return;
-			case AutoevaluacionPackage.RESPUESTA__SELECCIONADAS:
-				getSeleccionadas().clear();
-				getSeleccionadas().addAll((Collection<? extends String>)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -173,9 +144,6 @@ public abstract class RespuestaImpl extends MinimalEObjectImpl.Container impleme
 			case AutoevaluacionPackage.RESPUESTA__ALTERNATIVAS:
 				getAlternativas().clear();
 				return;
-			case AutoevaluacionPackage.RESPUESTA__SELECCIONADAS:
-				getSeleccionadas().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -192,8 +160,6 @@ public abstract class RespuestaImpl extends MinimalEObjectImpl.Container impleme
 				return correctas != null && !correctas.isEmpty();
 			case AutoevaluacionPackage.RESPUESTA__ALTERNATIVAS:
 				return alternativas != null && !alternativas.isEmpty();
-			case AutoevaluacionPackage.RESPUESTA__SELECCIONADAS:
-				return seleccionadas != null && !seleccionadas.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -212,8 +178,6 @@ public abstract class RespuestaImpl extends MinimalEObjectImpl.Container impleme
 		result.append(correctas);
 		result.append(", alternativas: ");
 		result.append(alternativas);
-		result.append(", seleccionadas: ");
-		result.append(seleccionadas);
 		result.append(')');
 		return result.toString();
 	}

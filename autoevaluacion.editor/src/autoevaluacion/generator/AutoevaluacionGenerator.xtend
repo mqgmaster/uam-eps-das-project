@@ -3,10 +3,18 @@
  */
 package autoevaluacion.generator
 
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.xtext.generator.IGenerator
-import org.eclipse.xtext.generator.IFileSystemAccess
+import Autoevaluacion.Clasico
+import Autoevaluacion.Hoja
+import Autoevaluacion.Ordenacion
+import Autoevaluacion.RespuestaMultiple
+import Autoevaluacion.RespuestaUnica
+import Autoevaluacion.TextoLibre
 import Autoevaluacion.Wizard
+import Autoevaluacion.WizardAdaptativo
+import java.util.ArrayList
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.xtext.generator.IFileSystemAccess
+import org.eclipse.xtext.generator.IGenerator
 
 /**
  * Generates code from your model files on save.
@@ -16,9 +24,17 @@ import Autoevaluacion.Wizard
 class AutoevaluacionGenerator implements IGenerator {
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-		
+	
+		val lista = newArrayList();
+		var hoja = resource.contents.head as Hoja;
+		hoja.ejercicios.forEach[elem,index|
+			if(!lista.contains(elem)){
+				lista.add(elem);
+			}
+		]
+			
 		//Genera el Main
-		fsa.generateFile("main/Main.java", Main(resource.contents.head as Wizard));
+		fsa.generateFile("main/Main.java", Main(resource.contents.head as Hoja));
 		//Genera Answer
 		fsa.generateFile("autoevaluacion/answer/Answer.java", Answer());
 		fsa.generateFile("autoevaluacion/answer/MultipleAnswer.java", MultipleAnswer());
@@ -28,7 +44,7 @@ class AutoevaluacionGenerator implements IGenerator {
 		fsa.generateFile("autoevaluacion/Exercise.java", Exercise());
 		fsa.generateFile("autoevaluacion/ExercisePanel.java", ExercisePanel());
 		fsa.generateFile("autoevaluacion/Panel.java", Panel());
-		fsa.generateFile("autoevaluacion/Autoevaluacion.java", compile(resource.contents.head as Wizard));
+		fsa.generateFile("autoevaluacion/Autoevaluacion.java", compile(resource.contents.head as Hoja, lista));
 		
 //		fsa.generateFile('greetings.txt', 'People to greet: ' + 
 //			resource.allContents
@@ -37,7 +53,7 @@ class AutoevaluacionGenerator implements IGenerator {
 //				.join(', '))
 	}
 	
-	def Main(Wizard w)'''
+	def Main(Hoja h)'''
 package main;
 
 import autoevaluacion.Autoevaluacion;
@@ -45,7 +61,7 @@ import autoevaluacion.Autoevaluacion;
 public class Main {
 	
 	public static void main(String[] args){
-		Autoevaluacion autoevaluacion = new Autoevaluacion(«w.puntuacion»,«w.penalizacion»);
+		Autoevaluacion autoevaluacion = new Autoevaluacion(«h.puntuacion»,«h.penalizacion»);
 		autoevaluacion.mostrar();
 	}
 }'''
@@ -532,7 +548,232 @@ public class Panel extends JPanel {
 }
 '''	
 
-	def compile(Wizard w)'''
+	def compile(Hoja h, ArrayList categoria)'''
+package autoevaluacion;
+
+import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import autoevaluacion.ExercisePanel.PanelType;
+import autoevaluacion.answer.Answer.AnswerType;
+
+@SuppressWarnings("serial")
+public class Autoevaluacion extends JFrame {
+	private double nota;
+	private double puntuacionStandard;
+	private double penalizacion;
+	private JPanel mainContainer = new JPanel(new CardLayout());
+	private ArrayList<ExercisePanel> exercisePanels = new ArrayList<>();
+	
+	public Autoevaluacion (double puntuacionStandard, final double penalizacion) {
+		super ("Autoevaluacion");
+		this.puntuacionStandard = puntuacionStandard;
+		this.penalizacion = penalizacion;
+		«IF h instanceof Clasico»
+		//Crea una pantalla
+		final ExercisePanel pe = new ExercisePanel("clasico", PanelType.CLASSIC);
+		
+		//Anade ejercicios
+		«FOR e : h.ejercicios»
+		pe.addExercise(new Exercise(
+				"«e.name»", 
+				"«e.enunciado»", 
+				«e.order», 
+				"«e.categoria»",
+				«IF e.puntuacionEj.naN»
+				«h.puntuacion»,
+				«ELSE»
+				«e.puntuacionEj»,
+				«ENDIF»
+				
+				new String[]{
+				«FOR c : e.respuesta.correctas»
+				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»
+				"«c»"
+				«ELSE»
+				"«c»",
+				«ENDIF»
+				«ENDFOR»
+				},
+				new String[]{
+				«FOR a : e.respuesta.alternativas»
+				«IF e.respuesta.alternativas.indexOf(a) == e.respuesta.alternativas.size-1»
+				"«a»"
+				«ELSE»
+				"«a»",
+				«ENDIF»
+				«ENDFOR»
+				},
+				
+				«IF e.respuesta instanceof RespuestaUnica»
+				AnswerType.UNIQUE
+				«ELSEIF e.respuesta instanceof RespuestaMultiple»
+				AnswerType.MULTIPLE
+				«ELSEIF e.respuesta instanceof TextoLibre»
+				AnswerType.WRITTEN
+				«ELSEIF e.respuesta instanceof Ordenacion»
+				AnswerType.ORDINATION
+				«ENDIF»
+				));
+		«ENDFOR»
+		
+		//Anade el boton de correccion
+		pe2.addNextButton("Corregir", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Panel panel = createFinalPanel();
+				addPanel(panel);
+				showPanel(panel);
+			}
+		});
+		
+		addExercisePanel(pe);
+		
+		//Comienza en la pantalla inicial
+		showPanel(pe);
+		// añadir panel a la ventana
+		getContentPane().add(mainContainer);
+		
+		
+		«ELSEIF h instanceof Wizard»
+		//Crea pantallas
+		«FOR c : categoria»		
+		final ExercisePanel p«c» = new ExercisePanel("«c»", PanelType.WIZARD);
+		addExercisePanel(p«c»);
+		«ENDFOR»
+		
+		//Anade ejercicios
+		«FOR e : h.ejercicios»
+		p«e.categoria».addExercise(new Exercise(
+				"«e.name»", 
+				"«e.enunciado»", 
+				«e.order», 
+				"«e.categoria»",
+				«IF e.puntuacionEj.naN»
+				«h.puntuacion»,
+				«ELSE»
+				«e.puntuacionEj»,
+				«ENDIF»
+				
+				new String[]{
+				«FOR c : e.respuesta.correctas»
+				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»
+				"«c»"
+				«ELSE»
+				"«c»",
+				«ENDIF»
+				«ENDFOR»
+				},
+				new String[]{
+				«FOR a : e.respuesta.alternativas»
+				«IF e.respuesta.alternativas.indexOf(a) == e.respuesta.alternativas.size-1»
+				"«a»"
+				«ELSE»
+				"«a»",
+				«ENDIF»
+				«ENDFOR»
+				},
+				
+				«IF e.respuesta instanceof RespuestaUnica»
+				AnswerType.UNIQUE
+				«ELSEIF e.respuesta instanceof RespuestaMultiple»
+				AnswerType.MULTIPLE
+				«ELSEIF e.respuesta instanceof TextoLibre»
+				AnswerType.WRITTEN
+				«ELSEIF e.respuesta instanceof Ordenacion»
+				AnswerType.ORDINATION
+				«ENDIF»
+				));
+		«ENDFOR»
+		
+		//Anade boton siguiente
+		«FOR c : categoria»
+		«IF categoria.indexOf(c)==categoria.size-1»
+		p«c».addNextButton("Corregir", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Panel panel = createFinalPanel();
+				addPanel(panel);
+				showPanel(panel);
+			}
+		});
+		«ELSE»
+		p«c».addNextButton("Proxima", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				showPanel(p«categoria.get(categoria.indexOf(c)+1)»);
+			}
+		});
+		«ENDIF»
+		«ENDFOR»
+		
+		
+		//Comienza en la pantalla inicial
+		showPanel(p«categoria.get(0)»);
+		// añadir panel a la ventana
+		getContentPane().add(mainContainer);
+		
+		«ELSEIF h instanceof WizardAdaptativo»
+		«ENDIF»
+		
+	}
+	
+	public Panel createFinalPanel() {
+		Panel panel = new Panel("Nota");
+		calculaNota(panel);
+		JLabel n = new JLabel("Nota : "+nota);
+		panel.add(n);
+		panel.addButton("Salir", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Autoevaluacion.this.setVisible(false);
+				Autoevaluacion.this.dispose();
+			}
+		});
+		return panel;
+	}
+	
+	public void addExercisePanel(ExercisePanel ep) {
+		exercisePanels.add(ep);
+		addPanel(ep);
+	}
+	
+	public void addPanel(Panel panel) {
+		panel.setupView();
+		mainContainer.add(panel, panel.getName());
+	}
+	
+	public void showPanel(Panel panel) {
+		((CardLayout)mainContainer.getLayout()).show(mainContainer, panel.getName());
+	}
+
+	public void mostrar() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.pack();
+		this.setVisible(true);
+	}
+	 
+	public void calculaNota(Panel pantalla) {
+		nota = 0.0;
+		for (ExercisePanel pe : exercisePanels) {
+			for (Exercise e : pe.getAllExercises()) {
+				if(e.isAnswered()){
+					double c = e.corrige(penalizacion);
+					nota += c;
+					if (c <= 0) {
+						pantalla.add(e.muestraCorreccion());
+					}
+				}
+			}
+		}
+	}
+}
 '''
 
 }

@@ -300,15 +300,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRespuesta_Seleccionadas() {
-		return (EAttribute)respuestaEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getRespuestaUnica() {
 		return respuestaUnicaEClass;
 	}
@@ -372,15 +363,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getWizardAdaptativo_EjerciciosRespondidos() {
-		return (EReference)wizardAdaptativoEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public AutoevaluacionFactory getAutoevaluacionFactory() {
 		return (AutoevaluacionFactory)getEFactoryInstance();
 	}
@@ -420,7 +402,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		respuestaEClass = createEClass(RESPUESTA);
 		createEAttribute(respuestaEClass, RESPUESTA__CORRECTAS);
 		createEAttribute(respuestaEClass, RESPUESTA__ALTERNATIVAS);
-		createEAttribute(respuestaEClass, RESPUESTA__SELECCIONADAS);
 
 		respuestaUnicaEClass = createEClass(RESPUESTA_UNICA);
 
@@ -435,7 +416,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		wizardEClass = createEClass(WIZARD);
 
 		wizardAdaptativoEClass = createEClass(WIZARD_ADAPTATIVO);
-		createEReference(wizardAdaptativoEClass, WIZARD_ADAPTATIVO__EJERCICIOS_RESPONDIDOS);
 	}
 
 	/**
@@ -491,7 +471,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		initEClass(respuestaEClass, Respuesta.class, "Respuesta", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRespuesta_Correctas(), ecorePackage.getEString(), "correctas", null, 0, -1, Respuesta.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRespuesta_Alternativas(), ecorePackage.getEString(), "alternativas", null, 0, -1, Respuesta.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRespuesta_Seleccionadas(), ecorePackage.getEString(), "seleccionadas", null, 0, -1, Respuesta.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(respuestaUnicaEClass, RespuestaUnica.class, "RespuestaUnica", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -506,7 +485,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		initEClass(wizardEClass, Wizard.class, "Wizard", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(wizardAdaptativoEClass, WizardAdaptativo.class, "WizardAdaptativo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getWizardAdaptativo_EjerciciosRespondidos(), this.getEjercicio(), null, "ejerciciosRespondidos", null, 0, -1, WizardAdaptativo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -533,7 +511,7 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		   source, 
 		   new String[] {
 			 "ecore", "http://www.eclipse.org/emf/2002/Ecore#/"
-		   });													
+		   });											
 	}
 
 	/**
@@ -581,12 +559,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		   source, 
 		   new String[] {
 			 "constraints", "uniqueAnswer"
-		   });			
-		addAnnotation
-		  (wizardAdaptativoEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "respOnce"
 		   });	
 	}
 
@@ -629,12 +601,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		   source, 
 		   new String[] {
 			 "uniqueAnswer", "\n\t\t\tcorrectas->size()=1"
-		   });			
-		addAnnotation
-		  (wizardAdaptativoEClass, 
-		   source, 
-		   new String[] {
-			 "respOnce", "\n\t\t\tejerciciosRespondidos->isUnique(name)"
 		   });
 	}
 

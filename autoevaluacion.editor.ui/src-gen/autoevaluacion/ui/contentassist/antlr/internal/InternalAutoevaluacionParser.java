@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalAutoevaluacionParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'E'", "'e'", "'Ejercicio'", "'{'", "'enunciado'", "'categoria'", "'order'", "'respuesta'", "'}'", "'puntuacionEj'", "'-'", "'.'", "'Clasico'", "'puntuacion'", "'penalizacion'", "'ejercicios'", "','", "'Wizard'", "'WizardAdaptativo'", "'ejerciciosRespondidos'", "'('", "')'", "'RespuestaUnica'", "'correctas'", "'alternativas'", "'seleccionadas'", "'RespuestaMultiple'", "'TextoLibre'", "'Ordenacion'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'E'", "'e'", "'Ejercicio'", "'{'", "'enunciado'", "'categoria'", "'order'", "'respuesta'", "'}'", "'puntuacionEj'", "'-'", "'.'", "'Clasico'", "'puntuacion'", "'penalizacion'", "'ejercicios'", "','", "'Wizard'", "'WizardAdaptativo'", "'RespuestaUnica'", "'correctas'", "'alternativas'", "'RespuestaMultiple'", "'TextoLibre'", "'Ordenacion'"
     };
     public static final int RULE_ID=5;
     public static final int T__29=29;
@@ -50,13 +50,9 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     public static final int T__15=15;
     public static final int T__35=35;
     public static final int T__18=18;
-    public static final int T__36=36;
     public static final int T__17=17;
-    public static final int T__37=37;
     public static final int T__12=12;
-    public static final int T__38=38;
     public static final int T__11=11;
-    public static final int T__39=39;
     public static final int T__14=14;
     public static final int T__13=13;
     public static final int RULE_INT=6;
@@ -1217,22 +1213,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:456:1: ( ( ruleRespuestaUnica ) | ( ruleRespuestaMultiple ) | ( ruleTextoLibre ) | ( ruleOrdenacion ) )
             int alt2=4;
             switch ( input.LA(1) ) {
-            case 33:
+            case 30:
                 {
                 alt2=1;
                 }
                 break;
-            case 37:
+            case 33:
                 {
                 alt2=2;
                 }
                 break;
-            case 38:
+            case 34:
                 {
                 alt2=3;
                 }
                 break;
-            case 39:
+            case 35:
                 {
                 alt2=4;
                 }
@@ -6073,42 +6069,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__6__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2361:1: rule__WizardAdaptativo__Group__6__Impl : ( ( rule__WizardAdaptativo__Group_6__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2361:1: rule__WizardAdaptativo__Group__6__Impl : ( 'ejercicios' ) ;
     public final void rule__WizardAdaptativo__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2365:1: ( ( ( rule__WizardAdaptativo__Group_6__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2366:1: ( ( rule__WizardAdaptativo__Group_6__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2365:1: ( ( 'ejercicios' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2366:1: ( 'ejercicios' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2366:1: ( ( rule__WizardAdaptativo__Group_6__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2367:1: ( rule__WizardAdaptativo__Group_6__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2366:1: ( 'ejercicios' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2367:1: 'ejercicios'
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getGroup_6()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2368:1: ( rule__WizardAdaptativo__Group_6__0 )?
-            int alt12=2;
-            int LA12_0 = input.LA(1);
-
-            if ( (LA12_0==30) ) {
-                alt12=1;
-            }
-            switch (alt12) {
-                case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2368:2: rule__WizardAdaptativo__Group_6__0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__0_in_rule__WizardAdaptativo__Group__6__Impl4705);
-                    rule__WizardAdaptativo__Group_6__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getWizardAdaptativoAccess().getGroup_6()); 
+             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosKeyword_6()); 
+            match(input,26,FollowSets000.FOLLOW_26_in_rule__WizardAdaptativo__Group__6__Impl4706); 
+             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosKeyword_6()); 
 
             }
 
@@ -6131,21 +6106,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__7"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2378:1: rule__WizardAdaptativo__Group__7 : rule__WizardAdaptativo__Group__7__Impl rule__WizardAdaptativo__Group__8 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2380:1: rule__WizardAdaptativo__Group__7 : rule__WizardAdaptativo__Group__7__Impl rule__WizardAdaptativo__Group__8 ;
     public final void rule__WizardAdaptativo__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2382:1: ( rule__WizardAdaptativo__Group__7__Impl rule__WizardAdaptativo__Group__8 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2383:2: rule__WizardAdaptativo__Group__7__Impl rule__WizardAdaptativo__Group__8
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2384:1: ( rule__WizardAdaptativo__Group__7__Impl rule__WizardAdaptativo__Group__8 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2385:2: rule__WizardAdaptativo__Group__7__Impl rule__WizardAdaptativo__Group__8
             {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__7__Impl_in_rule__WizardAdaptativo__Group__74736);
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__7__Impl_in_rule__WizardAdaptativo__Group__74737);
             rule__WizardAdaptativo__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__8_in_rule__WizardAdaptativo__Group__74739);
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__8_in_rule__WizardAdaptativo__Group__74740);
             rule__WizardAdaptativo__Group__8();
 
             state._fsp--;
@@ -6169,21 +6144,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__7__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2390:1: rule__WizardAdaptativo__Group__7__Impl : ( 'ejercicios' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2392:1: rule__WizardAdaptativo__Group__7__Impl : ( '{' ) ;
     public final void rule__WizardAdaptativo__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2394:1: ( ( 'ejercicios' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2395:1: ( 'ejercicios' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2396:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2397:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2395:1: ( 'ejercicios' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2396:1: 'ejercicios'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2397:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2398:1: '{'
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosKeyword_7()); 
-            match(input,26,FollowSets000.FOLLOW_26_in_rule__WizardAdaptativo__Group__7__Impl4767); 
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosKeyword_7()); 
+             before(grammarAccess.getWizardAdaptativoAccess().getLeftCurlyBracketKeyword_7()); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__WizardAdaptativo__Group__7__Impl4768); 
+             after(grammarAccess.getWizardAdaptativoAccess().getLeftCurlyBracketKeyword_7()); 
 
             }
 
@@ -6206,21 +6181,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__8"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2409:1: rule__WizardAdaptativo__Group__8 : rule__WizardAdaptativo__Group__8__Impl rule__WizardAdaptativo__Group__9 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2411:1: rule__WizardAdaptativo__Group__8 : rule__WizardAdaptativo__Group__8__Impl rule__WizardAdaptativo__Group__9 ;
     public final void rule__WizardAdaptativo__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2413:1: ( rule__WizardAdaptativo__Group__8__Impl rule__WizardAdaptativo__Group__9 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2414:2: rule__WizardAdaptativo__Group__8__Impl rule__WizardAdaptativo__Group__9
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2415:1: ( rule__WizardAdaptativo__Group__8__Impl rule__WizardAdaptativo__Group__9 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2416:2: rule__WizardAdaptativo__Group__8__Impl rule__WizardAdaptativo__Group__9
             {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__8__Impl_in_rule__WizardAdaptativo__Group__84798);
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__8__Impl_in_rule__WizardAdaptativo__Group__84799);
             rule__WizardAdaptativo__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__9_in_rule__WizardAdaptativo__Group__84801);
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__9_in_rule__WizardAdaptativo__Group__84802);
             rule__WizardAdaptativo__Group__9();
 
             state._fsp--;
@@ -6244,21 +6219,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__8__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2421:1: rule__WizardAdaptativo__Group__8__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2423:1: rule__WizardAdaptativo__Group__8__Impl : ( ( rule__WizardAdaptativo__EjerciciosAssignment_8 ) ) ;
     public final void rule__WizardAdaptativo__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2425:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2426:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2427:1: ( ( ( rule__WizardAdaptativo__EjerciciosAssignment_8 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2428:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_8 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2426:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2427:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2428:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_8 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2429:1: ( rule__WizardAdaptativo__EjerciciosAssignment_8 )
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getLeftCurlyBracketKeyword_8()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__WizardAdaptativo__Group__8__Impl4829); 
-             after(grammarAccess.getWizardAdaptativoAccess().getLeftCurlyBracketKeyword_8()); 
+             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_8()); 
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2430:1: ( rule__WizardAdaptativo__EjerciciosAssignment_8 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2430:2: rule__WizardAdaptativo__EjerciciosAssignment_8
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_8_in_rule__WizardAdaptativo__Group__8__Impl4829);
+            rule__WizardAdaptativo__EjerciciosAssignment_8();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_8()); 
 
             }
 
@@ -6290,12 +6275,12 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2444:1: ( rule__WizardAdaptativo__Group__9__Impl rule__WizardAdaptativo__Group__10 )
             // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2445:2: rule__WizardAdaptativo__Group__9__Impl rule__WizardAdaptativo__Group__10
             {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__9__Impl_in_rule__WizardAdaptativo__Group__94860);
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__9__Impl_in_rule__WizardAdaptativo__Group__94859);
             rule__WizardAdaptativo__Group__9__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__10_in_rule__WizardAdaptativo__Group__94863);
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__10_in_rule__WizardAdaptativo__Group__94862);
             rule__WizardAdaptativo__Group__10();
 
             state._fsp--;
@@ -6319,31 +6304,49 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__9__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2452:1: rule__WizardAdaptativo__Group__9__Impl : ( ( rule__WizardAdaptativo__EjerciciosAssignment_9 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2452:1: rule__WizardAdaptativo__Group__9__Impl : ( ( rule__WizardAdaptativo__Group_9__0 )* ) ;
     public final void rule__WizardAdaptativo__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2456:1: ( ( ( rule__WizardAdaptativo__EjerciciosAssignment_9 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2457:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_9 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2456:1: ( ( ( rule__WizardAdaptativo__Group_9__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2457:1: ( ( rule__WizardAdaptativo__Group_9__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2457:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_9 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2458:1: ( rule__WizardAdaptativo__EjerciciosAssignment_9 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2457:1: ( ( rule__WizardAdaptativo__Group_9__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2458:1: ( rule__WizardAdaptativo__Group_9__0 )*
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_9()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2459:1: ( rule__WizardAdaptativo__EjerciciosAssignment_9 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2459:2: rule__WizardAdaptativo__EjerciciosAssignment_9
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_9_in_rule__WizardAdaptativo__Group__9__Impl4890);
-            rule__WizardAdaptativo__EjerciciosAssignment_9();
+             before(grammarAccess.getWizardAdaptativoAccess().getGroup_9()); 
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2459:1: ( rule__WizardAdaptativo__Group_9__0 )*
+            loop12:
+            do {
+                int alt12=2;
+                int LA12_0 = input.LA(1);
 
-            state._fsp--;
+                if ( (LA12_0==27) ) {
+                    alt12=1;
+                }
 
 
-            }
+                switch (alt12) {
+            	case 1 :
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2459:2: rule__WizardAdaptativo__Group_9__0
+            	    {
+            	    pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_9__0_in_rule__WizardAdaptativo__Group__9__Impl4889);
+            	    rule__WizardAdaptativo__Group_9__0();
 
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_9()); 
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop12;
+                }
+            } while (true);
+
+             after(grammarAccess.getWizardAdaptativoAccess().getGroup_9()); 
 
             }
 
@@ -6404,49 +6407,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__10__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2481:1: rule__WizardAdaptativo__Group__10__Impl : ( ( rule__WizardAdaptativo__Group_10__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2481:1: rule__WizardAdaptativo__Group__10__Impl : ( '}' ) ;
     public final void rule__WizardAdaptativo__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2485:1: ( ( ( rule__WizardAdaptativo__Group_10__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2486:1: ( ( rule__WizardAdaptativo__Group_10__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2485:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2486:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2486:1: ( ( rule__WizardAdaptativo__Group_10__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2487:1: ( rule__WizardAdaptativo__Group_10__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2486:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2487:1: '}'
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getGroup_10()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2488:1: ( rule__WizardAdaptativo__Group_10__0 )*
-            loop13:
-            do {
-                int alt13=2;
-                int LA13_0 = input.LA(1);
-
-                if ( (LA13_0==27) ) {
-                    alt13=1;
-                }
-
-
-                switch (alt13) {
-            	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2488:2: rule__WizardAdaptativo__Group_10__0
-            	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_10__0_in_rule__WizardAdaptativo__Group__10__Impl4950);
-            	    rule__WizardAdaptativo__Group_10__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop13;
-                }
-            } while (true);
-
-             after(grammarAccess.getWizardAdaptativoAccess().getGroup_10()); 
+             before(grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_10()); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__WizardAdaptativo__Group__10__Impl4951); 
+             after(grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_10()); 
 
             }
 
@@ -6469,22 +6444,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__11"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2498:1: rule__WizardAdaptativo__Group__11 : rule__WizardAdaptativo__Group__11__Impl rule__WizardAdaptativo__Group__12 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2500:1: rule__WizardAdaptativo__Group__11 : rule__WizardAdaptativo__Group__11__Impl ;
     public final void rule__WizardAdaptativo__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2502:1: ( rule__WizardAdaptativo__Group__11__Impl rule__WizardAdaptativo__Group__12 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2503:2: rule__WizardAdaptativo__Group__11__Impl rule__WizardAdaptativo__Group__12
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2504:1: ( rule__WizardAdaptativo__Group__11__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2505:2: rule__WizardAdaptativo__Group__11__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__11__Impl_in_rule__WizardAdaptativo__Group__114981);
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__11__Impl_in_rule__WizardAdaptativo__Group__114982);
             rule__WizardAdaptativo__Group__11__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__12_in_rule__WizardAdaptativo__Group__114984);
-            rule__WizardAdaptativo__Group__12();
 
             state._fsp--;
 
@@ -6507,20 +6477,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__Group__11__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2510:1: rule__WizardAdaptativo__Group__11__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2511:1: rule__WizardAdaptativo__Group__11__Impl : ( '}' ) ;
     public final void rule__WizardAdaptativo__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2514:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2515:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2515:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2516:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2515:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2516:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2516:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2517:1: '}'
             {
              before(grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_11()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__WizardAdaptativo__Group__11__Impl5012); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__WizardAdaptativo__Group__11__Impl5010); 
              after(grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_11()); 
 
             }
@@ -6543,18 +6513,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__WizardAdaptativo__Group__11__Impl"
 
 
-    // $ANTLR start "rule__WizardAdaptativo__Group__12"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2529:1: rule__WizardAdaptativo__Group__12 : rule__WizardAdaptativo__Group__12__Impl ;
-    public final void rule__WizardAdaptativo__Group__12() throws RecognitionException {
+    // $ANTLR start "rule__WizardAdaptativo__Group_9__0"
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2554:1: rule__WizardAdaptativo__Group_9__0 : rule__WizardAdaptativo__Group_9__0__Impl rule__WizardAdaptativo__Group_9__1 ;
+    public final void rule__WizardAdaptativo__Group_9__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2533:1: ( rule__WizardAdaptativo__Group__12__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2534:2: rule__WizardAdaptativo__Group__12__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2558:1: ( rule__WizardAdaptativo__Group_9__0__Impl rule__WizardAdaptativo__Group_9__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2559:2: rule__WizardAdaptativo__Group_9__0__Impl rule__WizardAdaptativo__Group_9__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group__12__Impl_in_rule__WizardAdaptativo__Group__125043);
-            rule__WizardAdaptativo__Group__12__Impl();
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_9__0__Impl_in_rule__WizardAdaptativo__Group_9__05065);
+            rule__WizardAdaptativo__Group_9__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_9__1_in_rule__WizardAdaptativo__Group_9__05068);
+            rule__WizardAdaptativo__Group_9__1();
 
             state._fsp--;
 
@@ -6573,25 +6548,25 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__WizardAdaptativo__Group__12"
+    // $ANTLR end "rule__WizardAdaptativo__Group_9__0"
 
 
-    // $ANTLR start "rule__WizardAdaptativo__Group__12__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2540:1: rule__WizardAdaptativo__Group__12__Impl : ( '}' ) ;
-    public final void rule__WizardAdaptativo__Group__12__Impl() throws RecognitionException {
+    // $ANTLR start "rule__WizardAdaptativo__Group_9__0__Impl"
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2566:1: rule__WizardAdaptativo__Group_9__0__Impl : ( ',' ) ;
+    public final void rule__WizardAdaptativo__Group_9__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2544:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2545:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2570:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2571:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2545:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2546:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2571:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2572:1: ','
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_12()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__WizardAdaptativo__Group__12__Impl5071); 
-             after(grammarAccess.getWizardAdaptativoAccess().getRightCurlyBracketKeyword_12()); 
+             before(grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_9_0()); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__WizardAdaptativo__Group_9__0__Impl5096); 
+             after(grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_9_0()); 
 
             }
 
@@ -6610,26 +6585,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__WizardAdaptativo__Group__12__Impl"
+    // $ANTLR end "rule__WizardAdaptativo__Group_9__0__Impl"
 
 
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2585:1: rule__WizardAdaptativo__Group_6__0 : rule__WizardAdaptativo__Group_6__0__Impl rule__WizardAdaptativo__Group_6__1 ;
-    public final void rule__WizardAdaptativo__Group_6__0() throws RecognitionException {
+    // $ANTLR start "rule__WizardAdaptativo__Group_9__1"
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2585:1: rule__WizardAdaptativo__Group_9__1 : rule__WizardAdaptativo__Group_9__1__Impl ;
+    public final void rule__WizardAdaptativo__Group_9__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2589:1: ( rule__WizardAdaptativo__Group_6__0__Impl rule__WizardAdaptativo__Group_6__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2590:2: rule__WizardAdaptativo__Group_6__0__Impl rule__WizardAdaptativo__Group_6__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2589:1: ( rule__WizardAdaptativo__Group_9__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2590:2: rule__WizardAdaptativo__Group_9__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__0__Impl_in_rule__WizardAdaptativo__Group_6__05128);
-            rule__WizardAdaptativo__Group_6__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__1_in_rule__WizardAdaptativo__Group_6__05131);
-            rule__WizardAdaptativo__Group_6__1();
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_9__1__Impl_in_rule__WizardAdaptativo__Group_9__15127);
+            rule__WizardAdaptativo__Group_9__1__Impl();
 
             state._fsp--;
 
@@ -6648,100 +6618,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__0"
+    // $ANTLR end "rule__WizardAdaptativo__Group_9__1"
 
 
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2597:1: rule__WizardAdaptativo__Group_6__0__Impl : ( 'ejerciciosRespondidos' ) ;
-    public final void rule__WizardAdaptativo__Group_6__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2601:1: ( ( 'ejerciciosRespondidos' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2602:1: ( 'ejerciciosRespondidos' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2602:1: ( 'ejerciciosRespondidos' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2603:1: 'ejerciciosRespondidos'
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosKeyword_6_0()); 
-            match(input,30,FollowSets000.FOLLOW_30_in_rule__WizardAdaptativo__Group_6__0__Impl5159); 
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosKeyword_6_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__0__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2616:1: rule__WizardAdaptativo__Group_6__1 : rule__WizardAdaptativo__Group_6__1__Impl rule__WizardAdaptativo__Group_6__2 ;
-    public final void rule__WizardAdaptativo__Group_6__1() throws RecognitionException {
+    // $ANTLR start "rule__WizardAdaptativo__Group_9__1__Impl"
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2596:1: rule__WizardAdaptativo__Group_9__1__Impl : ( ( rule__WizardAdaptativo__EjerciciosAssignment_9_1 ) ) ;
+    public final void rule__WizardAdaptativo__Group_9__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2620:1: ( rule__WizardAdaptativo__Group_6__1__Impl rule__WizardAdaptativo__Group_6__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2621:2: rule__WizardAdaptativo__Group_6__1__Impl rule__WizardAdaptativo__Group_6__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2600:1: ( ( ( rule__WizardAdaptativo__EjerciciosAssignment_9_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2601:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_9_1 ) )
             {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__1__Impl_in_rule__WizardAdaptativo__Group_6__15190);
-            rule__WizardAdaptativo__Group_6__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__2_in_rule__WizardAdaptativo__Group_6__15193);
-            rule__WizardAdaptativo__Group_6__2();
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2601:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_9_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2602:1: ( rule__WizardAdaptativo__EjerciciosAssignment_9_1 )
+            {
+             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_9_1()); 
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2603:1: ( rule__WizardAdaptativo__EjerciciosAssignment_9_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2603:2: rule__WizardAdaptativo__EjerciciosAssignment_9_1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_9_1_in_rule__WizardAdaptativo__Group_9__1__Impl5154);
+            rule__WizardAdaptativo__EjerciciosAssignment_9_1();
 
             state._fsp--;
 
 
             }
 
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__1"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2628:1: rule__WizardAdaptativo__Group_6__1__Impl : ( '(' ) ;
-    public final void rule__WizardAdaptativo__Group_6__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2632:1: ( ( '(' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2633:1: ( '(' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2633:1: ( '(' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2634:1: '('
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getLeftParenthesisKeyword_6_1()); 
-            match(input,31,FollowSets000.FOLLOW_31_in_rule__WizardAdaptativo__Group_6__1__Impl5221); 
-             after(grammarAccess.getWizardAdaptativoAccess().getLeftParenthesisKeyword_6_1()); 
+             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_9_1()); 
 
             }
 
@@ -6760,593 +6665,25 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__1__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2647:1: rule__WizardAdaptativo__Group_6__2 : rule__WizardAdaptativo__Group_6__2__Impl rule__WizardAdaptativo__Group_6__3 ;
-    public final void rule__WizardAdaptativo__Group_6__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2651:1: ( rule__WizardAdaptativo__Group_6__2__Impl rule__WizardAdaptativo__Group_6__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2652:2: rule__WizardAdaptativo__Group_6__2__Impl rule__WizardAdaptativo__Group_6__3
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__2__Impl_in_rule__WizardAdaptativo__Group_6__25252);
-            rule__WizardAdaptativo__Group_6__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__3_in_rule__WizardAdaptativo__Group_6__25255);
-            rule__WizardAdaptativo__Group_6__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__2"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2659:1: rule__WizardAdaptativo__Group_6__2__Impl : ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2 ) ) ;
-    public final void rule__WizardAdaptativo__Group_6__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2663:1: ( ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2664:1: ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2664:1: ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2665:1: ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2 )
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosAssignment_6_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2666:1: ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2666:2: rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2_in_rule__WizardAdaptativo__Group_6__2__Impl5282);
-            rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosAssignment_6_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__2__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2676:1: rule__WizardAdaptativo__Group_6__3 : rule__WizardAdaptativo__Group_6__3__Impl rule__WizardAdaptativo__Group_6__4 ;
-    public final void rule__WizardAdaptativo__Group_6__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2680:1: ( rule__WizardAdaptativo__Group_6__3__Impl rule__WizardAdaptativo__Group_6__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2681:2: rule__WizardAdaptativo__Group_6__3__Impl rule__WizardAdaptativo__Group_6__4
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__3__Impl_in_rule__WizardAdaptativo__Group_6__35312);
-            rule__WizardAdaptativo__Group_6__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__4_in_rule__WizardAdaptativo__Group_6__35315);
-            rule__WizardAdaptativo__Group_6__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__3"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2688:1: rule__WizardAdaptativo__Group_6__3__Impl : ( ( rule__WizardAdaptativo__Group_6_3__0 )* ) ;
-    public final void rule__WizardAdaptativo__Group_6__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2692:1: ( ( ( rule__WizardAdaptativo__Group_6_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2693:1: ( ( rule__WizardAdaptativo__Group_6_3__0 )* )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2693:1: ( ( rule__WizardAdaptativo__Group_6_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2694:1: ( rule__WizardAdaptativo__Group_6_3__0 )*
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getGroup_6_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2695:1: ( rule__WizardAdaptativo__Group_6_3__0 )*
-            loop14:
-            do {
-                int alt14=2;
-                int LA14_0 = input.LA(1);
-
-                if ( (LA14_0==27) ) {
-                    alt14=1;
-                }
-
-
-                switch (alt14) {
-            	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2695:2: rule__WizardAdaptativo__Group_6_3__0
-            	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6_3__0_in_rule__WizardAdaptativo__Group_6__3__Impl5342);
-            	    rule__WizardAdaptativo__Group_6_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop14;
-                }
-            } while (true);
-
-             after(grammarAccess.getWizardAdaptativoAccess().getGroup_6_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__3__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2705:1: rule__WizardAdaptativo__Group_6__4 : rule__WizardAdaptativo__Group_6__4__Impl ;
-    public final void rule__WizardAdaptativo__Group_6__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2709:1: ( rule__WizardAdaptativo__Group_6__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2710:2: rule__WizardAdaptativo__Group_6__4__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6__4__Impl_in_rule__WizardAdaptativo__Group_6__45373);
-            rule__WizardAdaptativo__Group_6__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__4"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2716:1: rule__WizardAdaptativo__Group_6__4__Impl : ( ')' ) ;
-    public final void rule__WizardAdaptativo__Group_6__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2720:1: ( ( ')' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2721:1: ( ')' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2721:1: ( ')' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2722:1: ')'
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getRightParenthesisKeyword_6_4()); 
-            match(input,32,FollowSets000.FOLLOW_32_in_rule__WizardAdaptativo__Group_6__4__Impl5401); 
-             after(grammarAccess.getWizardAdaptativoAccess().getRightParenthesisKeyword_6_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6__4__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2745:1: rule__WizardAdaptativo__Group_6_3__0 : rule__WizardAdaptativo__Group_6_3__0__Impl rule__WizardAdaptativo__Group_6_3__1 ;
-    public final void rule__WizardAdaptativo__Group_6_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2749:1: ( rule__WizardAdaptativo__Group_6_3__0__Impl rule__WizardAdaptativo__Group_6_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2750:2: rule__WizardAdaptativo__Group_6_3__0__Impl rule__WizardAdaptativo__Group_6_3__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6_3__0__Impl_in_rule__WizardAdaptativo__Group_6_3__05442);
-            rule__WizardAdaptativo__Group_6_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6_3__1_in_rule__WizardAdaptativo__Group_6_3__05445);
-            rule__WizardAdaptativo__Group_6_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6_3__0"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2757:1: rule__WizardAdaptativo__Group_6_3__0__Impl : ( ',' ) ;
-    public final void rule__WizardAdaptativo__Group_6_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2761:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2762:1: ( ',' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2762:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2763:1: ','
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_6_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__WizardAdaptativo__Group_6_3__0__Impl5473); 
-             after(grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_6_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6_3__0__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2776:1: rule__WizardAdaptativo__Group_6_3__1 : rule__WizardAdaptativo__Group_6_3__1__Impl ;
-    public final void rule__WizardAdaptativo__Group_6_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2780:1: ( rule__WizardAdaptativo__Group_6_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2781:2: rule__WizardAdaptativo__Group_6_3__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_6_3__1__Impl_in_rule__WizardAdaptativo__Group_6_3__15504);
-            rule__WizardAdaptativo__Group_6_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6_3__1"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_6_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2787:1: rule__WizardAdaptativo__Group_6_3__1__Impl : ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1 ) ) ;
-    public final void rule__WizardAdaptativo__Group_6_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2791:1: ( ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2792:1: ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2792:1: ( ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2793:1: ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1 )
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosAssignment_6_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2794:1: ( rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2794:2: rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1_in_rule__WizardAdaptativo__Group_6_3__1__Impl5531);
-            rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosAssignment_6_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_6_3__1__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_10__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2808:1: rule__WizardAdaptativo__Group_10__0 : rule__WizardAdaptativo__Group_10__0__Impl rule__WizardAdaptativo__Group_10__1 ;
-    public final void rule__WizardAdaptativo__Group_10__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2812:1: ( rule__WizardAdaptativo__Group_10__0__Impl rule__WizardAdaptativo__Group_10__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2813:2: rule__WizardAdaptativo__Group_10__0__Impl rule__WizardAdaptativo__Group_10__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_10__0__Impl_in_rule__WizardAdaptativo__Group_10__05565);
-            rule__WizardAdaptativo__Group_10__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_10__1_in_rule__WizardAdaptativo__Group_10__05568);
-            rule__WizardAdaptativo__Group_10__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_10__0"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_10__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2820:1: rule__WizardAdaptativo__Group_10__0__Impl : ( ',' ) ;
-    public final void rule__WizardAdaptativo__Group_10__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2824:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2825:1: ( ',' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2825:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2826:1: ','
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_10_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__WizardAdaptativo__Group_10__0__Impl5596); 
-             after(grammarAccess.getWizardAdaptativoAccess().getCommaKeyword_10_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_10__0__Impl"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_10__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2839:1: rule__WizardAdaptativo__Group_10__1 : rule__WizardAdaptativo__Group_10__1__Impl ;
-    public final void rule__WizardAdaptativo__Group_10__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2843:1: ( rule__WizardAdaptativo__Group_10__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2844:2: rule__WizardAdaptativo__Group_10__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__Group_10__1__Impl_in_rule__WizardAdaptativo__Group_10__15627);
-            rule__WizardAdaptativo__Group_10__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_10__1"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__Group_10__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2850:1: rule__WizardAdaptativo__Group_10__1__Impl : ( ( rule__WizardAdaptativo__EjerciciosAssignment_10_1 ) ) ;
-    public final void rule__WizardAdaptativo__Group_10__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2854:1: ( ( ( rule__WizardAdaptativo__EjerciciosAssignment_10_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2855:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_10_1 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2855:1: ( ( rule__WizardAdaptativo__EjerciciosAssignment_10_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2856:1: ( rule__WizardAdaptativo__EjerciciosAssignment_10_1 )
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_10_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2857:1: ( rule__WizardAdaptativo__EjerciciosAssignment_10_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2857:2: rule__WizardAdaptativo__EjerciciosAssignment_10_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_10_1_in_rule__WizardAdaptativo__Group_10__1__Impl5654);
-            rule__WizardAdaptativo__EjerciciosAssignment_10_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosAssignment_10_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__Group_10__1__Impl"
+    // $ANTLR end "rule__WizardAdaptativo__Group_9__1__Impl"
 
 
     // $ANTLR start "rule__EInt__Group__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2871:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2617:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
     public final void rule__EInt__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2875:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2876:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2621:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2622:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__05688);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__05188);
             rule__EInt__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__05691);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__05191);
             rule__EInt__Group__1();
 
             state._fsp--;
@@ -7370,31 +6707,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__EInt__Group__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2883:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2629:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
     public final void rule__EInt__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2887:1: ( ( ( '-' )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2888:1: ( ( '-' )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2633:1: ( ( ( '-' )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2634:1: ( ( '-' )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2888:1: ( ( '-' )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2889:1: ( '-' )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2634:1: ( ( '-' )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2635:1: ( '-' )?
             {
              before(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2890:1: ( '-' )?
-            int alt15=2;
-            int LA15_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2636:1: ( '-' )?
+            int alt13=2;
+            int LA13_0 = input.LA(1);
 
-            if ( (LA15_0==21) ) {
-                alt15=1;
+            if ( (LA13_0==21) ) {
+                alt13=1;
             }
-            switch (alt15) {
+            switch (alt13) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2891:2: '-'
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2637:2: '-'
                     {
-                    match(input,21,FollowSets000.FOLLOW_21_in_rule__EInt__Group__0__Impl5720); 
+                    match(input,21,FollowSets000.FOLLOW_21_in_rule__EInt__Group__0__Impl5220); 
 
                     }
                     break;
@@ -7424,16 +6761,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__EInt__Group__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2902:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2648:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
     public final void rule__EInt__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2906:1: ( rule__EInt__Group__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2907:2: rule__EInt__Group__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2652:1: ( rule__EInt__Group__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2653:2: rule__EInt__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__15753);
+            pushFollow(FollowSets000.FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__15253);
             rule__EInt__Group__1__Impl();
 
             state._fsp--;
@@ -7457,20 +6794,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__EInt__Group__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2913:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2659:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
     public final void rule__EInt__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2917:1: ( ( RULE_INT ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2918:1: ( RULE_INT )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2663:1: ( ( RULE_INT ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2664:1: ( RULE_INT )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2918:1: ( RULE_INT )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2919:1: RULE_INT
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2664:1: ( RULE_INT )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2665:1: RULE_INT
             {
              before(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
-            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl5780); 
+            match(input,RULE_INT,FollowSets000.FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl5280); 
              after(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
 
             }
@@ -7494,21 +6831,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2934:1: rule__RespuestaUnica__Group__0 : rule__RespuestaUnica__Group__0__Impl rule__RespuestaUnica__Group__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2680:1: rule__RespuestaUnica__Group__0 : rule__RespuestaUnica__Group__0__Impl rule__RespuestaUnica__Group__1 ;
     public final void rule__RespuestaUnica__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2938:1: ( rule__RespuestaUnica__Group__0__Impl rule__RespuestaUnica__Group__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2939:2: rule__RespuestaUnica__Group__0__Impl rule__RespuestaUnica__Group__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2684:1: ( rule__RespuestaUnica__Group__0__Impl rule__RespuestaUnica__Group__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2685:2: rule__RespuestaUnica__Group__0__Impl rule__RespuestaUnica__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__0__Impl_in_rule__RespuestaUnica__Group__05813);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__0__Impl_in_rule__RespuestaUnica__Group__05313);
             rule__RespuestaUnica__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__1_in_rule__RespuestaUnica__Group__05816);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__1_in_rule__RespuestaUnica__Group__05316);
             rule__RespuestaUnica__Group__1();
 
             state._fsp--;
@@ -7532,21 +6869,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2946:1: rule__RespuestaUnica__Group__0__Impl : ( () ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2692:1: rule__RespuestaUnica__Group__0__Impl : ( () ) ;
     public final void rule__RespuestaUnica__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2950:1: ( ( () ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2951:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2696:1: ( ( () ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2697:1: ( () )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2951:1: ( () )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2952:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2697:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2698:1: ()
             {
              before(grammarAccess.getRespuestaUnicaAccess().getRespuestaUnicaAction_0()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2953:1: ()
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2955:1: 
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2699:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2701:1: 
             {
             }
 
@@ -7569,21 +6906,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2965:1: rule__RespuestaUnica__Group__1 : rule__RespuestaUnica__Group__1__Impl rule__RespuestaUnica__Group__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2711:1: rule__RespuestaUnica__Group__1 : rule__RespuestaUnica__Group__1__Impl rule__RespuestaUnica__Group__2 ;
     public final void rule__RespuestaUnica__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2969:1: ( rule__RespuestaUnica__Group__1__Impl rule__RespuestaUnica__Group__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2970:2: rule__RespuestaUnica__Group__1__Impl rule__RespuestaUnica__Group__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2715:1: ( rule__RespuestaUnica__Group__1__Impl rule__RespuestaUnica__Group__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2716:2: rule__RespuestaUnica__Group__1__Impl rule__RespuestaUnica__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__1__Impl_in_rule__RespuestaUnica__Group__15874);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__1__Impl_in_rule__RespuestaUnica__Group__15374);
             rule__RespuestaUnica__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__2_in_rule__RespuestaUnica__Group__15877);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__2_in_rule__RespuestaUnica__Group__15377);
             rule__RespuestaUnica__Group__2();
 
             state._fsp--;
@@ -7607,20 +6944,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2977:1: rule__RespuestaUnica__Group__1__Impl : ( 'RespuestaUnica' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2723:1: rule__RespuestaUnica__Group__1__Impl : ( 'RespuestaUnica' ) ;
     public final void rule__RespuestaUnica__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2981:1: ( ( 'RespuestaUnica' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2982:1: ( 'RespuestaUnica' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2727:1: ( ( 'RespuestaUnica' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2728:1: ( 'RespuestaUnica' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2982:1: ( 'RespuestaUnica' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2983:1: 'RespuestaUnica'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2728:1: ( 'RespuestaUnica' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2729:1: 'RespuestaUnica'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getRespuestaUnicaKeyword_1()); 
-            match(input,33,FollowSets000.FOLLOW_33_in_rule__RespuestaUnica__Group__1__Impl5905); 
+            match(input,30,FollowSets000.FOLLOW_30_in_rule__RespuestaUnica__Group__1__Impl5405); 
              after(grammarAccess.getRespuestaUnicaAccess().getRespuestaUnicaKeyword_1()); 
 
             }
@@ -7644,21 +6981,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2996:1: rule__RespuestaUnica__Group__2 : rule__RespuestaUnica__Group__2__Impl rule__RespuestaUnica__Group__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2742:1: rule__RespuestaUnica__Group__2 : rule__RespuestaUnica__Group__2__Impl rule__RespuestaUnica__Group__3 ;
     public final void rule__RespuestaUnica__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3000:1: ( rule__RespuestaUnica__Group__2__Impl rule__RespuestaUnica__Group__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3001:2: rule__RespuestaUnica__Group__2__Impl rule__RespuestaUnica__Group__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2746:1: ( rule__RespuestaUnica__Group__2__Impl rule__RespuestaUnica__Group__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2747:2: rule__RespuestaUnica__Group__2__Impl rule__RespuestaUnica__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__2__Impl_in_rule__RespuestaUnica__Group__25936);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__2__Impl_in_rule__RespuestaUnica__Group__25436);
             rule__RespuestaUnica__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__3_in_rule__RespuestaUnica__Group__25939);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__3_in_rule__RespuestaUnica__Group__25439);
             rule__RespuestaUnica__Group__3();
 
             state._fsp--;
@@ -7682,20 +7019,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3008:1: rule__RespuestaUnica__Group__2__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2754:1: rule__RespuestaUnica__Group__2__Impl : ( '{' ) ;
     public final void rule__RespuestaUnica__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3012:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3013:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2758:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2759:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3013:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3014:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2759:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2760:1: '{'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaUnica__Group__2__Impl5967); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaUnica__Group__2__Impl5467); 
              after(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -7719,21 +7056,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3027:1: rule__RespuestaUnica__Group__3 : rule__RespuestaUnica__Group__3__Impl rule__RespuestaUnica__Group__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2773:1: rule__RespuestaUnica__Group__3 : rule__RespuestaUnica__Group__3__Impl rule__RespuestaUnica__Group__4 ;
     public final void rule__RespuestaUnica__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3031:1: ( rule__RespuestaUnica__Group__3__Impl rule__RespuestaUnica__Group__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3032:2: rule__RespuestaUnica__Group__3__Impl rule__RespuestaUnica__Group__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2777:1: ( rule__RespuestaUnica__Group__3__Impl rule__RespuestaUnica__Group__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2778:2: rule__RespuestaUnica__Group__3__Impl rule__RespuestaUnica__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__3__Impl_in_rule__RespuestaUnica__Group__35998);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__3__Impl_in_rule__RespuestaUnica__Group__35498);
             rule__RespuestaUnica__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__4_in_rule__RespuestaUnica__Group__36001);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__4_in_rule__RespuestaUnica__Group__35501);
             rule__RespuestaUnica__Group__4();
 
             state._fsp--;
@@ -7757,31 +7094,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3039:1: rule__RespuestaUnica__Group__3__Impl : ( ( rule__RespuestaUnica__Group_3__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2785:1: rule__RespuestaUnica__Group__3__Impl : ( ( rule__RespuestaUnica__Group_3__0 )? ) ;
     public final void rule__RespuestaUnica__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3043:1: ( ( ( rule__RespuestaUnica__Group_3__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3044:1: ( ( rule__RespuestaUnica__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2789:1: ( ( ( rule__RespuestaUnica__Group_3__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2790:1: ( ( rule__RespuestaUnica__Group_3__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3044:1: ( ( rule__RespuestaUnica__Group_3__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3045:1: ( rule__RespuestaUnica__Group_3__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2790:1: ( ( rule__RespuestaUnica__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2791:1: ( rule__RespuestaUnica__Group_3__0 )?
             {
              before(grammarAccess.getRespuestaUnicaAccess().getGroup_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3046:1: ( rule__RespuestaUnica__Group_3__0 )?
-            int alt16=2;
-            int LA16_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2792:1: ( rule__RespuestaUnica__Group_3__0 )?
+            int alt14=2;
+            int LA14_0 = input.LA(1);
 
-            if ( (LA16_0==34) ) {
-                alt16=1;
+            if ( (LA14_0==31) ) {
+                alt14=1;
             }
-            switch (alt16) {
+            switch (alt14) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3046:2: rule__RespuestaUnica__Group_3__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2792:2: rule__RespuestaUnica__Group_3__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__0_in_rule__RespuestaUnica__Group__3__Impl6028);
+                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__0_in_rule__RespuestaUnica__Group__3__Impl5528);
                     rule__RespuestaUnica__Group_3__0();
 
                     state._fsp--;
@@ -7815,21 +7152,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3056:1: rule__RespuestaUnica__Group__4 : rule__RespuestaUnica__Group__4__Impl rule__RespuestaUnica__Group__5 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2802:1: rule__RespuestaUnica__Group__4 : rule__RespuestaUnica__Group__4__Impl rule__RespuestaUnica__Group__5 ;
     public final void rule__RespuestaUnica__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3060:1: ( rule__RespuestaUnica__Group__4__Impl rule__RespuestaUnica__Group__5 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3061:2: rule__RespuestaUnica__Group__4__Impl rule__RespuestaUnica__Group__5
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2806:1: ( rule__RespuestaUnica__Group__4__Impl rule__RespuestaUnica__Group__5 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2807:2: rule__RespuestaUnica__Group__4__Impl rule__RespuestaUnica__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__4__Impl_in_rule__RespuestaUnica__Group__46059);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__4__Impl_in_rule__RespuestaUnica__Group__45559);
             rule__RespuestaUnica__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__5_in_rule__RespuestaUnica__Group__46062);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__5_in_rule__RespuestaUnica__Group__45562);
             rule__RespuestaUnica__Group__5();
 
             state._fsp--;
@@ -7853,31 +7190,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3068:1: rule__RespuestaUnica__Group__4__Impl : ( ( rule__RespuestaUnica__Group_4__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2814:1: rule__RespuestaUnica__Group__4__Impl : ( ( rule__RespuestaUnica__Group_4__0 )? ) ;
     public final void rule__RespuestaUnica__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3072:1: ( ( ( rule__RespuestaUnica__Group_4__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3073:1: ( ( rule__RespuestaUnica__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2818:1: ( ( ( rule__RespuestaUnica__Group_4__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2819:1: ( ( rule__RespuestaUnica__Group_4__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3073:1: ( ( rule__RespuestaUnica__Group_4__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3074:1: ( rule__RespuestaUnica__Group_4__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2819:1: ( ( rule__RespuestaUnica__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2820:1: ( rule__RespuestaUnica__Group_4__0 )?
             {
              before(grammarAccess.getRespuestaUnicaAccess().getGroup_4()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3075:1: ( rule__RespuestaUnica__Group_4__0 )?
-            int alt17=2;
-            int LA17_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2821:1: ( rule__RespuestaUnica__Group_4__0 )?
+            int alt15=2;
+            int LA15_0 = input.LA(1);
 
-            if ( (LA17_0==35) ) {
-                alt17=1;
+            if ( (LA15_0==32) ) {
+                alt15=1;
             }
-            switch (alt17) {
+            switch (alt15) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3075:2: rule__RespuestaUnica__Group_4__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2821:2: rule__RespuestaUnica__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__0_in_rule__RespuestaUnica__Group__4__Impl6089);
+                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__0_in_rule__RespuestaUnica__Group__4__Impl5589);
                     rule__RespuestaUnica__Group_4__0();
 
                     state._fsp--;
@@ -7911,22 +7248,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__5"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3085:1: rule__RespuestaUnica__Group__5 : rule__RespuestaUnica__Group__5__Impl rule__RespuestaUnica__Group__6 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2831:1: rule__RespuestaUnica__Group__5 : rule__RespuestaUnica__Group__5__Impl ;
     public final void rule__RespuestaUnica__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3089:1: ( rule__RespuestaUnica__Group__5__Impl rule__RespuestaUnica__Group__6 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3090:2: rule__RespuestaUnica__Group__5__Impl rule__RespuestaUnica__Group__6
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2835:1: ( rule__RespuestaUnica__Group__5__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2836:2: rule__RespuestaUnica__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__5__Impl_in_rule__RespuestaUnica__Group__56120);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__5__Impl_in_rule__RespuestaUnica__Group__55620);
             rule__RespuestaUnica__Group__5__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__6_in_rule__RespuestaUnica__Group__56123);
-            rule__RespuestaUnica__Group__6();
 
             state._fsp--;
 
@@ -7949,42 +7281,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group__5__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3097:1: rule__RespuestaUnica__Group__5__Impl : ( ( rule__RespuestaUnica__Group_5__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2842:1: rule__RespuestaUnica__Group__5__Impl : ( '}' ) ;
     public final void rule__RespuestaUnica__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3101:1: ( ( ( rule__RespuestaUnica__Group_5__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3102:1: ( ( rule__RespuestaUnica__Group_5__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2846:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2847:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3102:1: ( ( rule__RespuestaUnica__Group_5__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3103:1: ( rule__RespuestaUnica__Group_5__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2847:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2848:1: '}'
             {
-             before(grammarAccess.getRespuestaUnicaAccess().getGroup_5()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3104:1: ( rule__RespuestaUnica__Group_5__0 )?
-            int alt18=2;
-            int LA18_0 = input.LA(1);
-
-            if ( (LA18_0==36) ) {
-                alt18=1;
-            }
-            switch (alt18) {
-                case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3104:2: rule__RespuestaUnica__Group_5__0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__0_in_rule__RespuestaUnica__Group__5__Impl6150);
-                    rule__RespuestaUnica__Group_5__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getRespuestaUnicaAccess().getGroup_5()); 
+             before(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_5()); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaUnica__Group__5__Impl5648); 
+             after(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_5()); 
 
             }
 
@@ -8006,92 +7317,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__RespuestaUnica__Group__5__Impl"
 
 
-    // $ANTLR start "rule__RespuestaUnica__Group__6"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3114:1: rule__RespuestaUnica__Group__6 : rule__RespuestaUnica__Group__6__Impl ;
-    public final void rule__RespuestaUnica__Group__6() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3118:1: ( rule__RespuestaUnica__Group__6__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3119:2: rule__RespuestaUnica__Group__6__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group__6__Impl_in_rule__RespuestaUnica__Group__66181);
-            rule__RespuestaUnica__Group__6__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group__6"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group__6__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3125:1: rule__RespuestaUnica__Group__6__Impl : ( '}' ) ;
-    public final void rule__RespuestaUnica__Group__6__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3129:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3130:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3130:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3131:1: '}'
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaUnica__Group__6__Impl6209); 
-             after(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_6()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group__6__Impl"
-
-
     // $ANTLR start "rule__RespuestaUnica__Group_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3158:1: rule__RespuestaUnica__Group_3__0 : rule__RespuestaUnica__Group_3__0__Impl rule__RespuestaUnica__Group_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2873:1: rule__RespuestaUnica__Group_3__0 : rule__RespuestaUnica__Group_3__0__Impl rule__RespuestaUnica__Group_3__1 ;
     public final void rule__RespuestaUnica__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3162:1: ( rule__RespuestaUnica__Group_3__0__Impl rule__RespuestaUnica__Group_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3163:2: rule__RespuestaUnica__Group_3__0__Impl rule__RespuestaUnica__Group_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2877:1: ( rule__RespuestaUnica__Group_3__0__Impl rule__RespuestaUnica__Group_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2878:2: rule__RespuestaUnica__Group_3__0__Impl rule__RespuestaUnica__Group_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__0__Impl_in_rule__RespuestaUnica__Group_3__06254);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__0__Impl_in_rule__RespuestaUnica__Group_3__05691);
             rule__RespuestaUnica__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__1_in_rule__RespuestaUnica__Group_3__06257);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__1_in_rule__RespuestaUnica__Group_3__05694);
             rule__RespuestaUnica__Group_3__1();
 
             state._fsp--;
@@ -8115,20 +7356,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3170:1: rule__RespuestaUnica__Group_3__0__Impl : ( 'correctas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2885:1: rule__RespuestaUnica__Group_3__0__Impl : ( 'correctas' ) ;
     public final void rule__RespuestaUnica__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3174:1: ( ( 'correctas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3175:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2889:1: ( ( 'correctas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2890:1: ( 'correctas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3175:1: ( 'correctas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3176:1: 'correctas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2890:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2891:1: 'correctas'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getCorrectasKeyword_3_0()); 
-            match(input,34,FollowSets000.FOLLOW_34_in_rule__RespuestaUnica__Group_3__0__Impl6285); 
+            match(input,31,FollowSets000.FOLLOW_31_in_rule__RespuestaUnica__Group_3__0__Impl5722); 
              after(grammarAccess.getRespuestaUnicaAccess().getCorrectasKeyword_3_0()); 
 
             }
@@ -8152,21 +7393,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3189:1: rule__RespuestaUnica__Group_3__1 : rule__RespuestaUnica__Group_3__1__Impl rule__RespuestaUnica__Group_3__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2904:1: rule__RespuestaUnica__Group_3__1 : rule__RespuestaUnica__Group_3__1__Impl rule__RespuestaUnica__Group_3__2 ;
     public final void rule__RespuestaUnica__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3193:1: ( rule__RespuestaUnica__Group_3__1__Impl rule__RespuestaUnica__Group_3__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3194:2: rule__RespuestaUnica__Group_3__1__Impl rule__RespuestaUnica__Group_3__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2908:1: ( rule__RespuestaUnica__Group_3__1__Impl rule__RespuestaUnica__Group_3__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2909:2: rule__RespuestaUnica__Group_3__1__Impl rule__RespuestaUnica__Group_3__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__1__Impl_in_rule__RespuestaUnica__Group_3__16316);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__1__Impl_in_rule__RespuestaUnica__Group_3__15753);
             rule__RespuestaUnica__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__2_in_rule__RespuestaUnica__Group_3__16319);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__2_in_rule__RespuestaUnica__Group_3__15756);
             rule__RespuestaUnica__Group_3__2();
 
             state._fsp--;
@@ -8190,20 +7431,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3201:1: rule__RespuestaUnica__Group_3__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2916:1: rule__RespuestaUnica__Group_3__1__Impl : ( '{' ) ;
     public final void rule__RespuestaUnica__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3205:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3206:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2920:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2921:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3206:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3207:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2921:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2922:1: '{'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_3_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaUnica__Group_3__1__Impl6347); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaUnica__Group_3__1__Impl5784); 
              after(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_3_1()); 
 
             }
@@ -8227,21 +7468,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3220:1: rule__RespuestaUnica__Group_3__2 : rule__RespuestaUnica__Group_3__2__Impl rule__RespuestaUnica__Group_3__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2935:1: rule__RespuestaUnica__Group_3__2 : rule__RespuestaUnica__Group_3__2__Impl rule__RespuestaUnica__Group_3__3 ;
     public final void rule__RespuestaUnica__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3224:1: ( rule__RespuestaUnica__Group_3__2__Impl rule__RespuestaUnica__Group_3__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3225:2: rule__RespuestaUnica__Group_3__2__Impl rule__RespuestaUnica__Group_3__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2939:1: ( rule__RespuestaUnica__Group_3__2__Impl rule__RespuestaUnica__Group_3__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2940:2: rule__RespuestaUnica__Group_3__2__Impl rule__RespuestaUnica__Group_3__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__2__Impl_in_rule__RespuestaUnica__Group_3__26378);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__2__Impl_in_rule__RespuestaUnica__Group_3__25815);
             rule__RespuestaUnica__Group_3__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__3_in_rule__RespuestaUnica__Group_3__26381);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__3_in_rule__RespuestaUnica__Group_3__25818);
             rule__RespuestaUnica__Group_3__3();
 
             state._fsp--;
@@ -8265,23 +7506,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3232:1: rule__RespuestaUnica__Group_3__2__Impl : ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2947:1: rule__RespuestaUnica__Group_3__2__Impl : ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) ) ;
     public final void rule__RespuestaUnica__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3236:1: ( ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3237:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2951:1: ( ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2952:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3237:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3238:1: ( rule__RespuestaUnica__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2952:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2953:1: ( rule__RespuestaUnica__CorrectasAssignment_3_2 )
             {
              before(grammarAccess.getRespuestaUnicaAccess().getCorrectasAssignment_3_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3239:1: ( rule__RespuestaUnica__CorrectasAssignment_3_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3239:2: rule__RespuestaUnica__CorrectasAssignment_3_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2954:1: ( rule__RespuestaUnica__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2954:2: rule__RespuestaUnica__CorrectasAssignment_3_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_2_in_rule__RespuestaUnica__Group_3__2__Impl6408);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_2_in_rule__RespuestaUnica__Group_3__2__Impl5845);
             rule__RespuestaUnica__CorrectasAssignment_3_2();
 
             state._fsp--;
@@ -8312,21 +7553,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3249:1: rule__RespuestaUnica__Group_3__3 : rule__RespuestaUnica__Group_3__3__Impl rule__RespuestaUnica__Group_3__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2964:1: rule__RespuestaUnica__Group_3__3 : rule__RespuestaUnica__Group_3__3__Impl rule__RespuestaUnica__Group_3__4 ;
     public final void rule__RespuestaUnica__Group_3__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3253:1: ( rule__RespuestaUnica__Group_3__3__Impl rule__RespuestaUnica__Group_3__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3254:2: rule__RespuestaUnica__Group_3__3__Impl rule__RespuestaUnica__Group_3__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2968:1: ( rule__RespuestaUnica__Group_3__3__Impl rule__RespuestaUnica__Group_3__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2969:2: rule__RespuestaUnica__Group_3__3__Impl rule__RespuestaUnica__Group_3__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__3__Impl_in_rule__RespuestaUnica__Group_3__36438);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__3__Impl_in_rule__RespuestaUnica__Group_3__35875);
             rule__RespuestaUnica__Group_3__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__4_in_rule__RespuestaUnica__Group_3__36441);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__4_in_rule__RespuestaUnica__Group_3__35878);
             rule__RespuestaUnica__Group_3__4();
 
             state._fsp--;
@@ -8350,35 +7591,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3261:1: rule__RespuestaUnica__Group_3__3__Impl : ( ( rule__RespuestaUnica__Group_3_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2976:1: rule__RespuestaUnica__Group_3__3__Impl : ( ( rule__RespuestaUnica__Group_3_3__0 )* ) ;
     public final void rule__RespuestaUnica__Group_3__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3265:1: ( ( ( rule__RespuestaUnica__Group_3_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3266:1: ( ( rule__RespuestaUnica__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2980:1: ( ( ( rule__RespuestaUnica__Group_3_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2981:1: ( ( rule__RespuestaUnica__Group_3_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3266:1: ( ( rule__RespuestaUnica__Group_3_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3267:1: ( rule__RespuestaUnica__Group_3_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2981:1: ( ( rule__RespuestaUnica__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2982:1: ( rule__RespuestaUnica__Group_3_3__0 )*
             {
              before(grammarAccess.getRespuestaUnicaAccess().getGroup_3_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3268:1: ( rule__RespuestaUnica__Group_3_3__0 )*
-            loop19:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2983:1: ( rule__RespuestaUnica__Group_3_3__0 )*
+            loop16:
             do {
-                int alt19=2;
-                int LA19_0 = input.LA(1);
+                int alt16=2;
+                int LA16_0 = input.LA(1);
 
-                if ( (LA19_0==27) ) {
-                    alt19=1;
+                if ( (LA16_0==27) ) {
+                    alt16=1;
                 }
 
 
-                switch (alt19) {
+                switch (alt16) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3268:2: rule__RespuestaUnica__Group_3_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2983:2: rule__RespuestaUnica__Group_3_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__0_in_rule__RespuestaUnica__Group_3__3__Impl6468);
+            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__0_in_rule__RespuestaUnica__Group_3__3__Impl5905);
             	    rule__RespuestaUnica__Group_3_3__0();
 
             	    state._fsp--;
@@ -8388,7 +7629,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop19;
+            	    break loop16;
                 }
             } while (true);
 
@@ -8415,16 +7656,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3278:1: rule__RespuestaUnica__Group_3__4 : rule__RespuestaUnica__Group_3__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2993:1: rule__RespuestaUnica__Group_3__4 : rule__RespuestaUnica__Group_3__4__Impl ;
     public final void rule__RespuestaUnica__Group_3__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3282:1: ( rule__RespuestaUnica__Group_3__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3283:2: rule__RespuestaUnica__Group_3__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2997:1: ( rule__RespuestaUnica__Group_3__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:2998:2: rule__RespuestaUnica__Group_3__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__4__Impl_in_rule__RespuestaUnica__Group_3__46499);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3__4__Impl_in_rule__RespuestaUnica__Group_3__45936);
             rule__RespuestaUnica__Group_3__4__Impl();
 
             state._fsp--;
@@ -8448,20 +7689,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3289:1: rule__RespuestaUnica__Group_3__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3004:1: rule__RespuestaUnica__Group_3__4__Impl : ( '}' ) ;
     public final void rule__RespuestaUnica__Group_3__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3293:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3294:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3008:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3009:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3294:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3295:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3009:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3010:1: '}'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_3_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaUnica__Group_3__4__Impl6527); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaUnica__Group_3__4__Impl5964); 
              after(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_3_4()); 
 
             }
@@ -8485,21 +7726,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3318:1: rule__RespuestaUnica__Group_3_3__0 : rule__RespuestaUnica__Group_3_3__0__Impl rule__RespuestaUnica__Group_3_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3033:1: rule__RespuestaUnica__Group_3_3__0 : rule__RespuestaUnica__Group_3_3__0__Impl rule__RespuestaUnica__Group_3_3__1 ;
     public final void rule__RespuestaUnica__Group_3_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3322:1: ( rule__RespuestaUnica__Group_3_3__0__Impl rule__RespuestaUnica__Group_3_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3323:2: rule__RespuestaUnica__Group_3_3__0__Impl rule__RespuestaUnica__Group_3_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3037:1: ( rule__RespuestaUnica__Group_3_3__0__Impl rule__RespuestaUnica__Group_3_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3038:2: rule__RespuestaUnica__Group_3_3__0__Impl rule__RespuestaUnica__Group_3_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__0__Impl_in_rule__RespuestaUnica__Group_3_3__06568);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__0__Impl_in_rule__RespuestaUnica__Group_3_3__06005);
             rule__RespuestaUnica__Group_3_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__1_in_rule__RespuestaUnica__Group_3_3__06571);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__1_in_rule__RespuestaUnica__Group_3_3__06008);
             rule__RespuestaUnica__Group_3_3__1();
 
             state._fsp--;
@@ -8523,20 +7764,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3330:1: rule__RespuestaUnica__Group_3_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3045:1: rule__RespuestaUnica__Group_3_3__0__Impl : ( ',' ) ;
     public final void rule__RespuestaUnica__Group_3_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3334:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3335:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3049:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3050:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3335:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3336:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3050:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3051:1: ','
             {
              before(grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_3_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaUnica__Group_3_3__0__Impl6599); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaUnica__Group_3_3__0__Impl6036); 
              after(grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_3_3_0()); 
 
             }
@@ -8560,16 +7801,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3349:1: rule__RespuestaUnica__Group_3_3__1 : rule__RespuestaUnica__Group_3_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3064:1: rule__RespuestaUnica__Group_3_3__1 : rule__RespuestaUnica__Group_3_3__1__Impl ;
     public final void rule__RespuestaUnica__Group_3_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3353:1: ( rule__RespuestaUnica__Group_3_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3354:2: rule__RespuestaUnica__Group_3_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3068:1: ( rule__RespuestaUnica__Group_3_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3069:2: rule__RespuestaUnica__Group_3_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__1__Impl_in_rule__RespuestaUnica__Group_3_3__16630);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_3_3__1__Impl_in_rule__RespuestaUnica__Group_3_3__16067);
             rule__RespuestaUnica__Group_3_3__1__Impl();
 
             state._fsp--;
@@ -8593,23 +7834,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_3_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3360:1: rule__RespuestaUnica__Group_3_3__1__Impl : ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3075:1: rule__RespuestaUnica__Group_3_3__1__Impl : ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) ) ;
     public final void rule__RespuestaUnica__Group_3_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3364:1: ( ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3365:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3079:1: ( ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3080:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3365:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3366:1: ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3080:1: ( ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3081:1: ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 )
             {
              before(grammarAccess.getRespuestaUnicaAccess().getCorrectasAssignment_3_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3367:1: ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3367:2: rule__RespuestaUnica__CorrectasAssignment_3_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3082:1: ( rule__RespuestaUnica__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3082:2: rule__RespuestaUnica__CorrectasAssignment_3_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_3_1_in_rule__RespuestaUnica__Group_3_3__1__Impl6657);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_3_1_in_rule__RespuestaUnica__Group_3_3__1__Impl6094);
             rule__RespuestaUnica__CorrectasAssignment_3_3_1();
 
             state._fsp--;
@@ -8640,21 +7881,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3381:1: rule__RespuestaUnica__Group_4__0 : rule__RespuestaUnica__Group_4__0__Impl rule__RespuestaUnica__Group_4__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3096:1: rule__RespuestaUnica__Group_4__0 : rule__RespuestaUnica__Group_4__0__Impl rule__RespuestaUnica__Group_4__1 ;
     public final void rule__RespuestaUnica__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3385:1: ( rule__RespuestaUnica__Group_4__0__Impl rule__RespuestaUnica__Group_4__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3386:2: rule__RespuestaUnica__Group_4__0__Impl rule__RespuestaUnica__Group_4__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3100:1: ( rule__RespuestaUnica__Group_4__0__Impl rule__RespuestaUnica__Group_4__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3101:2: rule__RespuestaUnica__Group_4__0__Impl rule__RespuestaUnica__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__0__Impl_in_rule__RespuestaUnica__Group_4__06691);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__0__Impl_in_rule__RespuestaUnica__Group_4__06128);
             rule__RespuestaUnica__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__1_in_rule__RespuestaUnica__Group_4__06694);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__1_in_rule__RespuestaUnica__Group_4__06131);
             rule__RespuestaUnica__Group_4__1();
 
             state._fsp--;
@@ -8678,20 +7919,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3393:1: rule__RespuestaUnica__Group_4__0__Impl : ( 'alternativas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3108:1: rule__RespuestaUnica__Group_4__0__Impl : ( 'alternativas' ) ;
     public final void rule__RespuestaUnica__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3397:1: ( ( 'alternativas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3398:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3112:1: ( ( 'alternativas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3113:1: ( 'alternativas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3398:1: ( 'alternativas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3399:1: 'alternativas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3113:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3114:1: 'alternativas'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getAlternativasKeyword_4_0()); 
-            match(input,35,FollowSets000.FOLLOW_35_in_rule__RespuestaUnica__Group_4__0__Impl6722); 
+            match(input,32,FollowSets000.FOLLOW_32_in_rule__RespuestaUnica__Group_4__0__Impl6159); 
              after(grammarAccess.getRespuestaUnicaAccess().getAlternativasKeyword_4_0()); 
 
             }
@@ -8715,21 +7956,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3412:1: rule__RespuestaUnica__Group_4__1 : rule__RespuestaUnica__Group_4__1__Impl rule__RespuestaUnica__Group_4__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3127:1: rule__RespuestaUnica__Group_4__1 : rule__RespuestaUnica__Group_4__1__Impl rule__RespuestaUnica__Group_4__2 ;
     public final void rule__RespuestaUnica__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3416:1: ( rule__RespuestaUnica__Group_4__1__Impl rule__RespuestaUnica__Group_4__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3417:2: rule__RespuestaUnica__Group_4__1__Impl rule__RespuestaUnica__Group_4__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3131:1: ( rule__RespuestaUnica__Group_4__1__Impl rule__RespuestaUnica__Group_4__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3132:2: rule__RespuestaUnica__Group_4__1__Impl rule__RespuestaUnica__Group_4__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__1__Impl_in_rule__RespuestaUnica__Group_4__16753);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__1__Impl_in_rule__RespuestaUnica__Group_4__16190);
             rule__RespuestaUnica__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__2_in_rule__RespuestaUnica__Group_4__16756);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__2_in_rule__RespuestaUnica__Group_4__16193);
             rule__RespuestaUnica__Group_4__2();
 
             state._fsp--;
@@ -8753,20 +7994,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3424:1: rule__RespuestaUnica__Group_4__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3139:1: rule__RespuestaUnica__Group_4__1__Impl : ( '{' ) ;
     public final void rule__RespuestaUnica__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3428:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3429:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3143:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3144:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3429:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3430:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3144:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3145:1: '{'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_4_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaUnica__Group_4__1__Impl6784); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaUnica__Group_4__1__Impl6221); 
              after(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_4_1()); 
 
             }
@@ -8790,21 +8031,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3443:1: rule__RespuestaUnica__Group_4__2 : rule__RespuestaUnica__Group_4__2__Impl rule__RespuestaUnica__Group_4__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3158:1: rule__RespuestaUnica__Group_4__2 : rule__RespuestaUnica__Group_4__2__Impl rule__RespuestaUnica__Group_4__3 ;
     public final void rule__RespuestaUnica__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3447:1: ( rule__RespuestaUnica__Group_4__2__Impl rule__RespuestaUnica__Group_4__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3448:2: rule__RespuestaUnica__Group_4__2__Impl rule__RespuestaUnica__Group_4__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3162:1: ( rule__RespuestaUnica__Group_4__2__Impl rule__RespuestaUnica__Group_4__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3163:2: rule__RespuestaUnica__Group_4__2__Impl rule__RespuestaUnica__Group_4__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__2__Impl_in_rule__RespuestaUnica__Group_4__26815);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__2__Impl_in_rule__RespuestaUnica__Group_4__26252);
             rule__RespuestaUnica__Group_4__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__3_in_rule__RespuestaUnica__Group_4__26818);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__3_in_rule__RespuestaUnica__Group_4__26255);
             rule__RespuestaUnica__Group_4__3();
 
             state._fsp--;
@@ -8828,23 +8069,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3455:1: rule__RespuestaUnica__Group_4__2__Impl : ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3170:1: rule__RespuestaUnica__Group_4__2__Impl : ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) ) ;
     public final void rule__RespuestaUnica__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3459:1: ( ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3460:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3174:1: ( ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3175:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3460:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3461:1: ( rule__RespuestaUnica__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3175:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3176:1: ( rule__RespuestaUnica__AlternativasAssignment_4_2 )
             {
              before(grammarAccess.getRespuestaUnicaAccess().getAlternativasAssignment_4_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3462:1: ( rule__RespuestaUnica__AlternativasAssignment_4_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3462:2: rule__RespuestaUnica__AlternativasAssignment_4_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3177:1: ( rule__RespuestaUnica__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3177:2: rule__RespuestaUnica__AlternativasAssignment_4_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_2_in_rule__RespuestaUnica__Group_4__2__Impl6845);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_2_in_rule__RespuestaUnica__Group_4__2__Impl6282);
             rule__RespuestaUnica__AlternativasAssignment_4_2();
 
             state._fsp--;
@@ -8875,21 +8116,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3472:1: rule__RespuestaUnica__Group_4__3 : rule__RespuestaUnica__Group_4__3__Impl rule__RespuestaUnica__Group_4__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3187:1: rule__RespuestaUnica__Group_4__3 : rule__RespuestaUnica__Group_4__3__Impl rule__RespuestaUnica__Group_4__4 ;
     public final void rule__RespuestaUnica__Group_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3476:1: ( rule__RespuestaUnica__Group_4__3__Impl rule__RespuestaUnica__Group_4__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3477:2: rule__RespuestaUnica__Group_4__3__Impl rule__RespuestaUnica__Group_4__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3191:1: ( rule__RespuestaUnica__Group_4__3__Impl rule__RespuestaUnica__Group_4__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3192:2: rule__RespuestaUnica__Group_4__3__Impl rule__RespuestaUnica__Group_4__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__3__Impl_in_rule__RespuestaUnica__Group_4__36875);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__3__Impl_in_rule__RespuestaUnica__Group_4__36312);
             rule__RespuestaUnica__Group_4__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__4_in_rule__RespuestaUnica__Group_4__36878);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__4_in_rule__RespuestaUnica__Group_4__36315);
             rule__RespuestaUnica__Group_4__4();
 
             state._fsp--;
@@ -8913,35 +8154,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3484:1: rule__RespuestaUnica__Group_4__3__Impl : ( ( rule__RespuestaUnica__Group_4_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3199:1: rule__RespuestaUnica__Group_4__3__Impl : ( ( rule__RespuestaUnica__Group_4_3__0 )* ) ;
     public final void rule__RespuestaUnica__Group_4__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3488:1: ( ( ( rule__RespuestaUnica__Group_4_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3489:1: ( ( rule__RespuestaUnica__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3203:1: ( ( ( rule__RespuestaUnica__Group_4_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3204:1: ( ( rule__RespuestaUnica__Group_4_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3489:1: ( ( rule__RespuestaUnica__Group_4_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3490:1: ( rule__RespuestaUnica__Group_4_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3204:1: ( ( rule__RespuestaUnica__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3205:1: ( rule__RespuestaUnica__Group_4_3__0 )*
             {
              before(grammarAccess.getRespuestaUnicaAccess().getGroup_4_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3491:1: ( rule__RespuestaUnica__Group_4_3__0 )*
-            loop20:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3206:1: ( rule__RespuestaUnica__Group_4_3__0 )*
+            loop17:
             do {
-                int alt20=2;
-                int LA20_0 = input.LA(1);
+                int alt17=2;
+                int LA17_0 = input.LA(1);
 
-                if ( (LA20_0==27) ) {
-                    alt20=1;
+                if ( (LA17_0==27) ) {
+                    alt17=1;
                 }
 
 
-                switch (alt20) {
+                switch (alt17) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3491:2: rule__RespuestaUnica__Group_4_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3206:2: rule__RespuestaUnica__Group_4_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__0_in_rule__RespuestaUnica__Group_4__3__Impl6905);
+            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__0_in_rule__RespuestaUnica__Group_4__3__Impl6342);
             	    rule__RespuestaUnica__Group_4_3__0();
 
             	    state._fsp--;
@@ -8951,7 +8192,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop20;
+            	    break loop17;
                 }
             } while (true);
 
@@ -8978,16 +8219,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3501:1: rule__RespuestaUnica__Group_4__4 : rule__RespuestaUnica__Group_4__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3216:1: rule__RespuestaUnica__Group_4__4 : rule__RespuestaUnica__Group_4__4__Impl ;
     public final void rule__RespuestaUnica__Group_4__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3505:1: ( rule__RespuestaUnica__Group_4__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3506:2: rule__RespuestaUnica__Group_4__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3220:1: ( rule__RespuestaUnica__Group_4__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3221:2: rule__RespuestaUnica__Group_4__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__4__Impl_in_rule__RespuestaUnica__Group_4__46936);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4__4__Impl_in_rule__RespuestaUnica__Group_4__46373);
             rule__RespuestaUnica__Group_4__4__Impl();
 
             state._fsp--;
@@ -9011,20 +8252,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3512:1: rule__RespuestaUnica__Group_4__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3227:1: rule__RespuestaUnica__Group_4__4__Impl : ( '}' ) ;
     public final void rule__RespuestaUnica__Group_4__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3516:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3517:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3231:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3232:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3517:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3518:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3232:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3233:1: '}'
             {
              before(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_4_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaUnica__Group_4__4__Impl6964); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaUnica__Group_4__4__Impl6401); 
              after(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_4_4()); 
 
             }
@@ -9048,21 +8289,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3541:1: rule__RespuestaUnica__Group_4_3__0 : rule__RespuestaUnica__Group_4_3__0__Impl rule__RespuestaUnica__Group_4_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3256:1: rule__RespuestaUnica__Group_4_3__0 : rule__RespuestaUnica__Group_4_3__0__Impl rule__RespuestaUnica__Group_4_3__1 ;
     public final void rule__RespuestaUnica__Group_4_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3545:1: ( rule__RespuestaUnica__Group_4_3__0__Impl rule__RespuestaUnica__Group_4_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3546:2: rule__RespuestaUnica__Group_4_3__0__Impl rule__RespuestaUnica__Group_4_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3260:1: ( rule__RespuestaUnica__Group_4_3__0__Impl rule__RespuestaUnica__Group_4_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3261:2: rule__RespuestaUnica__Group_4_3__0__Impl rule__RespuestaUnica__Group_4_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__0__Impl_in_rule__RespuestaUnica__Group_4_3__07005);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__0__Impl_in_rule__RespuestaUnica__Group_4_3__06442);
             rule__RespuestaUnica__Group_4_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__1_in_rule__RespuestaUnica__Group_4_3__07008);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__1_in_rule__RespuestaUnica__Group_4_3__06445);
             rule__RespuestaUnica__Group_4_3__1();
 
             state._fsp--;
@@ -9086,20 +8327,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3553:1: rule__RespuestaUnica__Group_4_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3268:1: rule__RespuestaUnica__Group_4_3__0__Impl : ( ',' ) ;
     public final void rule__RespuestaUnica__Group_4_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3557:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3558:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3272:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3273:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3558:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3559:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3273:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3274:1: ','
             {
              before(grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_4_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaUnica__Group_4_3__0__Impl7036); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaUnica__Group_4_3__0__Impl6473); 
              after(grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_4_3_0()); 
 
             }
@@ -9123,16 +8364,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3572:1: rule__RespuestaUnica__Group_4_3__1 : rule__RespuestaUnica__Group_4_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3287:1: rule__RespuestaUnica__Group_4_3__1 : rule__RespuestaUnica__Group_4_3__1__Impl ;
     public final void rule__RespuestaUnica__Group_4_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3576:1: ( rule__RespuestaUnica__Group_4_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3577:2: rule__RespuestaUnica__Group_4_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3291:1: ( rule__RespuestaUnica__Group_4_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3292:2: rule__RespuestaUnica__Group_4_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__1__Impl_in_rule__RespuestaUnica__Group_4_3__17067);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_4_3__1__Impl_in_rule__RespuestaUnica__Group_4_3__16504);
             rule__RespuestaUnica__Group_4_3__1__Impl();
 
             state._fsp--;
@@ -9156,23 +8397,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__Group_4_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3583:1: rule__RespuestaUnica__Group_4_3__1__Impl : ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3298:1: rule__RespuestaUnica__Group_4_3__1__Impl : ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) ) ;
     public final void rule__RespuestaUnica__Group_4_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3587:1: ( ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3588:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3302:1: ( ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3303:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3588:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3589:1: ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3303:1: ( ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3304:1: ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 )
             {
              before(grammarAccess.getRespuestaUnicaAccess().getAlternativasAssignment_4_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3590:1: ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3590:2: rule__RespuestaUnica__AlternativasAssignment_4_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3305:1: ( rule__RespuestaUnica__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3305:2: rule__RespuestaUnica__AlternativasAssignment_4_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_3_1_in_rule__RespuestaUnica__Group_4_3__1__Impl7094);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_3_1_in_rule__RespuestaUnica__Group_4_3__1__Impl6531);
             rule__RespuestaUnica__AlternativasAssignment_4_3_1();
 
             state._fsp--;
@@ -9202,585 +8443,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__RespuestaUnica__Group_4_3__1__Impl"
 
 
-    // $ANTLR start "rule__RespuestaUnica__Group_5__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3604:1: rule__RespuestaUnica__Group_5__0 : rule__RespuestaUnica__Group_5__0__Impl rule__RespuestaUnica__Group_5__1 ;
-    public final void rule__RespuestaUnica__Group_5__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3608:1: ( rule__RespuestaUnica__Group_5__0__Impl rule__RespuestaUnica__Group_5__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3609:2: rule__RespuestaUnica__Group_5__0__Impl rule__RespuestaUnica__Group_5__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__0__Impl_in_rule__RespuestaUnica__Group_5__07128);
-            rule__RespuestaUnica__Group_5__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__1_in_rule__RespuestaUnica__Group_5__07131);
-            rule__RespuestaUnica__Group_5__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__0"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3616:1: rule__RespuestaUnica__Group_5__0__Impl : ( 'seleccionadas' ) ;
-    public final void rule__RespuestaUnica__Group_5__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3620:1: ( ( 'seleccionadas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3621:1: ( 'seleccionadas' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3621:1: ( 'seleccionadas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3622:1: 'seleccionadas'
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasKeyword_5_0()); 
-            match(input,36,FollowSets000.FOLLOW_36_in_rule__RespuestaUnica__Group_5__0__Impl7159); 
-             after(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasKeyword_5_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__0__Impl"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3635:1: rule__RespuestaUnica__Group_5__1 : rule__RespuestaUnica__Group_5__1__Impl rule__RespuestaUnica__Group_5__2 ;
-    public final void rule__RespuestaUnica__Group_5__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3639:1: ( rule__RespuestaUnica__Group_5__1__Impl rule__RespuestaUnica__Group_5__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3640:2: rule__RespuestaUnica__Group_5__1__Impl rule__RespuestaUnica__Group_5__2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__1__Impl_in_rule__RespuestaUnica__Group_5__17190);
-            rule__RespuestaUnica__Group_5__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__2_in_rule__RespuestaUnica__Group_5__17193);
-            rule__RespuestaUnica__Group_5__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__1"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3647:1: rule__RespuestaUnica__Group_5__1__Impl : ( '{' ) ;
-    public final void rule__RespuestaUnica__Group_5__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3651:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3652:1: ( '{' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3652:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3653:1: '{'
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_5_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaUnica__Group_5__1__Impl7221); 
-             after(grammarAccess.getRespuestaUnicaAccess().getLeftCurlyBracketKeyword_5_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__1__Impl"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3666:1: rule__RespuestaUnica__Group_5__2 : rule__RespuestaUnica__Group_5__2__Impl rule__RespuestaUnica__Group_5__3 ;
-    public final void rule__RespuestaUnica__Group_5__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3670:1: ( rule__RespuestaUnica__Group_5__2__Impl rule__RespuestaUnica__Group_5__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3671:2: rule__RespuestaUnica__Group_5__2__Impl rule__RespuestaUnica__Group_5__3
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__2__Impl_in_rule__RespuestaUnica__Group_5__27252);
-            rule__RespuestaUnica__Group_5__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__3_in_rule__RespuestaUnica__Group_5__27255);
-            rule__RespuestaUnica__Group_5__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__2"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3678:1: rule__RespuestaUnica__Group_5__2__Impl : ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_2 ) ) ;
-    public final void rule__RespuestaUnica__Group_5__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3682:1: ( ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3683:1: ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_2 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3683:1: ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3684:1: ( rule__RespuestaUnica__SeleccionadasAssignment_5_2 )
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasAssignment_5_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3685:1: ( rule__RespuestaUnica__SeleccionadasAssignment_5_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3685:2: rule__RespuestaUnica__SeleccionadasAssignment_5_2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__SeleccionadasAssignment_5_2_in_rule__RespuestaUnica__Group_5__2__Impl7282);
-            rule__RespuestaUnica__SeleccionadasAssignment_5_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasAssignment_5_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__2__Impl"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3695:1: rule__RespuestaUnica__Group_5__3 : rule__RespuestaUnica__Group_5__3__Impl rule__RespuestaUnica__Group_5__4 ;
-    public final void rule__RespuestaUnica__Group_5__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3699:1: ( rule__RespuestaUnica__Group_5__3__Impl rule__RespuestaUnica__Group_5__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3700:2: rule__RespuestaUnica__Group_5__3__Impl rule__RespuestaUnica__Group_5__4
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__3__Impl_in_rule__RespuestaUnica__Group_5__37312);
-            rule__RespuestaUnica__Group_5__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__4_in_rule__RespuestaUnica__Group_5__37315);
-            rule__RespuestaUnica__Group_5__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__3"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3707:1: rule__RespuestaUnica__Group_5__3__Impl : ( ( rule__RespuestaUnica__Group_5_3__0 )* ) ;
-    public final void rule__RespuestaUnica__Group_5__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3711:1: ( ( ( rule__RespuestaUnica__Group_5_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3712:1: ( ( rule__RespuestaUnica__Group_5_3__0 )* )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3712:1: ( ( rule__RespuestaUnica__Group_5_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3713:1: ( rule__RespuestaUnica__Group_5_3__0 )*
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getGroup_5_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3714:1: ( rule__RespuestaUnica__Group_5_3__0 )*
-            loop21:
-            do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
-
-                if ( (LA21_0==27) ) {
-                    alt21=1;
-                }
-
-
-                switch (alt21) {
-            	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3714:2: rule__RespuestaUnica__Group_5_3__0
-            	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5_3__0_in_rule__RespuestaUnica__Group_5__3__Impl7342);
-            	    rule__RespuestaUnica__Group_5_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop21;
-                }
-            } while (true);
-
-             after(grammarAccess.getRespuestaUnicaAccess().getGroup_5_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__3__Impl"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3724:1: rule__RespuestaUnica__Group_5__4 : rule__RespuestaUnica__Group_5__4__Impl ;
-    public final void rule__RespuestaUnica__Group_5__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3728:1: ( rule__RespuestaUnica__Group_5__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3729:2: rule__RespuestaUnica__Group_5__4__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5__4__Impl_in_rule__RespuestaUnica__Group_5__47373);
-            rule__RespuestaUnica__Group_5__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__4"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3735:1: rule__RespuestaUnica__Group_5__4__Impl : ( '}' ) ;
-    public final void rule__RespuestaUnica__Group_5__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3739:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3740:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3740:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3741:1: '}'
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_5_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaUnica__Group_5__4__Impl7401); 
-             after(grammarAccess.getRespuestaUnicaAccess().getRightCurlyBracketKeyword_5_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5__4__Impl"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3764:1: rule__RespuestaUnica__Group_5_3__0 : rule__RespuestaUnica__Group_5_3__0__Impl rule__RespuestaUnica__Group_5_3__1 ;
-    public final void rule__RespuestaUnica__Group_5_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3768:1: ( rule__RespuestaUnica__Group_5_3__0__Impl rule__RespuestaUnica__Group_5_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3769:2: rule__RespuestaUnica__Group_5_3__0__Impl rule__RespuestaUnica__Group_5_3__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5_3__0__Impl_in_rule__RespuestaUnica__Group_5_3__07442);
-            rule__RespuestaUnica__Group_5_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5_3__1_in_rule__RespuestaUnica__Group_5_3__07445);
-            rule__RespuestaUnica__Group_5_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5_3__0"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3776:1: rule__RespuestaUnica__Group_5_3__0__Impl : ( ',' ) ;
-    public final void rule__RespuestaUnica__Group_5_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3780:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3781:1: ( ',' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3781:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3782:1: ','
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_5_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaUnica__Group_5_3__0__Impl7473); 
-             after(grammarAccess.getRespuestaUnicaAccess().getCommaKeyword_5_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5_3__0__Impl"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3795:1: rule__RespuestaUnica__Group_5_3__1 : rule__RespuestaUnica__Group_5_3__1__Impl ;
-    public final void rule__RespuestaUnica__Group_5_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3799:1: ( rule__RespuestaUnica__Group_5_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3800:2: rule__RespuestaUnica__Group_5_3__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__Group_5_3__1__Impl_in_rule__RespuestaUnica__Group_5_3__17504);
-            rule__RespuestaUnica__Group_5_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5_3__1"
-
-
-    // $ANTLR start "rule__RespuestaUnica__Group_5_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3806:1: rule__RespuestaUnica__Group_5_3__1__Impl : ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_3_1 ) ) ;
-    public final void rule__RespuestaUnica__Group_5_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3810:1: ( ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3811:1: ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_3_1 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3811:1: ( ( rule__RespuestaUnica__SeleccionadasAssignment_5_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3812:1: ( rule__RespuestaUnica__SeleccionadasAssignment_5_3_1 )
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasAssignment_5_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3813:1: ( rule__RespuestaUnica__SeleccionadasAssignment_5_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3813:2: rule__RespuestaUnica__SeleccionadasAssignment_5_3_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaUnica__SeleccionadasAssignment_5_3_1_in_rule__RespuestaUnica__Group_5_3__1__Impl7531);
-            rule__RespuestaUnica__SeleccionadasAssignment_5_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasAssignment_5_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__Group_5_3__1__Impl"
-
-
     // $ANTLR start "rule__RespuestaMultiple__Group__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3827:1: rule__RespuestaMultiple__Group__0 : rule__RespuestaMultiple__Group__0__Impl rule__RespuestaMultiple__Group__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3319:1: rule__RespuestaMultiple__Group__0 : rule__RespuestaMultiple__Group__0__Impl rule__RespuestaMultiple__Group__1 ;
     public final void rule__RespuestaMultiple__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3831:1: ( rule__RespuestaMultiple__Group__0__Impl rule__RespuestaMultiple__Group__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3832:2: rule__RespuestaMultiple__Group__0__Impl rule__RespuestaMultiple__Group__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3323:1: ( rule__RespuestaMultiple__Group__0__Impl rule__RespuestaMultiple__Group__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3324:2: rule__RespuestaMultiple__Group__0__Impl rule__RespuestaMultiple__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__0__Impl_in_rule__RespuestaMultiple__Group__07565);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__0__Impl_in_rule__RespuestaMultiple__Group__06565);
             rule__RespuestaMultiple__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__1_in_rule__RespuestaMultiple__Group__07568);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__1_in_rule__RespuestaMultiple__Group__06568);
             rule__RespuestaMultiple__Group__1();
 
             state._fsp--;
@@ -9804,21 +8482,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3839:1: rule__RespuestaMultiple__Group__0__Impl : ( () ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3331:1: rule__RespuestaMultiple__Group__0__Impl : ( () ) ;
     public final void rule__RespuestaMultiple__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3843:1: ( ( () ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3844:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3335:1: ( ( () ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3336:1: ( () )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3844:1: ( () )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3845:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3336:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3337:1: ()
             {
              before(grammarAccess.getRespuestaMultipleAccess().getRespuestaMultipleAction_0()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3846:1: ()
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3848:1: 
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3338:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3340:1: 
             {
             }
 
@@ -9841,21 +8519,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3858:1: rule__RespuestaMultiple__Group__1 : rule__RespuestaMultiple__Group__1__Impl rule__RespuestaMultiple__Group__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3350:1: rule__RespuestaMultiple__Group__1 : rule__RespuestaMultiple__Group__1__Impl rule__RespuestaMultiple__Group__2 ;
     public final void rule__RespuestaMultiple__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3862:1: ( rule__RespuestaMultiple__Group__1__Impl rule__RespuestaMultiple__Group__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3863:2: rule__RespuestaMultiple__Group__1__Impl rule__RespuestaMultiple__Group__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3354:1: ( rule__RespuestaMultiple__Group__1__Impl rule__RespuestaMultiple__Group__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3355:2: rule__RespuestaMultiple__Group__1__Impl rule__RespuestaMultiple__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__1__Impl_in_rule__RespuestaMultiple__Group__17626);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__1__Impl_in_rule__RespuestaMultiple__Group__16626);
             rule__RespuestaMultiple__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__2_in_rule__RespuestaMultiple__Group__17629);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__2_in_rule__RespuestaMultiple__Group__16629);
             rule__RespuestaMultiple__Group__2();
 
             state._fsp--;
@@ -9879,20 +8557,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3870:1: rule__RespuestaMultiple__Group__1__Impl : ( 'RespuestaMultiple' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3362:1: rule__RespuestaMultiple__Group__1__Impl : ( 'RespuestaMultiple' ) ;
     public final void rule__RespuestaMultiple__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3874:1: ( ( 'RespuestaMultiple' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3875:1: ( 'RespuestaMultiple' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3366:1: ( ( 'RespuestaMultiple' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3367:1: ( 'RespuestaMultiple' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3875:1: ( 'RespuestaMultiple' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3876:1: 'RespuestaMultiple'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3367:1: ( 'RespuestaMultiple' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3368:1: 'RespuestaMultiple'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getRespuestaMultipleKeyword_1()); 
-            match(input,37,FollowSets000.FOLLOW_37_in_rule__RespuestaMultiple__Group__1__Impl7657); 
+            match(input,33,FollowSets000.FOLLOW_33_in_rule__RespuestaMultiple__Group__1__Impl6657); 
              after(grammarAccess.getRespuestaMultipleAccess().getRespuestaMultipleKeyword_1()); 
 
             }
@@ -9916,21 +8594,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3889:1: rule__RespuestaMultiple__Group__2 : rule__RespuestaMultiple__Group__2__Impl rule__RespuestaMultiple__Group__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3381:1: rule__RespuestaMultiple__Group__2 : rule__RespuestaMultiple__Group__2__Impl rule__RespuestaMultiple__Group__3 ;
     public final void rule__RespuestaMultiple__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3893:1: ( rule__RespuestaMultiple__Group__2__Impl rule__RespuestaMultiple__Group__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3894:2: rule__RespuestaMultiple__Group__2__Impl rule__RespuestaMultiple__Group__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3385:1: ( rule__RespuestaMultiple__Group__2__Impl rule__RespuestaMultiple__Group__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3386:2: rule__RespuestaMultiple__Group__2__Impl rule__RespuestaMultiple__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__2__Impl_in_rule__RespuestaMultiple__Group__27688);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__2__Impl_in_rule__RespuestaMultiple__Group__26688);
             rule__RespuestaMultiple__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__3_in_rule__RespuestaMultiple__Group__27691);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__3_in_rule__RespuestaMultiple__Group__26691);
             rule__RespuestaMultiple__Group__3();
 
             state._fsp--;
@@ -9954,20 +8632,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3901:1: rule__RespuestaMultiple__Group__2__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3393:1: rule__RespuestaMultiple__Group__2__Impl : ( '{' ) ;
     public final void rule__RespuestaMultiple__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3905:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3906:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3397:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3398:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3906:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3907:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3398:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3399:1: '{'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaMultiple__Group__2__Impl7719); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaMultiple__Group__2__Impl6719); 
              after(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -9991,21 +8669,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3920:1: rule__RespuestaMultiple__Group__3 : rule__RespuestaMultiple__Group__3__Impl rule__RespuestaMultiple__Group__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3412:1: rule__RespuestaMultiple__Group__3 : rule__RespuestaMultiple__Group__3__Impl rule__RespuestaMultiple__Group__4 ;
     public final void rule__RespuestaMultiple__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3924:1: ( rule__RespuestaMultiple__Group__3__Impl rule__RespuestaMultiple__Group__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3925:2: rule__RespuestaMultiple__Group__3__Impl rule__RespuestaMultiple__Group__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3416:1: ( rule__RespuestaMultiple__Group__3__Impl rule__RespuestaMultiple__Group__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3417:2: rule__RespuestaMultiple__Group__3__Impl rule__RespuestaMultiple__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__3__Impl_in_rule__RespuestaMultiple__Group__37750);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__3__Impl_in_rule__RespuestaMultiple__Group__36750);
             rule__RespuestaMultiple__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__4_in_rule__RespuestaMultiple__Group__37753);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__4_in_rule__RespuestaMultiple__Group__36753);
             rule__RespuestaMultiple__Group__4();
 
             state._fsp--;
@@ -10029,31 +8707,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3932:1: rule__RespuestaMultiple__Group__3__Impl : ( ( rule__RespuestaMultiple__Group_3__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3424:1: rule__RespuestaMultiple__Group__3__Impl : ( ( rule__RespuestaMultiple__Group_3__0 )? ) ;
     public final void rule__RespuestaMultiple__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3936:1: ( ( ( rule__RespuestaMultiple__Group_3__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3937:1: ( ( rule__RespuestaMultiple__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3428:1: ( ( ( rule__RespuestaMultiple__Group_3__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3429:1: ( ( rule__RespuestaMultiple__Group_3__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3937:1: ( ( rule__RespuestaMultiple__Group_3__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3938:1: ( rule__RespuestaMultiple__Group_3__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3429:1: ( ( rule__RespuestaMultiple__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3430:1: ( rule__RespuestaMultiple__Group_3__0 )?
             {
              before(grammarAccess.getRespuestaMultipleAccess().getGroup_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3939:1: ( rule__RespuestaMultiple__Group_3__0 )?
-            int alt22=2;
-            int LA22_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3431:1: ( rule__RespuestaMultiple__Group_3__0 )?
+            int alt18=2;
+            int LA18_0 = input.LA(1);
 
-            if ( (LA22_0==34) ) {
-                alt22=1;
+            if ( (LA18_0==31) ) {
+                alt18=1;
             }
-            switch (alt22) {
+            switch (alt18) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3939:2: rule__RespuestaMultiple__Group_3__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3431:2: rule__RespuestaMultiple__Group_3__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__0_in_rule__RespuestaMultiple__Group__3__Impl7780);
+                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__0_in_rule__RespuestaMultiple__Group__3__Impl6780);
                     rule__RespuestaMultiple__Group_3__0();
 
                     state._fsp--;
@@ -10087,21 +8765,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3949:1: rule__RespuestaMultiple__Group__4 : rule__RespuestaMultiple__Group__4__Impl rule__RespuestaMultiple__Group__5 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3441:1: rule__RespuestaMultiple__Group__4 : rule__RespuestaMultiple__Group__4__Impl rule__RespuestaMultiple__Group__5 ;
     public final void rule__RespuestaMultiple__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3953:1: ( rule__RespuestaMultiple__Group__4__Impl rule__RespuestaMultiple__Group__5 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3954:2: rule__RespuestaMultiple__Group__4__Impl rule__RespuestaMultiple__Group__5
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3445:1: ( rule__RespuestaMultiple__Group__4__Impl rule__RespuestaMultiple__Group__5 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3446:2: rule__RespuestaMultiple__Group__4__Impl rule__RespuestaMultiple__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__4__Impl_in_rule__RespuestaMultiple__Group__47811);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__4__Impl_in_rule__RespuestaMultiple__Group__46811);
             rule__RespuestaMultiple__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__5_in_rule__RespuestaMultiple__Group__47814);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__5_in_rule__RespuestaMultiple__Group__46814);
             rule__RespuestaMultiple__Group__5();
 
             state._fsp--;
@@ -10125,31 +8803,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3961:1: rule__RespuestaMultiple__Group__4__Impl : ( ( rule__RespuestaMultiple__Group_4__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3453:1: rule__RespuestaMultiple__Group__4__Impl : ( ( rule__RespuestaMultiple__Group_4__0 )? ) ;
     public final void rule__RespuestaMultiple__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3965:1: ( ( ( rule__RespuestaMultiple__Group_4__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3966:1: ( ( rule__RespuestaMultiple__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3457:1: ( ( ( rule__RespuestaMultiple__Group_4__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3458:1: ( ( rule__RespuestaMultiple__Group_4__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3966:1: ( ( rule__RespuestaMultiple__Group_4__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3967:1: ( rule__RespuestaMultiple__Group_4__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3458:1: ( ( rule__RespuestaMultiple__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3459:1: ( rule__RespuestaMultiple__Group_4__0 )?
             {
              before(grammarAccess.getRespuestaMultipleAccess().getGroup_4()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3968:1: ( rule__RespuestaMultiple__Group_4__0 )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3460:1: ( rule__RespuestaMultiple__Group_4__0 )?
+            int alt19=2;
+            int LA19_0 = input.LA(1);
 
-            if ( (LA23_0==35) ) {
-                alt23=1;
+            if ( (LA19_0==32) ) {
+                alt19=1;
             }
-            switch (alt23) {
+            switch (alt19) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3968:2: rule__RespuestaMultiple__Group_4__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3460:2: rule__RespuestaMultiple__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__0_in_rule__RespuestaMultiple__Group__4__Impl7841);
+                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__0_in_rule__RespuestaMultiple__Group__4__Impl6841);
                     rule__RespuestaMultiple__Group_4__0();
 
                     state._fsp--;
@@ -10183,22 +8861,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__5"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3978:1: rule__RespuestaMultiple__Group__5 : rule__RespuestaMultiple__Group__5__Impl rule__RespuestaMultiple__Group__6 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3470:1: rule__RespuestaMultiple__Group__5 : rule__RespuestaMultiple__Group__5__Impl ;
     public final void rule__RespuestaMultiple__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3982:1: ( rule__RespuestaMultiple__Group__5__Impl rule__RespuestaMultiple__Group__6 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3983:2: rule__RespuestaMultiple__Group__5__Impl rule__RespuestaMultiple__Group__6
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3474:1: ( rule__RespuestaMultiple__Group__5__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3475:2: rule__RespuestaMultiple__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__5__Impl_in_rule__RespuestaMultiple__Group__57872);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__5__Impl_in_rule__RespuestaMultiple__Group__56872);
             rule__RespuestaMultiple__Group__5__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__6_in_rule__RespuestaMultiple__Group__57875);
-            rule__RespuestaMultiple__Group__6();
 
             state._fsp--;
 
@@ -10221,42 +8894,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group__5__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3990:1: rule__RespuestaMultiple__Group__5__Impl : ( ( rule__RespuestaMultiple__Group_5__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3481:1: rule__RespuestaMultiple__Group__5__Impl : ( '}' ) ;
     public final void rule__RespuestaMultiple__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3994:1: ( ( ( rule__RespuestaMultiple__Group_5__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3995:1: ( ( rule__RespuestaMultiple__Group_5__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3485:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3486:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3995:1: ( ( rule__RespuestaMultiple__Group_5__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3996:1: ( rule__RespuestaMultiple__Group_5__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3486:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3487:1: '}'
             {
-             before(grammarAccess.getRespuestaMultipleAccess().getGroup_5()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3997:1: ( rule__RespuestaMultiple__Group_5__0 )?
-            int alt24=2;
-            int LA24_0 = input.LA(1);
-
-            if ( (LA24_0==36) ) {
-                alt24=1;
-            }
-            switch (alt24) {
-                case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3997:2: rule__RespuestaMultiple__Group_5__0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__0_in_rule__RespuestaMultiple__Group__5__Impl7902);
-                    rule__RespuestaMultiple__Group_5__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getRespuestaMultipleAccess().getGroup_5()); 
+             before(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_5()); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaMultiple__Group__5__Impl6900); 
+             after(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_5()); 
 
             }
 
@@ -10278,92 +8930,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__RespuestaMultiple__Group__5__Impl"
 
 
-    // $ANTLR start "rule__RespuestaMultiple__Group__6"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4007:1: rule__RespuestaMultiple__Group__6 : rule__RespuestaMultiple__Group__6__Impl ;
-    public final void rule__RespuestaMultiple__Group__6() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4011:1: ( rule__RespuestaMultiple__Group__6__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4012:2: rule__RespuestaMultiple__Group__6__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group__6__Impl_in_rule__RespuestaMultiple__Group__67933);
-            rule__RespuestaMultiple__Group__6__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group__6"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group__6__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4018:1: rule__RespuestaMultiple__Group__6__Impl : ( '}' ) ;
-    public final void rule__RespuestaMultiple__Group__6__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4022:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4023:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4023:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4024:1: '}'
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaMultiple__Group__6__Impl7961); 
-             after(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_6()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group__6__Impl"
-
-
     // $ANTLR start "rule__RespuestaMultiple__Group_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4051:1: rule__RespuestaMultiple__Group_3__0 : rule__RespuestaMultiple__Group_3__0__Impl rule__RespuestaMultiple__Group_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3512:1: rule__RespuestaMultiple__Group_3__0 : rule__RespuestaMultiple__Group_3__0__Impl rule__RespuestaMultiple__Group_3__1 ;
     public final void rule__RespuestaMultiple__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4055:1: ( rule__RespuestaMultiple__Group_3__0__Impl rule__RespuestaMultiple__Group_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4056:2: rule__RespuestaMultiple__Group_3__0__Impl rule__RespuestaMultiple__Group_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3516:1: ( rule__RespuestaMultiple__Group_3__0__Impl rule__RespuestaMultiple__Group_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3517:2: rule__RespuestaMultiple__Group_3__0__Impl rule__RespuestaMultiple__Group_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__0__Impl_in_rule__RespuestaMultiple__Group_3__08006);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__0__Impl_in_rule__RespuestaMultiple__Group_3__06943);
             rule__RespuestaMultiple__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__1_in_rule__RespuestaMultiple__Group_3__08009);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__1_in_rule__RespuestaMultiple__Group_3__06946);
             rule__RespuestaMultiple__Group_3__1();
 
             state._fsp--;
@@ -10387,20 +8969,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4063:1: rule__RespuestaMultiple__Group_3__0__Impl : ( 'correctas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3524:1: rule__RespuestaMultiple__Group_3__0__Impl : ( 'correctas' ) ;
     public final void rule__RespuestaMultiple__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4067:1: ( ( 'correctas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4068:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3528:1: ( ( 'correctas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3529:1: ( 'correctas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4068:1: ( 'correctas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4069:1: 'correctas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3529:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3530:1: 'correctas'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getCorrectasKeyword_3_0()); 
-            match(input,34,FollowSets000.FOLLOW_34_in_rule__RespuestaMultiple__Group_3__0__Impl8037); 
+            match(input,31,FollowSets000.FOLLOW_31_in_rule__RespuestaMultiple__Group_3__0__Impl6974); 
              after(grammarAccess.getRespuestaMultipleAccess().getCorrectasKeyword_3_0()); 
 
             }
@@ -10424,21 +9006,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4082:1: rule__RespuestaMultiple__Group_3__1 : rule__RespuestaMultiple__Group_3__1__Impl rule__RespuestaMultiple__Group_3__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3543:1: rule__RespuestaMultiple__Group_3__1 : rule__RespuestaMultiple__Group_3__1__Impl rule__RespuestaMultiple__Group_3__2 ;
     public final void rule__RespuestaMultiple__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4086:1: ( rule__RespuestaMultiple__Group_3__1__Impl rule__RespuestaMultiple__Group_3__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4087:2: rule__RespuestaMultiple__Group_3__1__Impl rule__RespuestaMultiple__Group_3__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3547:1: ( rule__RespuestaMultiple__Group_3__1__Impl rule__RespuestaMultiple__Group_3__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3548:2: rule__RespuestaMultiple__Group_3__1__Impl rule__RespuestaMultiple__Group_3__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__1__Impl_in_rule__RespuestaMultiple__Group_3__18068);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__1__Impl_in_rule__RespuestaMultiple__Group_3__17005);
             rule__RespuestaMultiple__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__2_in_rule__RespuestaMultiple__Group_3__18071);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__2_in_rule__RespuestaMultiple__Group_3__17008);
             rule__RespuestaMultiple__Group_3__2();
 
             state._fsp--;
@@ -10462,20 +9044,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4094:1: rule__RespuestaMultiple__Group_3__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3555:1: rule__RespuestaMultiple__Group_3__1__Impl : ( '{' ) ;
     public final void rule__RespuestaMultiple__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4098:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4099:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3559:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3560:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4099:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4100:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3560:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3561:1: '{'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_3_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaMultiple__Group_3__1__Impl8099); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaMultiple__Group_3__1__Impl7036); 
              after(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_3_1()); 
 
             }
@@ -10499,21 +9081,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4113:1: rule__RespuestaMultiple__Group_3__2 : rule__RespuestaMultiple__Group_3__2__Impl rule__RespuestaMultiple__Group_3__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3574:1: rule__RespuestaMultiple__Group_3__2 : rule__RespuestaMultiple__Group_3__2__Impl rule__RespuestaMultiple__Group_3__3 ;
     public final void rule__RespuestaMultiple__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4117:1: ( rule__RespuestaMultiple__Group_3__2__Impl rule__RespuestaMultiple__Group_3__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4118:2: rule__RespuestaMultiple__Group_3__2__Impl rule__RespuestaMultiple__Group_3__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3578:1: ( rule__RespuestaMultiple__Group_3__2__Impl rule__RespuestaMultiple__Group_3__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3579:2: rule__RespuestaMultiple__Group_3__2__Impl rule__RespuestaMultiple__Group_3__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__2__Impl_in_rule__RespuestaMultiple__Group_3__28130);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__2__Impl_in_rule__RespuestaMultiple__Group_3__27067);
             rule__RespuestaMultiple__Group_3__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__3_in_rule__RespuestaMultiple__Group_3__28133);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__3_in_rule__RespuestaMultiple__Group_3__27070);
             rule__RespuestaMultiple__Group_3__3();
 
             state._fsp--;
@@ -10537,23 +9119,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4125:1: rule__RespuestaMultiple__Group_3__2__Impl : ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3586:1: rule__RespuestaMultiple__Group_3__2__Impl : ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) ) ;
     public final void rule__RespuestaMultiple__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4129:1: ( ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4130:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3590:1: ( ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3591:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4130:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4131:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3591:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3592:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_2 )
             {
              before(grammarAccess.getRespuestaMultipleAccess().getCorrectasAssignment_3_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4132:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4132:2: rule__RespuestaMultiple__CorrectasAssignment_3_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3593:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3593:2: rule__RespuestaMultiple__CorrectasAssignment_3_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_2_in_rule__RespuestaMultiple__Group_3__2__Impl8160);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_2_in_rule__RespuestaMultiple__Group_3__2__Impl7097);
             rule__RespuestaMultiple__CorrectasAssignment_3_2();
 
             state._fsp--;
@@ -10584,21 +9166,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4142:1: rule__RespuestaMultiple__Group_3__3 : rule__RespuestaMultiple__Group_3__3__Impl rule__RespuestaMultiple__Group_3__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3603:1: rule__RespuestaMultiple__Group_3__3 : rule__RespuestaMultiple__Group_3__3__Impl rule__RespuestaMultiple__Group_3__4 ;
     public final void rule__RespuestaMultiple__Group_3__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4146:1: ( rule__RespuestaMultiple__Group_3__3__Impl rule__RespuestaMultiple__Group_3__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4147:2: rule__RespuestaMultiple__Group_3__3__Impl rule__RespuestaMultiple__Group_3__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3607:1: ( rule__RespuestaMultiple__Group_3__3__Impl rule__RespuestaMultiple__Group_3__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3608:2: rule__RespuestaMultiple__Group_3__3__Impl rule__RespuestaMultiple__Group_3__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__3__Impl_in_rule__RespuestaMultiple__Group_3__38190);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__3__Impl_in_rule__RespuestaMultiple__Group_3__37127);
             rule__RespuestaMultiple__Group_3__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__4_in_rule__RespuestaMultiple__Group_3__38193);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__4_in_rule__RespuestaMultiple__Group_3__37130);
             rule__RespuestaMultiple__Group_3__4();
 
             state._fsp--;
@@ -10622,35 +9204,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4154:1: rule__RespuestaMultiple__Group_3__3__Impl : ( ( rule__RespuestaMultiple__Group_3_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3615:1: rule__RespuestaMultiple__Group_3__3__Impl : ( ( rule__RespuestaMultiple__Group_3_3__0 )* ) ;
     public final void rule__RespuestaMultiple__Group_3__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4158:1: ( ( ( rule__RespuestaMultiple__Group_3_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4159:1: ( ( rule__RespuestaMultiple__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3619:1: ( ( ( rule__RespuestaMultiple__Group_3_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3620:1: ( ( rule__RespuestaMultiple__Group_3_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4159:1: ( ( rule__RespuestaMultiple__Group_3_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4160:1: ( rule__RespuestaMultiple__Group_3_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3620:1: ( ( rule__RespuestaMultiple__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3621:1: ( rule__RespuestaMultiple__Group_3_3__0 )*
             {
              before(grammarAccess.getRespuestaMultipleAccess().getGroup_3_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4161:1: ( rule__RespuestaMultiple__Group_3_3__0 )*
-            loop25:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3622:1: ( rule__RespuestaMultiple__Group_3_3__0 )*
+            loop20:
             do {
-                int alt25=2;
-                int LA25_0 = input.LA(1);
+                int alt20=2;
+                int LA20_0 = input.LA(1);
 
-                if ( (LA25_0==27) ) {
-                    alt25=1;
+                if ( (LA20_0==27) ) {
+                    alt20=1;
                 }
 
 
-                switch (alt25) {
+                switch (alt20) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4161:2: rule__RespuestaMultiple__Group_3_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3622:2: rule__RespuestaMultiple__Group_3_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__0_in_rule__RespuestaMultiple__Group_3__3__Impl8220);
+            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__0_in_rule__RespuestaMultiple__Group_3__3__Impl7157);
             	    rule__RespuestaMultiple__Group_3_3__0();
 
             	    state._fsp--;
@@ -10660,7 +9242,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop25;
+            	    break loop20;
                 }
             } while (true);
 
@@ -10687,16 +9269,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4171:1: rule__RespuestaMultiple__Group_3__4 : rule__RespuestaMultiple__Group_3__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3632:1: rule__RespuestaMultiple__Group_3__4 : rule__RespuestaMultiple__Group_3__4__Impl ;
     public final void rule__RespuestaMultiple__Group_3__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4175:1: ( rule__RespuestaMultiple__Group_3__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4176:2: rule__RespuestaMultiple__Group_3__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3636:1: ( rule__RespuestaMultiple__Group_3__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3637:2: rule__RespuestaMultiple__Group_3__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__4__Impl_in_rule__RespuestaMultiple__Group_3__48251);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3__4__Impl_in_rule__RespuestaMultiple__Group_3__47188);
             rule__RespuestaMultiple__Group_3__4__Impl();
 
             state._fsp--;
@@ -10720,20 +9302,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4182:1: rule__RespuestaMultiple__Group_3__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3643:1: rule__RespuestaMultiple__Group_3__4__Impl : ( '}' ) ;
     public final void rule__RespuestaMultiple__Group_3__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4186:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4187:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3647:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3648:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4187:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4188:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3648:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3649:1: '}'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_3_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaMultiple__Group_3__4__Impl8279); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaMultiple__Group_3__4__Impl7216); 
              after(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_3_4()); 
 
             }
@@ -10757,21 +9339,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4211:1: rule__RespuestaMultiple__Group_3_3__0 : rule__RespuestaMultiple__Group_3_3__0__Impl rule__RespuestaMultiple__Group_3_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3672:1: rule__RespuestaMultiple__Group_3_3__0 : rule__RespuestaMultiple__Group_3_3__0__Impl rule__RespuestaMultiple__Group_3_3__1 ;
     public final void rule__RespuestaMultiple__Group_3_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4215:1: ( rule__RespuestaMultiple__Group_3_3__0__Impl rule__RespuestaMultiple__Group_3_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4216:2: rule__RespuestaMultiple__Group_3_3__0__Impl rule__RespuestaMultiple__Group_3_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3676:1: ( rule__RespuestaMultiple__Group_3_3__0__Impl rule__RespuestaMultiple__Group_3_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3677:2: rule__RespuestaMultiple__Group_3_3__0__Impl rule__RespuestaMultiple__Group_3_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__0__Impl_in_rule__RespuestaMultiple__Group_3_3__08320);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__0__Impl_in_rule__RespuestaMultiple__Group_3_3__07257);
             rule__RespuestaMultiple__Group_3_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__1_in_rule__RespuestaMultiple__Group_3_3__08323);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__1_in_rule__RespuestaMultiple__Group_3_3__07260);
             rule__RespuestaMultiple__Group_3_3__1();
 
             state._fsp--;
@@ -10795,20 +9377,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4223:1: rule__RespuestaMultiple__Group_3_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3684:1: rule__RespuestaMultiple__Group_3_3__0__Impl : ( ',' ) ;
     public final void rule__RespuestaMultiple__Group_3_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4227:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4228:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3688:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3689:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4228:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4229:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3689:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3690:1: ','
             {
              before(grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_3_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaMultiple__Group_3_3__0__Impl8351); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaMultiple__Group_3_3__0__Impl7288); 
              after(grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_3_3_0()); 
 
             }
@@ -10832,16 +9414,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4242:1: rule__RespuestaMultiple__Group_3_3__1 : rule__RespuestaMultiple__Group_3_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3703:1: rule__RespuestaMultiple__Group_3_3__1 : rule__RespuestaMultiple__Group_3_3__1__Impl ;
     public final void rule__RespuestaMultiple__Group_3_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4246:1: ( rule__RespuestaMultiple__Group_3_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4247:2: rule__RespuestaMultiple__Group_3_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3707:1: ( rule__RespuestaMultiple__Group_3_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3708:2: rule__RespuestaMultiple__Group_3_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__1__Impl_in_rule__RespuestaMultiple__Group_3_3__18382);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_3_3__1__Impl_in_rule__RespuestaMultiple__Group_3_3__17319);
             rule__RespuestaMultiple__Group_3_3__1__Impl();
 
             state._fsp--;
@@ -10865,23 +9447,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_3_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4253:1: rule__RespuestaMultiple__Group_3_3__1__Impl : ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3714:1: rule__RespuestaMultiple__Group_3_3__1__Impl : ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) ) ;
     public final void rule__RespuestaMultiple__Group_3_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4257:1: ( ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4258:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3718:1: ( ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3719:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4258:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4259:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3719:1: ( ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3720:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 )
             {
              before(grammarAccess.getRespuestaMultipleAccess().getCorrectasAssignment_3_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4260:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4260:2: rule__RespuestaMultiple__CorrectasAssignment_3_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3721:1: ( rule__RespuestaMultiple__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3721:2: rule__RespuestaMultiple__CorrectasAssignment_3_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_3_1_in_rule__RespuestaMultiple__Group_3_3__1__Impl8409);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_3_1_in_rule__RespuestaMultiple__Group_3_3__1__Impl7346);
             rule__RespuestaMultiple__CorrectasAssignment_3_3_1();
 
             state._fsp--;
@@ -10912,21 +9494,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4274:1: rule__RespuestaMultiple__Group_4__0 : rule__RespuestaMultiple__Group_4__0__Impl rule__RespuestaMultiple__Group_4__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3735:1: rule__RespuestaMultiple__Group_4__0 : rule__RespuestaMultiple__Group_4__0__Impl rule__RespuestaMultiple__Group_4__1 ;
     public final void rule__RespuestaMultiple__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4278:1: ( rule__RespuestaMultiple__Group_4__0__Impl rule__RespuestaMultiple__Group_4__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4279:2: rule__RespuestaMultiple__Group_4__0__Impl rule__RespuestaMultiple__Group_4__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3739:1: ( rule__RespuestaMultiple__Group_4__0__Impl rule__RespuestaMultiple__Group_4__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3740:2: rule__RespuestaMultiple__Group_4__0__Impl rule__RespuestaMultiple__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__0__Impl_in_rule__RespuestaMultiple__Group_4__08443);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__0__Impl_in_rule__RespuestaMultiple__Group_4__07380);
             rule__RespuestaMultiple__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__1_in_rule__RespuestaMultiple__Group_4__08446);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__1_in_rule__RespuestaMultiple__Group_4__07383);
             rule__RespuestaMultiple__Group_4__1();
 
             state._fsp--;
@@ -10950,20 +9532,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4286:1: rule__RespuestaMultiple__Group_4__0__Impl : ( 'alternativas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3747:1: rule__RespuestaMultiple__Group_4__0__Impl : ( 'alternativas' ) ;
     public final void rule__RespuestaMultiple__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4290:1: ( ( 'alternativas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4291:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3751:1: ( ( 'alternativas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3752:1: ( 'alternativas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4291:1: ( 'alternativas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4292:1: 'alternativas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3752:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3753:1: 'alternativas'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getAlternativasKeyword_4_0()); 
-            match(input,35,FollowSets000.FOLLOW_35_in_rule__RespuestaMultiple__Group_4__0__Impl8474); 
+            match(input,32,FollowSets000.FOLLOW_32_in_rule__RespuestaMultiple__Group_4__0__Impl7411); 
              after(grammarAccess.getRespuestaMultipleAccess().getAlternativasKeyword_4_0()); 
 
             }
@@ -10987,21 +9569,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4305:1: rule__RespuestaMultiple__Group_4__1 : rule__RespuestaMultiple__Group_4__1__Impl rule__RespuestaMultiple__Group_4__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3766:1: rule__RespuestaMultiple__Group_4__1 : rule__RespuestaMultiple__Group_4__1__Impl rule__RespuestaMultiple__Group_4__2 ;
     public final void rule__RespuestaMultiple__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4309:1: ( rule__RespuestaMultiple__Group_4__1__Impl rule__RespuestaMultiple__Group_4__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4310:2: rule__RespuestaMultiple__Group_4__1__Impl rule__RespuestaMultiple__Group_4__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3770:1: ( rule__RespuestaMultiple__Group_4__1__Impl rule__RespuestaMultiple__Group_4__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3771:2: rule__RespuestaMultiple__Group_4__1__Impl rule__RespuestaMultiple__Group_4__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__1__Impl_in_rule__RespuestaMultiple__Group_4__18505);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__1__Impl_in_rule__RespuestaMultiple__Group_4__17442);
             rule__RespuestaMultiple__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__2_in_rule__RespuestaMultiple__Group_4__18508);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__2_in_rule__RespuestaMultiple__Group_4__17445);
             rule__RespuestaMultiple__Group_4__2();
 
             state._fsp--;
@@ -11025,20 +9607,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4317:1: rule__RespuestaMultiple__Group_4__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3778:1: rule__RespuestaMultiple__Group_4__1__Impl : ( '{' ) ;
     public final void rule__RespuestaMultiple__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4321:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4322:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3782:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3783:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4322:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4323:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3783:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3784:1: '{'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_4_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaMultiple__Group_4__1__Impl8536); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaMultiple__Group_4__1__Impl7473); 
              after(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_4_1()); 
 
             }
@@ -11062,21 +9644,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4336:1: rule__RespuestaMultiple__Group_4__2 : rule__RespuestaMultiple__Group_4__2__Impl rule__RespuestaMultiple__Group_4__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3797:1: rule__RespuestaMultiple__Group_4__2 : rule__RespuestaMultiple__Group_4__2__Impl rule__RespuestaMultiple__Group_4__3 ;
     public final void rule__RespuestaMultiple__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4340:1: ( rule__RespuestaMultiple__Group_4__2__Impl rule__RespuestaMultiple__Group_4__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4341:2: rule__RespuestaMultiple__Group_4__2__Impl rule__RespuestaMultiple__Group_4__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3801:1: ( rule__RespuestaMultiple__Group_4__2__Impl rule__RespuestaMultiple__Group_4__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3802:2: rule__RespuestaMultiple__Group_4__2__Impl rule__RespuestaMultiple__Group_4__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__2__Impl_in_rule__RespuestaMultiple__Group_4__28567);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__2__Impl_in_rule__RespuestaMultiple__Group_4__27504);
             rule__RespuestaMultiple__Group_4__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__3_in_rule__RespuestaMultiple__Group_4__28570);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__3_in_rule__RespuestaMultiple__Group_4__27507);
             rule__RespuestaMultiple__Group_4__3();
 
             state._fsp--;
@@ -11100,23 +9682,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4348:1: rule__RespuestaMultiple__Group_4__2__Impl : ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3809:1: rule__RespuestaMultiple__Group_4__2__Impl : ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) ) ;
     public final void rule__RespuestaMultiple__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4352:1: ( ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4353:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3813:1: ( ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3814:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4353:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4354:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3814:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3815:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_2 )
             {
              before(grammarAccess.getRespuestaMultipleAccess().getAlternativasAssignment_4_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4355:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4355:2: rule__RespuestaMultiple__AlternativasAssignment_4_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3816:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3816:2: rule__RespuestaMultiple__AlternativasAssignment_4_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_2_in_rule__RespuestaMultiple__Group_4__2__Impl8597);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_2_in_rule__RespuestaMultiple__Group_4__2__Impl7534);
             rule__RespuestaMultiple__AlternativasAssignment_4_2();
 
             state._fsp--;
@@ -11147,21 +9729,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4365:1: rule__RespuestaMultiple__Group_4__3 : rule__RespuestaMultiple__Group_4__3__Impl rule__RespuestaMultiple__Group_4__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3826:1: rule__RespuestaMultiple__Group_4__3 : rule__RespuestaMultiple__Group_4__3__Impl rule__RespuestaMultiple__Group_4__4 ;
     public final void rule__RespuestaMultiple__Group_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4369:1: ( rule__RespuestaMultiple__Group_4__3__Impl rule__RespuestaMultiple__Group_4__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4370:2: rule__RespuestaMultiple__Group_4__3__Impl rule__RespuestaMultiple__Group_4__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3830:1: ( rule__RespuestaMultiple__Group_4__3__Impl rule__RespuestaMultiple__Group_4__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3831:2: rule__RespuestaMultiple__Group_4__3__Impl rule__RespuestaMultiple__Group_4__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__3__Impl_in_rule__RespuestaMultiple__Group_4__38627);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__3__Impl_in_rule__RespuestaMultiple__Group_4__37564);
             rule__RespuestaMultiple__Group_4__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__4_in_rule__RespuestaMultiple__Group_4__38630);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__4_in_rule__RespuestaMultiple__Group_4__37567);
             rule__RespuestaMultiple__Group_4__4();
 
             state._fsp--;
@@ -11185,35 +9767,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4377:1: rule__RespuestaMultiple__Group_4__3__Impl : ( ( rule__RespuestaMultiple__Group_4_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3838:1: rule__RespuestaMultiple__Group_4__3__Impl : ( ( rule__RespuestaMultiple__Group_4_3__0 )* ) ;
     public final void rule__RespuestaMultiple__Group_4__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4381:1: ( ( ( rule__RespuestaMultiple__Group_4_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4382:1: ( ( rule__RespuestaMultiple__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3842:1: ( ( ( rule__RespuestaMultiple__Group_4_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3843:1: ( ( rule__RespuestaMultiple__Group_4_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4382:1: ( ( rule__RespuestaMultiple__Group_4_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4383:1: ( rule__RespuestaMultiple__Group_4_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3843:1: ( ( rule__RespuestaMultiple__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3844:1: ( rule__RespuestaMultiple__Group_4_3__0 )*
             {
              before(grammarAccess.getRespuestaMultipleAccess().getGroup_4_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4384:1: ( rule__RespuestaMultiple__Group_4_3__0 )*
-            loop26:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3845:1: ( rule__RespuestaMultiple__Group_4_3__0 )*
+            loop21:
             do {
-                int alt26=2;
-                int LA26_0 = input.LA(1);
+                int alt21=2;
+                int LA21_0 = input.LA(1);
 
-                if ( (LA26_0==27) ) {
-                    alt26=1;
+                if ( (LA21_0==27) ) {
+                    alt21=1;
                 }
 
 
-                switch (alt26) {
+                switch (alt21) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4384:2: rule__RespuestaMultiple__Group_4_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3845:2: rule__RespuestaMultiple__Group_4_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__0_in_rule__RespuestaMultiple__Group_4__3__Impl8657);
+            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__0_in_rule__RespuestaMultiple__Group_4__3__Impl7594);
             	    rule__RespuestaMultiple__Group_4_3__0();
 
             	    state._fsp--;
@@ -11223,7 +9805,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop21;
                 }
             } while (true);
 
@@ -11250,16 +9832,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4394:1: rule__RespuestaMultiple__Group_4__4 : rule__RespuestaMultiple__Group_4__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3855:1: rule__RespuestaMultiple__Group_4__4 : rule__RespuestaMultiple__Group_4__4__Impl ;
     public final void rule__RespuestaMultiple__Group_4__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4398:1: ( rule__RespuestaMultiple__Group_4__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4399:2: rule__RespuestaMultiple__Group_4__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3859:1: ( rule__RespuestaMultiple__Group_4__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3860:2: rule__RespuestaMultiple__Group_4__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__4__Impl_in_rule__RespuestaMultiple__Group_4__48688);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4__4__Impl_in_rule__RespuestaMultiple__Group_4__47625);
             rule__RespuestaMultiple__Group_4__4__Impl();
 
             state._fsp--;
@@ -11283,20 +9865,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4405:1: rule__RespuestaMultiple__Group_4__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3866:1: rule__RespuestaMultiple__Group_4__4__Impl : ( '}' ) ;
     public final void rule__RespuestaMultiple__Group_4__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4409:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4410:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3870:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3871:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4410:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4411:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3871:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3872:1: '}'
             {
              before(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_4_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaMultiple__Group_4__4__Impl8716); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaMultiple__Group_4__4__Impl7653); 
              after(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_4_4()); 
 
             }
@@ -11320,21 +9902,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4434:1: rule__RespuestaMultiple__Group_4_3__0 : rule__RespuestaMultiple__Group_4_3__0__Impl rule__RespuestaMultiple__Group_4_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3895:1: rule__RespuestaMultiple__Group_4_3__0 : rule__RespuestaMultiple__Group_4_3__0__Impl rule__RespuestaMultiple__Group_4_3__1 ;
     public final void rule__RespuestaMultiple__Group_4_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4438:1: ( rule__RespuestaMultiple__Group_4_3__0__Impl rule__RespuestaMultiple__Group_4_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4439:2: rule__RespuestaMultiple__Group_4_3__0__Impl rule__RespuestaMultiple__Group_4_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3899:1: ( rule__RespuestaMultiple__Group_4_3__0__Impl rule__RespuestaMultiple__Group_4_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3900:2: rule__RespuestaMultiple__Group_4_3__0__Impl rule__RespuestaMultiple__Group_4_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__0__Impl_in_rule__RespuestaMultiple__Group_4_3__08757);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__0__Impl_in_rule__RespuestaMultiple__Group_4_3__07694);
             rule__RespuestaMultiple__Group_4_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__1_in_rule__RespuestaMultiple__Group_4_3__08760);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__1_in_rule__RespuestaMultiple__Group_4_3__07697);
             rule__RespuestaMultiple__Group_4_3__1();
 
             state._fsp--;
@@ -11358,20 +9940,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4446:1: rule__RespuestaMultiple__Group_4_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3907:1: rule__RespuestaMultiple__Group_4_3__0__Impl : ( ',' ) ;
     public final void rule__RespuestaMultiple__Group_4_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4450:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4451:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3911:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3912:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4451:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4452:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3912:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3913:1: ','
             {
              before(grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_4_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaMultiple__Group_4_3__0__Impl8788); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaMultiple__Group_4_3__0__Impl7725); 
              after(grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_4_3_0()); 
 
             }
@@ -11395,16 +9977,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4465:1: rule__RespuestaMultiple__Group_4_3__1 : rule__RespuestaMultiple__Group_4_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3926:1: rule__RespuestaMultiple__Group_4_3__1 : rule__RespuestaMultiple__Group_4_3__1__Impl ;
     public final void rule__RespuestaMultiple__Group_4_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4469:1: ( rule__RespuestaMultiple__Group_4_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4470:2: rule__RespuestaMultiple__Group_4_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3930:1: ( rule__RespuestaMultiple__Group_4_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3931:2: rule__RespuestaMultiple__Group_4_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__1__Impl_in_rule__RespuestaMultiple__Group_4_3__18819);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_4_3__1__Impl_in_rule__RespuestaMultiple__Group_4_3__17756);
             rule__RespuestaMultiple__Group_4_3__1__Impl();
 
             state._fsp--;
@@ -11428,23 +10010,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__Group_4_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4476:1: rule__RespuestaMultiple__Group_4_3__1__Impl : ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3937:1: rule__RespuestaMultiple__Group_4_3__1__Impl : ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) ) ;
     public final void rule__RespuestaMultiple__Group_4_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4480:1: ( ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4481:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3941:1: ( ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3942:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4481:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4482:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3942:1: ( ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3943:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 )
             {
              before(grammarAccess.getRespuestaMultipleAccess().getAlternativasAssignment_4_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4483:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4483:2: rule__RespuestaMultiple__AlternativasAssignment_4_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3944:1: ( rule__RespuestaMultiple__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3944:2: rule__RespuestaMultiple__AlternativasAssignment_4_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_3_1_in_rule__RespuestaMultiple__Group_4_3__1__Impl8846);
+            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_3_1_in_rule__RespuestaMultiple__Group_4_3__1__Impl7783);
             rule__RespuestaMultiple__AlternativasAssignment_4_3_1();
 
             state._fsp--;
@@ -11474,585 +10056,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__RespuestaMultiple__Group_4_3__1__Impl"
 
 
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4497:1: rule__RespuestaMultiple__Group_5__0 : rule__RespuestaMultiple__Group_5__0__Impl rule__RespuestaMultiple__Group_5__1 ;
-    public final void rule__RespuestaMultiple__Group_5__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4501:1: ( rule__RespuestaMultiple__Group_5__0__Impl rule__RespuestaMultiple__Group_5__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4502:2: rule__RespuestaMultiple__Group_5__0__Impl rule__RespuestaMultiple__Group_5__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__0__Impl_in_rule__RespuestaMultiple__Group_5__08880);
-            rule__RespuestaMultiple__Group_5__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__1_in_rule__RespuestaMultiple__Group_5__08883);
-            rule__RespuestaMultiple__Group_5__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__0"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4509:1: rule__RespuestaMultiple__Group_5__0__Impl : ( 'seleccionadas' ) ;
-    public final void rule__RespuestaMultiple__Group_5__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4513:1: ( ( 'seleccionadas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4514:1: ( 'seleccionadas' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4514:1: ( 'seleccionadas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4515:1: 'seleccionadas'
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasKeyword_5_0()); 
-            match(input,36,FollowSets000.FOLLOW_36_in_rule__RespuestaMultiple__Group_5__0__Impl8911); 
-             after(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasKeyword_5_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__0__Impl"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4528:1: rule__RespuestaMultiple__Group_5__1 : rule__RespuestaMultiple__Group_5__1__Impl rule__RespuestaMultiple__Group_5__2 ;
-    public final void rule__RespuestaMultiple__Group_5__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4532:1: ( rule__RespuestaMultiple__Group_5__1__Impl rule__RespuestaMultiple__Group_5__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4533:2: rule__RespuestaMultiple__Group_5__1__Impl rule__RespuestaMultiple__Group_5__2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__1__Impl_in_rule__RespuestaMultiple__Group_5__18942);
-            rule__RespuestaMultiple__Group_5__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__2_in_rule__RespuestaMultiple__Group_5__18945);
-            rule__RespuestaMultiple__Group_5__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__1"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4540:1: rule__RespuestaMultiple__Group_5__1__Impl : ( '{' ) ;
-    public final void rule__RespuestaMultiple__Group_5__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4544:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4545:1: ( '{' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4545:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4546:1: '{'
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_5_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__RespuestaMultiple__Group_5__1__Impl8973); 
-             after(grammarAccess.getRespuestaMultipleAccess().getLeftCurlyBracketKeyword_5_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__1__Impl"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4559:1: rule__RespuestaMultiple__Group_5__2 : rule__RespuestaMultiple__Group_5__2__Impl rule__RespuestaMultiple__Group_5__3 ;
-    public final void rule__RespuestaMultiple__Group_5__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4563:1: ( rule__RespuestaMultiple__Group_5__2__Impl rule__RespuestaMultiple__Group_5__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4564:2: rule__RespuestaMultiple__Group_5__2__Impl rule__RespuestaMultiple__Group_5__3
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__2__Impl_in_rule__RespuestaMultiple__Group_5__29004);
-            rule__RespuestaMultiple__Group_5__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__3_in_rule__RespuestaMultiple__Group_5__29007);
-            rule__RespuestaMultiple__Group_5__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__2"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4571:1: rule__RespuestaMultiple__Group_5__2__Impl : ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_2 ) ) ;
-    public final void rule__RespuestaMultiple__Group_5__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4575:1: ( ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4576:1: ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_2 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4576:1: ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4577:1: ( rule__RespuestaMultiple__SeleccionadasAssignment_5_2 )
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasAssignment_5_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4578:1: ( rule__RespuestaMultiple__SeleccionadasAssignment_5_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4578:2: rule__RespuestaMultiple__SeleccionadasAssignment_5_2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__SeleccionadasAssignment_5_2_in_rule__RespuestaMultiple__Group_5__2__Impl9034);
-            rule__RespuestaMultiple__SeleccionadasAssignment_5_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasAssignment_5_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__2__Impl"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4588:1: rule__RespuestaMultiple__Group_5__3 : rule__RespuestaMultiple__Group_5__3__Impl rule__RespuestaMultiple__Group_5__4 ;
-    public final void rule__RespuestaMultiple__Group_5__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4592:1: ( rule__RespuestaMultiple__Group_5__3__Impl rule__RespuestaMultiple__Group_5__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4593:2: rule__RespuestaMultiple__Group_5__3__Impl rule__RespuestaMultiple__Group_5__4
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__3__Impl_in_rule__RespuestaMultiple__Group_5__39064);
-            rule__RespuestaMultiple__Group_5__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__4_in_rule__RespuestaMultiple__Group_5__39067);
-            rule__RespuestaMultiple__Group_5__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__3"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4600:1: rule__RespuestaMultiple__Group_5__3__Impl : ( ( rule__RespuestaMultiple__Group_5_3__0 )* ) ;
-    public final void rule__RespuestaMultiple__Group_5__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4604:1: ( ( ( rule__RespuestaMultiple__Group_5_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4605:1: ( ( rule__RespuestaMultiple__Group_5_3__0 )* )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4605:1: ( ( rule__RespuestaMultiple__Group_5_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4606:1: ( rule__RespuestaMultiple__Group_5_3__0 )*
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getGroup_5_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4607:1: ( rule__RespuestaMultiple__Group_5_3__0 )*
-            loop27:
-            do {
-                int alt27=2;
-                int LA27_0 = input.LA(1);
-
-                if ( (LA27_0==27) ) {
-                    alt27=1;
-                }
-
-
-                switch (alt27) {
-            	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4607:2: rule__RespuestaMultiple__Group_5_3__0
-            	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5_3__0_in_rule__RespuestaMultiple__Group_5__3__Impl9094);
-            	    rule__RespuestaMultiple__Group_5_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop27;
-                }
-            } while (true);
-
-             after(grammarAccess.getRespuestaMultipleAccess().getGroup_5_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__3__Impl"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4617:1: rule__RespuestaMultiple__Group_5__4 : rule__RespuestaMultiple__Group_5__4__Impl ;
-    public final void rule__RespuestaMultiple__Group_5__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4621:1: ( rule__RespuestaMultiple__Group_5__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4622:2: rule__RespuestaMultiple__Group_5__4__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5__4__Impl_in_rule__RespuestaMultiple__Group_5__49125);
-            rule__RespuestaMultiple__Group_5__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__4"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4628:1: rule__RespuestaMultiple__Group_5__4__Impl : ( '}' ) ;
-    public final void rule__RespuestaMultiple__Group_5__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4632:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4633:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4633:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4634:1: '}'
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_5_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__RespuestaMultiple__Group_5__4__Impl9153); 
-             after(grammarAccess.getRespuestaMultipleAccess().getRightCurlyBracketKeyword_5_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5__4__Impl"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4657:1: rule__RespuestaMultiple__Group_5_3__0 : rule__RespuestaMultiple__Group_5_3__0__Impl rule__RespuestaMultiple__Group_5_3__1 ;
-    public final void rule__RespuestaMultiple__Group_5_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4661:1: ( rule__RespuestaMultiple__Group_5_3__0__Impl rule__RespuestaMultiple__Group_5_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4662:2: rule__RespuestaMultiple__Group_5_3__0__Impl rule__RespuestaMultiple__Group_5_3__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5_3__0__Impl_in_rule__RespuestaMultiple__Group_5_3__09194);
-            rule__RespuestaMultiple__Group_5_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5_3__1_in_rule__RespuestaMultiple__Group_5_3__09197);
-            rule__RespuestaMultiple__Group_5_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5_3__0"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4669:1: rule__RespuestaMultiple__Group_5_3__0__Impl : ( ',' ) ;
-    public final void rule__RespuestaMultiple__Group_5_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4673:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4674:1: ( ',' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4674:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4675:1: ','
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_5_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__RespuestaMultiple__Group_5_3__0__Impl9225); 
-             after(grammarAccess.getRespuestaMultipleAccess().getCommaKeyword_5_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5_3__0__Impl"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4688:1: rule__RespuestaMultiple__Group_5_3__1 : rule__RespuestaMultiple__Group_5_3__1__Impl ;
-    public final void rule__RespuestaMultiple__Group_5_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4692:1: ( rule__RespuestaMultiple__Group_5_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4693:2: rule__RespuestaMultiple__Group_5_3__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__Group_5_3__1__Impl_in_rule__RespuestaMultiple__Group_5_3__19256);
-            rule__RespuestaMultiple__Group_5_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5_3__1"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__Group_5_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4699:1: rule__RespuestaMultiple__Group_5_3__1__Impl : ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1 ) ) ;
-    public final void rule__RespuestaMultiple__Group_5_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4703:1: ( ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4704:1: ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4704:1: ( ( rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4705:1: ( rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1 )
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasAssignment_5_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4706:1: ( rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4706:2: rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1_in_rule__RespuestaMultiple__Group_5_3__1__Impl9283);
-            rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasAssignment_5_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__Group_5_3__1__Impl"
-
-
     // $ANTLR start "rule__TextoLibre__Group__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4720:1: rule__TextoLibre__Group__0 : rule__TextoLibre__Group__0__Impl rule__TextoLibre__Group__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3958:1: rule__TextoLibre__Group__0 : rule__TextoLibre__Group__0__Impl rule__TextoLibre__Group__1 ;
     public final void rule__TextoLibre__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4724:1: ( rule__TextoLibre__Group__0__Impl rule__TextoLibre__Group__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4725:2: rule__TextoLibre__Group__0__Impl rule__TextoLibre__Group__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3962:1: ( rule__TextoLibre__Group__0__Impl rule__TextoLibre__Group__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3963:2: rule__TextoLibre__Group__0__Impl rule__TextoLibre__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__0__Impl_in_rule__TextoLibre__Group__09317);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__0__Impl_in_rule__TextoLibre__Group__07817);
             rule__TextoLibre__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__1_in_rule__TextoLibre__Group__09320);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__1_in_rule__TextoLibre__Group__07820);
             rule__TextoLibre__Group__1();
 
             state._fsp--;
@@ -12076,21 +10095,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4732:1: rule__TextoLibre__Group__0__Impl : ( () ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3970:1: rule__TextoLibre__Group__0__Impl : ( () ) ;
     public final void rule__TextoLibre__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4736:1: ( ( () ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4737:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3974:1: ( ( () ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3975:1: ( () )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4737:1: ( () )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4738:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3975:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3976:1: ()
             {
              before(grammarAccess.getTextoLibreAccess().getTextoLibreAction_0()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4739:1: ()
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4741:1: 
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3977:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3979:1: 
             {
             }
 
@@ -12113,21 +10132,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4751:1: rule__TextoLibre__Group__1 : rule__TextoLibre__Group__1__Impl rule__TextoLibre__Group__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3989:1: rule__TextoLibre__Group__1 : rule__TextoLibre__Group__1__Impl rule__TextoLibre__Group__2 ;
     public final void rule__TextoLibre__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4755:1: ( rule__TextoLibre__Group__1__Impl rule__TextoLibre__Group__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4756:2: rule__TextoLibre__Group__1__Impl rule__TextoLibre__Group__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3993:1: ( rule__TextoLibre__Group__1__Impl rule__TextoLibre__Group__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:3994:2: rule__TextoLibre__Group__1__Impl rule__TextoLibre__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__1__Impl_in_rule__TextoLibre__Group__19378);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__1__Impl_in_rule__TextoLibre__Group__17878);
             rule__TextoLibre__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__2_in_rule__TextoLibre__Group__19381);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__2_in_rule__TextoLibre__Group__17881);
             rule__TextoLibre__Group__2();
 
             state._fsp--;
@@ -12151,20 +10170,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4763:1: rule__TextoLibre__Group__1__Impl : ( 'TextoLibre' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4001:1: rule__TextoLibre__Group__1__Impl : ( 'TextoLibre' ) ;
     public final void rule__TextoLibre__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4767:1: ( ( 'TextoLibre' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4768:1: ( 'TextoLibre' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4005:1: ( ( 'TextoLibre' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4006:1: ( 'TextoLibre' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4768:1: ( 'TextoLibre' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4769:1: 'TextoLibre'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4006:1: ( 'TextoLibre' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4007:1: 'TextoLibre'
             {
              before(grammarAccess.getTextoLibreAccess().getTextoLibreKeyword_1()); 
-            match(input,38,FollowSets000.FOLLOW_38_in_rule__TextoLibre__Group__1__Impl9409); 
+            match(input,34,FollowSets000.FOLLOW_34_in_rule__TextoLibre__Group__1__Impl7909); 
              after(grammarAccess.getTextoLibreAccess().getTextoLibreKeyword_1()); 
 
             }
@@ -12188,21 +10207,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4782:1: rule__TextoLibre__Group__2 : rule__TextoLibre__Group__2__Impl rule__TextoLibre__Group__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4020:1: rule__TextoLibre__Group__2 : rule__TextoLibre__Group__2__Impl rule__TextoLibre__Group__3 ;
     public final void rule__TextoLibre__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4786:1: ( rule__TextoLibre__Group__2__Impl rule__TextoLibre__Group__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4787:2: rule__TextoLibre__Group__2__Impl rule__TextoLibre__Group__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4024:1: ( rule__TextoLibre__Group__2__Impl rule__TextoLibre__Group__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4025:2: rule__TextoLibre__Group__2__Impl rule__TextoLibre__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__2__Impl_in_rule__TextoLibre__Group__29440);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__2__Impl_in_rule__TextoLibre__Group__27940);
             rule__TextoLibre__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__3_in_rule__TextoLibre__Group__29443);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__3_in_rule__TextoLibre__Group__27943);
             rule__TextoLibre__Group__3();
 
             state._fsp--;
@@ -12226,20 +10245,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4794:1: rule__TextoLibre__Group__2__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4032:1: rule__TextoLibre__Group__2__Impl : ( '{' ) ;
     public final void rule__TextoLibre__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4798:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4799:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4036:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4037:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4799:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4800:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4037:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4038:1: '{'
             {
              before(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__TextoLibre__Group__2__Impl9471); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__TextoLibre__Group__2__Impl7971); 
              after(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -12263,21 +10282,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4813:1: rule__TextoLibre__Group__3 : rule__TextoLibre__Group__3__Impl rule__TextoLibre__Group__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4051:1: rule__TextoLibre__Group__3 : rule__TextoLibre__Group__3__Impl rule__TextoLibre__Group__4 ;
     public final void rule__TextoLibre__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4817:1: ( rule__TextoLibre__Group__3__Impl rule__TextoLibre__Group__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4818:2: rule__TextoLibre__Group__3__Impl rule__TextoLibre__Group__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4055:1: ( rule__TextoLibre__Group__3__Impl rule__TextoLibre__Group__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4056:2: rule__TextoLibre__Group__3__Impl rule__TextoLibre__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__3__Impl_in_rule__TextoLibre__Group__39502);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__3__Impl_in_rule__TextoLibre__Group__38002);
             rule__TextoLibre__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__4_in_rule__TextoLibre__Group__39505);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__4_in_rule__TextoLibre__Group__38005);
             rule__TextoLibre__Group__4();
 
             state._fsp--;
@@ -12301,31 +10320,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4825:1: rule__TextoLibre__Group__3__Impl : ( ( rule__TextoLibre__Group_3__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4063:1: rule__TextoLibre__Group__3__Impl : ( ( rule__TextoLibre__Group_3__0 )? ) ;
     public final void rule__TextoLibre__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4829:1: ( ( ( rule__TextoLibre__Group_3__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4830:1: ( ( rule__TextoLibre__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4067:1: ( ( ( rule__TextoLibre__Group_3__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4068:1: ( ( rule__TextoLibre__Group_3__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4830:1: ( ( rule__TextoLibre__Group_3__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4831:1: ( rule__TextoLibre__Group_3__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4068:1: ( ( rule__TextoLibre__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4069:1: ( rule__TextoLibre__Group_3__0 )?
             {
              before(grammarAccess.getTextoLibreAccess().getGroup_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4832:1: ( rule__TextoLibre__Group_3__0 )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4070:1: ( rule__TextoLibre__Group_3__0 )?
+            int alt22=2;
+            int LA22_0 = input.LA(1);
 
-            if ( (LA28_0==34) ) {
-                alt28=1;
+            if ( (LA22_0==31) ) {
+                alt22=1;
             }
-            switch (alt28) {
+            switch (alt22) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4832:2: rule__TextoLibre__Group_3__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4070:2: rule__TextoLibre__Group_3__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__0_in_rule__TextoLibre__Group__3__Impl9532);
+                    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__0_in_rule__TextoLibre__Group__3__Impl8032);
                     rule__TextoLibre__Group_3__0();
 
                     state._fsp--;
@@ -12359,21 +10378,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4842:1: rule__TextoLibre__Group__4 : rule__TextoLibre__Group__4__Impl rule__TextoLibre__Group__5 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4080:1: rule__TextoLibre__Group__4 : rule__TextoLibre__Group__4__Impl rule__TextoLibre__Group__5 ;
     public final void rule__TextoLibre__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4846:1: ( rule__TextoLibre__Group__4__Impl rule__TextoLibre__Group__5 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4847:2: rule__TextoLibre__Group__4__Impl rule__TextoLibre__Group__5
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4084:1: ( rule__TextoLibre__Group__4__Impl rule__TextoLibre__Group__5 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4085:2: rule__TextoLibre__Group__4__Impl rule__TextoLibre__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__4__Impl_in_rule__TextoLibre__Group__49563);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__4__Impl_in_rule__TextoLibre__Group__48063);
             rule__TextoLibre__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__5_in_rule__TextoLibre__Group__49566);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__5_in_rule__TextoLibre__Group__48066);
             rule__TextoLibre__Group__5();
 
             state._fsp--;
@@ -12397,31 +10416,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4854:1: rule__TextoLibre__Group__4__Impl : ( ( rule__TextoLibre__Group_4__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4092:1: rule__TextoLibre__Group__4__Impl : ( ( rule__TextoLibre__Group_4__0 )? ) ;
     public final void rule__TextoLibre__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4858:1: ( ( ( rule__TextoLibre__Group_4__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4859:1: ( ( rule__TextoLibre__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4096:1: ( ( ( rule__TextoLibre__Group_4__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4097:1: ( ( rule__TextoLibre__Group_4__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4859:1: ( ( rule__TextoLibre__Group_4__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4860:1: ( rule__TextoLibre__Group_4__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4097:1: ( ( rule__TextoLibre__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4098:1: ( rule__TextoLibre__Group_4__0 )?
             {
              before(grammarAccess.getTextoLibreAccess().getGroup_4()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4861:1: ( rule__TextoLibre__Group_4__0 )?
-            int alt29=2;
-            int LA29_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4099:1: ( rule__TextoLibre__Group_4__0 )?
+            int alt23=2;
+            int LA23_0 = input.LA(1);
 
-            if ( (LA29_0==35) ) {
-                alt29=1;
+            if ( (LA23_0==32) ) {
+                alt23=1;
             }
-            switch (alt29) {
+            switch (alt23) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4861:2: rule__TextoLibre__Group_4__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4099:2: rule__TextoLibre__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__0_in_rule__TextoLibre__Group__4__Impl9593);
+                    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__0_in_rule__TextoLibre__Group__4__Impl8093);
                     rule__TextoLibre__Group_4__0();
 
                     state._fsp--;
@@ -12455,22 +10474,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__5"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4871:1: rule__TextoLibre__Group__5 : rule__TextoLibre__Group__5__Impl rule__TextoLibre__Group__6 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4109:1: rule__TextoLibre__Group__5 : rule__TextoLibre__Group__5__Impl ;
     public final void rule__TextoLibre__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4875:1: ( rule__TextoLibre__Group__5__Impl rule__TextoLibre__Group__6 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4876:2: rule__TextoLibre__Group__5__Impl rule__TextoLibre__Group__6
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4113:1: ( rule__TextoLibre__Group__5__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4114:2: rule__TextoLibre__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__5__Impl_in_rule__TextoLibre__Group__59624);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__5__Impl_in_rule__TextoLibre__Group__58124);
             rule__TextoLibre__Group__5__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__6_in_rule__TextoLibre__Group__59627);
-            rule__TextoLibre__Group__6();
 
             state._fsp--;
 
@@ -12493,42 +10507,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group__5__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4883:1: rule__TextoLibre__Group__5__Impl : ( ( rule__TextoLibre__Group_5__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4120:1: rule__TextoLibre__Group__5__Impl : ( '}' ) ;
     public final void rule__TextoLibre__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4887:1: ( ( ( rule__TextoLibre__Group_5__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4888:1: ( ( rule__TextoLibre__Group_5__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4124:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4125:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4888:1: ( ( rule__TextoLibre__Group_5__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4889:1: ( rule__TextoLibre__Group_5__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4125:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4126:1: '}'
             {
-             before(grammarAccess.getTextoLibreAccess().getGroup_5()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4890:1: ( rule__TextoLibre__Group_5__0 )?
-            int alt30=2;
-            int LA30_0 = input.LA(1);
-
-            if ( (LA30_0==36) ) {
-                alt30=1;
-            }
-            switch (alt30) {
-                case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4890:2: rule__TextoLibre__Group_5__0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__0_in_rule__TextoLibre__Group__5__Impl9654);
-                    rule__TextoLibre__Group_5__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getTextoLibreAccess().getGroup_5()); 
+             before(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_5()); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__TextoLibre__Group__5__Impl8152); 
+             after(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_5()); 
 
             }
 
@@ -12550,92 +10543,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__TextoLibre__Group__5__Impl"
 
 
-    // $ANTLR start "rule__TextoLibre__Group__6"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4900:1: rule__TextoLibre__Group__6 : rule__TextoLibre__Group__6__Impl ;
-    public final void rule__TextoLibre__Group__6() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4904:1: ( rule__TextoLibre__Group__6__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4905:2: rule__TextoLibre__Group__6__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group__6__Impl_in_rule__TextoLibre__Group__69685);
-            rule__TextoLibre__Group__6__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group__6"
-
-
-    // $ANTLR start "rule__TextoLibre__Group__6__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4911:1: rule__TextoLibre__Group__6__Impl : ( '}' ) ;
-    public final void rule__TextoLibre__Group__6__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4915:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4916:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4916:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4917:1: '}'
-            {
-             before(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__TextoLibre__Group__6__Impl9713); 
-             after(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_6()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group__6__Impl"
-
-
     // $ANTLR start "rule__TextoLibre__Group_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4944:1: rule__TextoLibre__Group_3__0 : rule__TextoLibre__Group_3__0__Impl rule__TextoLibre__Group_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4151:1: rule__TextoLibre__Group_3__0 : rule__TextoLibre__Group_3__0__Impl rule__TextoLibre__Group_3__1 ;
     public final void rule__TextoLibre__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4948:1: ( rule__TextoLibre__Group_3__0__Impl rule__TextoLibre__Group_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4949:2: rule__TextoLibre__Group_3__0__Impl rule__TextoLibre__Group_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4155:1: ( rule__TextoLibre__Group_3__0__Impl rule__TextoLibre__Group_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4156:2: rule__TextoLibre__Group_3__0__Impl rule__TextoLibre__Group_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__0__Impl_in_rule__TextoLibre__Group_3__09758);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__0__Impl_in_rule__TextoLibre__Group_3__08195);
             rule__TextoLibre__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__1_in_rule__TextoLibre__Group_3__09761);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__1_in_rule__TextoLibre__Group_3__08198);
             rule__TextoLibre__Group_3__1();
 
             state._fsp--;
@@ -12659,20 +10582,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4956:1: rule__TextoLibre__Group_3__0__Impl : ( 'correctas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4163:1: rule__TextoLibre__Group_3__0__Impl : ( 'correctas' ) ;
     public final void rule__TextoLibre__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4960:1: ( ( 'correctas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4961:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4167:1: ( ( 'correctas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4168:1: ( 'correctas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4961:1: ( 'correctas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4962:1: 'correctas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4168:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4169:1: 'correctas'
             {
              before(grammarAccess.getTextoLibreAccess().getCorrectasKeyword_3_0()); 
-            match(input,34,FollowSets000.FOLLOW_34_in_rule__TextoLibre__Group_3__0__Impl9789); 
+            match(input,31,FollowSets000.FOLLOW_31_in_rule__TextoLibre__Group_3__0__Impl8226); 
              after(grammarAccess.getTextoLibreAccess().getCorrectasKeyword_3_0()); 
 
             }
@@ -12696,21 +10619,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4975:1: rule__TextoLibre__Group_3__1 : rule__TextoLibre__Group_3__1__Impl rule__TextoLibre__Group_3__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4182:1: rule__TextoLibre__Group_3__1 : rule__TextoLibre__Group_3__1__Impl rule__TextoLibre__Group_3__2 ;
     public final void rule__TextoLibre__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4979:1: ( rule__TextoLibre__Group_3__1__Impl rule__TextoLibre__Group_3__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4980:2: rule__TextoLibre__Group_3__1__Impl rule__TextoLibre__Group_3__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4186:1: ( rule__TextoLibre__Group_3__1__Impl rule__TextoLibre__Group_3__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4187:2: rule__TextoLibre__Group_3__1__Impl rule__TextoLibre__Group_3__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__1__Impl_in_rule__TextoLibre__Group_3__19820);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__1__Impl_in_rule__TextoLibre__Group_3__18257);
             rule__TextoLibre__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__2_in_rule__TextoLibre__Group_3__19823);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__2_in_rule__TextoLibre__Group_3__18260);
             rule__TextoLibre__Group_3__2();
 
             state._fsp--;
@@ -12734,20 +10657,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4987:1: rule__TextoLibre__Group_3__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4194:1: rule__TextoLibre__Group_3__1__Impl : ( '{' ) ;
     public final void rule__TextoLibre__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4991:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4992:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4198:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4199:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4992:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4993:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4199:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4200:1: '{'
             {
              before(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_3_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__TextoLibre__Group_3__1__Impl9851); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__TextoLibre__Group_3__1__Impl8288); 
              after(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_3_1()); 
 
             }
@@ -12771,21 +10694,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5006:1: rule__TextoLibre__Group_3__2 : rule__TextoLibre__Group_3__2__Impl rule__TextoLibre__Group_3__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4213:1: rule__TextoLibre__Group_3__2 : rule__TextoLibre__Group_3__2__Impl rule__TextoLibre__Group_3__3 ;
     public final void rule__TextoLibre__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5010:1: ( rule__TextoLibre__Group_3__2__Impl rule__TextoLibre__Group_3__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5011:2: rule__TextoLibre__Group_3__2__Impl rule__TextoLibre__Group_3__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4217:1: ( rule__TextoLibre__Group_3__2__Impl rule__TextoLibre__Group_3__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4218:2: rule__TextoLibre__Group_3__2__Impl rule__TextoLibre__Group_3__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__2__Impl_in_rule__TextoLibre__Group_3__29882);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__2__Impl_in_rule__TextoLibre__Group_3__28319);
             rule__TextoLibre__Group_3__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__3_in_rule__TextoLibre__Group_3__29885);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__3_in_rule__TextoLibre__Group_3__28322);
             rule__TextoLibre__Group_3__3();
 
             state._fsp--;
@@ -12809,23 +10732,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5018:1: rule__TextoLibre__Group_3__2__Impl : ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4225:1: rule__TextoLibre__Group_3__2__Impl : ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) ) ;
     public final void rule__TextoLibre__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5022:1: ( ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5023:1: ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4229:1: ( ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4230:1: ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5023:1: ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5024:1: ( rule__TextoLibre__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4230:1: ( ( rule__TextoLibre__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4231:1: ( rule__TextoLibre__CorrectasAssignment_3_2 )
             {
              before(grammarAccess.getTextoLibreAccess().getCorrectasAssignment_3_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5025:1: ( rule__TextoLibre__CorrectasAssignment_3_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5025:2: rule__TextoLibre__CorrectasAssignment_3_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4232:1: ( rule__TextoLibre__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4232:2: rule__TextoLibre__CorrectasAssignment_3_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__CorrectasAssignment_3_2_in_rule__TextoLibre__Group_3__2__Impl9912);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__CorrectasAssignment_3_2_in_rule__TextoLibre__Group_3__2__Impl8349);
             rule__TextoLibre__CorrectasAssignment_3_2();
 
             state._fsp--;
@@ -12856,21 +10779,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5035:1: rule__TextoLibre__Group_3__3 : rule__TextoLibre__Group_3__3__Impl rule__TextoLibre__Group_3__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4242:1: rule__TextoLibre__Group_3__3 : rule__TextoLibre__Group_3__3__Impl rule__TextoLibre__Group_3__4 ;
     public final void rule__TextoLibre__Group_3__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5039:1: ( rule__TextoLibre__Group_3__3__Impl rule__TextoLibre__Group_3__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5040:2: rule__TextoLibre__Group_3__3__Impl rule__TextoLibre__Group_3__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4246:1: ( rule__TextoLibre__Group_3__3__Impl rule__TextoLibre__Group_3__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4247:2: rule__TextoLibre__Group_3__3__Impl rule__TextoLibre__Group_3__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__3__Impl_in_rule__TextoLibre__Group_3__39942);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__3__Impl_in_rule__TextoLibre__Group_3__38379);
             rule__TextoLibre__Group_3__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__4_in_rule__TextoLibre__Group_3__39945);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__4_in_rule__TextoLibre__Group_3__38382);
             rule__TextoLibre__Group_3__4();
 
             state._fsp--;
@@ -12894,35 +10817,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5047:1: rule__TextoLibre__Group_3__3__Impl : ( ( rule__TextoLibre__Group_3_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4254:1: rule__TextoLibre__Group_3__3__Impl : ( ( rule__TextoLibre__Group_3_3__0 )* ) ;
     public final void rule__TextoLibre__Group_3__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5051:1: ( ( ( rule__TextoLibre__Group_3_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5052:1: ( ( rule__TextoLibre__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4258:1: ( ( ( rule__TextoLibre__Group_3_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4259:1: ( ( rule__TextoLibre__Group_3_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5052:1: ( ( rule__TextoLibre__Group_3_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5053:1: ( rule__TextoLibre__Group_3_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4259:1: ( ( rule__TextoLibre__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4260:1: ( rule__TextoLibre__Group_3_3__0 )*
             {
              before(grammarAccess.getTextoLibreAccess().getGroup_3_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5054:1: ( rule__TextoLibre__Group_3_3__0 )*
-            loop31:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4261:1: ( rule__TextoLibre__Group_3_3__0 )*
+            loop24:
             do {
-                int alt31=2;
-                int LA31_0 = input.LA(1);
+                int alt24=2;
+                int LA24_0 = input.LA(1);
 
-                if ( (LA31_0==27) ) {
-                    alt31=1;
+                if ( (LA24_0==27) ) {
+                    alt24=1;
                 }
 
 
-                switch (alt31) {
+                switch (alt24) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5054:2: rule__TextoLibre__Group_3_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4261:2: rule__TextoLibre__Group_3_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__0_in_rule__TextoLibre__Group_3__3__Impl9972);
+            	    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__0_in_rule__TextoLibre__Group_3__3__Impl8409);
             	    rule__TextoLibre__Group_3_3__0();
 
             	    state._fsp--;
@@ -12932,7 +10855,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop31;
+            	    break loop24;
                 }
             } while (true);
 
@@ -12959,16 +10882,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5064:1: rule__TextoLibre__Group_3__4 : rule__TextoLibre__Group_3__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4271:1: rule__TextoLibre__Group_3__4 : rule__TextoLibre__Group_3__4__Impl ;
     public final void rule__TextoLibre__Group_3__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5068:1: ( rule__TextoLibre__Group_3__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5069:2: rule__TextoLibre__Group_3__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4275:1: ( rule__TextoLibre__Group_3__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4276:2: rule__TextoLibre__Group_3__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__4__Impl_in_rule__TextoLibre__Group_3__410003);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3__4__Impl_in_rule__TextoLibre__Group_3__48440);
             rule__TextoLibre__Group_3__4__Impl();
 
             state._fsp--;
@@ -12992,20 +10915,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5075:1: rule__TextoLibre__Group_3__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4282:1: rule__TextoLibre__Group_3__4__Impl : ( '}' ) ;
     public final void rule__TextoLibre__Group_3__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5079:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5080:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4286:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4287:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5080:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5081:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4287:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4288:1: '}'
             {
              before(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_3_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__TextoLibre__Group_3__4__Impl10031); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__TextoLibre__Group_3__4__Impl8468); 
              after(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_3_4()); 
 
             }
@@ -13029,21 +10952,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5104:1: rule__TextoLibre__Group_3_3__0 : rule__TextoLibre__Group_3_3__0__Impl rule__TextoLibre__Group_3_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4311:1: rule__TextoLibre__Group_3_3__0 : rule__TextoLibre__Group_3_3__0__Impl rule__TextoLibre__Group_3_3__1 ;
     public final void rule__TextoLibre__Group_3_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5108:1: ( rule__TextoLibre__Group_3_3__0__Impl rule__TextoLibre__Group_3_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5109:2: rule__TextoLibre__Group_3_3__0__Impl rule__TextoLibre__Group_3_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4315:1: ( rule__TextoLibre__Group_3_3__0__Impl rule__TextoLibre__Group_3_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4316:2: rule__TextoLibre__Group_3_3__0__Impl rule__TextoLibre__Group_3_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__0__Impl_in_rule__TextoLibre__Group_3_3__010072);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__0__Impl_in_rule__TextoLibre__Group_3_3__08509);
             rule__TextoLibre__Group_3_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__1_in_rule__TextoLibre__Group_3_3__010075);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__1_in_rule__TextoLibre__Group_3_3__08512);
             rule__TextoLibre__Group_3_3__1();
 
             state._fsp--;
@@ -13067,20 +10990,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5116:1: rule__TextoLibre__Group_3_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4323:1: rule__TextoLibre__Group_3_3__0__Impl : ( ',' ) ;
     public final void rule__TextoLibre__Group_3_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5120:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5121:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4327:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4328:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5121:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5122:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4328:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4329:1: ','
             {
              before(grammarAccess.getTextoLibreAccess().getCommaKeyword_3_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__TextoLibre__Group_3_3__0__Impl10103); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__TextoLibre__Group_3_3__0__Impl8540); 
              after(grammarAccess.getTextoLibreAccess().getCommaKeyword_3_3_0()); 
 
             }
@@ -13104,16 +11027,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5135:1: rule__TextoLibre__Group_3_3__1 : rule__TextoLibre__Group_3_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4342:1: rule__TextoLibre__Group_3_3__1 : rule__TextoLibre__Group_3_3__1__Impl ;
     public final void rule__TextoLibre__Group_3_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5139:1: ( rule__TextoLibre__Group_3_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5140:2: rule__TextoLibre__Group_3_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4346:1: ( rule__TextoLibre__Group_3_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4347:2: rule__TextoLibre__Group_3_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__1__Impl_in_rule__TextoLibre__Group_3_3__110134);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_3_3__1__Impl_in_rule__TextoLibre__Group_3_3__18571);
             rule__TextoLibre__Group_3_3__1__Impl();
 
             state._fsp--;
@@ -13137,23 +11060,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_3_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5146:1: rule__TextoLibre__Group_3_3__1__Impl : ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4353:1: rule__TextoLibre__Group_3_3__1__Impl : ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) ) ;
     public final void rule__TextoLibre__Group_3_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5150:1: ( ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5151:1: ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4357:1: ( ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4358:1: ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5151:1: ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5152:1: ( rule__TextoLibre__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4358:1: ( ( rule__TextoLibre__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4359:1: ( rule__TextoLibre__CorrectasAssignment_3_3_1 )
             {
              before(grammarAccess.getTextoLibreAccess().getCorrectasAssignment_3_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5153:1: ( rule__TextoLibre__CorrectasAssignment_3_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5153:2: rule__TextoLibre__CorrectasAssignment_3_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4360:1: ( rule__TextoLibre__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4360:2: rule__TextoLibre__CorrectasAssignment_3_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__CorrectasAssignment_3_3_1_in_rule__TextoLibre__Group_3_3__1__Impl10161);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__CorrectasAssignment_3_3_1_in_rule__TextoLibre__Group_3_3__1__Impl8598);
             rule__TextoLibre__CorrectasAssignment_3_3_1();
 
             state._fsp--;
@@ -13184,21 +11107,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5167:1: rule__TextoLibre__Group_4__0 : rule__TextoLibre__Group_4__0__Impl rule__TextoLibre__Group_4__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4374:1: rule__TextoLibre__Group_4__0 : rule__TextoLibre__Group_4__0__Impl rule__TextoLibre__Group_4__1 ;
     public final void rule__TextoLibre__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5171:1: ( rule__TextoLibre__Group_4__0__Impl rule__TextoLibre__Group_4__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5172:2: rule__TextoLibre__Group_4__0__Impl rule__TextoLibre__Group_4__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4378:1: ( rule__TextoLibre__Group_4__0__Impl rule__TextoLibre__Group_4__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4379:2: rule__TextoLibre__Group_4__0__Impl rule__TextoLibre__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__0__Impl_in_rule__TextoLibre__Group_4__010195);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__0__Impl_in_rule__TextoLibre__Group_4__08632);
             rule__TextoLibre__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__1_in_rule__TextoLibre__Group_4__010198);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__1_in_rule__TextoLibre__Group_4__08635);
             rule__TextoLibre__Group_4__1();
 
             state._fsp--;
@@ -13222,20 +11145,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5179:1: rule__TextoLibre__Group_4__0__Impl : ( 'alternativas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4386:1: rule__TextoLibre__Group_4__0__Impl : ( 'alternativas' ) ;
     public final void rule__TextoLibre__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5183:1: ( ( 'alternativas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5184:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4390:1: ( ( 'alternativas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4391:1: ( 'alternativas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5184:1: ( 'alternativas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5185:1: 'alternativas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4391:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4392:1: 'alternativas'
             {
              before(grammarAccess.getTextoLibreAccess().getAlternativasKeyword_4_0()); 
-            match(input,35,FollowSets000.FOLLOW_35_in_rule__TextoLibre__Group_4__0__Impl10226); 
+            match(input,32,FollowSets000.FOLLOW_32_in_rule__TextoLibre__Group_4__0__Impl8663); 
              after(grammarAccess.getTextoLibreAccess().getAlternativasKeyword_4_0()); 
 
             }
@@ -13259,21 +11182,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5198:1: rule__TextoLibre__Group_4__1 : rule__TextoLibre__Group_4__1__Impl rule__TextoLibre__Group_4__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4405:1: rule__TextoLibre__Group_4__1 : rule__TextoLibre__Group_4__1__Impl rule__TextoLibre__Group_4__2 ;
     public final void rule__TextoLibre__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5202:1: ( rule__TextoLibre__Group_4__1__Impl rule__TextoLibre__Group_4__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5203:2: rule__TextoLibre__Group_4__1__Impl rule__TextoLibre__Group_4__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4409:1: ( rule__TextoLibre__Group_4__1__Impl rule__TextoLibre__Group_4__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4410:2: rule__TextoLibre__Group_4__1__Impl rule__TextoLibre__Group_4__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__1__Impl_in_rule__TextoLibre__Group_4__110257);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__1__Impl_in_rule__TextoLibre__Group_4__18694);
             rule__TextoLibre__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__2_in_rule__TextoLibre__Group_4__110260);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__2_in_rule__TextoLibre__Group_4__18697);
             rule__TextoLibre__Group_4__2();
 
             state._fsp--;
@@ -13297,20 +11220,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5210:1: rule__TextoLibre__Group_4__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4417:1: rule__TextoLibre__Group_4__1__Impl : ( '{' ) ;
     public final void rule__TextoLibre__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5214:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5215:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4421:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4422:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5215:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5216:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4422:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4423:1: '{'
             {
              before(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_4_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__TextoLibre__Group_4__1__Impl10288); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__TextoLibre__Group_4__1__Impl8725); 
              after(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_4_1()); 
 
             }
@@ -13334,21 +11257,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5229:1: rule__TextoLibre__Group_4__2 : rule__TextoLibre__Group_4__2__Impl rule__TextoLibre__Group_4__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4436:1: rule__TextoLibre__Group_4__2 : rule__TextoLibre__Group_4__2__Impl rule__TextoLibre__Group_4__3 ;
     public final void rule__TextoLibre__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5233:1: ( rule__TextoLibre__Group_4__2__Impl rule__TextoLibre__Group_4__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5234:2: rule__TextoLibre__Group_4__2__Impl rule__TextoLibre__Group_4__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4440:1: ( rule__TextoLibre__Group_4__2__Impl rule__TextoLibre__Group_4__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4441:2: rule__TextoLibre__Group_4__2__Impl rule__TextoLibre__Group_4__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__2__Impl_in_rule__TextoLibre__Group_4__210319);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__2__Impl_in_rule__TextoLibre__Group_4__28756);
             rule__TextoLibre__Group_4__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__3_in_rule__TextoLibre__Group_4__210322);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__3_in_rule__TextoLibre__Group_4__28759);
             rule__TextoLibre__Group_4__3();
 
             state._fsp--;
@@ -13372,23 +11295,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5241:1: rule__TextoLibre__Group_4__2__Impl : ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4448:1: rule__TextoLibre__Group_4__2__Impl : ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) ) ;
     public final void rule__TextoLibre__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5245:1: ( ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5246:1: ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4452:1: ( ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4453:1: ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5246:1: ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5247:1: ( rule__TextoLibre__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4453:1: ( ( rule__TextoLibre__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4454:1: ( rule__TextoLibre__AlternativasAssignment_4_2 )
             {
              before(grammarAccess.getTextoLibreAccess().getAlternativasAssignment_4_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5248:1: ( rule__TextoLibre__AlternativasAssignment_4_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5248:2: rule__TextoLibre__AlternativasAssignment_4_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4455:1: ( rule__TextoLibre__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4455:2: rule__TextoLibre__AlternativasAssignment_4_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__AlternativasAssignment_4_2_in_rule__TextoLibre__Group_4__2__Impl10349);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__AlternativasAssignment_4_2_in_rule__TextoLibre__Group_4__2__Impl8786);
             rule__TextoLibre__AlternativasAssignment_4_2();
 
             state._fsp--;
@@ -13419,21 +11342,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5258:1: rule__TextoLibre__Group_4__3 : rule__TextoLibre__Group_4__3__Impl rule__TextoLibre__Group_4__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4465:1: rule__TextoLibre__Group_4__3 : rule__TextoLibre__Group_4__3__Impl rule__TextoLibre__Group_4__4 ;
     public final void rule__TextoLibre__Group_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5262:1: ( rule__TextoLibre__Group_4__3__Impl rule__TextoLibre__Group_4__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5263:2: rule__TextoLibre__Group_4__3__Impl rule__TextoLibre__Group_4__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4469:1: ( rule__TextoLibre__Group_4__3__Impl rule__TextoLibre__Group_4__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4470:2: rule__TextoLibre__Group_4__3__Impl rule__TextoLibre__Group_4__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__3__Impl_in_rule__TextoLibre__Group_4__310379);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__3__Impl_in_rule__TextoLibre__Group_4__38816);
             rule__TextoLibre__Group_4__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__4_in_rule__TextoLibre__Group_4__310382);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__4_in_rule__TextoLibre__Group_4__38819);
             rule__TextoLibre__Group_4__4();
 
             state._fsp--;
@@ -13457,35 +11380,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5270:1: rule__TextoLibre__Group_4__3__Impl : ( ( rule__TextoLibre__Group_4_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4477:1: rule__TextoLibre__Group_4__3__Impl : ( ( rule__TextoLibre__Group_4_3__0 )* ) ;
     public final void rule__TextoLibre__Group_4__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5274:1: ( ( ( rule__TextoLibre__Group_4_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5275:1: ( ( rule__TextoLibre__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4481:1: ( ( ( rule__TextoLibre__Group_4_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4482:1: ( ( rule__TextoLibre__Group_4_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5275:1: ( ( rule__TextoLibre__Group_4_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5276:1: ( rule__TextoLibre__Group_4_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4482:1: ( ( rule__TextoLibre__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4483:1: ( rule__TextoLibre__Group_4_3__0 )*
             {
              before(grammarAccess.getTextoLibreAccess().getGroup_4_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5277:1: ( rule__TextoLibre__Group_4_3__0 )*
-            loop32:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4484:1: ( rule__TextoLibre__Group_4_3__0 )*
+            loop25:
             do {
-                int alt32=2;
-                int LA32_0 = input.LA(1);
+                int alt25=2;
+                int LA25_0 = input.LA(1);
 
-                if ( (LA32_0==27) ) {
-                    alt32=1;
+                if ( (LA25_0==27) ) {
+                    alt25=1;
                 }
 
 
-                switch (alt32) {
+                switch (alt25) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5277:2: rule__TextoLibre__Group_4_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4484:2: rule__TextoLibre__Group_4_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__0_in_rule__TextoLibre__Group_4__3__Impl10409);
+            	    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__0_in_rule__TextoLibre__Group_4__3__Impl8846);
             	    rule__TextoLibre__Group_4_3__0();
 
             	    state._fsp--;
@@ -13495,7 +11418,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop32;
+            	    break loop25;
                 }
             } while (true);
 
@@ -13522,16 +11445,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5287:1: rule__TextoLibre__Group_4__4 : rule__TextoLibre__Group_4__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4494:1: rule__TextoLibre__Group_4__4 : rule__TextoLibre__Group_4__4__Impl ;
     public final void rule__TextoLibre__Group_4__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5291:1: ( rule__TextoLibre__Group_4__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5292:2: rule__TextoLibre__Group_4__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4498:1: ( rule__TextoLibre__Group_4__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4499:2: rule__TextoLibre__Group_4__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__4__Impl_in_rule__TextoLibre__Group_4__410440);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4__4__Impl_in_rule__TextoLibre__Group_4__48877);
             rule__TextoLibre__Group_4__4__Impl();
 
             state._fsp--;
@@ -13555,20 +11478,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5298:1: rule__TextoLibre__Group_4__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4505:1: rule__TextoLibre__Group_4__4__Impl : ( '}' ) ;
     public final void rule__TextoLibre__Group_4__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5302:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5303:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4509:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4510:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5303:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5304:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4510:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4511:1: '}'
             {
              before(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_4_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__TextoLibre__Group_4__4__Impl10468); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__TextoLibre__Group_4__4__Impl8905); 
              after(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_4_4()); 
 
             }
@@ -13592,21 +11515,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5327:1: rule__TextoLibre__Group_4_3__0 : rule__TextoLibre__Group_4_3__0__Impl rule__TextoLibre__Group_4_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4534:1: rule__TextoLibre__Group_4_3__0 : rule__TextoLibre__Group_4_3__0__Impl rule__TextoLibre__Group_4_3__1 ;
     public final void rule__TextoLibre__Group_4_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5331:1: ( rule__TextoLibre__Group_4_3__0__Impl rule__TextoLibre__Group_4_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5332:2: rule__TextoLibre__Group_4_3__0__Impl rule__TextoLibre__Group_4_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4538:1: ( rule__TextoLibre__Group_4_3__0__Impl rule__TextoLibre__Group_4_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4539:2: rule__TextoLibre__Group_4_3__0__Impl rule__TextoLibre__Group_4_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__0__Impl_in_rule__TextoLibre__Group_4_3__010509);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__0__Impl_in_rule__TextoLibre__Group_4_3__08946);
             rule__TextoLibre__Group_4_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__1_in_rule__TextoLibre__Group_4_3__010512);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__1_in_rule__TextoLibre__Group_4_3__08949);
             rule__TextoLibre__Group_4_3__1();
 
             state._fsp--;
@@ -13630,20 +11553,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5339:1: rule__TextoLibre__Group_4_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4546:1: rule__TextoLibre__Group_4_3__0__Impl : ( ',' ) ;
     public final void rule__TextoLibre__Group_4_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5343:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5344:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4550:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4551:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5344:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5345:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4551:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4552:1: ','
             {
              before(grammarAccess.getTextoLibreAccess().getCommaKeyword_4_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__TextoLibre__Group_4_3__0__Impl10540); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__TextoLibre__Group_4_3__0__Impl8977); 
              after(grammarAccess.getTextoLibreAccess().getCommaKeyword_4_3_0()); 
 
             }
@@ -13667,16 +11590,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5358:1: rule__TextoLibre__Group_4_3__1 : rule__TextoLibre__Group_4_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4565:1: rule__TextoLibre__Group_4_3__1 : rule__TextoLibre__Group_4_3__1__Impl ;
     public final void rule__TextoLibre__Group_4_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5362:1: ( rule__TextoLibre__Group_4_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5363:2: rule__TextoLibre__Group_4_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4569:1: ( rule__TextoLibre__Group_4_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4570:2: rule__TextoLibre__Group_4_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__1__Impl_in_rule__TextoLibre__Group_4_3__110571);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_4_3__1__Impl_in_rule__TextoLibre__Group_4_3__19008);
             rule__TextoLibre__Group_4_3__1__Impl();
 
             state._fsp--;
@@ -13700,23 +11623,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__Group_4_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5369:1: rule__TextoLibre__Group_4_3__1__Impl : ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4576:1: rule__TextoLibre__Group_4_3__1__Impl : ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) ) ;
     public final void rule__TextoLibre__Group_4_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5373:1: ( ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5374:1: ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4580:1: ( ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4581:1: ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5374:1: ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5375:1: ( rule__TextoLibre__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4581:1: ( ( rule__TextoLibre__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4582:1: ( rule__TextoLibre__AlternativasAssignment_4_3_1 )
             {
              before(grammarAccess.getTextoLibreAccess().getAlternativasAssignment_4_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5376:1: ( rule__TextoLibre__AlternativasAssignment_4_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5376:2: rule__TextoLibre__AlternativasAssignment_4_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4583:1: ( rule__TextoLibre__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4583:2: rule__TextoLibre__AlternativasAssignment_4_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__AlternativasAssignment_4_3_1_in_rule__TextoLibre__Group_4_3__1__Impl10598);
+            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__AlternativasAssignment_4_3_1_in_rule__TextoLibre__Group_4_3__1__Impl9035);
             rule__TextoLibre__AlternativasAssignment_4_3_1();
 
             state._fsp--;
@@ -13746,585 +11669,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__TextoLibre__Group_4_3__1__Impl"
 
 
-    // $ANTLR start "rule__TextoLibre__Group_5__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5390:1: rule__TextoLibre__Group_5__0 : rule__TextoLibre__Group_5__0__Impl rule__TextoLibre__Group_5__1 ;
-    public final void rule__TextoLibre__Group_5__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5394:1: ( rule__TextoLibre__Group_5__0__Impl rule__TextoLibre__Group_5__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5395:2: rule__TextoLibre__Group_5__0__Impl rule__TextoLibre__Group_5__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__0__Impl_in_rule__TextoLibre__Group_5__010632);
-            rule__TextoLibre__Group_5__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__1_in_rule__TextoLibre__Group_5__010635);
-            rule__TextoLibre__Group_5__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__0"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5402:1: rule__TextoLibre__Group_5__0__Impl : ( 'seleccionadas' ) ;
-    public final void rule__TextoLibre__Group_5__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5406:1: ( ( 'seleccionadas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5407:1: ( 'seleccionadas' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5407:1: ( 'seleccionadas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5408:1: 'seleccionadas'
-            {
-             before(grammarAccess.getTextoLibreAccess().getSeleccionadasKeyword_5_0()); 
-            match(input,36,FollowSets000.FOLLOW_36_in_rule__TextoLibre__Group_5__0__Impl10663); 
-             after(grammarAccess.getTextoLibreAccess().getSeleccionadasKeyword_5_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__0__Impl"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5421:1: rule__TextoLibre__Group_5__1 : rule__TextoLibre__Group_5__1__Impl rule__TextoLibre__Group_5__2 ;
-    public final void rule__TextoLibre__Group_5__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5425:1: ( rule__TextoLibre__Group_5__1__Impl rule__TextoLibre__Group_5__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5426:2: rule__TextoLibre__Group_5__1__Impl rule__TextoLibre__Group_5__2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__1__Impl_in_rule__TextoLibre__Group_5__110694);
-            rule__TextoLibre__Group_5__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__2_in_rule__TextoLibre__Group_5__110697);
-            rule__TextoLibre__Group_5__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__1"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5433:1: rule__TextoLibre__Group_5__1__Impl : ( '{' ) ;
-    public final void rule__TextoLibre__Group_5__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5437:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5438:1: ( '{' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5438:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5439:1: '{'
-            {
-             before(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_5_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__TextoLibre__Group_5__1__Impl10725); 
-             after(grammarAccess.getTextoLibreAccess().getLeftCurlyBracketKeyword_5_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__1__Impl"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5452:1: rule__TextoLibre__Group_5__2 : rule__TextoLibre__Group_5__2__Impl rule__TextoLibre__Group_5__3 ;
-    public final void rule__TextoLibre__Group_5__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5456:1: ( rule__TextoLibre__Group_5__2__Impl rule__TextoLibre__Group_5__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5457:2: rule__TextoLibre__Group_5__2__Impl rule__TextoLibre__Group_5__3
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__2__Impl_in_rule__TextoLibre__Group_5__210756);
-            rule__TextoLibre__Group_5__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__3_in_rule__TextoLibre__Group_5__210759);
-            rule__TextoLibre__Group_5__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__2"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5464:1: rule__TextoLibre__Group_5__2__Impl : ( ( rule__TextoLibre__SeleccionadasAssignment_5_2 ) ) ;
-    public final void rule__TextoLibre__Group_5__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5468:1: ( ( ( rule__TextoLibre__SeleccionadasAssignment_5_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5469:1: ( ( rule__TextoLibre__SeleccionadasAssignment_5_2 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5469:1: ( ( rule__TextoLibre__SeleccionadasAssignment_5_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5470:1: ( rule__TextoLibre__SeleccionadasAssignment_5_2 )
-            {
-             before(grammarAccess.getTextoLibreAccess().getSeleccionadasAssignment_5_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5471:1: ( rule__TextoLibre__SeleccionadasAssignment_5_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5471:2: rule__TextoLibre__SeleccionadasAssignment_5_2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__SeleccionadasAssignment_5_2_in_rule__TextoLibre__Group_5__2__Impl10786);
-            rule__TextoLibre__SeleccionadasAssignment_5_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getTextoLibreAccess().getSeleccionadasAssignment_5_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__2__Impl"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5481:1: rule__TextoLibre__Group_5__3 : rule__TextoLibre__Group_5__3__Impl rule__TextoLibre__Group_5__4 ;
-    public final void rule__TextoLibre__Group_5__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5485:1: ( rule__TextoLibre__Group_5__3__Impl rule__TextoLibre__Group_5__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5486:2: rule__TextoLibre__Group_5__3__Impl rule__TextoLibre__Group_5__4
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__3__Impl_in_rule__TextoLibre__Group_5__310816);
-            rule__TextoLibre__Group_5__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__4_in_rule__TextoLibre__Group_5__310819);
-            rule__TextoLibre__Group_5__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__3"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5493:1: rule__TextoLibre__Group_5__3__Impl : ( ( rule__TextoLibre__Group_5_3__0 )* ) ;
-    public final void rule__TextoLibre__Group_5__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5497:1: ( ( ( rule__TextoLibre__Group_5_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5498:1: ( ( rule__TextoLibre__Group_5_3__0 )* )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5498:1: ( ( rule__TextoLibre__Group_5_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5499:1: ( rule__TextoLibre__Group_5_3__0 )*
-            {
-             before(grammarAccess.getTextoLibreAccess().getGroup_5_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5500:1: ( rule__TextoLibre__Group_5_3__0 )*
-            loop33:
-            do {
-                int alt33=2;
-                int LA33_0 = input.LA(1);
-
-                if ( (LA33_0==27) ) {
-                    alt33=1;
-                }
-
-
-                switch (alt33) {
-            	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5500:2: rule__TextoLibre__Group_5_3__0
-            	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5_3__0_in_rule__TextoLibre__Group_5__3__Impl10846);
-            	    rule__TextoLibre__Group_5_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop33;
-                }
-            } while (true);
-
-             after(grammarAccess.getTextoLibreAccess().getGroup_5_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__3__Impl"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5510:1: rule__TextoLibre__Group_5__4 : rule__TextoLibre__Group_5__4__Impl ;
-    public final void rule__TextoLibre__Group_5__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5514:1: ( rule__TextoLibre__Group_5__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5515:2: rule__TextoLibre__Group_5__4__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5__4__Impl_in_rule__TextoLibre__Group_5__410877);
-            rule__TextoLibre__Group_5__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__4"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5521:1: rule__TextoLibre__Group_5__4__Impl : ( '}' ) ;
-    public final void rule__TextoLibre__Group_5__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5525:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5526:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5526:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5527:1: '}'
-            {
-             before(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_5_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__TextoLibre__Group_5__4__Impl10905); 
-             after(grammarAccess.getTextoLibreAccess().getRightCurlyBracketKeyword_5_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5__4__Impl"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5550:1: rule__TextoLibre__Group_5_3__0 : rule__TextoLibre__Group_5_3__0__Impl rule__TextoLibre__Group_5_3__1 ;
-    public final void rule__TextoLibre__Group_5_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5554:1: ( rule__TextoLibre__Group_5_3__0__Impl rule__TextoLibre__Group_5_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5555:2: rule__TextoLibre__Group_5_3__0__Impl rule__TextoLibre__Group_5_3__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5_3__0__Impl_in_rule__TextoLibre__Group_5_3__010946);
-            rule__TextoLibre__Group_5_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5_3__1_in_rule__TextoLibre__Group_5_3__010949);
-            rule__TextoLibre__Group_5_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5_3__0"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5562:1: rule__TextoLibre__Group_5_3__0__Impl : ( ',' ) ;
-    public final void rule__TextoLibre__Group_5_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5566:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5567:1: ( ',' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5567:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5568:1: ','
-            {
-             before(grammarAccess.getTextoLibreAccess().getCommaKeyword_5_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__TextoLibre__Group_5_3__0__Impl10977); 
-             after(grammarAccess.getTextoLibreAccess().getCommaKeyword_5_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5_3__0__Impl"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5581:1: rule__TextoLibre__Group_5_3__1 : rule__TextoLibre__Group_5_3__1__Impl ;
-    public final void rule__TextoLibre__Group_5_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5585:1: ( rule__TextoLibre__Group_5_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5586:2: rule__TextoLibre__Group_5_3__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__Group_5_3__1__Impl_in_rule__TextoLibre__Group_5_3__111008);
-            rule__TextoLibre__Group_5_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5_3__1"
-
-
-    // $ANTLR start "rule__TextoLibre__Group_5_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5592:1: rule__TextoLibre__Group_5_3__1__Impl : ( ( rule__TextoLibre__SeleccionadasAssignment_5_3_1 ) ) ;
-    public final void rule__TextoLibre__Group_5_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5596:1: ( ( ( rule__TextoLibre__SeleccionadasAssignment_5_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5597:1: ( ( rule__TextoLibre__SeleccionadasAssignment_5_3_1 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5597:1: ( ( rule__TextoLibre__SeleccionadasAssignment_5_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5598:1: ( rule__TextoLibre__SeleccionadasAssignment_5_3_1 )
-            {
-             before(grammarAccess.getTextoLibreAccess().getSeleccionadasAssignment_5_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5599:1: ( rule__TextoLibre__SeleccionadasAssignment_5_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5599:2: rule__TextoLibre__SeleccionadasAssignment_5_3_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__TextoLibre__SeleccionadasAssignment_5_3_1_in_rule__TextoLibre__Group_5_3__1__Impl11035);
-            rule__TextoLibre__SeleccionadasAssignment_5_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getTextoLibreAccess().getSeleccionadasAssignment_5_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__Group_5_3__1__Impl"
-
-
     // $ANTLR start "rule__Ordenacion__Group__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5613:1: rule__Ordenacion__Group__0 : rule__Ordenacion__Group__0__Impl rule__Ordenacion__Group__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4597:1: rule__Ordenacion__Group__0 : rule__Ordenacion__Group__0__Impl rule__Ordenacion__Group__1 ;
     public final void rule__Ordenacion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5617:1: ( rule__Ordenacion__Group__0__Impl rule__Ordenacion__Group__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5618:2: rule__Ordenacion__Group__0__Impl rule__Ordenacion__Group__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4601:1: ( rule__Ordenacion__Group__0__Impl rule__Ordenacion__Group__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4602:2: rule__Ordenacion__Group__0__Impl rule__Ordenacion__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__0__Impl_in_rule__Ordenacion__Group__011069);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__0__Impl_in_rule__Ordenacion__Group__09069);
             rule__Ordenacion__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__1_in_rule__Ordenacion__Group__011072);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__1_in_rule__Ordenacion__Group__09072);
             rule__Ordenacion__Group__1();
 
             state._fsp--;
@@ -14348,21 +11708,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5625:1: rule__Ordenacion__Group__0__Impl : ( () ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4609:1: rule__Ordenacion__Group__0__Impl : ( () ) ;
     public final void rule__Ordenacion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5629:1: ( ( () ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5630:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4613:1: ( ( () ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4614:1: ( () )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5630:1: ( () )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5631:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4614:1: ( () )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4615:1: ()
             {
              before(grammarAccess.getOrdenacionAccess().getOrdenacionAction_0()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5632:1: ()
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5634:1: 
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4616:1: ()
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4618:1: 
             {
             }
 
@@ -14385,21 +11745,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5644:1: rule__Ordenacion__Group__1 : rule__Ordenacion__Group__1__Impl rule__Ordenacion__Group__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4628:1: rule__Ordenacion__Group__1 : rule__Ordenacion__Group__1__Impl rule__Ordenacion__Group__2 ;
     public final void rule__Ordenacion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5648:1: ( rule__Ordenacion__Group__1__Impl rule__Ordenacion__Group__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5649:2: rule__Ordenacion__Group__1__Impl rule__Ordenacion__Group__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4632:1: ( rule__Ordenacion__Group__1__Impl rule__Ordenacion__Group__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4633:2: rule__Ordenacion__Group__1__Impl rule__Ordenacion__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__1__Impl_in_rule__Ordenacion__Group__111130);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__1__Impl_in_rule__Ordenacion__Group__19130);
             rule__Ordenacion__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__2_in_rule__Ordenacion__Group__111133);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__2_in_rule__Ordenacion__Group__19133);
             rule__Ordenacion__Group__2();
 
             state._fsp--;
@@ -14423,20 +11783,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5656:1: rule__Ordenacion__Group__1__Impl : ( 'Ordenacion' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4640:1: rule__Ordenacion__Group__1__Impl : ( 'Ordenacion' ) ;
     public final void rule__Ordenacion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5660:1: ( ( 'Ordenacion' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5661:1: ( 'Ordenacion' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4644:1: ( ( 'Ordenacion' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4645:1: ( 'Ordenacion' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5661:1: ( 'Ordenacion' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5662:1: 'Ordenacion'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4645:1: ( 'Ordenacion' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4646:1: 'Ordenacion'
             {
              before(grammarAccess.getOrdenacionAccess().getOrdenacionKeyword_1()); 
-            match(input,39,FollowSets000.FOLLOW_39_in_rule__Ordenacion__Group__1__Impl11161); 
+            match(input,35,FollowSets000.FOLLOW_35_in_rule__Ordenacion__Group__1__Impl9161); 
              after(grammarAccess.getOrdenacionAccess().getOrdenacionKeyword_1()); 
 
             }
@@ -14460,21 +11820,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5675:1: rule__Ordenacion__Group__2 : rule__Ordenacion__Group__2__Impl rule__Ordenacion__Group__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4659:1: rule__Ordenacion__Group__2 : rule__Ordenacion__Group__2__Impl rule__Ordenacion__Group__3 ;
     public final void rule__Ordenacion__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5679:1: ( rule__Ordenacion__Group__2__Impl rule__Ordenacion__Group__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5680:2: rule__Ordenacion__Group__2__Impl rule__Ordenacion__Group__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4663:1: ( rule__Ordenacion__Group__2__Impl rule__Ordenacion__Group__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4664:2: rule__Ordenacion__Group__2__Impl rule__Ordenacion__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__2__Impl_in_rule__Ordenacion__Group__211192);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__2__Impl_in_rule__Ordenacion__Group__29192);
             rule__Ordenacion__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__3_in_rule__Ordenacion__Group__211195);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__3_in_rule__Ordenacion__Group__29195);
             rule__Ordenacion__Group__3();
 
             state._fsp--;
@@ -14498,20 +11858,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5687:1: rule__Ordenacion__Group__2__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4671:1: rule__Ordenacion__Group__2__Impl : ( '{' ) ;
     public final void rule__Ordenacion__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5691:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5692:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4675:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4676:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5692:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5693:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4676:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4677:1: '{'
             {
              before(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Ordenacion__Group__2__Impl11223); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Ordenacion__Group__2__Impl9223); 
              after(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -14535,21 +11895,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5706:1: rule__Ordenacion__Group__3 : rule__Ordenacion__Group__3__Impl rule__Ordenacion__Group__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4690:1: rule__Ordenacion__Group__3 : rule__Ordenacion__Group__3__Impl rule__Ordenacion__Group__4 ;
     public final void rule__Ordenacion__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5710:1: ( rule__Ordenacion__Group__3__Impl rule__Ordenacion__Group__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5711:2: rule__Ordenacion__Group__3__Impl rule__Ordenacion__Group__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4694:1: ( rule__Ordenacion__Group__3__Impl rule__Ordenacion__Group__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4695:2: rule__Ordenacion__Group__3__Impl rule__Ordenacion__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__3__Impl_in_rule__Ordenacion__Group__311254);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__3__Impl_in_rule__Ordenacion__Group__39254);
             rule__Ordenacion__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__4_in_rule__Ordenacion__Group__311257);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__4_in_rule__Ordenacion__Group__39257);
             rule__Ordenacion__Group__4();
 
             state._fsp--;
@@ -14573,31 +11933,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5718:1: rule__Ordenacion__Group__3__Impl : ( ( rule__Ordenacion__Group_3__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4702:1: rule__Ordenacion__Group__3__Impl : ( ( rule__Ordenacion__Group_3__0 )? ) ;
     public final void rule__Ordenacion__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5722:1: ( ( ( rule__Ordenacion__Group_3__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5723:1: ( ( rule__Ordenacion__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4706:1: ( ( ( rule__Ordenacion__Group_3__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4707:1: ( ( rule__Ordenacion__Group_3__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5723:1: ( ( rule__Ordenacion__Group_3__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5724:1: ( rule__Ordenacion__Group_3__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4707:1: ( ( rule__Ordenacion__Group_3__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4708:1: ( rule__Ordenacion__Group_3__0 )?
             {
              before(grammarAccess.getOrdenacionAccess().getGroup_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5725:1: ( rule__Ordenacion__Group_3__0 )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4709:1: ( rule__Ordenacion__Group_3__0 )?
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( (LA34_0==34) ) {
-                alt34=1;
+            if ( (LA26_0==31) ) {
+                alt26=1;
             }
-            switch (alt34) {
+            switch (alt26) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5725:2: rule__Ordenacion__Group_3__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4709:2: rule__Ordenacion__Group_3__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__0_in_rule__Ordenacion__Group__3__Impl11284);
+                    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__0_in_rule__Ordenacion__Group__3__Impl9284);
                     rule__Ordenacion__Group_3__0();
 
                     state._fsp--;
@@ -14631,21 +11991,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5735:1: rule__Ordenacion__Group__4 : rule__Ordenacion__Group__4__Impl rule__Ordenacion__Group__5 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4719:1: rule__Ordenacion__Group__4 : rule__Ordenacion__Group__4__Impl rule__Ordenacion__Group__5 ;
     public final void rule__Ordenacion__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5739:1: ( rule__Ordenacion__Group__4__Impl rule__Ordenacion__Group__5 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5740:2: rule__Ordenacion__Group__4__Impl rule__Ordenacion__Group__5
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4723:1: ( rule__Ordenacion__Group__4__Impl rule__Ordenacion__Group__5 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4724:2: rule__Ordenacion__Group__4__Impl rule__Ordenacion__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__4__Impl_in_rule__Ordenacion__Group__411315);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__4__Impl_in_rule__Ordenacion__Group__49315);
             rule__Ordenacion__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__5_in_rule__Ordenacion__Group__411318);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__5_in_rule__Ordenacion__Group__49318);
             rule__Ordenacion__Group__5();
 
             state._fsp--;
@@ -14669,31 +12029,31 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5747:1: rule__Ordenacion__Group__4__Impl : ( ( rule__Ordenacion__Group_4__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4731:1: rule__Ordenacion__Group__4__Impl : ( ( rule__Ordenacion__Group_4__0 )? ) ;
     public final void rule__Ordenacion__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5751:1: ( ( ( rule__Ordenacion__Group_4__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:1: ( ( rule__Ordenacion__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4735:1: ( ( ( rule__Ordenacion__Group_4__0 )? ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4736:1: ( ( rule__Ordenacion__Group_4__0 )? )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:1: ( ( rule__Ordenacion__Group_4__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5753:1: ( rule__Ordenacion__Group_4__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4736:1: ( ( rule__Ordenacion__Group_4__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4737:1: ( rule__Ordenacion__Group_4__0 )?
             {
              before(grammarAccess.getOrdenacionAccess().getGroup_4()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5754:1: ( rule__Ordenacion__Group_4__0 )?
-            int alt35=2;
-            int LA35_0 = input.LA(1);
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4738:1: ( rule__Ordenacion__Group_4__0 )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA35_0==35) ) {
-                alt35=1;
+            if ( (LA27_0==32) ) {
+                alt27=1;
             }
-            switch (alt35) {
+            switch (alt27) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5754:2: rule__Ordenacion__Group_4__0
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4738:2: rule__Ordenacion__Group_4__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__0_in_rule__Ordenacion__Group__4__Impl11345);
+                    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__0_in_rule__Ordenacion__Group__4__Impl9345);
                     rule__Ordenacion__Group_4__0();
 
                     state._fsp--;
@@ -14727,22 +12087,17 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__5"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5764:1: rule__Ordenacion__Group__5 : rule__Ordenacion__Group__5__Impl rule__Ordenacion__Group__6 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4748:1: rule__Ordenacion__Group__5 : rule__Ordenacion__Group__5__Impl ;
     public final void rule__Ordenacion__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5768:1: ( rule__Ordenacion__Group__5__Impl rule__Ordenacion__Group__6 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5769:2: rule__Ordenacion__Group__5__Impl rule__Ordenacion__Group__6
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4752:1: ( rule__Ordenacion__Group__5__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4753:2: rule__Ordenacion__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__5__Impl_in_rule__Ordenacion__Group__511376);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__5__Impl_in_rule__Ordenacion__Group__59376);
             rule__Ordenacion__Group__5__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__6_in_rule__Ordenacion__Group__511379);
-            rule__Ordenacion__Group__6();
 
             state._fsp--;
 
@@ -14765,42 +12120,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group__5__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5776:1: rule__Ordenacion__Group__5__Impl : ( ( rule__Ordenacion__Group_5__0 )? ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4759:1: rule__Ordenacion__Group__5__Impl : ( '}' ) ;
     public final void rule__Ordenacion__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5780:1: ( ( ( rule__Ordenacion__Group_5__0 )? ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5781:1: ( ( rule__Ordenacion__Group_5__0 )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4763:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4764:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5781:1: ( ( rule__Ordenacion__Group_5__0 )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:1: ( rule__Ordenacion__Group_5__0 )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4764:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4765:1: '}'
             {
-             before(grammarAccess.getOrdenacionAccess().getGroup_5()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5783:1: ( rule__Ordenacion__Group_5__0 )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
-
-            if ( (LA36_0==36) ) {
-                alt36=1;
-            }
-            switch (alt36) {
-                case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5783:2: rule__Ordenacion__Group_5__0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__0_in_rule__Ordenacion__Group__5__Impl11406);
-                    rule__Ordenacion__Group_5__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getOrdenacionAccess().getGroup_5()); 
+             before(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_5()); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__Ordenacion__Group__5__Impl9404); 
+             after(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_5()); 
 
             }
 
@@ -14822,92 +12156,22 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__Ordenacion__Group__5__Impl"
 
 
-    // $ANTLR start "rule__Ordenacion__Group__6"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5793:1: rule__Ordenacion__Group__6 : rule__Ordenacion__Group__6__Impl ;
-    public final void rule__Ordenacion__Group__6() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5797:1: ( rule__Ordenacion__Group__6__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5798:2: rule__Ordenacion__Group__6__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group__6__Impl_in_rule__Ordenacion__Group__611437);
-            rule__Ordenacion__Group__6__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group__6"
-
-
-    // $ANTLR start "rule__Ordenacion__Group__6__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5804:1: rule__Ordenacion__Group__6__Impl : ( '}' ) ;
-    public final void rule__Ordenacion__Group__6__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5808:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5809:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5809:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5810:1: '}'
-            {
-             before(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__Ordenacion__Group__6__Impl11465); 
-             after(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_6()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group__6__Impl"
-
-
     // $ANTLR start "rule__Ordenacion__Group_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5837:1: rule__Ordenacion__Group_3__0 : rule__Ordenacion__Group_3__0__Impl rule__Ordenacion__Group_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4790:1: rule__Ordenacion__Group_3__0 : rule__Ordenacion__Group_3__0__Impl rule__Ordenacion__Group_3__1 ;
     public final void rule__Ordenacion__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5841:1: ( rule__Ordenacion__Group_3__0__Impl rule__Ordenacion__Group_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5842:2: rule__Ordenacion__Group_3__0__Impl rule__Ordenacion__Group_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4794:1: ( rule__Ordenacion__Group_3__0__Impl rule__Ordenacion__Group_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4795:2: rule__Ordenacion__Group_3__0__Impl rule__Ordenacion__Group_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__0__Impl_in_rule__Ordenacion__Group_3__011510);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__0__Impl_in_rule__Ordenacion__Group_3__09447);
             rule__Ordenacion__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__1_in_rule__Ordenacion__Group_3__011513);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__1_in_rule__Ordenacion__Group_3__09450);
             rule__Ordenacion__Group_3__1();
 
             state._fsp--;
@@ -14931,20 +12195,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5849:1: rule__Ordenacion__Group_3__0__Impl : ( 'correctas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4802:1: rule__Ordenacion__Group_3__0__Impl : ( 'correctas' ) ;
     public final void rule__Ordenacion__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5853:1: ( ( 'correctas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5854:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4806:1: ( ( 'correctas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4807:1: ( 'correctas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5854:1: ( 'correctas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5855:1: 'correctas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4807:1: ( 'correctas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4808:1: 'correctas'
             {
              before(grammarAccess.getOrdenacionAccess().getCorrectasKeyword_3_0()); 
-            match(input,34,FollowSets000.FOLLOW_34_in_rule__Ordenacion__Group_3__0__Impl11541); 
+            match(input,31,FollowSets000.FOLLOW_31_in_rule__Ordenacion__Group_3__0__Impl9478); 
              after(grammarAccess.getOrdenacionAccess().getCorrectasKeyword_3_0()); 
 
             }
@@ -14968,21 +12232,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5868:1: rule__Ordenacion__Group_3__1 : rule__Ordenacion__Group_3__1__Impl rule__Ordenacion__Group_3__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4821:1: rule__Ordenacion__Group_3__1 : rule__Ordenacion__Group_3__1__Impl rule__Ordenacion__Group_3__2 ;
     public final void rule__Ordenacion__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5872:1: ( rule__Ordenacion__Group_3__1__Impl rule__Ordenacion__Group_3__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5873:2: rule__Ordenacion__Group_3__1__Impl rule__Ordenacion__Group_3__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4825:1: ( rule__Ordenacion__Group_3__1__Impl rule__Ordenacion__Group_3__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4826:2: rule__Ordenacion__Group_3__1__Impl rule__Ordenacion__Group_3__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__1__Impl_in_rule__Ordenacion__Group_3__111572);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__1__Impl_in_rule__Ordenacion__Group_3__19509);
             rule__Ordenacion__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__2_in_rule__Ordenacion__Group_3__111575);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__2_in_rule__Ordenacion__Group_3__19512);
             rule__Ordenacion__Group_3__2();
 
             state._fsp--;
@@ -15006,20 +12270,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5880:1: rule__Ordenacion__Group_3__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4833:1: rule__Ordenacion__Group_3__1__Impl : ( '{' ) ;
     public final void rule__Ordenacion__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5884:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5885:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4837:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4838:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5885:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5886:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4838:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4839:1: '{'
             {
              before(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_3_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Ordenacion__Group_3__1__Impl11603); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Ordenacion__Group_3__1__Impl9540); 
              after(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_3_1()); 
 
             }
@@ -15043,21 +12307,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5899:1: rule__Ordenacion__Group_3__2 : rule__Ordenacion__Group_3__2__Impl rule__Ordenacion__Group_3__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4852:1: rule__Ordenacion__Group_3__2 : rule__Ordenacion__Group_3__2__Impl rule__Ordenacion__Group_3__3 ;
     public final void rule__Ordenacion__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5903:1: ( rule__Ordenacion__Group_3__2__Impl rule__Ordenacion__Group_3__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5904:2: rule__Ordenacion__Group_3__2__Impl rule__Ordenacion__Group_3__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4856:1: ( rule__Ordenacion__Group_3__2__Impl rule__Ordenacion__Group_3__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4857:2: rule__Ordenacion__Group_3__2__Impl rule__Ordenacion__Group_3__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__2__Impl_in_rule__Ordenacion__Group_3__211634);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__2__Impl_in_rule__Ordenacion__Group_3__29571);
             rule__Ordenacion__Group_3__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__3_in_rule__Ordenacion__Group_3__211637);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__3_in_rule__Ordenacion__Group_3__29574);
             rule__Ordenacion__Group_3__3();
 
             state._fsp--;
@@ -15081,23 +12345,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5911:1: rule__Ordenacion__Group_3__2__Impl : ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4864:1: rule__Ordenacion__Group_3__2__Impl : ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) ) ;
     public final void rule__Ordenacion__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5915:1: ( ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5916:1: ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4868:1: ( ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4869:1: ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5916:1: ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5917:1: ( rule__Ordenacion__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4869:1: ( ( rule__Ordenacion__CorrectasAssignment_3_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4870:1: ( rule__Ordenacion__CorrectasAssignment_3_2 )
             {
              before(grammarAccess.getOrdenacionAccess().getCorrectasAssignment_3_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5918:1: ( rule__Ordenacion__CorrectasAssignment_3_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5918:2: rule__Ordenacion__CorrectasAssignment_3_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4871:1: ( rule__Ordenacion__CorrectasAssignment_3_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4871:2: rule__Ordenacion__CorrectasAssignment_3_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__CorrectasAssignment_3_2_in_rule__Ordenacion__Group_3__2__Impl11664);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__CorrectasAssignment_3_2_in_rule__Ordenacion__Group_3__2__Impl9601);
             rule__Ordenacion__CorrectasAssignment_3_2();
 
             state._fsp--;
@@ -15128,21 +12392,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5928:1: rule__Ordenacion__Group_3__3 : rule__Ordenacion__Group_3__3__Impl rule__Ordenacion__Group_3__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4881:1: rule__Ordenacion__Group_3__3 : rule__Ordenacion__Group_3__3__Impl rule__Ordenacion__Group_3__4 ;
     public final void rule__Ordenacion__Group_3__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5932:1: ( rule__Ordenacion__Group_3__3__Impl rule__Ordenacion__Group_3__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5933:2: rule__Ordenacion__Group_3__3__Impl rule__Ordenacion__Group_3__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4885:1: ( rule__Ordenacion__Group_3__3__Impl rule__Ordenacion__Group_3__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4886:2: rule__Ordenacion__Group_3__3__Impl rule__Ordenacion__Group_3__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__3__Impl_in_rule__Ordenacion__Group_3__311694);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__3__Impl_in_rule__Ordenacion__Group_3__39631);
             rule__Ordenacion__Group_3__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__4_in_rule__Ordenacion__Group_3__311697);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__4_in_rule__Ordenacion__Group_3__39634);
             rule__Ordenacion__Group_3__4();
 
             state._fsp--;
@@ -15166,35 +12430,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5940:1: rule__Ordenacion__Group_3__3__Impl : ( ( rule__Ordenacion__Group_3_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4893:1: rule__Ordenacion__Group_3__3__Impl : ( ( rule__Ordenacion__Group_3_3__0 )* ) ;
     public final void rule__Ordenacion__Group_3__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5944:1: ( ( ( rule__Ordenacion__Group_3_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5945:1: ( ( rule__Ordenacion__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4897:1: ( ( ( rule__Ordenacion__Group_3_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4898:1: ( ( rule__Ordenacion__Group_3_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5945:1: ( ( rule__Ordenacion__Group_3_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5946:1: ( rule__Ordenacion__Group_3_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4898:1: ( ( rule__Ordenacion__Group_3_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4899:1: ( rule__Ordenacion__Group_3_3__0 )*
             {
              before(grammarAccess.getOrdenacionAccess().getGroup_3_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5947:1: ( rule__Ordenacion__Group_3_3__0 )*
-            loop37:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4900:1: ( rule__Ordenacion__Group_3_3__0 )*
+            loop28:
             do {
-                int alt37=2;
-                int LA37_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( (LA37_0==27) ) {
-                    alt37=1;
+                if ( (LA28_0==27) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt37) {
+                switch (alt28) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5947:2: rule__Ordenacion__Group_3_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4900:2: rule__Ordenacion__Group_3_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__0_in_rule__Ordenacion__Group_3__3__Impl11724);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__0_in_rule__Ordenacion__Group_3__3__Impl9661);
             	    rule__Ordenacion__Group_3_3__0();
 
             	    state._fsp--;
@@ -15204,7 +12468,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop37;
+            	    break loop28;
                 }
             } while (true);
 
@@ -15231,16 +12495,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5957:1: rule__Ordenacion__Group_3__4 : rule__Ordenacion__Group_3__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4910:1: rule__Ordenacion__Group_3__4 : rule__Ordenacion__Group_3__4__Impl ;
     public final void rule__Ordenacion__Group_3__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5961:1: ( rule__Ordenacion__Group_3__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5962:2: rule__Ordenacion__Group_3__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4914:1: ( rule__Ordenacion__Group_3__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4915:2: rule__Ordenacion__Group_3__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__4__Impl_in_rule__Ordenacion__Group_3__411755);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3__4__Impl_in_rule__Ordenacion__Group_3__49692);
             rule__Ordenacion__Group_3__4__Impl();
 
             state._fsp--;
@@ -15264,20 +12528,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5968:1: rule__Ordenacion__Group_3__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4921:1: rule__Ordenacion__Group_3__4__Impl : ( '}' ) ;
     public final void rule__Ordenacion__Group_3__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5972:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5973:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4925:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4926:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5973:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5974:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4926:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4927:1: '}'
             {
              before(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_3_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__Ordenacion__Group_3__4__Impl11783); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__Ordenacion__Group_3__4__Impl9720); 
              after(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_3_4()); 
 
             }
@@ -15301,21 +12565,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5997:1: rule__Ordenacion__Group_3_3__0 : rule__Ordenacion__Group_3_3__0__Impl rule__Ordenacion__Group_3_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4950:1: rule__Ordenacion__Group_3_3__0 : rule__Ordenacion__Group_3_3__0__Impl rule__Ordenacion__Group_3_3__1 ;
     public final void rule__Ordenacion__Group_3_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6001:1: ( rule__Ordenacion__Group_3_3__0__Impl rule__Ordenacion__Group_3_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6002:2: rule__Ordenacion__Group_3_3__0__Impl rule__Ordenacion__Group_3_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4954:1: ( rule__Ordenacion__Group_3_3__0__Impl rule__Ordenacion__Group_3_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4955:2: rule__Ordenacion__Group_3_3__0__Impl rule__Ordenacion__Group_3_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__0__Impl_in_rule__Ordenacion__Group_3_3__011824);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__0__Impl_in_rule__Ordenacion__Group_3_3__09761);
             rule__Ordenacion__Group_3_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__1_in_rule__Ordenacion__Group_3_3__011827);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__1_in_rule__Ordenacion__Group_3_3__09764);
             rule__Ordenacion__Group_3_3__1();
 
             state._fsp--;
@@ -15339,20 +12603,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6009:1: rule__Ordenacion__Group_3_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4962:1: rule__Ordenacion__Group_3_3__0__Impl : ( ',' ) ;
     public final void rule__Ordenacion__Group_3_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6013:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6014:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4966:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4967:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6014:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6015:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4967:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4968:1: ','
             {
              before(grammarAccess.getOrdenacionAccess().getCommaKeyword_3_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__Ordenacion__Group_3_3__0__Impl11855); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__Ordenacion__Group_3_3__0__Impl9792); 
              after(grammarAccess.getOrdenacionAccess().getCommaKeyword_3_3_0()); 
 
             }
@@ -15376,16 +12640,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6028:1: rule__Ordenacion__Group_3_3__1 : rule__Ordenacion__Group_3_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4981:1: rule__Ordenacion__Group_3_3__1 : rule__Ordenacion__Group_3_3__1__Impl ;
     public final void rule__Ordenacion__Group_3_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6032:1: ( rule__Ordenacion__Group_3_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6033:2: rule__Ordenacion__Group_3_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4985:1: ( rule__Ordenacion__Group_3_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4986:2: rule__Ordenacion__Group_3_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__1__Impl_in_rule__Ordenacion__Group_3_3__111886);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_3_3__1__Impl_in_rule__Ordenacion__Group_3_3__19823);
             rule__Ordenacion__Group_3_3__1__Impl();
 
             state._fsp--;
@@ -15409,23 +12673,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_3_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6039:1: rule__Ordenacion__Group_3_3__1__Impl : ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4992:1: rule__Ordenacion__Group_3_3__1__Impl : ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) ) ;
     public final void rule__Ordenacion__Group_3_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6043:1: ( ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6044:1: ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4996:1: ( ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4997:1: ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6044:1: ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6045:1: ( rule__Ordenacion__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4997:1: ( ( rule__Ordenacion__CorrectasAssignment_3_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4998:1: ( rule__Ordenacion__CorrectasAssignment_3_3_1 )
             {
              before(grammarAccess.getOrdenacionAccess().getCorrectasAssignment_3_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6046:1: ( rule__Ordenacion__CorrectasAssignment_3_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6046:2: rule__Ordenacion__CorrectasAssignment_3_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4999:1: ( rule__Ordenacion__CorrectasAssignment_3_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:4999:2: rule__Ordenacion__CorrectasAssignment_3_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__CorrectasAssignment_3_3_1_in_rule__Ordenacion__Group_3_3__1__Impl11913);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__CorrectasAssignment_3_3_1_in_rule__Ordenacion__Group_3_3__1__Impl9850);
             rule__Ordenacion__CorrectasAssignment_3_3_1();
 
             state._fsp--;
@@ -15456,21 +12720,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6060:1: rule__Ordenacion__Group_4__0 : rule__Ordenacion__Group_4__0__Impl rule__Ordenacion__Group_4__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5013:1: rule__Ordenacion__Group_4__0 : rule__Ordenacion__Group_4__0__Impl rule__Ordenacion__Group_4__1 ;
     public final void rule__Ordenacion__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6064:1: ( rule__Ordenacion__Group_4__0__Impl rule__Ordenacion__Group_4__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6065:2: rule__Ordenacion__Group_4__0__Impl rule__Ordenacion__Group_4__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5017:1: ( rule__Ordenacion__Group_4__0__Impl rule__Ordenacion__Group_4__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5018:2: rule__Ordenacion__Group_4__0__Impl rule__Ordenacion__Group_4__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__0__Impl_in_rule__Ordenacion__Group_4__011947);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__0__Impl_in_rule__Ordenacion__Group_4__09884);
             rule__Ordenacion__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__1_in_rule__Ordenacion__Group_4__011950);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__1_in_rule__Ordenacion__Group_4__09887);
             rule__Ordenacion__Group_4__1();
 
             state._fsp--;
@@ -15494,20 +12758,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6072:1: rule__Ordenacion__Group_4__0__Impl : ( 'alternativas' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5025:1: rule__Ordenacion__Group_4__0__Impl : ( 'alternativas' ) ;
     public final void rule__Ordenacion__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6076:1: ( ( 'alternativas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6077:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5029:1: ( ( 'alternativas' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5030:1: ( 'alternativas' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6077:1: ( 'alternativas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6078:1: 'alternativas'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5030:1: ( 'alternativas' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5031:1: 'alternativas'
             {
              before(grammarAccess.getOrdenacionAccess().getAlternativasKeyword_4_0()); 
-            match(input,35,FollowSets000.FOLLOW_35_in_rule__Ordenacion__Group_4__0__Impl11978); 
+            match(input,32,FollowSets000.FOLLOW_32_in_rule__Ordenacion__Group_4__0__Impl9915); 
              after(grammarAccess.getOrdenacionAccess().getAlternativasKeyword_4_0()); 
 
             }
@@ -15531,21 +12795,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6091:1: rule__Ordenacion__Group_4__1 : rule__Ordenacion__Group_4__1__Impl rule__Ordenacion__Group_4__2 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5044:1: rule__Ordenacion__Group_4__1 : rule__Ordenacion__Group_4__1__Impl rule__Ordenacion__Group_4__2 ;
     public final void rule__Ordenacion__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6095:1: ( rule__Ordenacion__Group_4__1__Impl rule__Ordenacion__Group_4__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6096:2: rule__Ordenacion__Group_4__1__Impl rule__Ordenacion__Group_4__2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5048:1: ( rule__Ordenacion__Group_4__1__Impl rule__Ordenacion__Group_4__2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5049:2: rule__Ordenacion__Group_4__1__Impl rule__Ordenacion__Group_4__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__1__Impl_in_rule__Ordenacion__Group_4__112009);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__1__Impl_in_rule__Ordenacion__Group_4__19946);
             rule__Ordenacion__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__2_in_rule__Ordenacion__Group_4__112012);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__2_in_rule__Ordenacion__Group_4__19949);
             rule__Ordenacion__Group_4__2();
 
             state._fsp--;
@@ -15569,20 +12833,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6103:1: rule__Ordenacion__Group_4__1__Impl : ( '{' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5056:1: rule__Ordenacion__Group_4__1__Impl : ( '{' ) ;
     public final void rule__Ordenacion__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6107:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6108:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5060:1: ( ( '{' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5061:1: ( '{' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6108:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6109:1: '{'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5061:1: ( '{' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5062:1: '{'
             {
              before(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_4_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Ordenacion__Group_4__1__Impl12040); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__Ordenacion__Group_4__1__Impl9977); 
              after(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_4_1()); 
 
             }
@@ -15606,21 +12870,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6122:1: rule__Ordenacion__Group_4__2 : rule__Ordenacion__Group_4__2__Impl rule__Ordenacion__Group_4__3 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5075:1: rule__Ordenacion__Group_4__2 : rule__Ordenacion__Group_4__2__Impl rule__Ordenacion__Group_4__3 ;
     public final void rule__Ordenacion__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6126:1: ( rule__Ordenacion__Group_4__2__Impl rule__Ordenacion__Group_4__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6127:2: rule__Ordenacion__Group_4__2__Impl rule__Ordenacion__Group_4__3
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5079:1: ( rule__Ordenacion__Group_4__2__Impl rule__Ordenacion__Group_4__3 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5080:2: rule__Ordenacion__Group_4__2__Impl rule__Ordenacion__Group_4__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__2__Impl_in_rule__Ordenacion__Group_4__212071);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__2__Impl_in_rule__Ordenacion__Group_4__210008);
             rule__Ordenacion__Group_4__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__3_in_rule__Ordenacion__Group_4__212074);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__3_in_rule__Ordenacion__Group_4__210011);
             rule__Ordenacion__Group_4__3();
 
             state._fsp--;
@@ -15644,23 +12908,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6134:1: rule__Ordenacion__Group_4__2__Impl : ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5087:1: rule__Ordenacion__Group_4__2__Impl : ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) ) ;
     public final void rule__Ordenacion__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6138:1: ( ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6139:1: ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5091:1: ( ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5092:1: ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6139:1: ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6140:1: ( rule__Ordenacion__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5092:1: ( ( rule__Ordenacion__AlternativasAssignment_4_2 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5093:1: ( rule__Ordenacion__AlternativasAssignment_4_2 )
             {
              before(grammarAccess.getOrdenacionAccess().getAlternativasAssignment_4_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6141:1: ( rule__Ordenacion__AlternativasAssignment_4_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6141:2: rule__Ordenacion__AlternativasAssignment_4_2
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5094:1: ( rule__Ordenacion__AlternativasAssignment_4_2 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5094:2: rule__Ordenacion__AlternativasAssignment_4_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__AlternativasAssignment_4_2_in_rule__Ordenacion__Group_4__2__Impl12101);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__AlternativasAssignment_4_2_in_rule__Ordenacion__Group_4__2__Impl10038);
             rule__Ordenacion__AlternativasAssignment_4_2();
 
             state._fsp--;
@@ -15691,21 +12955,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6151:1: rule__Ordenacion__Group_4__3 : rule__Ordenacion__Group_4__3__Impl rule__Ordenacion__Group_4__4 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5104:1: rule__Ordenacion__Group_4__3 : rule__Ordenacion__Group_4__3__Impl rule__Ordenacion__Group_4__4 ;
     public final void rule__Ordenacion__Group_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6155:1: ( rule__Ordenacion__Group_4__3__Impl rule__Ordenacion__Group_4__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6156:2: rule__Ordenacion__Group_4__3__Impl rule__Ordenacion__Group_4__4
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5108:1: ( rule__Ordenacion__Group_4__3__Impl rule__Ordenacion__Group_4__4 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5109:2: rule__Ordenacion__Group_4__3__Impl rule__Ordenacion__Group_4__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__3__Impl_in_rule__Ordenacion__Group_4__312131);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__3__Impl_in_rule__Ordenacion__Group_4__310068);
             rule__Ordenacion__Group_4__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__4_in_rule__Ordenacion__Group_4__312134);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__4_in_rule__Ordenacion__Group_4__310071);
             rule__Ordenacion__Group_4__4();
 
             state._fsp--;
@@ -15729,35 +12993,35 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6163:1: rule__Ordenacion__Group_4__3__Impl : ( ( rule__Ordenacion__Group_4_3__0 )* ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5116:1: rule__Ordenacion__Group_4__3__Impl : ( ( rule__Ordenacion__Group_4_3__0 )* ) ;
     public final void rule__Ordenacion__Group_4__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6167:1: ( ( ( rule__Ordenacion__Group_4_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6168:1: ( ( rule__Ordenacion__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5120:1: ( ( ( rule__Ordenacion__Group_4_3__0 )* ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5121:1: ( ( rule__Ordenacion__Group_4_3__0 )* )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6168:1: ( ( rule__Ordenacion__Group_4_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6169:1: ( rule__Ordenacion__Group_4_3__0 )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5121:1: ( ( rule__Ordenacion__Group_4_3__0 )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5122:1: ( rule__Ordenacion__Group_4_3__0 )*
             {
              before(grammarAccess.getOrdenacionAccess().getGroup_4_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6170:1: ( rule__Ordenacion__Group_4_3__0 )*
-            loop38:
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5123:1: ( rule__Ordenacion__Group_4_3__0 )*
+            loop29:
             do {
-                int alt38=2;
-                int LA38_0 = input.LA(1);
+                int alt29=2;
+                int LA29_0 = input.LA(1);
 
-                if ( (LA38_0==27) ) {
-                    alt38=1;
+                if ( (LA29_0==27) ) {
+                    alt29=1;
                 }
 
 
-                switch (alt38) {
+                switch (alt29) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6170:2: rule__Ordenacion__Group_4_3__0
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5123:2: rule__Ordenacion__Group_4_3__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__0_in_rule__Ordenacion__Group_4__3__Impl12161);
+            	    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__0_in_rule__Ordenacion__Group_4__3__Impl10098);
             	    rule__Ordenacion__Group_4_3__0();
 
             	    state._fsp--;
@@ -15767,7 +13031,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
             	    break;
 
             	default :
-            	    break loop38;
+            	    break loop29;
                 }
             } while (true);
 
@@ -15794,16 +13058,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6180:1: rule__Ordenacion__Group_4__4 : rule__Ordenacion__Group_4__4__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5133:1: rule__Ordenacion__Group_4__4 : rule__Ordenacion__Group_4__4__Impl ;
     public final void rule__Ordenacion__Group_4__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6184:1: ( rule__Ordenacion__Group_4__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6185:2: rule__Ordenacion__Group_4__4__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5137:1: ( rule__Ordenacion__Group_4__4__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5138:2: rule__Ordenacion__Group_4__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__4__Impl_in_rule__Ordenacion__Group_4__412192);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4__4__Impl_in_rule__Ordenacion__Group_4__410129);
             rule__Ordenacion__Group_4__4__Impl();
 
             state._fsp--;
@@ -15827,20 +13091,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6191:1: rule__Ordenacion__Group_4__4__Impl : ( '}' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5144:1: rule__Ordenacion__Group_4__4__Impl : ( '}' ) ;
     public final void rule__Ordenacion__Group_4__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6195:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6196:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5148:1: ( ( '}' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5149:1: ( '}' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6196:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6197:1: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5149:1: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5150:1: '}'
             {
              before(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_4_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__Ordenacion__Group_4__4__Impl12220); 
+            match(input,19,FollowSets000.FOLLOW_19_in_rule__Ordenacion__Group_4__4__Impl10157); 
              after(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_4_4()); 
 
             }
@@ -15864,21 +13128,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6220:1: rule__Ordenacion__Group_4_3__0 : rule__Ordenacion__Group_4_3__0__Impl rule__Ordenacion__Group_4_3__1 ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5173:1: rule__Ordenacion__Group_4_3__0 : rule__Ordenacion__Group_4_3__0__Impl rule__Ordenacion__Group_4_3__1 ;
     public final void rule__Ordenacion__Group_4_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6224:1: ( rule__Ordenacion__Group_4_3__0__Impl rule__Ordenacion__Group_4_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6225:2: rule__Ordenacion__Group_4_3__0__Impl rule__Ordenacion__Group_4_3__1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5177:1: ( rule__Ordenacion__Group_4_3__0__Impl rule__Ordenacion__Group_4_3__1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5178:2: rule__Ordenacion__Group_4_3__0__Impl rule__Ordenacion__Group_4_3__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__0__Impl_in_rule__Ordenacion__Group_4_3__012261);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__0__Impl_in_rule__Ordenacion__Group_4_3__010198);
             rule__Ordenacion__Group_4_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__1_in_rule__Ordenacion__Group_4_3__012264);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__1_in_rule__Ordenacion__Group_4_3__010201);
             rule__Ordenacion__Group_4_3__1();
 
             state._fsp--;
@@ -15902,20 +13166,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6232:1: rule__Ordenacion__Group_4_3__0__Impl : ( ',' ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5185:1: rule__Ordenacion__Group_4_3__0__Impl : ( ',' ) ;
     public final void rule__Ordenacion__Group_4_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6236:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6237:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5189:1: ( ( ',' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5190:1: ( ',' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6237:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6238:1: ','
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5190:1: ( ',' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5191:1: ','
             {
              before(grammarAccess.getOrdenacionAccess().getCommaKeyword_4_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__Ordenacion__Group_4_3__0__Impl12292); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__Ordenacion__Group_4_3__0__Impl10229); 
              after(grammarAccess.getOrdenacionAccess().getCommaKeyword_4_3_0()); 
 
             }
@@ -15939,16 +13203,16 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6251:1: rule__Ordenacion__Group_4_3__1 : rule__Ordenacion__Group_4_3__1__Impl ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5204:1: rule__Ordenacion__Group_4_3__1 : rule__Ordenacion__Group_4_3__1__Impl ;
     public final void rule__Ordenacion__Group_4_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6255:1: ( rule__Ordenacion__Group_4_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6256:2: rule__Ordenacion__Group_4_3__1__Impl
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5208:1: ( rule__Ordenacion__Group_4_3__1__Impl )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5209:2: rule__Ordenacion__Group_4_3__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__1__Impl_in_rule__Ordenacion__Group_4_3__112323);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_4_3__1__Impl_in_rule__Ordenacion__Group_4_3__110260);
             rule__Ordenacion__Group_4_3__1__Impl();
 
             state._fsp--;
@@ -15972,23 +13236,23 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__Group_4_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6262:1: rule__Ordenacion__Group_4_3__1__Impl : ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5215:1: rule__Ordenacion__Group_4_3__1__Impl : ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) ) ;
     public final void rule__Ordenacion__Group_4_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6266:1: ( ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6267:1: ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5219:1: ( ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5220:1: ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6267:1: ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6268:1: ( rule__Ordenacion__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5220:1: ( ( rule__Ordenacion__AlternativasAssignment_4_3_1 ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5221:1: ( rule__Ordenacion__AlternativasAssignment_4_3_1 )
             {
              before(grammarAccess.getOrdenacionAccess().getAlternativasAssignment_4_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6269:1: ( rule__Ordenacion__AlternativasAssignment_4_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6269:2: rule__Ordenacion__AlternativasAssignment_4_3_1
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5222:1: ( rule__Ordenacion__AlternativasAssignment_4_3_1 )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5222:2: rule__Ordenacion__AlternativasAssignment_4_3_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__AlternativasAssignment_4_3_1_in_rule__Ordenacion__Group_4_3__1__Impl12350);
+            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__AlternativasAssignment_4_3_1_in_rule__Ordenacion__Group_4_3__1__Impl10287);
             rule__Ordenacion__AlternativasAssignment_4_3_1();
 
             state._fsp--;
@@ -16018,584 +13282,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__Ordenacion__Group_4_3__1__Impl"
 
 
-    // $ANTLR start "rule__Ordenacion__Group_5__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6283:1: rule__Ordenacion__Group_5__0 : rule__Ordenacion__Group_5__0__Impl rule__Ordenacion__Group_5__1 ;
-    public final void rule__Ordenacion__Group_5__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6287:1: ( rule__Ordenacion__Group_5__0__Impl rule__Ordenacion__Group_5__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6288:2: rule__Ordenacion__Group_5__0__Impl rule__Ordenacion__Group_5__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__0__Impl_in_rule__Ordenacion__Group_5__012384);
-            rule__Ordenacion__Group_5__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__1_in_rule__Ordenacion__Group_5__012387);
-            rule__Ordenacion__Group_5__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__0"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6295:1: rule__Ordenacion__Group_5__0__Impl : ( 'seleccionadas' ) ;
-    public final void rule__Ordenacion__Group_5__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6299:1: ( ( 'seleccionadas' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6300:1: ( 'seleccionadas' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6300:1: ( 'seleccionadas' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6301:1: 'seleccionadas'
-            {
-             before(grammarAccess.getOrdenacionAccess().getSeleccionadasKeyword_5_0()); 
-            match(input,36,FollowSets000.FOLLOW_36_in_rule__Ordenacion__Group_5__0__Impl12415); 
-             after(grammarAccess.getOrdenacionAccess().getSeleccionadasKeyword_5_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__0__Impl"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6314:1: rule__Ordenacion__Group_5__1 : rule__Ordenacion__Group_5__1__Impl rule__Ordenacion__Group_5__2 ;
-    public final void rule__Ordenacion__Group_5__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6318:1: ( rule__Ordenacion__Group_5__1__Impl rule__Ordenacion__Group_5__2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6319:2: rule__Ordenacion__Group_5__1__Impl rule__Ordenacion__Group_5__2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__1__Impl_in_rule__Ordenacion__Group_5__112446);
-            rule__Ordenacion__Group_5__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__2_in_rule__Ordenacion__Group_5__112449);
-            rule__Ordenacion__Group_5__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__1"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6326:1: rule__Ordenacion__Group_5__1__Impl : ( '{' ) ;
-    public final void rule__Ordenacion__Group_5__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6330:1: ( ( '{' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6331:1: ( '{' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6331:1: ( '{' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6332:1: '{'
-            {
-             before(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_5_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__Ordenacion__Group_5__1__Impl12477); 
-             after(grammarAccess.getOrdenacionAccess().getLeftCurlyBracketKeyword_5_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__1__Impl"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6345:1: rule__Ordenacion__Group_5__2 : rule__Ordenacion__Group_5__2__Impl rule__Ordenacion__Group_5__3 ;
-    public final void rule__Ordenacion__Group_5__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6349:1: ( rule__Ordenacion__Group_5__2__Impl rule__Ordenacion__Group_5__3 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6350:2: rule__Ordenacion__Group_5__2__Impl rule__Ordenacion__Group_5__3
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__2__Impl_in_rule__Ordenacion__Group_5__212508);
-            rule__Ordenacion__Group_5__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__3_in_rule__Ordenacion__Group_5__212511);
-            rule__Ordenacion__Group_5__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__2"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__2__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6357:1: rule__Ordenacion__Group_5__2__Impl : ( ( rule__Ordenacion__SeleccionadasAssignment_5_2 ) ) ;
-    public final void rule__Ordenacion__Group_5__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6361:1: ( ( ( rule__Ordenacion__SeleccionadasAssignment_5_2 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6362:1: ( ( rule__Ordenacion__SeleccionadasAssignment_5_2 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6362:1: ( ( rule__Ordenacion__SeleccionadasAssignment_5_2 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6363:1: ( rule__Ordenacion__SeleccionadasAssignment_5_2 )
-            {
-             before(grammarAccess.getOrdenacionAccess().getSeleccionadasAssignment_5_2()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6364:1: ( rule__Ordenacion__SeleccionadasAssignment_5_2 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6364:2: rule__Ordenacion__SeleccionadasAssignment_5_2
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__SeleccionadasAssignment_5_2_in_rule__Ordenacion__Group_5__2__Impl12538);
-            rule__Ordenacion__SeleccionadasAssignment_5_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getOrdenacionAccess().getSeleccionadasAssignment_5_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__2__Impl"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6374:1: rule__Ordenacion__Group_5__3 : rule__Ordenacion__Group_5__3__Impl rule__Ordenacion__Group_5__4 ;
-    public final void rule__Ordenacion__Group_5__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6378:1: ( rule__Ordenacion__Group_5__3__Impl rule__Ordenacion__Group_5__4 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6379:2: rule__Ordenacion__Group_5__3__Impl rule__Ordenacion__Group_5__4
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__3__Impl_in_rule__Ordenacion__Group_5__312568);
-            rule__Ordenacion__Group_5__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__4_in_rule__Ordenacion__Group_5__312571);
-            rule__Ordenacion__Group_5__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__3"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__3__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6386:1: rule__Ordenacion__Group_5__3__Impl : ( ( rule__Ordenacion__Group_5_3__0 )* ) ;
-    public final void rule__Ordenacion__Group_5__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6390:1: ( ( ( rule__Ordenacion__Group_5_3__0 )* ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6391:1: ( ( rule__Ordenacion__Group_5_3__0 )* )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6391:1: ( ( rule__Ordenacion__Group_5_3__0 )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6392:1: ( rule__Ordenacion__Group_5_3__0 )*
-            {
-             before(grammarAccess.getOrdenacionAccess().getGroup_5_3()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6393:1: ( rule__Ordenacion__Group_5_3__0 )*
-            loop39:
-            do {
-                int alt39=2;
-                int LA39_0 = input.LA(1);
-
-                if ( (LA39_0==27) ) {
-                    alt39=1;
-                }
-
-
-                switch (alt39) {
-            	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6393:2: rule__Ordenacion__Group_5_3__0
-            	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5_3__0_in_rule__Ordenacion__Group_5__3__Impl12598);
-            	    rule__Ordenacion__Group_5_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop39;
-                }
-            } while (true);
-
-             after(grammarAccess.getOrdenacionAccess().getGroup_5_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__3__Impl"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6403:1: rule__Ordenacion__Group_5__4 : rule__Ordenacion__Group_5__4__Impl ;
-    public final void rule__Ordenacion__Group_5__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6407:1: ( rule__Ordenacion__Group_5__4__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6408:2: rule__Ordenacion__Group_5__4__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5__4__Impl_in_rule__Ordenacion__Group_5__412629);
-            rule__Ordenacion__Group_5__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__4"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5__4__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6414:1: rule__Ordenacion__Group_5__4__Impl : ( '}' ) ;
-    public final void rule__Ordenacion__Group_5__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6418:1: ( ( '}' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6419:1: ( '}' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6419:1: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6420:1: '}'
-            {
-             before(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_5_4()); 
-            match(input,19,FollowSets000.FOLLOW_19_in_rule__Ordenacion__Group_5__4__Impl12657); 
-             after(grammarAccess.getOrdenacionAccess().getRightCurlyBracketKeyword_5_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5__4__Impl"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5_3__0"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6443:1: rule__Ordenacion__Group_5_3__0 : rule__Ordenacion__Group_5_3__0__Impl rule__Ordenacion__Group_5_3__1 ;
-    public final void rule__Ordenacion__Group_5_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6447:1: ( rule__Ordenacion__Group_5_3__0__Impl rule__Ordenacion__Group_5_3__1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6448:2: rule__Ordenacion__Group_5_3__0__Impl rule__Ordenacion__Group_5_3__1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5_3__0__Impl_in_rule__Ordenacion__Group_5_3__012698);
-            rule__Ordenacion__Group_5_3__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5_3__1_in_rule__Ordenacion__Group_5_3__012701);
-            rule__Ordenacion__Group_5_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5_3__0"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5_3__0__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6455:1: rule__Ordenacion__Group_5_3__0__Impl : ( ',' ) ;
-    public final void rule__Ordenacion__Group_5_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6459:1: ( ( ',' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6460:1: ( ',' )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6460:1: ( ',' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6461:1: ','
-            {
-             before(grammarAccess.getOrdenacionAccess().getCommaKeyword_5_3_0()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__Ordenacion__Group_5_3__0__Impl12729); 
-             after(grammarAccess.getOrdenacionAccess().getCommaKeyword_5_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5_3__0__Impl"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5_3__1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6474:1: rule__Ordenacion__Group_5_3__1 : rule__Ordenacion__Group_5_3__1__Impl ;
-    public final void rule__Ordenacion__Group_5_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6478:1: ( rule__Ordenacion__Group_5_3__1__Impl )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6479:2: rule__Ordenacion__Group_5_3__1__Impl
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__Group_5_3__1__Impl_in_rule__Ordenacion__Group_5_3__112760);
-            rule__Ordenacion__Group_5_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5_3__1"
-
-
-    // $ANTLR start "rule__Ordenacion__Group_5_3__1__Impl"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6485:1: rule__Ordenacion__Group_5_3__1__Impl : ( ( rule__Ordenacion__SeleccionadasAssignment_5_3_1 ) ) ;
-    public final void rule__Ordenacion__Group_5_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6489:1: ( ( ( rule__Ordenacion__SeleccionadasAssignment_5_3_1 ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6490:1: ( ( rule__Ordenacion__SeleccionadasAssignment_5_3_1 ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6490:1: ( ( rule__Ordenacion__SeleccionadasAssignment_5_3_1 ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6491:1: ( rule__Ordenacion__SeleccionadasAssignment_5_3_1 )
-            {
-             before(grammarAccess.getOrdenacionAccess().getSeleccionadasAssignment_5_3_1()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6492:1: ( rule__Ordenacion__SeleccionadasAssignment_5_3_1 )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6492:2: rule__Ordenacion__SeleccionadasAssignment_5_3_1
-            {
-            pushFollow(FollowSets000.FOLLOW_rule__Ordenacion__SeleccionadasAssignment_5_3_1_in_rule__Ordenacion__Group_5_3__1__Impl12787);
-            rule__Ordenacion__SeleccionadasAssignment_5_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getOrdenacionAccess().getSeleccionadasAssignment_5_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__Group_5_3__1__Impl"
-
-
     // $ANTLR start "rule__Ejercicio__NameAssignment_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6507:1: rule__Ejercicio__NameAssignment_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5237:1: rule__Ejercicio__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Ejercicio__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6511:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6512:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5241:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5242:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6512:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6513:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5242:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5243:1: ruleEString
             {
              before(grammarAccess.getEjercicioAccess().getNameEStringParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ejercicio__NameAssignment_112826);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ejercicio__NameAssignment_110326);
             ruleEString();
 
             state._fsp--;
@@ -16623,20 +13324,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ejercicio__EnunciadoAssignment_4"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6522:1: rule__Ejercicio__EnunciadoAssignment_4 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5252:1: rule__Ejercicio__EnunciadoAssignment_4 : ( ruleEString ) ;
     public final void rule__Ejercicio__EnunciadoAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6526:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6527:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5256:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5257:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6527:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6528:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5257:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5258:1: ruleEString
             {
              before(grammarAccess.getEjercicioAccess().getEnunciadoEStringParserRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ejercicio__EnunciadoAssignment_412857);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ejercicio__EnunciadoAssignment_410357);
             ruleEString();
 
             state._fsp--;
@@ -16664,20 +13365,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ejercicio__PuntuacionEjAssignment_5_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6537:1: rule__Ejercicio__PuntuacionEjAssignment_5_1 : ( ruleEDouble ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5267:1: rule__Ejercicio__PuntuacionEjAssignment_5_1 : ( ruleEDouble ) ;
     public final void rule__Ejercicio__PuntuacionEjAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6541:1: ( ( ruleEDouble ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6542:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5271:1: ( ( ruleEDouble ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5272:1: ( ruleEDouble )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6542:1: ( ruleEDouble )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6543:1: ruleEDouble
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5272:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5273:1: ruleEDouble
             {
              before(grammarAccess.getEjercicioAccess().getPuntuacionEjEDoubleParserRuleCall_5_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Ejercicio__PuntuacionEjAssignment_5_112888);
+            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Ejercicio__PuntuacionEjAssignment_5_110388);
             ruleEDouble();
 
             state._fsp--;
@@ -16705,20 +13406,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ejercicio__CategoriaAssignment_7"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6552:1: rule__Ejercicio__CategoriaAssignment_7 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5282:1: rule__Ejercicio__CategoriaAssignment_7 : ( ruleEString ) ;
     public final void rule__Ejercicio__CategoriaAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6556:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6557:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5286:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5287:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6557:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6558:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5287:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5288:1: ruleEString
             {
              before(grammarAccess.getEjercicioAccess().getCategoriaEStringParserRuleCall_7_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ejercicio__CategoriaAssignment_712919);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ejercicio__CategoriaAssignment_710419);
             ruleEString();
 
             state._fsp--;
@@ -16746,20 +13447,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ejercicio__OrderAssignment_9"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6567:1: rule__Ejercicio__OrderAssignment_9 : ( ruleEInt ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5297:1: rule__Ejercicio__OrderAssignment_9 : ( ruleEInt ) ;
     public final void rule__Ejercicio__OrderAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6571:1: ( ( ruleEInt ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6572:1: ( ruleEInt )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5301:1: ( ( ruleEInt ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5302:1: ( ruleEInt )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6572:1: ( ruleEInt )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6573:1: ruleEInt
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5302:1: ( ruleEInt )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5303:1: ruleEInt
             {
              before(grammarAccess.getEjercicioAccess().getOrderEIntParserRuleCall_9_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Ejercicio__OrderAssignment_912950);
+            pushFollow(FollowSets000.FOLLOW_ruleEInt_in_rule__Ejercicio__OrderAssignment_910450);
             ruleEInt();
 
             state._fsp--;
@@ -16787,20 +13488,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ejercicio__RespuestaAssignment_11"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6582:1: rule__Ejercicio__RespuestaAssignment_11 : ( ruleRespuesta ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5312:1: rule__Ejercicio__RespuestaAssignment_11 : ( ruleRespuesta ) ;
     public final void rule__Ejercicio__RespuestaAssignment_11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6586:1: ( ( ruleRespuesta ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6587:1: ( ruleRespuesta )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5316:1: ( ( ruleRespuesta ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5317:1: ( ruleRespuesta )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6587:1: ( ruleRespuesta )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6588:1: ruleRespuesta
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5317:1: ( ruleRespuesta )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5318:1: ruleRespuesta
             {
              before(grammarAccess.getEjercicioAccess().getRespuestaRespuestaParserRuleCall_11_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRespuesta_in_rule__Ejercicio__RespuestaAssignment_1112981);
+            pushFollow(FollowSets000.FOLLOW_ruleRespuesta_in_rule__Ejercicio__RespuestaAssignment_1110481);
             ruleRespuesta();
 
             state._fsp--;
@@ -16828,20 +13529,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Clasico__PuntuacionAssignment_3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6597:1: rule__Clasico__PuntuacionAssignment_3 : ( ruleEDouble ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5327:1: rule__Clasico__PuntuacionAssignment_3 : ( ruleEDouble ) ;
     public final void rule__Clasico__PuntuacionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6601:1: ( ( ruleEDouble ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6602:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5331:1: ( ( ruleEDouble ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5332:1: ( ruleEDouble )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6602:1: ( ruleEDouble )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6603:1: ruleEDouble
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5332:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5333:1: ruleEDouble
             {
              before(grammarAccess.getClasicoAccess().getPuntuacionEDoubleParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Clasico__PuntuacionAssignment_313012);
+            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Clasico__PuntuacionAssignment_310512);
             ruleEDouble();
 
             state._fsp--;
@@ -16869,20 +13570,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Clasico__PenalizacionAssignment_5"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6612:1: rule__Clasico__PenalizacionAssignment_5 : ( ruleEDouble ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5342:1: rule__Clasico__PenalizacionAssignment_5 : ( ruleEDouble ) ;
     public final void rule__Clasico__PenalizacionAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6616:1: ( ( ruleEDouble ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6617:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5346:1: ( ( ruleEDouble ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5347:1: ( ruleEDouble )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6617:1: ( ruleEDouble )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6618:1: ruleEDouble
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5347:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5348:1: ruleEDouble
             {
              before(grammarAccess.getClasicoAccess().getPenalizacionEDoubleParserRuleCall_5_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Clasico__PenalizacionAssignment_513043);
+            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Clasico__PenalizacionAssignment_510543);
             ruleEDouble();
 
             state._fsp--;
@@ -16910,20 +13611,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Clasico__EjerciciosAssignment_8"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6627:1: rule__Clasico__EjerciciosAssignment_8 : ( ruleEjercicio ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5357:1: rule__Clasico__EjerciciosAssignment_8 : ( ruleEjercicio ) ;
     public final void rule__Clasico__EjerciciosAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6631:1: ( ( ruleEjercicio ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6632:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5361:1: ( ( ruleEjercicio ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5362:1: ( ruleEjercicio )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6632:1: ( ruleEjercicio )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6633:1: ruleEjercicio
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5362:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5363:1: ruleEjercicio
             {
              before(grammarAccess.getClasicoAccess().getEjerciciosEjercicioParserRuleCall_8_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_813074);
+            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_810574);
             ruleEjercicio();
 
             state._fsp--;
@@ -16951,20 +13652,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Clasico__EjerciciosAssignment_9_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6642:1: rule__Clasico__EjerciciosAssignment_9_1 : ( ruleEjercicio ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5372:1: rule__Clasico__EjerciciosAssignment_9_1 : ( ruleEjercicio ) ;
     public final void rule__Clasico__EjerciciosAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6646:1: ( ( ruleEjercicio ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6647:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5376:1: ( ( ruleEjercicio ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5377:1: ( ruleEjercicio )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6647:1: ( ruleEjercicio )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6648:1: ruleEjercicio
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5377:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5378:1: ruleEjercicio
             {
              before(grammarAccess.getClasicoAccess().getEjerciciosEjercicioParserRuleCall_9_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_9_113105);
+            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_9_110605);
             ruleEjercicio();
 
             state._fsp--;
@@ -16992,20 +13693,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Wizard__PuntuacionAssignment_3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6657:1: rule__Wizard__PuntuacionAssignment_3 : ( ruleEDouble ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5387:1: rule__Wizard__PuntuacionAssignment_3 : ( ruleEDouble ) ;
     public final void rule__Wizard__PuntuacionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6661:1: ( ( ruleEDouble ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6662:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5391:1: ( ( ruleEDouble ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5392:1: ( ruleEDouble )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6662:1: ( ruleEDouble )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6663:1: ruleEDouble
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5392:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5393:1: ruleEDouble
             {
              before(grammarAccess.getWizardAccess().getPuntuacionEDoubleParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Wizard__PuntuacionAssignment_313136);
+            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Wizard__PuntuacionAssignment_310636);
             ruleEDouble();
 
             state._fsp--;
@@ -17033,20 +13734,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Wizard__PenalizacionAssignment_5"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6672:1: rule__Wizard__PenalizacionAssignment_5 : ( ruleEDouble ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5402:1: rule__Wizard__PenalizacionAssignment_5 : ( ruleEDouble ) ;
     public final void rule__Wizard__PenalizacionAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6676:1: ( ( ruleEDouble ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6677:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5406:1: ( ( ruleEDouble ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5407:1: ( ruleEDouble )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6677:1: ( ruleEDouble )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6678:1: ruleEDouble
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5407:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5408:1: ruleEDouble
             {
              before(grammarAccess.getWizardAccess().getPenalizacionEDoubleParserRuleCall_5_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Wizard__PenalizacionAssignment_513167);
+            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__Wizard__PenalizacionAssignment_510667);
             ruleEDouble();
 
             state._fsp--;
@@ -17074,20 +13775,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Wizard__EjerciciosAssignment_8"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6687:1: rule__Wizard__EjerciciosAssignment_8 : ( ruleEjercicio ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5417:1: rule__Wizard__EjerciciosAssignment_8 : ( ruleEjercicio ) ;
     public final void rule__Wizard__EjerciciosAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6691:1: ( ( ruleEjercicio ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6692:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5421:1: ( ( ruleEjercicio ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5422:1: ( ruleEjercicio )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6692:1: ( ruleEjercicio )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6693:1: ruleEjercicio
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5422:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5423:1: ruleEjercicio
             {
              before(grammarAccess.getWizardAccess().getEjerciciosEjercicioParserRuleCall_8_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_813198);
+            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_810698);
             ruleEjercicio();
 
             state._fsp--;
@@ -17115,20 +13816,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Wizard__EjerciciosAssignment_9_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6702:1: rule__Wizard__EjerciciosAssignment_9_1 : ( ruleEjercicio ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5432:1: rule__Wizard__EjerciciosAssignment_9_1 : ( ruleEjercicio ) ;
     public final void rule__Wizard__EjerciciosAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6706:1: ( ( ruleEjercicio ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6707:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5436:1: ( ( ruleEjercicio ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5437:1: ( ruleEjercicio )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6707:1: ( ruleEjercicio )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6708:1: ruleEjercicio
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5437:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5438:1: ruleEjercicio
             {
              before(grammarAccess.getWizardAccess().getEjerciciosEjercicioParserRuleCall_9_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_9_113229);
+            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_9_110729);
             ruleEjercicio();
 
             state._fsp--;
@@ -17156,20 +13857,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__PuntuacionAssignment_3"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6717:1: rule__WizardAdaptativo__PuntuacionAssignment_3 : ( ruleEDouble ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5447:1: rule__WizardAdaptativo__PuntuacionAssignment_3 : ( ruleEDouble ) ;
     public final void rule__WizardAdaptativo__PuntuacionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6721:1: ( ( ruleEDouble ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6722:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5451:1: ( ( ruleEDouble ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5452:1: ( ruleEDouble )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6722:1: ( ruleEDouble )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6723:1: ruleEDouble
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5452:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5453:1: ruleEDouble
             {
              before(grammarAccess.getWizardAdaptativoAccess().getPuntuacionEDoubleParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PuntuacionAssignment_313260);
+            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PuntuacionAssignment_310760);
             ruleEDouble();
 
             state._fsp--;
@@ -17197,20 +13898,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__WizardAdaptativo__PenalizacionAssignment_5"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6732:1: rule__WizardAdaptativo__PenalizacionAssignment_5 : ( ruleEDouble ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5462:1: rule__WizardAdaptativo__PenalizacionAssignment_5 : ( ruleEDouble ) ;
     public final void rule__WizardAdaptativo__PenalizacionAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6736:1: ( ( ruleEDouble ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6737:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5466:1: ( ( ruleEDouble ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5467:1: ( ruleEDouble )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6737:1: ( ruleEDouble )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6738:1: ruleEDouble
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5467:1: ( ruleEDouble )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5468:1: ruleEDouble
             {
              before(grammarAccess.getWizardAdaptativoAccess().getPenalizacionEDoubleParserRuleCall_5_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PenalizacionAssignment_513291);
+            pushFollow(FollowSets000.FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PenalizacionAssignment_510791);
             ruleEDouble();
 
             state._fsp--;
@@ -17237,124 +13938,26 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__WizardAdaptativo__PenalizacionAssignment_5"
 
 
-    // $ANTLR start "rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6747:1: rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2 : ( ( ruleEString ) ) ;
-    public final void rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2() throws RecognitionException {
+    // $ANTLR start "rule__WizardAdaptativo__EjerciciosAssignment_8"
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5477:1: rule__WizardAdaptativo__EjerciciosAssignment_8 : ( ruleEjercicio ) ;
+    public final void rule__WizardAdaptativo__EjerciciosAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6751:1: ( ( ( ruleEString ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6752:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5481:1: ( ( ruleEjercicio ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5482:1: ( ruleEjercicio )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6752:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6753:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5482:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5483:1: ruleEjercicio
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioCrossReference_6_2_0()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6754:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6755:1: ruleEString
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioEStringParserRuleCall_6_2_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_213326);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioEStringParserRuleCall_6_2_0_1()); 
-
-            }
-
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioCrossReference_6_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6766:1: rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6770:1: ( ( ( ruleEString ) ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6771:1: ( ( ruleEString ) )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6771:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6772:1: ( ruleEString )
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioCrossReference_6_3_1_0()); 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6773:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6774:1: ruleEString
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioEStringParserRuleCall_6_3_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_113365);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioEStringParserRuleCall_6_3_1_0_1()); 
-
-            }
-
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosRespondidosEjercicioCrossReference_6_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1"
-
-
-    // $ANTLR start "rule__WizardAdaptativo__EjerciciosAssignment_9"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6785:1: rule__WizardAdaptativo__EjerciciosAssignment_9 : ( ruleEjercicio ) ;
-    public final void rule__WizardAdaptativo__EjerciciosAssignment_9() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6789:1: ( ( ruleEjercicio ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6790:1: ( ruleEjercicio )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6790:1: ( ruleEjercicio )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6791:1: ruleEjercicio
-            {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_9_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_913400);
+             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_8_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_810822);
             ruleEjercicio();
 
             state._fsp--;
 
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_9_0()); 
+             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_8_0()); 
 
             }
 
@@ -17373,29 +13976,29 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__WizardAdaptativo__EjerciciosAssignment_9"
+    // $ANTLR end "rule__WizardAdaptativo__EjerciciosAssignment_8"
 
 
-    // $ANTLR start "rule__WizardAdaptativo__EjerciciosAssignment_10_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6800:1: rule__WizardAdaptativo__EjerciciosAssignment_10_1 : ( ruleEjercicio ) ;
-    public final void rule__WizardAdaptativo__EjerciciosAssignment_10_1() throws RecognitionException {
+    // $ANTLR start "rule__WizardAdaptativo__EjerciciosAssignment_9_1"
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5492:1: rule__WizardAdaptativo__EjerciciosAssignment_9_1 : ( ruleEjercicio ) ;
+    public final void rule__WizardAdaptativo__EjerciciosAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6804:1: ( ( ruleEjercicio ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6805:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5496:1: ( ( ruleEjercicio ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5497:1: ( ruleEjercicio )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6805:1: ( ruleEjercicio )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6806:1: ruleEjercicio
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5497:1: ( ruleEjercicio )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5498:1: ruleEjercicio
             {
-             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_10_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_10_113431);
+             before(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_9_1_0()); 
+            pushFollow(FollowSets000.FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_9_110853);
             ruleEjercicio();
 
             state._fsp--;
 
-             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_10_1_0()); 
+             after(grammarAccess.getWizardAdaptativoAccess().getEjerciciosEjercicioParserRuleCall_9_1_0()); 
 
             }
 
@@ -17414,24 +14017,24 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         }
         return ;
     }
-    // $ANTLR end "rule__WizardAdaptativo__EjerciciosAssignment_10_1"
+    // $ANTLR end "rule__WizardAdaptativo__EjerciciosAssignment_9_1"
 
 
     // $ANTLR start "rule__RespuestaUnica__CorrectasAssignment_3_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6815:1: rule__RespuestaUnica__CorrectasAssignment_3_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5507:1: rule__RespuestaUnica__CorrectasAssignment_3_2 : ( ruleEString ) ;
     public final void rule__RespuestaUnica__CorrectasAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6819:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6820:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5511:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5512:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6820:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6821:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5512:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5513:1: ruleEString
             {
              before(grammarAccess.getRespuestaUnicaAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_213462);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_210884);
             ruleEString();
 
             state._fsp--;
@@ -17459,20 +14062,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__CorrectasAssignment_3_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6830:1: rule__RespuestaUnica__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5522:1: rule__RespuestaUnica__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
     public final void rule__RespuestaUnica__CorrectasAssignment_3_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6834:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6835:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5526:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5527:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6835:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6836:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5527:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5528:1: ruleEString
             {
              before(grammarAccess.getRespuestaUnicaAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_3_113493);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_3_110915);
             ruleEString();
 
             state._fsp--;
@@ -17500,20 +14103,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__AlternativasAssignment_4_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6845:1: rule__RespuestaUnica__AlternativasAssignment_4_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5537:1: rule__RespuestaUnica__AlternativasAssignment_4_2 : ( ruleEString ) ;
     public final void rule__RespuestaUnica__AlternativasAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6849:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6850:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5541:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5542:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6850:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6851:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5542:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5543:1: ruleEString
             {
              before(grammarAccess.getRespuestaUnicaAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_213524);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_210946);
             ruleEString();
 
             state._fsp--;
@@ -17541,20 +14144,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaUnica__AlternativasAssignment_4_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6860:1: rule__RespuestaUnica__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5552:1: rule__RespuestaUnica__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
     public final void rule__RespuestaUnica__AlternativasAssignment_4_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6864:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6865:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5556:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5557:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6865:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6866:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5557:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5558:1: ruleEString
             {
              before(grammarAccess.getRespuestaUnicaAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_3_113555);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_3_110977);
             ruleEString();
 
             state._fsp--;
@@ -17581,103 +14184,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__RespuestaUnica__AlternativasAssignment_4_3_1"
 
 
-    // $ANTLR start "rule__RespuestaUnica__SeleccionadasAssignment_5_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6875:1: rule__RespuestaUnica__SeleccionadasAssignment_5_2 : ( ruleEString ) ;
-    public final void rule__RespuestaUnica__SeleccionadasAssignment_5_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6879:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6880:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6880:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6881:1: ruleEString
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__SeleccionadasAssignment_5_213586);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__SeleccionadasAssignment_5_2"
-
-
-    // $ANTLR start "rule__RespuestaUnica__SeleccionadasAssignment_5_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6890:1: rule__RespuestaUnica__SeleccionadasAssignment_5_3_1 : ( ruleEString ) ;
-    public final void rule__RespuestaUnica__SeleccionadasAssignment_5_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6894:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6895:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6895:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6896:1: ruleEString
-            {
-             before(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaUnica__SeleccionadasAssignment_5_3_113617);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRespuestaUnicaAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaUnica__SeleccionadasAssignment_5_3_1"
-
-
     // $ANTLR start "rule__RespuestaMultiple__CorrectasAssignment_3_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6905:1: rule__RespuestaMultiple__CorrectasAssignment_3_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5567:1: rule__RespuestaMultiple__CorrectasAssignment_3_2 : ( ruleEString ) ;
     public final void rule__RespuestaMultiple__CorrectasAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6909:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6910:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5571:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5572:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6910:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6911:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5572:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5573:1: ruleEString
             {
              before(grammarAccess.getRespuestaMultipleAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_213648);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_211008);
             ruleEString();
 
             state._fsp--;
@@ -17705,20 +14226,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__CorrectasAssignment_3_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6920:1: rule__RespuestaMultiple__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5582:1: rule__RespuestaMultiple__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
     public final void rule__RespuestaMultiple__CorrectasAssignment_3_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6924:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6925:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5586:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5587:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6925:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6926:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5587:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5588:1: ruleEString
             {
              before(grammarAccess.getRespuestaMultipleAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_3_113679);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_3_111039);
             ruleEString();
 
             state._fsp--;
@@ -17746,20 +14267,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__AlternativasAssignment_4_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6935:1: rule__RespuestaMultiple__AlternativasAssignment_4_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5597:1: rule__RespuestaMultiple__AlternativasAssignment_4_2 : ( ruleEString ) ;
     public final void rule__RespuestaMultiple__AlternativasAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6939:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6940:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5601:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5602:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6940:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6941:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5602:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5603:1: ruleEString
             {
              before(grammarAccess.getRespuestaMultipleAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_213710);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_211070);
             ruleEString();
 
             state._fsp--;
@@ -17787,20 +14308,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__RespuestaMultiple__AlternativasAssignment_4_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6950:1: rule__RespuestaMultiple__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5612:1: rule__RespuestaMultiple__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
     public final void rule__RespuestaMultiple__AlternativasAssignment_4_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6954:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6955:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5616:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5617:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6955:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6956:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5617:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5618:1: ruleEString
             {
              before(grammarAccess.getRespuestaMultipleAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_3_113741);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_3_111101);
             ruleEString();
 
             state._fsp--;
@@ -17827,103 +14348,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__RespuestaMultiple__AlternativasAssignment_4_3_1"
 
 
-    // $ANTLR start "rule__RespuestaMultiple__SeleccionadasAssignment_5_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6965:1: rule__RespuestaMultiple__SeleccionadasAssignment_5_2 : ( ruleEString ) ;
-    public final void rule__RespuestaMultiple__SeleccionadasAssignment_5_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6969:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6970:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6970:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6971:1: ruleEString
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__SeleccionadasAssignment_5_213772);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__SeleccionadasAssignment_5_2"
-
-
-    // $ANTLR start "rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6980:1: rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1 : ( ruleEString ) ;
-    public final void rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6984:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6985:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6985:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6986:1: ruleEString
-            {
-             before(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__RespuestaMultiple__SeleccionadasAssignment_5_3_113803);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getRespuestaMultipleAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1"
-
-
     // $ANTLR start "rule__TextoLibre__CorrectasAssignment_3_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6995:1: rule__TextoLibre__CorrectasAssignment_3_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5627:1: rule__TextoLibre__CorrectasAssignment_3_2 : ( ruleEString ) ;
     public final void rule__TextoLibre__CorrectasAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:6999:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7000:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5631:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5632:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7000:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7001:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5632:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5633:1: ruleEString
             {
              before(grammarAccess.getTextoLibreAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_213834);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_211132);
             ruleEString();
 
             state._fsp--;
@@ -17951,20 +14390,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__CorrectasAssignment_3_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7010:1: rule__TextoLibre__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5642:1: rule__TextoLibre__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
     public final void rule__TextoLibre__CorrectasAssignment_3_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7014:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7015:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5646:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5647:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7015:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7016:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5647:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5648:1: ruleEString
             {
              before(grammarAccess.getTextoLibreAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_3_113865);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_3_111163);
             ruleEString();
 
             state._fsp--;
@@ -17992,20 +14431,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__AlternativasAssignment_4_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7025:1: rule__TextoLibre__AlternativasAssignment_4_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5657:1: rule__TextoLibre__AlternativasAssignment_4_2 : ( ruleEString ) ;
     public final void rule__TextoLibre__AlternativasAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7029:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7030:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5661:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5662:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7030:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7031:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5662:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5663:1: ruleEString
             {
              before(grammarAccess.getTextoLibreAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_213896);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_211194);
             ruleEString();
 
             state._fsp--;
@@ -18033,20 +14472,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__TextoLibre__AlternativasAssignment_4_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7040:1: rule__TextoLibre__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5672:1: rule__TextoLibre__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
     public final void rule__TextoLibre__AlternativasAssignment_4_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7044:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7045:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5676:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5677:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7045:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7046:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5677:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5678:1: ruleEString
             {
              before(grammarAccess.getTextoLibreAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_3_113927);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_3_111225);
             ruleEString();
 
             state._fsp--;
@@ -18073,103 +14512,21 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
     // $ANTLR end "rule__TextoLibre__AlternativasAssignment_4_3_1"
 
 
-    // $ANTLR start "rule__TextoLibre__SeleccionadasAssignment_5_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7055:1: rule__TextoLibre__SeleccionadasAssignment_5_2 : ( ruleEString ) ;
-    public final void rule__TextoLibre__SeleccionadasAssignment_5_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7059:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7060:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7060:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7061:1: ruleEString
-            {
-             before(grammarAccess.getTextoLibreAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__SeleccionadasAssignment_5_213958);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getTextoLibreAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__SeleccionadasAssignment_5_2"
-
-
-    // $ANTLR start "rule__TextoLibre__SeleccionadasAssignment_5_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7070:1: rule__TextoLibre__SeleccionadasAssignment_5_3_1 : ( ruleEString ) ;
-    public final void rule__TextoLibre__SeleccionadasAssignment_5_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7074:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7075:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7075:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7076:1: ruleEString
-            {
-             before(grammarAccess.getTextoLibreAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__TextoLibre__SeleccionadasAssignment_5_3_113989);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getTextoLibreAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__TextoLibre__SeleccionadasAssignment_5_3_1"
-
-
     // $ANTLR start "rule__Ordenacion__CorrectasAssignment_3_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7085:1: rule__Ordenacion__CorrectasAssignment_3_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5687:1: rule__Ordenacion__CorrectasAssignment_3_2 : ( ruleEString ) ;
     public final void rule__Ordenacion__CorrectasAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7089:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7090:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5691:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5692:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7090:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7091:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5692:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5693:1: ruleEString
             {
              before(grammarAccess.getOrdenacionAccess().getCorrectasEStringParserRuleCall_3_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_214020);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_211256);
             ruleEString();
 
             state._fsp--;
@@ -18197,20 +14554,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__CorrectasAssignment_3_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7100:1: rule__Ordenacion__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5702:1: rule__Ordenacion__CorrectasAssignment_3_3_1 : ( ruleEString ) ;
     public final void rule__Ordenacion__CorrectasAssignment_3_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7104:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7105:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5706:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5707:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7105:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7106:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5707:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5708:1: ruleEString
             {
              before(grammarAccess.getOrdenacionAccess().getCorrectasEStringParserRuleCall_3_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_3_114051);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_3_111287);
             ruleEString();
 
             state._fsp--;
@@ -18238,20 +14595,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__AlternativasAssignment_4_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7115:1: rule__Ordenacion__AlternativasAssignment_4_2 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5717:1: rule__Ordenacion__AlternativasAssignment_4_2 : ( ruleEString ) ;
     public final void rule__Ordenacion__AlternativasAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7119:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7120:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5721:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5722:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7120:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7121:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5722:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5723:1: ruleEString
             {
              before(grammarAccess.getOrdenacionAccess().getAlternativasEStringParserRuleCall_4_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_214082);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_211318);
             ruleEString();
 
             state._fsp--;
@@ -18279,20 +14636,20 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Ordenacion__AlternativasAssignment_4_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7130:1: rule__Ordenacion__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
+    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5732:1: rule__Ordenacion__AlternativasAssignment_4_3_1 : ( ruleEString ) ;
     public final void rule__Ordenacion__AlternativasAssignment_4_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7134:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7135:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5736:1: ( ( ruleEString ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5737:1: ( ruleEString )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7135:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7136:1: ruleEString
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5737:1: ( ruleEString )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5738:1: ruleEString
             {
              before(grammarAccess.getOrdenacionAccess().getAlternativasEStringParserRuleCall_4_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_3_114113);
+            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_3_111349);
             ruleEString();
 
             state._fsp--;
@@ -18317,88 +14674,6 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         return ;
     }
     // $ANTLR end "rule__Ordenacion__AlternativasAssignment_4_3_1"
-
-
-    // $ANTLR start "rule__Ordenacion__SeleccionadasAssignment_5_2"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7145:1: rule__Ordenacion__SeleccionadasAssignment_5_2 : ( ruleEString ) ;
-    public final void rule__Ordenacion__SeleccionadasAssignment_5_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7149:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7150:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7150:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7151:1: ruleEString
-            {
-             before(grammarAccess.getOrdenacionAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__SeleccionadasAssignment_5_214144);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getOrdenacionAccess().getSeleccionadasEStringParserRuleCall_5_2_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__SeleccionadasAssignment_5_2"
-
-
-    // $ANTLR start "rule__Ordenacion__SeleccionadasAssignment_5_3_1"
-    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7160:1: rule__Ordenacion__SeleccionadasAssignment_5_3_1 : ( ruleEString ) ;
-    public final void rule__Ordenacion__SeleccionadasAssignment_5_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7164:1: ( ( ruleEString ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7165:1: ( ruleEString )
-            {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7165:1: ( ruleEString )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:7166:1: ruleEString
-            {
-             before(grammarAccess.getOrdenacionAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEString_in_rule__Ordenacion__SeleccionadasAssignment_5_3_114175);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getOrdenacionAccess().getSeleccionadasEStringParserRuleCall_5_3_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Ordenacion__SeleccionadasAssignment_5_3_1"
 
     // Delegated rules
 
@@ -18487,7 +14762,7 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         public static final BitSet FOLLOW_rule__Ejercicio__Group__9__Impl_in_rule__Ejercicio__Group__91652 = new BitSet(new long[]{0x0000000000040000L});
         public static final BitSet FOLLOW_rule__Ejercicio__Group__10_in_rule__Ejercicio__Group__91655 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Ejercicio__OrderAssignment_9_in_rule__Ejercicio__Group__9__Impl1682 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ejercicio__Group__10__Impl_in_rule__Ejercicio__Group__101712 = new BitSet(new long[]{0x000000E200000000L});
+        public static final BitSet FOLLOW_rule__Ejercicio__Group__10__Impl_in_rule__Ejercicio__Group__101712 = new BitSet(new long[]{0x0000000E40000000L});
         public static final BitSet FOLLOW_rule__Ejercicio__Group__11_in_rule__Ejercicio__Group__101715 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_18_in_rule__Ejercicio__Group__10__Impl1743 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__Ejercicio__Group__11__Impl_in_rule__Ejercicio__Group__111774 = new BitSet(new long[]{0x0000000000080000L});
@@ -18617,406 +14892,286 @@ public class InternalAutoevaluacionParser extends AbstractInternalContentAssistP
         public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__4__Impl_in_rule__WizardAdaptativo__Group__44553 = new BitSet(new long[]{0x0000000000600040L});
         public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__5_in_rule__WizardAdaptativo__Group__44556 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_25_in_rule__WizardAdaptativo__Group__4__Impl4584 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__5__Impl_in_rule__WizardAdaptativo__Group__54615 = new BitSet(new long[]{0x0000000044000000L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__5__Impl_in_rule__WizardAdaptativo__Group__54615 = new BitSet(new long[]{0x0000000004000000L});
         public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__6_in_rule__WizardAdaptativo__Group__54618 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__WizardAdaptativo__PenalizacionAssignment_5_in_rule__WizardAdaptativo__Group__5__Impl4645 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__6__Impl_in_rule__WizardAdaptativo__Group__64675 = new BitSet(new long[]{0x0000000044000000L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__6__Impl_in_rule__WizardAdaptativo__Group__64675 = new BitSet(new long[]{0x0000000000004000L});
         public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__7_in_rule__WizardAdaptativo__Group__64678 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__0_in_rule__WizardAdaptativo__Group__6__Impl4705 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__7__Impl_in_rule__WizardAdaptativo__Group__74736 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__8_in_rule__WizardAdaptativo__Group__74739 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_26_in_rule__WizardAdaptativo__Group__7__Impl4767 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__8__Impl_in_rule__WizardAdaptativo__Group__84798 = new BitSet(new long[]{0x0000000000002000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__9_in_rule__WizardAdaptativo__Group__84801 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__WizardAdaptativo__Group__8__Impl4829 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__9__Impl_in_rule__WizardAdaptativo__Group__94860 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__10_in_rule__WizardAdaptativo__Group__94863 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_9_in_rule__WizardAdaptativo__Group__9__Impl4890 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__10__Impl_in_rule__WizardAdaptativo__Group__104920 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_26_in_rule__WizardAdaptativo__Group__6__Impl4706 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__7__Impl_in_rule__WizardAdaptativo__Group__74737 = new BitSet(new long[]{0x0000000000002000L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__8_in_rule__WizardAdaptativo__Group__74740 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__WizardAdaptativo__Group__7__Impl4768 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__8__Impl_in_rule__WizardAdaptativo__Group__84799 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__9_in_rule__WizardAdaptativo__Group__84802 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_8_in_rule__WizardAdaptativo__Group__8__Impl4829 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__9__Impl_in_rule__WizardAdaptativo__Group__94859 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__10_in_rule__WizardAdaptativo__Group__94862 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_9__0_in_rule__WizardAdaptativo__Group__9__Impl4889 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__10__Impl_in_rule__WizardAdaptativo__Group__104920 = new BitSet(new long[]{0x0000000000080000L});
         public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__11_in_rule__WizardAdaptativo__Group__104923 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_10__0_in_rule__WizardAdaptativo__Group__10__Impl4950 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__11__Impl_in_rule__WizardAdaptativo__Group__114981 = new BitSet(new long[]{0x0000000000080000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__12_in_rule__WizardAdaptativo__Group__114984 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__WizardAdaptativo__Group__11__Impl5012 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__12__Impl_in_rule__WizardAdaptativo__Group__125043 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__WizardAdaptativo__Group__12__Impl5071 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__0__Impl_in_rule__WizardAdaptativo__Group_6__05128 = new BitSet(new long[]{0x0000000080000000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__1_in_rule__WizardAdaptativo__Group_6__05131 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_30_in_rule__WizardAdaptativo__Group_6__0__Impl5159 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__1__Impl_in_rule__WizardAdaptativo__Group_6__15190 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__2_in_rule__WizardAdaptativo__Group_6__15193 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_31_in_rule__WizardAdaptativo__Group_6__1__Impl5221 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__2__Impl_in_rule__WizardAdaptativo__Group_6__25252 = new BitSet(new long[]{0x0000000108000000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__3_in_rule__WizardAdaptativo__Group_6__25255 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_2_in_rule__WizardAdaptativo__Group_6__2__Impl5282 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__3__Impl_in_rule__WizardAdaptativo__Group_6__35312 = new BitSet(new long[]{0x0000000108000000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__4_in_rule__WizardAdaptativo__Group_6__35315 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6_3__0_in_rule__WizardAdaptativo__Group_6__3__Impl5342 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6__4__Impl_in_rule__WizardAdaptativo__Group_6__45373 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_rule__WizardAdaptativo__Group_6__4__Impl5401 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6_3__0__Impl_in_rule__WizardAdaptativo__Group_6_3__05442 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6_3__1_in_rule__WizardAdaptativo__Group_6_3__05445 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__WizardAdaptativo__Group_6_3__0__Impl5473 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_6_3__1__Impl_in_rule__WizardAdaptativo__Group_6_3__15504 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_1_in_rule__WizardAdaptativo__Group_6_3__1__Impl5531 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_10__0__Impl_in_rule__WizardAdaptativo__Group_10__05565 = new BitSet(new long[]{0x0000000000002000L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_10__1_in_rule__WizardAdaptativo__Group_10__05568 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__WizardAdaptativo__Group_10__0__Impl5596 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_10__1__Impl_in_rule__WizardAdaptativo__Group_10__15627 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_10_1_in_rule__WizardAdaptativo__Group_10__1__Impl5654 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__05688 = new BitSet(new long[]{0x0000000000200040L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__05691 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_21_in_rule__EInt__Group__0__Impl5720 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__15753 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl5780 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__0__Impl_in_rule__RespuestaUnica__Group__05813 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__1_in_rule__RespuestaUnica__Group__05816 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__1__Impl_in_rule__RespuestaUnica__Group__15874 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__2_in_rule__RespuestaUnica__Group__15877 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_rule__RespuestaUnica__Group__1__Impl5905 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__2__Impl_in_rule__RespuestaUnica__Group__25936 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__3_in_rule__RespuestaUnica__Group__25939 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaUnica__Group__2__Impl5967 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__3__Impl_in_rule__RespuestaUnica__Group__35998 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__4_in_rule__RespuestaUnica__Group__36001 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__0_in_rule__RespuestaUnica__Group__3__Impl6028 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__4__Impl_in_rule__RespuestaUnica__Group__46059 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__5_in_rule__RespuestaUnica__Group__46062 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__0_in_rule__RespuestaUnica__Group__4__Impl6089 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__5__Impl_in_rule__RespuestaUnica__Group__56120 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__6_in_rule__RespuestaUnica__Group__56123 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__0_in_rule__RespuestaUnica__Group__5__Impl6150 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__6__Impl_in_rule__RespuestaUnica__Group__66181 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaUnica__Group__6__Impl6209 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__0__Impl_in_rule__RespuestaUnica__Group_3__06254 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__1_in_rule__RespuestaUnica__Group_3__06257 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_34_in_rule__RespuestaUnica__Group_3__0__Impl6285 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__1__Impl_in_rule__RespuestaUnica__Group_3__16316 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__2_in_rule__RespuestaUnica__Group_3__16319 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaUnica__Group_3__1__Impl6347 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__2__Impl_in_rule__RespuestaUnica__Group_3__26378 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__3_in_rule__RespuestaUnica__Group_3__26381 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_2_in_rule__RespuestaUnica__Group_3__2__Impl6408 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__3__Impl_in_rule__RespuestaUnica__Group_3__36438 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__4_in_rule__RespuestaUnica__Group_3__36441 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__0_in_rule__RespuestaUnica__Group_3__3__Impl6468 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__4__Impl_in_rule__RespuestaUnica__Group_3__46499 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaUnica__Group_3__4__Impl6527 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__0__Impl_in_rule__RespuestaUnica__Group_3_3__06568 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__1_in_rule__RespuestaUnica__Group_3_3__06571 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__RespuestaUnica__Group_3_3__0__Impl6599 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__1__Impl_in_rule__RespuestaUnica__Group_3_3__16630 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_3_1_in_rule__RespuestaUnica__Group_3_3__1__Impl6657 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__0__Impl_in_rule__RespuestaUnica__Group_4__06691 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__1_in_rule__RespuestaUnica__Group_4__06694 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_35_in_rule__RespuestaUnica__Group_4__0__Impl6722 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__1__Impl_in_rule__RespuestaUnica__Group_4__16753 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__2_in_rule__RespuestaUnica__Group_4__16756 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaUnica__Group_4__1__Impl6784 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__2__Impl_in_rule__RespuestaUnica__Group_4__26815 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__3_in_rule__RespuestaUnica__Group_4__26818 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_2_in_rule__RespuestaUnica__Group_4__2__Impl6845 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__3__Impl_in_rule__RespuestaUnica__Group_4__36875 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__4_in_rule__RespuestaUnica__Group_4__36878 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__0_in_rule__RespuestaUnica__Group_4__3__Impl6905 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__4__Impl_in_rule__RespuestaUnica__Group_4__46936 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaUnica__Group_4__4__Impl6964 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__0__Impl_in_rule__RespuestaUnica__Group_4_3__07005 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__1_in_rule__RespuestaUnica__Group_4_3__07008 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__RespuestaUnica__Group_4_3__0__Impl7036 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__1__Impl_in_rule__RespuestaUnica__Group_4_3__17067 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_3_1_in_rule__RespuestaUnica__Group_4_3__1__Impl7094 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__0__Impl_in_rule__RespuestaUnica__Group_5__07128 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__1_in_rule__RespuestaUnica__Group_5__07131 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_36_in_rule__RespuestaUnica__Group_5__0__Impl7159 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__1__Impl_in_rule__RespuestaUnica__Group_5__17190 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__2_in_rule__RespuestaUnica__Group_5__17193 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaUnica__Group_5__1__Impl7221 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__2__Impl_in_rule__RespuestaUnica__Group_5__27252 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__3_in_rule__RespuestaUnica__Group_5__27255 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__SeleccionadasAssignment_5_2_in_rule__RespuestaUnica__Group_5__2__Impl7282 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__3__Impl_in_rule__RespuestaUnica__Group_5__37312 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__4_in_rule__RespuestaUnica__Group_5__37315 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5_3__0_in_rule__RespuestaUnica__Group_5__3__Impl7342 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5__4__Impl_in_rule__RespuestaUnica__Group_5__47373 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaUnica__Group_5__4__Impl7401 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5_3__0__Impl_in_rule__RespuestaUnica__Group_5_3__07442 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5_3__1_in_rule__RespuestaUnica__Group_5_3__07445 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__RespuestaUnica__Group_5_3__0__Impl7473 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_5_3__1__Impl_in_rule__RespuestaUnica__Group_5_3__17504 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaUnica__SeleccionadasAssignment_5_3_1_in_rule__RespuestaUnica__Group_5_3__1__Impl7531 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__0__Impl_in_rule__RespuestaMultiple__Group__07565 = new BitSet(new long[]{0x0000002000000000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__1_in_rule__RespuestaMultiple__Group__07568 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__1__Impl_in_rule__RespuestaMultiple__Group__17626 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__2_in_rule__RespuestaMultiple__Group__17629 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_37_in_rule__RespuestaMultiple__Group__1__Impl7657 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__2__Impl_in_rule__RespuestaMultiple__Group__27688 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__3_in_rule__RespuestaMultiple__Group__27691 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaMultiple__Group__2__Impl7719 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__3__Impl_in_rule__RespuestaMultiple__Group__37750 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__4_in_rule__RespuestaMultiple__Group__37753 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__0_in_rule__RespuestaMultiple__Group__3__Impl7780 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__4__Impl_in_rule__RespuestaMultiple__Group__47811 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__5_in_rule__RespuestaMultiple__Group__47814 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__0_in_rule__RespuestaMultiple__Group__4__Impl7841 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__5__Impl_in_rule__RespuestaMultiple__Group__57872 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__6_in_rule__RespuestaMultiple__Group__57875 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__0_in_rule__RespuestaMultiple__Group__5__Impl7902 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__6__Impl_in_rule__RespuestaMultiple__Group__67933 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaMultiple__Group__6__Impl7961 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__0__Impl_in_rule__RespuestaMultiple__Group_3__08006 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__1_in_rule__RespuestaMultiple__Group_3__08009 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_34_in_rule__RespuestaMultiple__Group_3__0__Impl8037 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__1__Impl_in_rule__RespuestaMultiple__Group_3__18068 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__2_in_rule__RespuestaMultiple__Group_3__18071 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaMultiple__Group_3__1__Impl8099 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__2__Impl_in_rule__RespuestaMultiple__Group_3__28130 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__3_in_rule__RespuestaMultiple__Group_3__28133 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_2_in_rule__RespuestaMultiple__Group_3__2__Impl8160 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__3__Impl_in_rule__RespuestaMultiple__Group_3__38190 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__4_in_rule__RespuestaMultiple__Group_3__38193 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__0_in_rule__RespuestaMultiple__Group_3__3__Impl8220 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__4__Impl_in_rule__RespuestaMultiple__Group_3__48251 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaMultiple__Group_3__4__Impl8279 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__0__Impl_in_rule__RespuestaMultiple__Group_3_3__08320 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__1_in_rule__RespuestaMultiple__Group_3_3__08323 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__RespuestaMultiple__Group_3_3__0__Impl8351 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__1__Impl_in_rule__RespuestaMultiple__Group_3_3__18382 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_3_1_in_rule__RespuestaMultiple__Group_3_3__1__Impl8409 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__0__Impl_in_rule__RespuestaMultiple__Group_4__08443 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__1_in_rule__RespuestaMultiple__Group_4__08446 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_35_in_rule__RespuestaMultiple__Group_4__0__Impl8474 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__1__Impl_in_rule__RespuestaMultiple__Group_4__18505 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__2_in_rule__RespuestaMultiple__Group_4__18508 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaMultiple__Group_4__1__Impl8536 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__2__Impl_in_rule__RespuestaMultiple__Group_4__28567 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__3_in_rule__RespuestaMultiple__Group_4__28570 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_2_in_rule__RespuestaMultiple__Group_4__2__Impl8597 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__3__Impl_in_rule__RespuestaMultiple__Group_4__38627 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__4_in_rule__RespuestaMultiple__Group_4__38630 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__0_in_rule__RespuestaMultiple__Group_4__3__Impl8657 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__4__Impl_in_rule__RespuestaMultiple__Group_4__48688 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaMultiple__Group_4__4__Impl8716 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__0__Impl_in_rule__RespuestaMultiple__Group_4_3__08757 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__1_in_rule__RespuestaMultiple__Group_4_3__08760 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__RespuestaMultiple__Group_4_3__0__Impl8788 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__1__Impl_in_rule__RespuestaMultiple__Group_4_3__18819 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_3_1_in_rule__RespuestaMultiple__Group_4_3__1__Impl8846 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__0__Impl_in_rule__RespuestaMultiple__Group_5__08880 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__1_in_rule__RespuestaMultiple__Group_5__08883 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_36_in_rule__RespuestaMultiple__Group_5__0__Impl8911 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__1__Impl_in_rule__RespuestaMultiple__Group_5__18942 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__2_in_rule__RespuestaMultiple__Group_5__18945 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__RespuestaMultiple__Group_5__1__Impl8973 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__2__Impl_in_rule__RespuestaMultiple__Group_5__29004 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__3_in_rule__RespuestaMultiple__Group_5__29007 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__SeleccionadasAssignment_5_2_in_rule__RespuestaMultiple__Group_5__2__Impl9034 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__3__Impl_in_rule__RespuestaMultiple__Group_5__39064 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__4_in_rule__RespuestaMultiple__Group_5__39067 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5_3__0_in_rule__RespuestaMultiple__Group_5__3__Impl9094 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5__4__Impl_in_rule__RespuestaMultiple__Group_5__49125 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__RespuestaMultiple__Group_5__4__Impl9153 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5_3__0__Impl_in_rule__RespuestaMultiple__Group_5_3__09194 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5_3__1_in_rule__RespuestaMultiple__Group_5_3__09197 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__RespuestaMultiple__Group_5_3__0__Impl9225 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_5_3__1__Impl_in_rule__RespuestaMultiple__Group_5_3__19256 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RespuestaMultiple__SeleccionadasAssignment_5_3_1_in_rule__RespuestaMultiple__Group_5_3__1__Impl9283 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__0__Impl_in_rule__TextoLibre__Group__09317 = new BitSet(new long[]{0x0000004000000000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__1_in_rule__TextoLibre__Group__09320 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__1__Impl_in_rule__TextoLibre__Group__19378 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__2_in_rule__TextoLibre__Group__19381 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_rule__TextoLibre__Group__1__Impl9409 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__2__Impl_in_rule__TextoLibre__Group__29440 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__3_in_rule__TextoLibre__Group__29443 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__TextoLibre__Group__2__Impl9471 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__3__Impl_in_rule__TextoLibre__Group__39502 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__4_in_rule__TextoLibre__Group__39505 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__0_in_rule__TextoLibre__Group__3__Impl9532 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__4__Impl_in_rule__TextoLibre__Group__49563 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__5_in_rule__TextoLibre__Group__49566 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__0_in_rule__TextoLibre__Group__4__Impl9593 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__5__Impl_in_rule__TextoLibre__Group__59624 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__6_in_rule__TextoLibre__Group__59627 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__0_in_rule__TextoLibre__Group__5__Impl9654 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group__6__Impl_in_rule__TextoLibre__Group__69685 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__TextoLibre__Group__6__Impl9713 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__0__Impl_in_rule__TextoLibre__Group_3__09758 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__1_in_rule__TextoLibre__Group_3__09761 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_34_in_rule__TextoLibre__Group_3__0__Impl9789 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__1__Impl_in_rule__TextoLibre__Group_3__19820 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__2_in_rule__TextoLibre__Group_3__19823 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__TextoLibre__Group_3__1__Impl9851 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__2__Impl_in_rule__TextoLibre__Group_3__29882 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__3_in_rule__TextoLibre__Group_3__29885 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__CorrectasAssignment_3_2_in_rule__TextoLibre__Group_3__2__Impl9912 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__3__Impl_in_rule__TextoLibre__Group_3__39942 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__4_in_rule__TextoLibre__Group_3__39945 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__0_in_rule__TextoLibre__Group_3__3__Impl9972 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__4__Impl_in_rule__TextoLibre__Group_3__410003 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__TextoLibre__Group_3__4__Impl10031 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__0__Impl_in_rule__TextoLibre__Group_3_3__010072 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__1_in_rule__TextoLibre__Group_3_3__010075 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__TextoLibre__Group_3_3__0__Impl10103 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__1__Impl_in_rule__TextoLibre__Group_3_3__110134 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__CorrectasAssignment_3_3_1_in_rule__TextoLibre__Group_3_3__1__Impl10161 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__0__Impl_in_rule__TextoLibre__Group_4__010195 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__1_in_rule__TextoLibre__Group_4__010198 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_35_in_rule__TextoLibre__Group_4__0__Impl10226 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__1__Impl_in_rule__TextoLibre__Group_4__110257 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__2_in_rule__TextoLibre__Group_4__110260 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__TextoLibre__Group_4__1__Impl10288 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__2__Impl_in_rule__TextoLibre__Group_4__210319 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__3_in_rule__TextoLibre__Group_4__210322 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__AlternativasAssignment_4_2_in_rule__TextoLibre__Group_4__2__Impl10349 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__3__Impl_in_rule__TextoLibre__Group_4__310379 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__4_in_rule__TextoLibre__Group_4__310382 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__0_in_rule__TextoLibre__Group_4__3__Impl10409 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__4__Impl_in_rule__TextoLibre__Group_4__410440 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__TextoLibre__Group_4__4__Impl10468 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__0__Impl_in_rule__TextoLibre__Group_4_3__010509 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__1_in_rule__TextoLibre__Group_4_3__010512 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__TextoLibre__Group_4_3__0__Impl10540 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__1__Impl_in_rule__TextoLibre__Group_4_3__110571 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__AlternativasAssignment_4_3_1_in_rule__TextoLibre__Group_4_3__1__Impl10598 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__0__Impl_in_rule__TextoLibre__Group_5__010632 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__1_in_rule__TextoLibre__Group_5__010635 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_36_in_rule__TextoLibre__Group_5__0__Impl10663 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__1__Impl_in_rule__TextoLibre__Group_5__110694 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__2_in_rule__TextoLibre__Group_5__110697 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__TextoLibre__Group_5__1__Impl10725 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__2__Impl_in_rule__TextoLibre__Group_5__210756 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__3_in_rule__TextoLibre__Group_5__210759 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__SeleccionadasAssignment_5_2_in_rule__TextoLibre__Group_5__2__Impl10786 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__3__Impl_in_rule__TextoLibre__Group_5__310816 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__4_in_rule__TextoLibre__Group_5__310819 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5_3__0_in_rule__TextoLibre__Group_5__3__Impl10846 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5__4__Impl_in_rule__TextoLibre__Group_5__410877 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__TextoLibre__Group_5__4__Impl10905 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5_3__0__Impl_in_rule__TextoLibre__Group_5_3__010946 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5_3__1_in_rule__TextoLibre__Group_5_3__010949 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__TextoLibre__Group_5_3__0__Impl10977 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__Group_5_3__1__Impl_in_rule__TextoLibre__Group_5_3__111008 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TextoLibre__SeleccionadasAssignment_5_3_1_in_rule__TextoLibre__Group_5_3__1__Impl11035 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__0__Impl_in_rule__Ordenacion__Group__011069 = new BitSet(new long[]{0x000000E200000000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__1_in_rule__Ordenacion__Group__011072 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__1__Impl_in_rule__Ordenacion__Group__111130 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__2_in_rule__Ordenacion__Group__111133 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rule__Ordenacion__Group__1__Impl11161 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__2__Impl_in_rule__Ordenacion__Group__211192 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__3_in_rule__Ordenacion__Group__211195 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Ordenacion__Group__2__Impl11223 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__3__Impl_in_rule__Ordenacion__Group__311254 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__4_in_rule__Ordenacion__Group__311257 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__0_in_rule__Ordenacion__Group__3__Impl11284 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__4__Impl_in_rule__Ordenacion__Group__411315 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__5_in_rule__Ordenacion__Group__411318 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__0_in_rule__Ordenacion__Group__4__Impl11345 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__5__Impl_in_rule__Ordenacion__Group__511376 = new BitSet(new long[]{0x0000001C00080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__6_in_rule__Ordenacion__Group__511379 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__0_in_rule__Ordenacion__Group__5__Impl11406 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group__6__Impl_in_rule__Ordenacion__Group__611437 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__Ordenacion__Group__6__Impl11465 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__0__Impl_in_rule__Ordenacion__Group_3__011510 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__1_in_rule__Ordenacion__Group_3__011513 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_34_in_rule__Ordenacion__Group_3__0__Impl11541 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__1__Impl_in_rule__Ordenacion__Group_3__111572 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__2_in_rule__Ordenacion__Group_3__111575 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Ordenacion__Group_3__1__Impl11603 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__2__Impl_in_rule__Ordenacion__Group_3__211634 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__3_in_rule__Ordenacion__Group_3__211637 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__CorrectasAssignment_3_2_in_rule__Ordenacion__Group_3__2__Impl11664 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__3__Impl_in_rule__Ordenacion__Group_3__311694 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__4_in_rule__Ordenacion__Group_3__311697 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__0_in_rule__Ordenacion__Group_3__3__Impl11724 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__4__Impl_in_rule__Ordenacion__Group_3__411755 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__Ordenacion__Group_3__4__Impl11783 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__0__Impl_in_rule__Ordenacion__Group_3_3__011824 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__1_in_rule__Ordenacion__Group_3_3__011827 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__Ordenacion__Group_3_3__0__Impl11855 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__1__Impl_in_rule__Ordenacion__Group_3_3__111886 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__CorrectasAssignment_3_3_1_in_rule__Ordenacion__Group_3_3__1__Impl11913 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__0__Impl_in_rule__Ordenacion__Group_4__011947 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__1_in_rule__Ordenacion__Group_4__011950 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_35_in_rule__Ordenacion__Group_4__0__Impl11978 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__1__Impl_in_rule__Ordenacion__Group_4__112009 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__2_in_rule__Ordenacion__Group_4__112012 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Ordenacion__Group_4__1__Impl12040 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__2__Impl_in_rule__Ordenacion__Group_4__212071 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__3_in_rule__Ordenacion__Group_4__212074 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__AlternativasAssignment_4_2_in_rule__Ordenacion__Group_4__2__Impl12101 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__3__Impl_in_rule__Ordenacion__Group_4__312131 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__4_in_rule__Ordenacion__Group_4__312134 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__0_in_rule__Ordenacion__Group_4__3__Impl12161 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__4__Impl_in_rule__Ordenacion__Group_4__412192 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__Ordenacion__Group_4__4__Impl12220 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__0__Impl_in_rule__Ordenacion__Group_4_3__012261 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__1_in_rule__Ordenacion__Group_4_3__012264 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__Ordenacion__Group_4_3__0__Impl12292 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__1__Impl_in_rule__Ordenacion__Group_4_3__112323 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__AlternativasAssignment_4_3_1_in_rule__Ordenacion__Group_4_3__1__Impl12350 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__0__Impl_in_rule__Ordenacion__Group_5__012384 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__1_in_rule__Ordenacion__Group_5__012387 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_36_in_rule__Ordenacion__Group_5__0__Impl12415 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__1__Impl_in_rule__Ordenacion__Group_5__112446 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__2_in_rule__Ordenacion__Group_5__112449 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__Ordenacion__Group_5__1__Impl12477 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__2__Impl_in_rule__Ordenacion__Group_5__212508 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__3_in_rule__Ordenacion__Group_5__212511 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__SeleccionadasAssignment_5_2_in_rule__Ordenacion__Group_5__2__Impl12538 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__3__Impl_in_rule__Ordenacion__Group_5__312568 = new BitSet(new long[]{0x0000000008080000L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__4_in_rule__Ordenacion__Group_5__312571 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5_3__0_in_rule__Ordenacion__Group_5__3__Impl12598 = new BitSet(new long[]{0x0000000008000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5__4__Impl_in_rule__Ordenacion__Group_5__412629 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_19_in_rule__Ordenacion__Group_5__4__Impl12657 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5_3__0__Impl_in_rule__Ordenacion__Group_5_3__012698 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5_3__1_in_rule__Ordenacion__Group_5_3__012701 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__Ordenacion__Group_5_3__0__Impl12729 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__Group_5_3__1__Impl_in_rule__Ordenacion__Group_5_3__112760 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Ordenacion__SeleccionadasAssignment_5_3_1_in_rule__Ordenacion__Group_5_3__1__Impl12787 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ejercicio__NameAssignment_112826 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ejercicio__EnunciadoAssignment_412857 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDouble_in_rule__Ejercicio__PuntuacionEjAssignment_5_112888 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ejercicio__CategoriaAssignment_712919 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEInt_in_rule__Ejercicio__OrderAssignment_912950 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRespuesta_in_rule__Ejercicio__RespuestaAssignment_1112981 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDouble_in_rule__Clasico__PuntuacionAssignment_313012 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDouble_in_rule__Clasico__PenalizacionAssignment_513043 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_813074 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_9_113105 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDouble_in_rule__Wizard__PuntuacionAssignment_313136 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDouble_in_rule__Wizard__PenalizacionAssignment_513167 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_813198 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_9_113229 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PuntuacionAssignment_313260 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PenalizacionAssignment_513291 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_213326 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__WizardAdaptativo__EjerciciosRespondidosAssignment_6_3_113365 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_913400 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_10_113431 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_213462 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_3_113493 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_213524 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_3_113555 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__SeleccionadasAssignment_5_213586 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__SeleccionadasAssignment_5_3_113617 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_213648 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_3_113679 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_213710 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_3_113741 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__SeleccionadasAssignment_5_213772 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__SeleccionadasAssignment_5_3_113803 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_213834 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_3_113865 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_213896 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_3_113927 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__SeleccionadasAssignment_5_213958 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__SeleccionadasAssignment_5_3_113989 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_214020 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_3_114051 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_214082 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_3_114113 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__SeleccionadasAssignment_5_214144 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__SeleccionadasAssignment_5_3_114175 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__WizardAdaptativo__Group__10__Impl4951 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group__11__Impl_in_rule__WizardAdaptativo__Group__114982 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__WizardAdaptativo__Group__11__Impl5010 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_9__0__Impl_in_rule__WizardAdaptativo__Group_9__05065 = new BitSet(new long[]{0x0000000000002000L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_9__1_in_rule__WizardAdaptativo__Group_9__05068 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__WizardAdaptativo__Group_9__0__Impl5096 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__Group_9__1__Impl_in_rule__WizardAdaptativo__Group_9__15127 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__WizardAdaptativo__EjerciciosAssignment_9_1_in_rule__WizardAdaptativo__Group_9__1__Impl5154 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__0__Impl_in_rule__EInt__Group__05188 = new BitSet(new long[]{0x0000000000200040L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1_in_rule__EInt__Group__05191 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_21_in_rule__EInt__Group__0__Impl5220 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EInt__Group__1__Impl_in_rule__EInt__Group__15253 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_INT_in_rule__EInt__Group__1__Impl5280 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__0__Impl_in_rule__RespuestaUnica__Group__05313 = new BitSet(new long[]{0x0000000040000000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__1_in_rule__RespuestaUnica__Group__05316 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__1__Impl_in_rule__RespuestaUnica__Group__15374 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__2_in_rule__RespuestaUnica__Group__15377 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_30_in_rule__RespuestaUnica__Group__1__Impl5405 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__2__Impl_in_rule__RespuestaUnica__Group__25436 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__3_in_rule__RespuestaUnica__Group__25439 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__RespuestaUnica__Group__2__Impl5467 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__3__Impl_in_rule__RespuestaUnica__Group__35498 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__4_in_rule__RespuestaUnica__Group__35501 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__0_in_rule__RespuestaUnica__Group__3__Impl5528 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__4__Impl_in_rule__RespuestaUnica__Group__45559 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__5_in_rule__RespuestaUnica__Group__45562 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__0_in_rule__RespuestaUnica__Group__4__Impl5589 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group__5__Impl_in_rule__RespuestaUnica__Group__55620 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__RespuestaUnica__Group__5__Impl5648 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__0__Impl_in_rule__RespuestaUnica__Group_3__05691 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__1_in_rule__RespuestaUnica__Group_3__05694 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_rule__RespuestaUnica__Group_3__0__Impl5722 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__1__Impl_in_rule__RespuestaUnica__Group_3__15753 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__2_in_rule__RespuestaUnica__Group_3__15756 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__RespuestaUnica__Group_3__1__Impl5784 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__2__Impl_in_rule__RespuestaUnica__Group_3__25815 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__3_in_rule__RespuestaUnica__Group_3__25818 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_2_in_rule__RespuestaUnica__Group_3__2__Impl5845 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__3__Impl_in_rule__RespuestaUnica__Group_3__35875 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__4_in_rule__RespuestaUnica__Group_3__35878 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__0_in_rule__RespuestaUnica__Group_3__3__Impl5905 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3__4__Impl_in_rule__RespuestaUnica__Group_3__45936 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__RespuestaUnica__Group_3__4__Impl5964 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__0__Impl_in_rule__RespuestaUnica__Group_3_3__06005 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__1_in_rule__RespuestaUnica__Group_3_3__06008 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__RespuestaUnica__Group_3_3__0__Impl6036 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_3_3__1__Impl_in_rule__RespuestaUnica__Group_3_3__16067 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__CorrectasAssignment_3_3_1_in_rule__RespuestaUnica__Group_3_3__1__Impl6094 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__0__Impl_in_rule__RespuestaUnica__Group_4__06128 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__1_in_rule__RespuestaUnica__Group_4__06131 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_rule__RespuestaUnica__Group_4__0__Impl6159 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__1__Impl_in_rule__RespuestaUnica__Group_4__16190 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__2_in_rule__RespuestaUnica__Group_4__16193 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__RespuestaUnica__Group_4__1__Impl6221 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__2__Impl_in_rule__RespuestaUnica__Group_4__26252 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__3_in_rule__RespuestaUnica__Group_4__26255 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_2_in_rule__RespuestaUnica__Group_4__2__Impl6282 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__3__Impl_in_rule__RespuestaUnica__Group_4__36312 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__4_in_rule__RespuestaUnica__Group_4__36315 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__0_in_rule__RespuestaUnica__Group_4__3__Impl6342 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4__4__Impl_in_rule__RespuestaUnica__Group_4__46373 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__RespuestaUnica__Group_4__4__Impl6401 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__0__Impl_in_rule__RespuestaUnica__Group_4_3__06442 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__1_in_rule__RespuestaUnica__Group_4_3__06445 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__RespuestaUnica__Group_4_3__0__Impl6473 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__Group_4_3__1__Impl_in_rule__RespuestaUnica__Group_4_3__16504 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaUnica__AlternativasAssignment_4_3_1_in_rule__RespuestaUnica__Group_4_3__1__Impl6531 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__0__Impl_in_rule__RespuestaMultiple__Group__06565 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__1_in_rule__RespuestaMultiple__Group__06568 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__1__Impl_in_rule__RespuestaMultiple__Group__16626 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__2_in_rule__RespuestaMultiple__Group__16629 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_rule__RespuestaMultiple__Group__1__Impl6657 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__2__Impl_in_rule__RespuestaMultiple__Group__26688 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__3_in_rule__RespuestaMultiple__Group__26691 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__RespuestaMultiple__Group__2__Impl6719 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__3__Impl_in_rule__RespuestaMultiple__Group__36750 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__4_in_rule__RespuestaMultiple__Group__36753 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__0_in_rule__RespuestaMultiple__Group__3__Impl6780 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__4__Impl_in_rule__RespuestaMultiple__Group__46811 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__5_in_rule__RespuestaMultiple__Group__46814 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__0_in_rule__RespuestaMultiple__Group__4__Impl6841 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group__5__Impl_in_rule__RespuestaMultiple__Group__56872 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__RespuestaMultiple__Group__5__Impl6900 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__0__Impl_in_rule__RespuestaMultiple__Group_3__06943 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__1_in_rule__RespuestaMultiple__Group_3__06946 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_rule__RespuestaMultiple__Group_3__0__Impl6974 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__1__Impl_in_rule__RespuestaMultiple__Group_3__17005 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__2_in_rule__RespuestaMultiple__Group_3__17008 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__RespuestaMultiple__Group_3__1__Impl7036 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__2__Impl_in_rule__RespuestaMultiple__Group_3__27067 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__3_in_rule__RespuestaMultiple__Group_3__27070 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_2_in_rule__RespuestaMultiple__Group_3__2__Impl7097 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__3__Impl_in_rule__RespuestaMultiple__Group_3__37127 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__4_in_rule__RespuestaMultiple__Group_3__37130 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__0_in_rule__RespuestaMultiple__Group_3__3__Impl7157 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3__4__Impl_in_rule__RespuestaMultiple__Group_3__47188 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__RespuestaMultiple__Group_3__4__Impl7216 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__0__Impl_in_rule__RespuestaMultiple__Group_3_3__07257 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__1_in_rule__RespuestaMultiple__Group_3_3__07260 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__RespuestaMultiple__Group_3_3__0__Impl7288 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_3_3__1__Impl_in_rule__RespuestaMultiple__Group_3_3__17319 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__CorrectasAssignment_3_3_1_in_rule__RespuestaMultiple__Group_3_3__1__Impl7346 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__0__Impl_in_rule__RespuestaMultiple__Group_4__07380 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__1_in_rule__RespuestaMultiple__Group_4__07383 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_rule__RespuestaMultiple__Group_4__0__Impl7411 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__1__Impl_in_rule__RespuestaMultiple__Group_4__17442 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__2_in_rule__RespuestaMultiple__Group_4__17445 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__RespuestaMultiple__Group_4__1__Impl7473 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__2__Impl_in_rule__RespuestaMultiple__Group_4__27504 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__3_in_rule__RespuestaMultiple__Group_4__27507 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_2_in_rule__RespuestaMultiple__Group_4__2__Impl7534 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__3__Impl_in_rule__RespuestaMultiple__Group_4__37564 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__4_in_rule__RespuestaMultiple__Group_4__37567 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__0_in_rule__RespuestaMultiple__Group_4__3__Impl7594 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4__4__Impl_in_rule__RespuestaMultiple__Group_4__47625 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__RespuestaMultiple__Group_4__4__Impl7653 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__0__Impl_in_rule__RespuestaMultiple__Group_4_3__07694 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__1_in_rule__RespuestaMultiple__Group_4_3__07697 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__RespuestaMultiple__Group_4_3__0__Impl7725 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__Group_4_3__1__Impl_in_rule__RespuestaMultiple__Group_4_3__17756 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RespuestaMultiple__AlternativasAssignment_4_3_1_in_rule__RespuestaMultiple__Group_4_3__1__Impl7783 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__0__Impl_in_rule__TextoLibre__Group__07817 = new BitSet(new long[]{0x0000000400000000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__1_in_rule__TextoLibre__Group__07820 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__1__Impl_in_rule__TextoLibre__Group__17878 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__2_in_rule__TextoLibre__Group__17881 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_34_in_rule__TextoLibre__Group__1__Impl7909 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__2__Impl_in_rule__TextoLibre__Group__27940 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__3_in_rule__TextoLibre__Group__27943 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__TextoLibre__Group__2__Impl7971 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__3__Impl_in_rule__TextoLibre__Group__38002 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__4_in_rule__TextoLibre__Group__38005 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__0_in_rule__TextoLibre__Group__3__Impl8032 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__4__Impl_in_rule__TextoLibre__Group__48063 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__5_in_rule__TextoLibre__Group__48066 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__0_in_rule__TextoLibre__Group__4__Impl8093 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group__5__Impl_in_rule__TextoLibre__Group__58124 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__TextoLibre__Group__5__Impl8152 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__0__Impl_in_rule__TextoLibre__Group_3__08195 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__1_in_rule__TextoLibre__Group_3__08198 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_rule__TextoLibre__Group_3__0__Impl8226 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__1__Impl_in_rule__TextoLibre__Group_3__18257 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__2_in_rule__TextoLibre__Group_3__18260 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__TextoLibre__Group_3__1__Impl8288 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__2__Impl_in_rule__TextoLibre__Group_3__28319 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__3_in_rule__TextoLibre__Group_3__28322 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__CorrectasAssignment_3_2_in_rule__TextoLibre__Group_3__2__Impl8349 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__3__Impl_in_rule__TextoLibre__Group_3__38379 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__4_in_rule__TextoLibre__Group_3__38382 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__0_in_rule__TextoLibre__Group_3__3__Impl8409 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3__4__Impl_in_rule__TextoLibre__Group_3__48440 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__TextoLibre__Group_3__4__Impl8468 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__0__Impl_in_rule__TextoLibre__Group_3_3__08509 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__1_in_rule__TextoLibre__Group_3_3__08512 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__TextoLibre__Group_3_3__0__Impl8540 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_3_3__1__Impl_in_rule__TextoLibre__Group_3_3__18571 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__CorrectasAssignment_3_3_1_in_rule__TextoLibre__Group_3_3__1__Impl8598 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__0__Impl_in_rule__TextoLibre__Group_4__08632 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__1_in_rule__TextoLibre__Group_4__08635 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_rule__TextoLibre__Group_4__0__Impl8663 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__1__Impl_in_rule__TextoLibre__Group_4__18694 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__2_in_rule__TextoLibre__Group_4__18697 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__TextoLibre__Group_4__1__Impl8725 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__2__Impl_in_rule__TextoLibre__Group_4__28756 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__3_in_rule__TextoLibre__Group_4__28759 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__AlternativasAssignment_4_2_in_rule__TextoLibre__Group_4__2__Impl8786 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__3__Impl_in_rule__TextoLibre__Group_4__38816 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__4_in_rule__TextoLibre__Group_4__38819 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__0_in_rule__TextoLibre__Group_4__3__Impl8846 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4__4__Impl_in_rule__TextoLibre__Group_4__48877 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__TextoLibre__Group_4__4__Impl8905 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__0__Impl_in_rule__TextoLibre__Group_4_3__08946 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__1_in_rule__TextoLibre__Group_4_3__08949 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__TextoLibre__Group_4_3__0__Impl8977 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__Group_4_3__1__Impl_in_rule__TextoLibre__Group_4_3__19008 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TextoLibre__AlternativasAssignment_4_3_1_in_rule__TextoLibre__Group_4_3__1__Impl9035 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__0__Impl_in_rule__Ordenacion__Group__09069 = new BitSet(new long[]{0x0000000E40000000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__1_in_rule__Ordenacion__Group__09072 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__1__Impl_in_rule__Ordenacion__Group__19130 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__2_in_rule__Ordenacion__Group__19133 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_35_in_rule__Ordenacion__Group__1__Impl9161 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__2__Impl_in_rule__Ordenacion__Group__29192 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__3_in_rule__Ordenacion__Group__29195 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Ordenacion__Group__2__Impl9223 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__3__Impl_in_rule__Ordenacion__Group__39254 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__4_in_rule__Ordenacion__Group__39257 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__0_in_rule__Ordenacion__Group__3__Impl9284 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__4__Impl_in_rule__Ordenacion__Group__49315 = new BitSet(new long[]{0x0000000180080000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__5_in_rule__Ordenacion__Group__49318 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__0_in_rule__Ordenacion__Group__4__Impl9345 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group__5__Impl_in_rule__Ordenacion__Group__59376 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__Ordenacion__Group__5__Impl9404 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__0__Impl_in_rule__Ordenacion__Group_3__09447 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__1_in_rule__Ordenacion__Group_3__09450 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_rule__Ordenacion__Group_3__0__Impl9478 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__1__Impl_in_rule__Ordenacion__Group_3__19509 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__2_in_rule__Ordenacion__Group_3__19512 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Ordenacion__Group_3__1__Impl9540 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__2__Impl_in_rule__Ordenacion__Group_3__29571 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__3_in_rule__Ordenacion__Group_3__29574 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__CorrectasAssignment_3_2_in_rule__Ordenacion__Group_3__2__Impl9601 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__3__Impl_in_rule__Ordenacion__Group_3__39631 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__4_in_rule__Ordenacion__Group_3__39634 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__0_in_rule__Ordenacion__Group_3__3__Impl9661 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3__4__Impl_in_rule__Ordenacion__Group_3__49692 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__Ordenacion__Group_3__4__Impl9720 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__0__Impl_in_rule__Ordenacion__Group_3_3__09761 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__1_in_rule__Ordenacion__Group_3_3__09764 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__Ordenacion__Group_3_3__0__Impl9792 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_3_3__1__Impl_in_rule__Ordenacion__Group_3_3__19823 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__CorrectasAssignment_3_3_1_in_rule__Ordenacion__Group_3_3__1__Impl9850 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__0__Impl_in_rule__Ordenacion__Group_4__09884 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__1_in_rule__Ordenacion__Group_4__09887 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_rule__Ordenacion__Group_4__0__Impl9915 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__1__Impl_in_rule__Ordenacion__Group_4__19946 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__2_in_rule__Ordenacion__Group_4__19949 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__Ordenacion__Group_4__1__Impl9977 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__2__Impl_in_rule__Ordenacion__Group_4__210008 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__3_in_rule__Ordenacion__Group_4__210011 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__AlternativasAssignment_4_2_in_rule__Ordenacion__Group_4__2__Impl10038 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__3__Impl_in_rule__Ordenacion__Group_4__310068 = new BitSet(new long[]{0x0000000008080000L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__4_in_rule__Ordenacion__Group_4__310071 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__0_in_rule__Ordenacion__Group_4__3__Impl10098 = new BitSet(new long[]{0x0000000008000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4__4__Impl_in_rule__Ordenacion__Group_4__410129 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_19_in_rule__Ordenacion__Group_4__4__Impl10157 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__0__Impl_in_rule__Ordenacion__Group_4_3__010198 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__1_in_rule__Ordenacion__Group_4_3__010201 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__Ordenacion__Group_4_3__0__Impl10229 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__Group_4_3__1__Impl_in_rule__Ordenacion__Group_4_3__110260 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Ordenacion__AlternativasAssignment_4_3_1_in_rule__Ordenacion__Group_4_3__1__Impl10287 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ejercicio__NameAssignment_110326 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ejercicio__EnunciadoAssignment_410357 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_rule__Ejercicio__PuntuacionEjAssignment_5_110388 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ejercicio__CategoriaAssignment_710419 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEInt_in_rule__Ejercicio__OrderAssignment_910450 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRespuesta_in_rule__Ejercicio__RespuestaAssignment_1110481 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_rule__Clasico__PuntuacionAssignment_310512 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_rule__Clasico__PenalizacionAssignment_510543 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_810574 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Clasico__EjerciciosAssignment_9_110605 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_rule__Wizard__PuntuacionAssignment_310636 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_rule__Wizard__PenalizacionAssignment_510667 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_810698 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_rule__Wizard__EjerciciosAssignment_9_110729 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PuntuacionAssignment_310760 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEDouble_in_rule__WizardAdaptativo__PenalizacionAssignment_510791 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_810822 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEjercicio_in_rule__WizardAdaptativo__EjerciciosAssignment_9_110853 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_210884 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__CorrectasAssignment_3_3_110915 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_210946 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaUnica__AlternativasAssignment_4_3_110977 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_211008 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__CorrectasAssignment_3_3_111039 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_211070 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__RespuestaMultiple__AlternativasAssignment_4_3_111101 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_211132 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__CorrectasAssignment_3_3_111163 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_211194 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__TextoLibre__AlternativasAssignment_4_3_111225 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_211256 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__CorrectasAssignment_3_3_111287 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_211318 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEString_in_rule__Ordenacion__AlternativasAssignment_4_3_111349 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

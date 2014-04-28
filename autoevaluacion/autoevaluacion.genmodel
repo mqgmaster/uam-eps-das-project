@@ -22,7 +22,6 @@
     <genClasses image="false" ecoreClass="autoevaluacion.ecore#//Respuesta">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuesta/correctas"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuesta/alternativas"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuesta/seleccionadas"/>
     </genClasses>
     <genClasses ecoreClass="autoevaluacion.ecore#//RespuestaUnica"/>
     <genClasses ecoreClass="autoevaluacion.ecore#//RespuestaMultiple"/>
@@ -30,8 +29,6 @@
     <genClasses ecoreClass="autoevaluacion.ecore#//Ordenacion"/>
     <genClasses ecoreClass="autoevaluacion.ecore#//Clasico"/>
     <genClasses ecoreClass="autoevaluacion.ecore#//Wizard"/>
-    <genClasses ecoreClass="autoevaluacion.ecore#//WizardAdaptativo">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference autoevaluacion.ecore#//WizardAdaptativo/ejerciciosRespondidos"/>
-    </genClasses>
+    <genClasses ecoreClass="autoevaluacion.ecore#//WizardAdaptativo"/>
   </genPackages>
 </genmodel:GenModel>

@@ -3,14 +3,26 @@
  */
 package autoevaluacion.generator;
 
+import Autoevaluacion.Clasico;
+import Autoevaluacion.Ejercicio;
+import Autoevaluacion.Hoja;
+import Autoevaluacion.Ordenacion;
+import Autoevaluacion.Respuesta;
+import Autoevaluacion.RespuestaMultiple;
+import Autoevaluacion.RespuestaUnica;
+import Autoevaluacion.TextoLibre;
 import Autoevaluacion.Wizard;
+import Autoevaluacion.WizardAdaptativo;
+import java.util.ArrayList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
+import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * Generates code from your model files on save.
@@ -20,9 +32,24 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
 @SuppressWarnings("all")
 public class AutoevaluacionGenerator implements IGenerator {
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
+    final ArrayList<Ejercicio> lista = CollectionLiterals.<Ejercicio>newArrayList();
     EList<EObject> _contents = resource.getContents();
     EObject _head = IterableExtensions.<EObject>head(_contents);
-    CharSequence _Main = this.Main(((Wizard) _head));
+    Hoja hoja = ((Hoja) _head);
+    EList<Ejercicio> _ejercicios = hoja.getEjercicios();
+    final Procedure2<Ejercicio,Integer> _function = new Procedure2<Ejercicio,Integer>() {
+      public void apply(final Ejercicio elem, final Integer index) {
+        boolean _contains = lista.contains(elem);
+        boolean _not = (!_contains);
+        if (_not) {
+          lista.add(elem);
+        }
+      }
+    };
+    IterableExtensions.<Ejercicio>forEach(_ejercicios, _function);
+    EList<EObject> _contents_1 = resource.getContents();
+    EObject _head_1 = IterableExtensions.<EObject>head(_contents_1);
+    CharSequence _Main = this.Main(((Hoja) _head_1));
     fsa.generateFile("main/Main.java", _Main);
     CharSequence _Answer = this.Answer();
     fsa.generateFile("autoevaluacion/answer/Answer.java", _Answer);
@@ -38,13 +65,13 @@ public class AutoevaluacionGenerator implements IGenerator {
     fsa.generateFile("autoevaluacion/ExercisePanel.java", _ExercisePanel);
     CharSequence _Panel = this.Panel();
     fsa.generateFile("autoevaluacion/Panel.java", _Panel);
-    EList<EObject> _contents_1 = resource.getContents();
-    EObject _head_1 = IterableExtensions.<EObject>head(_contents_1);
-    CharSequence _compile = this.compile(((Wizard) _head_1));
+    EList<EObject> _contents_2 = resource.getContents();
+    EObject _head_2 = IterableExtensions.<EObject>head(_contents_2);
+    CharSequence _compile = this.compile(((Hoja) _head_2), lista);
     fsa.generateFile("autoevaluacion/Autoevaluacion.java", _compile);
   }
   
-  public CharSequence Main(final Wizard w) {
+  public CharSequence Main(final Hoja h) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("package main;");
     _builder.newLine();
@@ -61,10 +88,10 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("Autoevaluacion autoevaluacion = new Autoevaluacion(");
-    double _puntuacion = w.getPuntuacion();
+    double _puntuacion = h.getPuntuacion();
     _builder.append(_puntuacion, "\t\t");
     _builder.append(",");
-    double _penalizacion = w.getPenalizacion();
+    double _penalizacion = h.getPenalizacion();
     _builder.append(_penalizacion, "\t\t");
     _builder.append(");");
     _builder.newLineIfNotEmpty();
@@ -1337,8 +1364,771 @@ public class AutoevaluacionGenerator implements IGenerator {
     return _builder;
   }
   
-  public CharSequence compile(final Wizard w) {
+  public CharSequence compile(final Hoja h, final ArrayList categoria) {
     StringConcatenation _builder = new StringConcatenation();
+    _builder.append("package autoevaluacion;");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("import java.awt.CardLayout;");
+    _builder.newLine();
+    _builder.append("import java.awt.event.ActionEvent;");
+    _builder.newLine();
+    _builder.append("import java.awt.event.ActionListener;");
+    _builder.newLine();
+    _builder.append("import java.util.ArrayList;");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("import javax.swing.JFrame;");
+    _builder.newLine();
+    _builder.append("import javax.swing.JLabel;");
+    _builder.newLine();
+    _builder.append("import javax.swing.JPanel;");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("import autoevaluacion.ExercisePanel.PanelType;");
+    _builder.newLine();
+    _builder.append("import autoevaluacion.answer.Answer.AnswerType;");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("@SuppressWarnings(\"serial\")");
+    _builder.newLine();
+    _builder.append("public class Autoevaluacion extends JFrame {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private double nota;");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private double puntuacionStandard;");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private double penalizacion;");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private JPanel mainContainer = new JPanel(new CardLayout());");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private ArrayList<ExercisePanel> exercisePanels = new ArrayList<>();");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public Autoevaluacion (double puntuacionStandard, final double penalizacion) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("super (\"Autoevaluacion\");");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.puntuacionStandard = puntuacionStandard;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.penalizacion = penalizacion;");
+    _builder.newLine();
+    {
+      if ((h instanceof Clasico)) {
+        _builder.append("\t\t");
+        _builder.append("//Crea una pantalla");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("final ExercisePanel pe = new ExercisePanel(\"clasico\", PanelType.CLASSIC);");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("//Anade ejercicios");
+        _builder.newLine();
+        {
+          EList<Ejercicio> _ejercicios = ((Clasico)h).getEjercicios();
+          for(final Ejercicio e : _ejercicios) {
+            _builder.append("\t\t");
+            _builder.append("pe.addExercise(new Exercise(");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("\"");
+            String _name = e.getName();
+            _builder.append(_name, "\t\t\t\t");
+            _builder.append("\", ");
+            _builder.newLineIfNotEmpty();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("\"");
+            String _enunciado = e.getEnunciado();
+            _builder.append(_enunciado, "\t\t\t\t");
+            _builder.append("\", ");
+            _builder.newLineIfNotEmpty();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            int _order = e.getOrder();
+            _builder.append(_order, "\t\t\t\t");
+            _builder.append(", ");
+            _builder.newLineIfNotEmpty();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("\"");
+            String _categoria = e.getCategoria();
+            _builder.append(_categoria, "\t\t\t\t");
+            _builder.append("\",");
+            _builder.newLineIfNotEmpty();
+            {
+              double _puntuacionEj = e.getPuntuacionEj();
+              boolean _isNaN = Double.valueOf(_puntuacionEj).isNaN();
+              if (_isNaN) {
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                double _puntuacion = ((Clasico)h).getPuntuacion();
+                _builder.append(_puntuacion, "\t\t\t\t");
+                _builder.append(",");
+                _builder.newLineIfNotEmpty();
+              } else {
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                double _puntuacionEj_1 = e.getPuntuacionEj();
+                _builder.append(_puntuacionEj_1, "\t\t\t\t");
+                _builder.append(",");
+                _builder.newLineIfNotEmpty();
+              }
+            }
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("new String[]{");
+            _builder.newLine();
+            {
+              Respuesta _respuesta = e.getRespuesta();
+              EList<String> _correctas = _respuesta.getCorrectas();
+              for(final String c : _correctas) {
+                {
+                  Respuesta _respuesta_1 = e.getRespuesta();
+                  EList<String> _correctas_1 = _respuesta_1.getCorrectas();
+                  int _indexOf = _correctas_1.indexOf(c);
+                  Respuesta _respuesta_2 = e.getRespuesta();
+                  EList<String> _correctas_2 = _respuesta_2.getCorrectas();
+                  int _size = _correctas_2.size();
+                  int _minus = (_size - 1);
+                  boolean _equals = (_indexOf == _minus);
+                  if (_equals) {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("\"");
+                    _builder.append(c, "\t\t\t\t");
+                    _builder.append("\"");
+                    _builder.newLineIfNotEmpty();
+                  } else {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("\"");
+                    _builder.append(c, "\t\t\t\t");
+                    _builder.append("\",");
+                    _builder.newLineIfNotEmpty();
+                  }
+                }
+              }
+            }
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("},");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("new String[]{");
+            _builder.newLine();
+            {
+              Respuesta _respuesta_3 = e.getRespuesta();
+              EList<String> _alternativas = _respuesta_3.getAlternativas();
+              for(final String a : _alternativas) {
+                {
+                  Respuesta _respuesta_4 = e.getRespuesta();
+                  EList<String> _alternativas_1 = _respuesta_4.getAlternativas();
+                  int _indexOf_1 = _alternativas_1.indexOf(a);
+                  Respuesta _respuesta_5 = e.getRespuesta();
+                  EList<String> _alternativas_2 = _respuesta_5.getAlternativas();
+                  int _size_1 = _alternativas_2.size();
+                  int _minus_1 = (_size_1 - 1);
+                  boolean _equals_1 = (_indexOf_1 == _minus_1);
+                  if (_equals_1) {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("\"");
+                    _builder.append(a, "\t\t\t\t");
+                    _builder.append("\"");
+                    _builder.newLineIfNotEmpty();
+                  } else {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("\"");
+                    _builder.append(a, "\t\t\t\t");
+                    _builder.append("\",");
+                    _builder.newLineIfNotEmpty();
+                  }
+                }
+              }
+            }
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("},");
+            _builder.newLine();
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.newLine();
+            {
+              Respuesta _respuesta_6 = e.getRespuesta();
+              if ((_respuesta_6 instanceof RespuestaUnica)) {
+                _builder.append("\t\t");
+                _builder.append("\t\t");
+                _builder.append("AnswerType.UNIQUE");
+                _builder.newLine();
+              } else {
+                Respuesta _respuesta_7 = e.getRespuesta();
+                if ((_respuesta_7 instanceof RespuestaMultiple)) {
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  _builder.append("AnswerType.MULTIPLE");
+                  _builder.newLine();
+                } else {
+                  Respuesta _respuesta_8 = e.getRespuesta();
+                  if ((_respuesta_8 instanceof TextoLibre)) {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("AnswerType.WRITTEN");
+                    _builder.newLine();
+                  } else {
+                    Respuesta _respuesta_9 = e.getRespuesta();
+                    if ((_respuesta_9 instanceof Ordenacion)) {
+                      _builder.append("\t\t");
+                      _builder.append("\t\t");
+                      _builder.append("AnswerType.ORDINATION");
+                      _builder.newLine();
+                    }
+                  }
+                }
+              }
+            }
+            _builder.append("\t\t");
+            _builder.append("\t\t");
+            _builder.append("));");
+            _builder.newLine();
+          }
+        }
+        _builder.append("\t\t");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("//Anade el boton de correccion");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("pe2.addNextButton(\"Corregir\", new ActionListener() {");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("\t");
+        _builder.append("@Override");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("\t");
+        _builder.append("public void actionPerformed(ActionEvent arg0) {");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("\t\t");
+        _builder.append("Panel panel = createFinalPanel();");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("\t\t");
+        _builder.append("addPanel(panel);");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("\t\t");
+        _builder.append("showPanel(panel);");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("\t");
+        _builder.append("}");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("});");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("addExercisePanel(pe);");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("//Comienza en la pantalla inicial");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("showPanel(pe);");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("// añadir panel a la ventana");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.append("getContentPane().add(mainContainer);");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.newLine();
+        _builder.append("\t\t");
+        _builder.newLine();
+      } else {
+        if ((h instanceof Wizard)) {
+          _builder.append("\t\t");
+          _builder.append("//Crea pantallas");
+          _builder.newLine();
+          {
+            for(final Object c_1 : categoria) {
+              _builder.append("\t\t");
+              _builder.append("final ExercisePanel p");
+              _builder.append(c_1, "\t\t");
+              _builder.append(" = new ExercisePanel(\"");
+              _builder.append(c_1, "\t\t");
+              _builder.append("\", PanelType.WIZARD);");
+              _builder.newLineIfNotEmpty();
+              _builder.append("\t\t");
+              _builder.append("addExercisePanel(p");
+              _builder.append(c_1, "\t\t");
+              _builder.append(");");
+              _builder.newLineIfNotEmpty();
+            }
+          }
+          _builder.append("\t\t");
+          _builder.newLine();
+          _builder.append("\t\t");
+          _builder.append("//Anade ejercicios");
+          _builder.newLine();
+          {
+            EList<Ejercicio> _ejercicios_1 = h.getEjercicios();
+            for(final Ejercicio e_1 : _ejercicios_1) {
+              _builder.append("\t\t");
+              _builder.append("p");
+              String _categoria_1 = e_1.getCategoria();
+              _builder.append(_categoria_1, "\t\t");
+              _builder.append(".addExercise(new Exercise(");
+              _builder.newLineIfNotEmpty();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("\"");
+              String _name_1 = e_1.getName();
+              _builder.append(_name_1, "\t\t\t\t");
+              _builder.append("\", ");
+              _builder.newLineIfNotEmpty();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("\"");
+              String _enunciado_1 = e_1.getEnunciado();
+              _builder.append(_enunciado_1, "\t\t\t\t");
+              _builder.append("\", ");
+              _builder.newLineIfNotEmpty();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              int _order_1 = e_1.getOrder();
+              _builder.append(_order_1, "\t\t\t\t");
+              _builder.append(", ");
+              _builder.newLineIfNotEmpty();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("\"");
+              String _categoria_2 = e_1.getCategoria();
+              _builder.append(_categoria_2, "\t\t\t\t");
+              _builder.append("\",");
+              _builder.newLineIfNotEmpty();
+              {
+                double _puntuacionEj_2 = e_1.getPuntuacionEj();
+                boolean _isNaN_1 = Double.valueOf(_puntuacionEj_2).isNaN();
+                if (_isNaN_1) {
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  double _puntuacion_1 = h.getPuntuacion();
+                  _builder.append(_puntuacion_1, "\t\t\t\t");
+                  _builder.append(",");
+                  _builder.newLineIfNotEmpty();
+                } else {
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  double _puntuacionEj_3 = e_1.getPuntuacionEj();
+                  _builder.append(_puntuacionEj_3, "\t\t\t\t");
+                  _builder.append(",");
+                  _builder.newLineIfNotEmpty();
+                }
+              }
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.newLine();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("new String[]{");
+              _builder.newLine();
+              {
+                Respuesta _respuesta_10 = e_1.getRespuesta();
+                EList<String> _correctas_3 = _respuesta_10.getCorrectas();
+                for(final String c_2 : _correctas_3) {
+                  {
+                    Respuesta _respuesta_11 = e_1.getRespuesta();
+                    EList<String> _correctas_4 = _respuesta_11.getCorrectas();
+                    int _indexOf_2 = _correctas_4.indexOf(c_2);
+                    Respuesta _respuesta_12 = e_1.getRespuesta();
+                    EList<String> _correctas_5 = _respuesta_12.getCorrectas();
+                    int _size_2 = _correctas_5.size();
+                    int _minus_2 = (_size_2 - 1);
+                    boolean _equals_2 = (_indexOf_2 == _minus_2);
+                    if (_equals_2) {
+                      _builder.append("\t\t");
+                      _builder.append("\t\t");
+                      _builder.append("\"");
+                      _builder.append(c_2, "\t\t\t\t");
+                      _builder.append("\"");
+                      _builder.newLineIfNotEmpty();
+                    } else {
+                      _builder.append("\t\t");
+                      _builder.append("\t\t");
+                      _builder.append("\"");
+                      _builder.append(c_2, "\t\t\t\t");
+                      _builder.append("\",");
+                      _builder.newLineIfNotEmpty();
+                    }
+                  }
+                }
+              }
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("},");
+              _builder.newLine();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("new String[]{");
+              _builder.newLine();
+              {
+                Respuesta _respuesta_13 = e_1.getRespuesta();
+                EList<String> _alternativas_3 = _respuesta_13.getAlternativas();
+                for(final String a_1 : _alternativas_3) {
+                  {
+                    Respuesta _respuesta_14 = e_1.getRespuesta();
+                    EList<String> _alternativas_4 = _respuesta_14.getAlternativas();
+                    int _indexOf_3 = _alternativas_4.indexOf(a_1);
+                    Respuesta _respuesta_15 = e_1.getRespuesta();
+                    EList<String> _alternativas_5 = _respuesta_15.getAlternativas();
+                    int _size_3 = _alternativas_5.size();
+                    int _minus_3 = (_size_3 - 1);
+                    boolean _equals_3 = (_indexOf_3 == _minus_3);
+                    if (_equals_3) {
+                      _builder.append("\t\t");
+                      _builder.append("\t\t");
+                      _builder.append("\"");
+                      _builder.append(a_1, "\t\t\t\t");
+                      _builder.append("\"");
+                      _builder.newLineIfNotEmpty();
+                    } else {
+                      _builder.append("\t\t");
+                      _builder.append("\t\t");
+                      _builder.append("\"");
+                      _builder.append(a_1, "\t\t\t\t");
+                      _builder.append("\",");
+                      _builder.newLineIfNotEmpty();
+                    }
+                  }
+                }
+              }
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("},");
+              _builder.newLine();
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.newLine();
+              {
+                Respuesta _respuesta_16 = e_1.getRespuesta();
+                if ((_respuesta_16 instanceof RespuestaUnica)) {
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  _builder.append("AnswerType.UNIQUE");
+                  _builder.newLine();
+                } else {
+                  Respuesta _respuesta_17 = e_1.getRespuesta();
+                  if ((_respuesta_17 instanceof RespuestaMultiple)) {
+                    _builder.append("\t\t");
+                    _builder.append("\t\t");
+                    _builder.append("AnswerType.MULTIPLE");
+                    _builder.newLine();
+                  } else {
+                    Respuesta _respuesta_18 = e_1.getRespuesta();
+                    if ((_respuesta_18 instanceof TextoLibre)) {
+                      _builder.append("\t\t");
+                      _builder.append("\t\t");
+                      _builder.append("AnswerType.WRITTEN");
+                      _builder.newLine();
+                    } else {
+                      Respuesta _respuesta_19 = e_1.getRespuesta();
+                      if ((_respuesta_19 instanceof Ordenacion)) {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("AnswerType.ORDINATION");
+                        _builder.newLine();
+                      }
+                    }
+                  }
+                }
+              }
+              _builder.append("\t\t");
+              _builder.append("\t\t");
+              _builder.append("));");
+              _builder.newLine();
+            }
+          }
+          _builder.append("\t\t");
+          _builder.newLine();
+          _builder.append("\t\t");
+          _builder.append("//Anade boton siguiente");
+          _builder.newLine();
+          {
+            for(final Object c_3 : categoria) {
+              {
+                int _indexOf_4 = categoria.indexOf(c_3);
+                int _size_4 = categoria.size();
+                int _minus_4 = (_size_4 - 1);
+                boolean _equals_4 = (_indexOf_4 == _minus_4);
+                if (_equals_4) {
+                  _builder.append("\t\t");
+                  _builder.append("p");
+                  _builder.append(c_3, "\t\t");
+                  _builder.append(".addNextButton(\"Corregir\", new ActionListener() {");
+                  _builder.newLineIfNotEmpty();
+                  _builder.append("\t\t");
+                  _builder.append("\t");
+                  _builder.append("@Override");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("\t");
+                  _builder.append("public void actionPerformed(ActionEvent arg0) {");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  _builder.append("Panel panel = createFinalPanel();");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  _builder.append("addPanel(panel);");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  _builder.append("showPanel(panel);");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("\t");
+                  _builder.append("}");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("});");
+                  _builder.newLine();
+                } else {
+                  _builder.append("\t\t");
+                  _builder.append("p");
+                  _builder.append(c_3, "\t\t");
+                  _builder.append(".addNextButton(\"Proxima\", new ActionListener() {");
+                  _builder.newLineIfNotEmpty();
+                  _builder.append("\t\t");
+                  _builder.append("\t");
+                  _builder.append("@Override");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("\t");
+                  _builder.append("public void actionPerformed(ActionEvent arg0) {");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("\t\t");
+                  _builder.append("showPanel(p");
+                  int _indexOf_5 = categoria.indexOf(c_3);
+                  int _plus = (_indexOf_5 + 1);
+                  Object _get = categoria.get(_plus);
+                  _builder.append(_get, "\t\t\t\t");
+                  _builder.append(");");
+                  _builder.newLineIfNotEmpty();
+                  _builder.append("\t\t");
+                  _builder.append("\t");
+                  _builder.append("}");
+                  _builder.newLine();
+                  _builder.append("\t\t");
+                  _builder.append("});");
+                  _builder.newLine();
+                }
+              }
+            }
+          }
+          _builder.append("\t\t");
+          _builder.newLine();
+          _builder.append("\t\t");
+          _builder.newLine();
+          _builder.append("\t\t");
+          _builder.append("//Comienza en la pantalla inicial");
+          _builder.newLine();
+          _builder.append("\t\t");
+          _builder.append("showPanel(p");
+          Object _get_1 = categoria.get(0);
+          _builder.append(_get_1, "\t\t");
+          _builder.append(");");
+          _builder.newLineIfNotEmpty();
+          _builder.append("\t\t");
+          _builder.append("// añadir panel a la ventana");
+          _builder.newLine();
+          _builder.append("\t\t");
+          _builder.append("getContentPane().add(mainContainer);");
+          _builder.newLine();
+          _builder.append("\t\t");
+          _builder.newLine();
+        } else {
+          if ((h instanceof WizardAdaptativo)) {
+          }
+        }
+      }
+    }
+    _builder.append("\t\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public Panel createFinalPanel() {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("Panel panel = new Panel(\"Nota\");");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("calculaNota(panel);");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("JLabel n = new JLabel(\"Nota : \"+nota);");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("panel.add(n);");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("panel.addButton(\"Salir\", new ActionListener() {");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("@Override");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("public void actionPerformed(ActionEvent arg0) {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("Autoevaluacion.this.setVisible(false);");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("Autoevaluacion.this.dispose();");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("});");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return panel;");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public void addExercisePanel(ExercisePanel ep) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("exercisePanels.add(ep);");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("addPanel(ep);");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public void addPanel(Panel panel) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("panel.setupView();");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("mainContainer.add(panel, panel.getName());");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public void showPanel(Panel panel) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("((CardLayout)mainContainer.getLayout()).show(mainContainer, panel.getName());");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public void mostrar() {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.pack();");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.setVisible(true);");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t ");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public void calculaNota(Panel pantalla) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("nota = 0.0;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("for (ExercisePanel pe : exercisePanels) {");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("for (Exercise e : pe.getAllExercises()) {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("if(e.isAnswered()){");
+    _builder.newLine();
+    _builder.append("\t\t\t\t\t");
+    _builder.append("double c = e.corrige(penalizacion);");
+    _builder.newLine();
+    _builder.append("\t\t\t\t\t");
+    _builder.append("nota += c;");
+    _builder.newLine();
+    _builder.append("\t\t\t\t\t");
+    _builder.append("if (c <= 0) {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t\t\t");
+    _builder.append("pantalla.add(e.muestraCorreccion());");
+    _builder.newLine();
+    _builder.append("\t\t\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
     return _builder;
   }
 }

@@ -495,38 +495,7 @@ public class AutoevaluacionValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(wizardAdaptativo, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHoja_uniqueName(wizardAdaptativo, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHoja_uniqueOrder(wizardAdaptativo, diagnostics, context);
-		if (result || diagnostics != null) result &= validateWizardAdaptativo_respOnce(wizardAdaptativo, diagnostics, context);
 		return result;
-	}
-
-	/**
-	 * The cached validation expression for the respOnce constraint of '<em>Wizard Adaptativo</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected static final String WIZARD_ADAPTATIVO__RESP_ONCE__EEXPRESSION = "\n" +
-		"\t\t\tejerciciosRespondidos->isUnique(name)";
-
-	/**
-	 * Validates the respOnce constraint of '<em>Wizard Adaptativo</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateWizardAdaptativo_respOnce(WizardAdaptativo wizardAdaptativo, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return
-			validate
-				(AutoevaluacionPackage.Literals.WIZARD_ADAPTATIVO,
-				 wizardAdaptativo,
-				 diagnostics,
-				 context,
-				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-				 "respOnce",
-				 WIZARD_ADAPTATIVO__RESP_ONCE__EEXPRESSION,
-				 Diagnostic.ERROR,
-				 DIAGNOSTIC_SOURCE,
-				 0);
 	}
 
 	/**

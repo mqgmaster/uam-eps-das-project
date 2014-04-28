@@ -403,37 +403,23 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cPenalizacionKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		private final Assignment cPenalizacionAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cPenalizacionEDoubleParserRuleCall_5_0 = (RuleCall)cPenalizacionAssignment_5.eContents().get(0);
-		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
-		private final Keyword cEjerciciosRespondidosKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_6_1 = (Keyword)cGroup_6.eContents().get(1);
-		private final Assignment cEjerciciosRespondidosAssignment_6_2 = (Assignment)cGroup_6.eContents().get(2);
-		private final CrossReference cEjerciciosRespondidosEjercicioCrossReference_6_2_0 = (CrossReference)cEjerciciosRespondidosAssignment_6_2.eContents().get(0);
-		private final RuleCall cEjerciciosRespondidosEjercicioEStringParserRuleCall_6_2_0_1 = (RuleCall)cEjerciciosRespondidosEjercicioCrossReference_6_2_0.eContents().get(1);
-		private final Group cGroup_6_3 = (Group)cGroup_6.eContents().get(3);
-		private final Keyword cCommaKeyword_6_3_0 = (Keyword)cGroup_6_3.eContents().get(0);
-		private final Assignment cEjerciciosRespondidosAssignment_6_3_1 = (Assignment)cGroup_6_3.eContents().get(1);
-		private final CrossReference cEjerciciosRespondidosEjercicioCrossReference_6_3_1_0 = (CrossReference)cEjerciciosRespondidosAssignment_6_3_1.eContents().get(0);
-		private final RuleCall cEjerciciosRespondidosEjercicioEStringParserRuleCall_6_3_1_0_1 = (RuleCall)cEjerciciosRespondidosEjercicioCrossReference_6_3_1_0.eContents().get(1);
-		private final Keyword cRightParenthesisKeyword_6_4 = (Keyword)cGroup_6.eContents().get(4);
-		private final Keyword cEjerciciosKeyword_7 = (Keyword)cGroup.eContents().get(7);
-		private final Keyword cLeftCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
-		private final Assignment cEjerciciosAssignment_9 = (Assignment)cGroup.eContents().get(9);
-		private final RuleCall cEjerciciosEjercicioParserRuleCall_9_0 = (RuleCall)cEjerciciosAssignment_9.eContents().get(0);
-		private final Group cGroup_10 = (Group)cGroup.eContents().get(10);
-		private final Keyword cCommaKeyword_10_0 = (Keyword)cGroup_10.eContents().get(0);
-		private final Assignment cEjerciciosAssignment_10_1 = (Assignment)cGroup_10.eContents().get(1);
-		private final RuleCall cEjerciciosEjercicioParserRuleCall_10_1_0 = (RuleCall)cEjerciciosAssignment_10_1.eContents().get(0);
+		private final Keyword cEjerciciosKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cLeftCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Assignment cEjerciciosAssignment_8 = (Assignment)cGroup.eContents().get(8);
+		private final RuleCall cEjerciciosEjercicioParserRuleCall_8_0 = (RuleCall)cEjerciciosAssignment_8.eContents().get(0);
+		private final Group cGroup_9 = (Group)cGroup.eContents().get(9);
+		private final Keyword cCommaKeyword_9_0 = (Keyword)cGroup_9.eContents().get(0);
+		private final Assignment cEjerciciosAssignment_9_1 = (Assignment)cGroup_9.eContents().get(1);
+		private final RuleCall cEjerciciosEjercicioParserRuleCall_9_1_0 = (RuleCall)cEjerciciosAssignment_9_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_10 = (Keyword)cGroup.eContents().get(10);
 		private final Keyword cRightCurlyBracketKeyword_11 = (Keyword)cGroup.eContents().get(11);
-		private final Keyword cRightCurlyBracketKeyword_12 = (Keyword)cGroup.eContents().get(12);
 		
 		//WizardAdaptativo:
-		//	"WizardAdaptativo" "{" "puntuacion" puntuacion=EDouble "penalizacion" penalizacion=EDouble ("ejerciciosRespondidos"
-		//	"(" ejerciciosRespondidos+=[Ejercicio|EString] ("," ejerciciosRespondidos+=[Ejercicio|EString])* ")")? "ejercicios"
-		//	"{" ejercicios+=Ejercicio ("," ejercicios+=Ejercicio)* "}" "}";
+		//	"WizardAdaptativo" "{" "puntuacion" puntuacion=EDouble "penalizacion" penalizacion=EDouble "ejercicios" "{"
+		//	ejercicios+=Ejercicio ("," ejercicios+=Ejercicio)* "}" "}";
 		public ParserRule getRule() { return rule; }
 
-		//"WizardAdaptativo" "{" "puntuacion" puntuacion=EDouble "penalizacion" penalizacion=EDouble ("ejerciciosRespondidos" "("
-		//ejerciciosRespondidos+=[Ejercicio|EString] ("," ejerciciosRespondidos+=[Ejercicio|EString])* ")")? "ejercicios" "{"
+		//"WizardAdaptativo" "{" "puntuacion" puntuacion=EDouble "penalizacion" penalizacion=EDouble "ejercicios" "{"
 		//ejercicios+=Ejercicio ("," ejercicios+=Ejercicio)* "}" "}"
 		public Group getGroup() { return cGroup; }
 
@@ -461,72 +447,35 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		//EDouble
 		public RuleCall getPenalizacionEDoubleParserRuleCall_5_0() { return cPenalizacionEDoubleParserRuleCall_5_0; }
 
-		//("ejerciciosRespondidos" "(" ejerciciosRespondidos+=[Ejercicio|EString] (","
-		//ejerciciosRespondidos+=[Ejercicio|EString])* ")")?
-		public Group getGroup_6() { return cGroup_6; }
-
-		//"ejerciciosRespondidos"
-		public Keyword getEjerciciosRespondidosKeyword_6_0() { return cEjerciciosRespondidosKeyword_6_0; }
-
-		//"("
-		public Keyword getLeftParenthesisKeyword_6_1() { return cLeftParenthesisKeyword_6_1; }
-
-		//ejerciciosRespondidos+=[Ejercicio|EString]
-		public Assignment getEjerciciosRespondidosAssignment_6_2() { return cEjerciciosRespondidosAssignment_6_2; }
-
-		//[Ejercicio|EString]
-		public CrossReference getEjerciciosRespondidosEjercicioCrossReference_6_2_0() { return cEjerciciosRespondidosEjercicioCrossReference_6_2_0; }
-
-		//EString
-		public RuleCall getEjerciciosRespondidosEjercicioEStringParserRuleCall_6_2_0_1() { return cEjerciciosRespondidosEjercicioEStringParserRuleCall_6_2_0_1; }
-
-		//("," ejerciciosRespondidos+=[Ejercicio|EString])*
-		public Group getGroup_6_3() { return cGroup_6_3; }
-
-		//","
-		public Keyword getCommaKeyword_6_3_0() { return cCommaKeyword_6_3_0; }
-
-		//ejerciciosRespondidos+=[Ejercicio|EString]
-		public Assignment getEjerciciosRespondidosAssignment_6_3_1() { return cEjerciciosRespondidosAssignment_6_3_1; }
-
-		//[Ejercicio|EString]
-		public CrossReference getEjerciciosRespondidosEjercicioCrossReference_6_3_1_0() { return cEjerciciosRespondidosEjercicioCrossReference_6_3_1_0; }
-
-		//EString
-		public RuleCall getEjerciciosRespondidosEjercicioEStringParserRuleCall_6_3_1_0_1() { return cEjerciciosRespondidosEjercicioEStringParserRuleCall_6_3_1_0_1; }
-
-		//")"
-		public Keyword getRightParenthesisKeyword_6_4() { return cRightParenthesisKeyword_6_4; }
-
 		//"ejercicios"
-		public Keyword getEjerciciosKeyword_7() { return cEjerciciosKeyword_7; }
+		public Keyword getEjerciciosKeyword_6() { return cEjerciciosKeyword_6; }
 
 		//"{"
-		public Keyword getLeftCurlyBracketKeyword_8() { return cLeftCurlyBracketKeyword_8; }
+		public Keyword getLeftCurlyBracketKeyword_7() { return cLeftCurlyBracketKeyword_7; }
 
 		//ejercicios+=Ejercicio
-		public Assignment getEjerciciosAssignment_9() { return cEjerciciosAssignment_9; }
+		public Assignment getEjerciciosAssignment_8() { return cEjerciciosAssignment_8; }
 
 		//Ejercicio
-		public RuleCall getEjerciciosEjercicioParserRuleCall_9_0() { return cEjerciciosEjercicioParserRuleCall_9_0; }
+		public RuleCall getEjerciciosEjercicioParserRuleCall_8_0() { return cEjerciciosEjercicioParserRuleCall_8_0; }
 
 		//("," ejercicios+=Ejercicio)*
-		public Group getGroup_10() { return cGroup_10; }
+		public Group getGroup_9() { return cGroup_9; }
 
 		//","
-		public Keyword getCommaKeyword_10_0() { return cCommaKeyword_10_0; }
+		public Keyword getCommaKeyword_9_0() { return cCommaKeyword_9_0; }
 
 		//ejercicios+=Ejercicio
-		public Assignment getEjerciciosAssignment_10_1() { return cEjerciciosAssignment_10_1; }
+		public Assignment getEjerciciosAssignment_9_1() { return cEjerciciosAssignment_9_1; }
 
 		//Ejercicio
-		public RuleCall getEjerciciosEjercicioParserRuleCall_10_1_0() { return cEjerciciosEjercicioParserRuleCall_10_1_0; }
+		public RuleCall getEjerciciosEjercicioParserRuleCall_9_1_0() { return cEjerciciosEjercicioParserRuleCall_9_1_0; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
 
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_11() { return cRightCurlyBracketKeyword_11; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_12() { return cRightCurlyBracketKeyword_12; }
 	}
 
 	public class EStringElements extends AbstractParserRuleElementFinder {
@@ -595,27 +544,15 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cAlternativasAssignment_4_3_1 = (Assignment)cGroup_4_3.eContents().get(1);
 		private final RuleCall cAlternativasEStringParserRuleCall_4_3_1_0 = (RuleCall)cAlternativasAssignment_4_3_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_4_4 = (Keyword)cGroup_4.eContents().get(4);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cSeleccionadasKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_5_1 = (Keyword)cGroup_5.eContents().get(1);
-		private final Assignment cSeleccionadasAssignment_5_2 = (Assignment)cGroup_5.eContents().get(2);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_2_0 = (RuleCall)cSeleccionadasAssignment_5_2.eContents().get(0);
-		private final Group cGroup_5_3 = (Group)cGroup_5.eContents().get(3);
-		private final Keyword cCommaKeyword_5_3_0 = (Keyword)cGroup_5_3.eContents().get(0);
-		private final Assignment cSeleccionadasAssignment_5_3_1 = (Assignment)cGroup_5_3.eContents().get(1);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_3_1_0 = (RuleCall)cSeleccionadasAssignment_5_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_5_4 = (Keyword)cGroup_5.eContents().get(4);
-		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//RespuestaUnica:
 		//	{RespuestaUnica} "RespuestaUnica" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")?
-		//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{"
-		//	seleccionadas+=EString ("," seleccionadas+=EString)* "}")? "}";
+		//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 		public ParserRule getRule() { return rule; }
 
 		//{RespuestaUnica} "RespuestaUnica" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")?
-		//("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{"
-		//seleccionadas+=EString ("," seleccionadas+=EString)* "}")? "}"
+		//("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? "}"
 		public Group getGroup() { return cGroup; }
 
 		//{RespuestaUnica}
@@ -687,38 +624,8 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_4_4() { return cRightCurlyBracketKeyword_4_4; }
 
-		//("seleccionadas" "{" seleccionadas+=EString ("," seleccionadas+=EString)* "}")?
-		public Group getGroup_5() { return cGroup_5; }
-
-		//"seleccionadas"
-		public Keyword getSeleccionadasKeyword_5_0() { return cSeleccionadasKeyword_5_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_5_1() { return cLeftCurlyBracketKeyword_5_1; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_2() { return cSeleccionadasAssignment_5_2; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_2_0() { return cSeleccionadasEStringParserRuleCall_5_2_0; }
-
-		//("," seleccionadas+=EString)*
-		public Group getGroup_5_3() { return cGroup_5_3; }
-
-		//","
-		public Keyword getCommaKeyword_5_3_0() { return cCommaKeyword_5_3_0; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_3_1() { return cSeleccionadasAssignment_5_3_1; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_3_1_0() { return cSeleccionadasEStringParserRuleCall_5_3_1_0; }
-
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_5_4() { return cRightCurlyBracketKeyword_5_4; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
 	}
 
 	public class RespuestaMultipleElements extends AbstractParserRuleElementFinder {
@@ -747,27 +654,15 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cAlternativasAssignment_4_3_1 = (Assignment)cGroup_4_3.eContents().get(1);
 		private final RuleCall cAlternativasEStringParserRuleCall_4_3_1_0 = (RuleCall)cAlternativasAssignment_4_3_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_4_4 = (Keyword)cGroup_4.eContents().get(4);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cSeleccionadasKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_5_1 = (Keyword)cGroup_5.eContents().get(1);
-		private final Assignment cSeleccionadasAssignment_5_2 = (Assignment)cGroup_5.eContents().get(2);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_2_0 = (RuleCall)cSeleccionadasAssignment_5_2.eContents().get(0);
-		private final Group cGroup_5_3 = (Group)cGroup_5.eContents().get(3);
-		private final Keyword cCommaKeyword_5_3_0 = (Keyword)cGroup_5_3.eContents().get(0);
-		private final Assignment cSeleccionadasAssignment_5_3_1 = (Assignment)cGroup_5_3.eContents().get(1);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_3_1_0 = (RuleCall)cSeleccionadasAssignment_5_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_5_4 = (Keyword)cGroup_5.eContents().get(4);
-		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//RespuestaMultiple:
 		//	{RespuestaMultiple} "RespuestaMultiple" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")?
-		//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{"
-		//	seleccionadas+=EString ("," seleccionadas+=EString)* "}")? "}";
+		//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 		public ParserRule getRule() { return rule; }
 
 		//{RespuestaMultiple} "RespuestaMultiple" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")?
-		//("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{"
-		//seleccionadas+=EString ("," seleccionadas+=EString)* "}")? "}"
+		//("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? "}"
 		public Group getGroup() { return cGroup; }
 
 		//{RespuestaMultiple}
@@ -839,38 +734,8 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_4_4() { return cRightCurlyBracketKeyword_4_4; }
 
-		//("seleccionadas" "{" seleccionadas+=EString ("," seleccionadas+=EString)* "}")?
-		public Group getGroup_5() { return cGroup_5; }
-
-		//"seleccionadas"
-		public Keyword getSeleccionadasKeyword_5_0() { return cSeleccionadasKeyword_5_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_5_1() { return cLeftCurlyBracketKeyword_5_1; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_2() { return cSeleccionadasAssignment_5_2; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_2_0() { return cSeleccionadasEStringParserRuleCall_5_2_0; }
-
-		//("," seleccionadas+=EString)*
-		public Group getGroup_5_3() { return cGroup_5_3; }
-
-		//","
-		public Keyword getCommaKeyword_5_3_0() { return cCommaKeyword_5_3_0; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_3_1() { return cSeleccionadasAssignment_5_3_1; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_3_1_0() { return cSeleccionadasEStringParserRuleCall_5_3_1_0; }
-
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_5_4() { return cRightCurlyBracketKeyword_5_4; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
 	}
 
 	public class TextoLibreElements extends AbstractParserRuleElementFinder {
@@ -899,27 +764,15 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cAlternativasAssignment_4_3_1 = (Assignment)cGroup_4_3.eContents().get(1);
 		private final RuleCall cAlternativasEStringParserRuleCall_4_3_1_0 = (RuleCall)cAlternativasAssignment_4_3_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_4_4 = (Keyword)cGroup_4.eContents().get(4);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cSeleccionadasKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_5_1 = (Keyword)cGroup_5.eContents().get(1);
-		private final Assignment cSeleccionadasAssignment_5_2 = (Assignment)cGroup_5.eContents().get(2);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_2_0 = (RuleCall)cSeleccionadasAssignment_5_2.eContents().get(0);
-		private final Group cGroup_5_3 = (Group)cGroup_5.eContents().get(3);
-		private final Keyword cCommaKeyword_5_3_0 = (Keyword)cGroup_5_3.eContents().get(0);
-		private final Assignment cSeleccionadasAssignment_5_3_1 = (Assignment)cGroup_5_3.eContents().get(1);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_3_1_0 = (RuleCall)cSeleccionadasAssignment_5_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_5_4 = (Keyword)cGroup_5.eContents().get(4);
-		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//TextoLibre:
 		//	{TextoLibre} "TextoLibre" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")? ("alternativas" "{"
-		//	alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{" seleccionadas+=EString (","
-		//	seleccionadas+=EString)* "}")? "}";
+		//	alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 		public ParserRule getRule() { return rule; }
 
 		//{TextoLibre} "TextoLibre" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")? ("alternativas" "{"
-		//alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{" seleccionadas+=EString (","
-		//seleccionadas+=EString)* "}")? "}"
+		//alternativas+=EString ("," alternativas+=EString)* "}")? "}"
 		public Group getGroup() { return cGroup; }
 
 		//{TextoLibre}
@@ -991,38 +844,8 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_4_4() { return cRightCurlyBracketKeyword_4_4; }
 
-		//("seleccionadas" "{" seleccionadas+=EString ("," seleccionadas+=EString)* "}")?
-		public Group getGroup_5() { return cGroup_5; }
-
-		//"seleccionadas"
-		public Keyword getSeleccionadasKeyword_5_0() { return cSeleccionadasKeyword_5_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_5_1() { return cLeftCurlyBracketKeyword_5_1; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_2() { return cSeleccionadasAssignment_5_2; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_2_0() { return cSeleccionadasEStringParserRuleCall_5_2_0; }
-
-		//("," seleccionadas+=EString)*
-		public Group getGroup_5_3() { return cGroup_5_3; }
-
-		//","
-		public Keyword getCommaKeyword_5_3_0() { return cCommaKeyword_5_3_0; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_3_1() { return cSeleccionadasAssignment_5_3_1; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_3_1_0() { return cSeleccionadasEStringParserRuleCall_5_3_1_0; }
-
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_5_4() { return cRightCurlyBracketKeyword_5_4; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
 	}
 
 	public class OrdenacionElements extends AbstractParserRuleElementFinder {
@@ -1051,27 +874,15 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cAlternativasAssignment_4_3_1 = (Assignment)cGroup_4_3.eContents().get(1);
 		private final RuleCall cAlternativasEStringParserRuleCall_4_3_1_0 = (RuleCall)cAlternativasAssignment_4_3_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_4_4 = (Keyword)cGroup_4.eContents().get(4);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cSeleccionadasKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_5_1 = (Keyword)cGroup_5.eContents().get(1);
-		private final Assignment cSeleccionadasAssignment_5_2 = (Assignment)cGroup_5.eContents().get(2);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_2_0 = (RuleCall)cSeleccionadasAssignment_5_2.eContents().get(0);
-		private final Group cGroup_5_3 = (Group)cGroup_5.eContents().get(3);
-		private final Keyword cCommaKeyword_5_3_0 = (Keyword)cGroup_5_3.eContents().get(0);
-		private final Assignment cSeleccionadasAssignment_5_3_1 = (Assignment)cGroup_5_3.eContents().get(1);
-		private final RuleCall cSeleccionadasEStringParserRuleCall_5_3_1_0 = (RuleCall)cSeleccionadasAssignment_5_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_5_4 = (Keyword)cGroup_5.eContents().get(4);
-		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Ordenacion:
 		//	{Ordenacion} "Ordenacion" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")? ("alternativas" "{"
-		//	alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{" seleccionadas+=EString (","
-		//	seleccionadas+=EString)* "}")? "}";
+		//	alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 		public ParserRule getRule() { return rule; }
 
 		//{Ordenacion} "Ordenacion" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")? ("alternativas" "{"
-		//alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{" seleccionadas+=EString (","
-		//seleccionadas+=EString)* "}")? "}"
+		//alternativas+=EString ("," alternativas+=EString)* "}")? "}"
 		public Group getGroup() { return cGroup; }
 
 		//{Ordenacion}
@@ -1143,38 +954,8 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_4_4() { return cRightCurlyBracketKeyword_4_4; }
 
-		//("seleccionadas" "{" seleccionadas+=EString ("," seleccionadas+=EString)* "}")?
-		public Group getGroup_5() { return cGroup_5; }
-
-		//"seleccionadas"
-		public Keyword getSeleccionadasKeyword_5_0() { return cSeleccionadasKeyword_5_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_5_1() { return cLeftCurlyBracketKeyword_5_1; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_2() { return cSeleccionadasAssignment_5_2; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_2_0() { return cSeleccionadasEStringParserRuleCall_5_2_0; }
-
-		//("," seleccionadas+=EString)*
-		public Group getGroup_5_3() { return cGroup_5_3; }
-
-		//","
-		public Keyword getCommaKeyword_5_3_0() { return cCommaKeyword_5_3_0; }
-
-		//seleccionadas+=EString
-		public Assignment getSeleccionadasAssignment_5_3_1() { return cSeleccionadasAssignment_5_3_1; }
-
-		//EString
-		public RuleCall getSeleccionadasEStringParserRuleCall_5_3_1_0() { return cSeleccionadasEStringParserRuleCall_5_3_1_0; }
-
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_5_4() { return cRightCurlyBracketKeyword_5_4; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
 	}
 	
 	
@@ -1294,9 +1075,8 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//WizardAdaptativo:
-	//	"WizardAdaptativo" "{" "puntuacion" puntuacion=EDouble "penalizacion" penalizacion=EDouble ("ejerciciosRespondidos"
-	//	"(" ejerciciosRespondidos+=[Ejercicio|EString] ("," ejerciciosRespondidos+=[Ejercicio|EString])* ")")? "ejercicios"
-	//	"{" ejercicios+=Ejercicio ("," ejercicios+=Ejercicio)* "}" "}";
+	//	"WizardAdaptativo" "{" "puntuacion" puntuacion=EDouble "penalizacion" penalizacion=EDouble "ejercicios" "{"
+	//	ejercicios+=Ejercicio ("," ejercicios+=Ejercicio)* "}" "}";
 	public WizardAdaptativoElements getWizardAdaptativoAccess() {
 		return (pWizardAdaptativo != null) ? pWizardAdaptativo : (pWizardAdaptativo = new WizardAdaptativoElements());
 	}
@@ -1327,8 +1107,7 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 
 	//RespuestaUnica:
 	//	{RespuestaUnica} "RespuestaUnica" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")?
-	//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{"
-	//	seleccionadas+=EString ("," seleccionadas+=EString)* "}")? "}";
+	//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 	public RespuestaUnicaElements getRespuestaUnicaAccess() {
 		return (pRespuestaUnica != null) ? pRespuestaUnica : (pRespuestaUnica = new RespuestaUnicaElements());
 	}
@@ -1339,8 +1118,7 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 
 	//RespuestaMultiple:
 	//	{RespuestaMultiple} "RespuestaMultiple" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")?
-	//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{"
-	//	seleccionadas+=EString ("," seleccionadas+=EString)* "}")? "}";
+	//	("alternativas" "{" alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 	public RespuestaMultipleElements getRespuestaMultipleAccess() {
 		return (pRespuestaMultiple != null) ? pRespuestaMultiple : (pRespuestaMultiple = new RespuestaMultipleElements());
 	}
@@ -1351,8 +1129,7 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 
 	//TextoLibre:
 	//	{TextoLibre} "TextoLibre" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")? ("alternativas" "{"
-	//	alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{" seleccionadas+=EString (","
-	//	seleccionadas+=EString)* "}")? "}";
+	//	alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 	public TextoLibreElements getTextoLibreAccess() {
 		return (pTextoLibre != null) ? pTextoLibre : (pTextoLibre = new TextoLibreElements());
 	}
@@ -1363,8 +1140,7 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 
 	//Ordenacion:
 	//	{Ordenacion} "Ordenacion" "{" ("correctas" "{" correctas+=EString ("," correctas+=EString)* "}")? ("alternativas" "{"
-	//	alternativas+=EString ("," alternativas+=EString)* "}")? ("seleccionadas" "{" seleccionadas+=EString (","
-	//	seleccionadas+=EString)* "}")? "}";
+	//	alternativas+=EString ("," alternativas+=EString)* "}")? "}";
 	public OrdenacionElements getOrdenacionAccess() {
 		return (pOrdenacion != null) ? pOrdenacion : (pOrdenacion = new OrdenacionElements());
 	}

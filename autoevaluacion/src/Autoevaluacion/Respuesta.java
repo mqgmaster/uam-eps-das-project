@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Autoevaluacion.Respuesta#getCorrectas <em>Correctas</em>}</li>
  *   <li>{@link Autoevaluacion.Respuesta#getAlternativas <em>Alternativas</em>}</li>
- *   <li>{@link Autoevaluacion.Respuesta#getSeleccionadas <em>Seleccionadas</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,21 +55,5 @@ public interface Respuesta extends EObject {
 	 * @generated
 	 */
 	EList<String> getAlternativas();
-
-	/**
-	 * Returns the value of the '<em><b>Seleccionadas</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Seleccionadas</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Seleccionadas</em>' attribute list.
-	 * @see Autoevaluacion.AutoevaluacionPackage#getRespuesta_Seleccionadas()
-	 * @model
-	 * @generated
-	 */
-	EList<String> getSeleccionadas();
 
 } // Respuesta
