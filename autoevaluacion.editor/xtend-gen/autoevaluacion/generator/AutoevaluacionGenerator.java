@@ -1659,7 +1659,7 @@ public class AutoevaluacionGenerator implements IGenerator {
         _builder.append("showPanel(pe);");
         _builder.newLine();
         _builder.append("\t\t");
-        _builder.append("// añadir panel a la ventana");
+        _builder.append("// anadir panel a la ventana");
         _builder.newLine();
         _builder.append("\t\t");
         _builder.append("getContentPane().add(mainContainer);");
@@ -1681,11 +1681,6 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append(" = new ExercisePanel(\"");
               _builder.append(c_1, "\t\t");
               _builder.append("\", PanelType.WIZARD);");
-              _builder.newLineIfNotEmpty();
-              _builder.append("\t\t");
-              _builder.append("addExercisePanel(p");
-              _builder.append(c_1, "\t\t");
-              _builder.append(");");
               _builder.newLineIfNotEmpty();
             }
           }
@@ -1827,9 +1822,6 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append("\t\t");
               _builder.append("},");
               _builder.newLine();
-              _builder.append("\t\t");
-              _builder.append("\t\t");
-              _builder.newLine();
               {
                 Respuesta _respuesta_16 = e_1.getRespuesta();
                 if ((_respuesta_16 instanceof RespuestaUnica)) {
@@ -1950,6 +1942,15 @@ public class AutoevaluacionGenerator implements IGenerator {
           }
           _builder.append("\t\t");
           _builder.newLine();
+          {
+            for(final Object c_4 : categoria) {
+              _builder.append("\t\t");
+              _builder.append("addExercisePanel(p");
+              _builder.append(c_4, "\t\t");
+              _builder.append(");");
+              _builder.newLineIfNotEmpty();
+            }
+          }
           _builder.append("\t\t");
           _builder.newLine();
           _builder.append("\t\t");
@@ -1962,7 +1963,7 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.append(");");
           _builder.newLineIfNotEmpty();
           _builder.append("\t\t");
-          _builder.append("// añadir panel a la ventana");
+          _builder.append("// aÃ±adir panel a la ventana");
           _builder.newLine();
           _builder.append("\t\t");
           _builder.append("getContentPane().add(mainContainer);");

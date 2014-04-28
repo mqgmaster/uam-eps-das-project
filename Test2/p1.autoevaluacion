@@ -1,0 +1,67 @@
+Wizard{
+	puntuacion 1.0
+	penalizacion 0.5
+	ejercicios{
+		Ejercicio "Ejercicio2"{
+			enunciado "Calcula 1 + 1 = ?"
+			puntuacionEj 3.0
+			categoria "matematicas"
+			order 2
+			respuesta
+			RespuestaUnica{
+				correctas{"2"}
+				alternativas{"1","3","100"}
+			}
+		},
+		Ejercicio "Ej4"{
+			enunciado "Calcula uno + uno = ?"
+			categoria "fisica"
+			order 4
+			respuesta
+			RespuestaUnica{
+				correctas{"dos"}
+				alternativas{"uno","tres","cien"}
+			}
+		},
+		Ejercicio "Ejercicio1"{
+			enunciado "Escoge multiplos de 2"
+			categoria "matematicas"
+			order 1
+			respuesta
+			RespuestaMultiple{
+				correctas{"2","4"}
+				alternativas{"1","3","101"}
+			}
+		},
+		Ejercicio "Ej3"{
+			enunciado "Escoge multiplos de dos"
+			categoria "fisica"
+			order 3
+			respuesta
+			RespuestaMultiple{
+				correctas{"2","4"}
+				alternativas{"1","3","101"}
+			}
+		},
+		Ejercicio "Ej6"{
+			enunciado "hola"
+			categoria "ingles"
+			order 6
+			respuesta
+			RespuestaUnica{
+				correctas{"hello"}
+				alternativas{"bye","good night"}
+			}
+		},
+		Ejercicio "Ej5"{
+			enunciado "hello"
+			categoria "ingles"
+			order 5
+			respuesta
+			RespuestaUnica{
+				correctas{"hola"}
+				alternativas{"adios","buenas noches"}
+			}
+		}
+	}
+}

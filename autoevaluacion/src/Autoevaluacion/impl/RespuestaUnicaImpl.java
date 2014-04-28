@@ -4,7 +4,6 @@ package Autoevaluacion.impl;
 
 import Autoevaluacion.AutoevaluacionPackage;
 import Autoevaluacion.RespuestaUnica;
-
 import org.eclipse.emf.ecore.EClass;
 
 /**

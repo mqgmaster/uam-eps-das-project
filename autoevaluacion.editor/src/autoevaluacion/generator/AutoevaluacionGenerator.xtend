@@ -636,7 +636,7 @@ public class Autoevaluacion extends JFrame {
 		
 		//Comienza en la pantalla inicial
 		showPanel(pe);
-		// añadir panel a la ventana
+		// anadir panel a la ventana
 		getContentPane().add(mainContainer);
 		
 		
@@ -644,7 +644,6 @@ public class Autoevaluacion extends JFrame {
 		//Crea pantallas
 		«FOR c : categoria»		
 		final ExercisePanel p«c» = new ExercisePanel("«c»", PanelType.WIZARD);
-		addExercisePanel(p«c»);
 		«ENDFOR»
 		
 		//Anade ejercicios
@@ -677,7 +676,6 @@ public class Autoevaluacion extends JFrame {
 				«ENDIF»
 				«ENDFOR»
 				},
-				
 				«IF e.respuesta instanceof RespuestaUnica»
 				AnswerType.UNIQUE
 				«ELSEIF e.respuesta instanceof RespuestaMultiple»
@@ -711,10 +709,13 @@ public class Autoevaluacion extends JFrame {
 		«ENDIF»
 		«ENDFOR»
 		
+		«FOR c : categoria»
+		addExercisePanel(p«c»);
+		«ENDFOR»
 		
 		//Comienza en la pantalla inicial
 		showPanel(p«categoria.get(0)»);
-		// añadir panel a la ventana
+		// aÃ±adir panel a la ventana
 		getContentPane().add(mainContainer);
 		
 		«ELSEIF h instanceof WizardAdaptativo»
