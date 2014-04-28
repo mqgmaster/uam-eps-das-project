@@ -17,6 +17,8 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.antlr.runtime,
  org.eclipse.xtext.common.types
 Import-Package: org.apache.log4j,
+ org.eclipse.ocl.common,
+ org.eclipse.ocl.ecore.delegate,
  org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: autoevaluacion,

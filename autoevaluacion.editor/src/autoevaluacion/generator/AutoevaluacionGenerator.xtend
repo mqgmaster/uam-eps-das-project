@@ -28,8 +28,8 @@ class AutoevaluacionGenerator implements IGenerator {
 		val lista = newArrayList();
 		var hoja = resource.contents.head as Hoja;
 		hoja.ejercicios.forEach[elem,index|
-			if(!lista.contains(elem)){
-				lista.add(elem);
+			if(!lista.contains(elem.categoria)){
+				lista.add(elem.categoria);
 			}
 		]
 			
@@ -583,15 +583,14 @@ public class Autoevaluacion extends JFrame {
 		«FOR e : h.ejercicios»
 		pe.addExercise(new Exercise(
 				"«e.name»", 
-				"«e.enunciado»", 
-				«e.order», 
-				"«e.categoria»",
-				«IF e.puntuacionEj.naN»
+				"«e.enunciado»",
+				«IF e.puntuacionEj.equals(0.0)»
 				«h.puntuacion»,
 				«ELSE»
 				«e.puntuacionEj»,
-				«ENDIF»
-				
+				«ENDIF» 
+				"«e.categoria»",
+				«e.order», 
 				new String[]{
 				«FOR c : e.respuesta.correctas»
 				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»
@@ -653,14 +652,13 @@ public class Autoevaluacion extends JFrame {
 		p«e.categoria».addExercise(new Exercise(
 				"«e.name»", 
 				"«e.enunciado»", 
-				«e.order», 
-				"«e.categoria»",
 				«IF e.puntuacionEj.naN»
 				«h.puntuacion»,
 				«ELSE»
 				«e.puntuacionEj»,
 				«ENDIF»
-				
+				"«e.categoria»",
+				«e.order»,
 				new String[]{
 				«FOR c : e.respuesta.correctas»
 				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»

@@ -45,8 +45,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Respuesta" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="correctas" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternativas" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RespuestaUnica" eSuperTypes="#//Respuesta">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -55,8 +53,13 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="uniqueAnswer" value="&#xA;&#x9;&#x9;&#x9;correctas->size()=1"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternativas" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RespuestaMultiple" eSuperTypes="#//Respuesta"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RespuestaMultiple" eSuperTypes="#//Respuesta">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternativas" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TextoLibre" eSuperTypes="#//Respuesta">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="posibleAnswers"/>
