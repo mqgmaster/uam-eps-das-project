@@ -29,7 +29,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Autoevaluacion.impl.HojaImpl#getNota <em>Nota</em>}</li>
  *   <li>{@link Autoevaluacion.impl.HojaImpl#getEjercicios <em>Ejercicios</em>}</li>
  *   <li>{@link Autoevaluacion.impl.HojaImpl#getPuntuacion <em>Puntuacion</em>}</li>
  *   <li>{@link Autoevaluacion.impl.HojaImpl#getPenalizacion <em>Penalizacion</em>}</li>
@@ -39,26 +38,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * @generated
  */
 public abstract class HojaImpl extends MinimalEObjectImpl.Container implements Hoja {
-	/**
-	 * The default value of the '{@link #getNota() <em>Nota</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNota()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final double NOTA_EDEFAULT = 0.0;
-
-	/**
-	 * The cached value of the '{@link #getNota() <em>Nota</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNota()
-	 * @generated
-	 * @ordered
-	 */
-	protected double nota = NOTA_EDEFAULT;
-
 	/**
 	 * The cached value of the '{@link #getEjercicios() <em>Ejercicios</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -126,27 +105,6 @@ public abstract class HojaImpl extends MinimalEObjectImpl.Container implements H
 	@Override
 	protected EClass eStaticClass() {
 		return AutoevaluacionPackage.Literals.HOJA;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public double getNota() {
-		return nota;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setNota(double newNota) {
-		double oldNota = nota;
-		nota = newNota;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AutoevaluacionPackage.HOJA__NOTA, oldNota, nota));
 	}
 
 	/**
@@ -225,8 +183,6 @@ public abstract class HojaImpl extends MinimalEObjectImpl.Container implements H
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case AutoevaluacionPackage.HOJA__NOTA:
-				return getNota();
 			case AutoevaluacionPackage.HOJA__EJERCICIOS:
 				return getEjercicios();
 			case AutoevaluacionPackage.HOJA__PUNTUACION:
@@ -246,9 +202,6 @@ public abstract class HojaImpl extends MinimalEObjectImpl.Container implements H
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case AutoevaluacionPackage.HOJA__NOTA:
-				setNota((Double)newValue);
-				return;
 			case AutoevaluacionPackage.HOJA__EJERCICIOS:
 				getEjercicios().clear();
 				getEjercicios().addAll((Collection<? extends Ejercicio>)newValue);
@@ -271,9 +224,6 @@ public abstract class HojaImpl extends MinimalEObjectImpl.Container implements H
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case AutoevaluacionPackage.HOJA__NOTA:
-				setNota(NOTA_EDEFAULT);
-				return;
 			case AutoevaluacionPackage.HOJA__EJERCICIOS:
 				getEjercicios().clear();
 				return;
@@ -295,8 +245,6 @@ public abstract class HojaImpl extends MinimalEObjectImpl.Container implements H
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case AutoevaluacionPackage.HOJA__NOTA:
-				return nota != NOTA_EDEFAULT;
 			case AutoevaluacionPackage.HOJA__EJERCICIOS:
 				return ejercicios != null && !ejercicios.isEmpty();
 			case AutoevaluacionPackage.HOJA__PUNTUACION:
@@ -317,9 +265,7 @@ public abstract class HojaImpl extends MinimalEObjectImpl.Container implements H
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (nota: ");
-		result.append(nota);
-		result.append(", puntuacion: ");
+		result.append(" (puntuacion: ");
 		result.append(puntuacion);
 		result.append(", penalizacion: ");
 		result.append(penalizacion);

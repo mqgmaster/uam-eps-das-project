@@ -1,5 +1,4 @@
 WizardAdaptativo{
-	nota 8.0
 	puntuacion 2.0
 	penalizacion 0.2
 	ejercicios{
@@ -7,7 +6,7 @@ WizardAdaptativo{
 			enunciado "sdfs"
 			categoria "1"
 			order 34
-			respuestas
+			respuesta
 				Ordenacion{
 					correctas {"sol1"}
 					alternativas {"asf"}
@@ -17,12 +16,11 @@ WizardAdaptativo{
 			enunciado sdf
 			categoria jl
 			order 2
-			respuestas
+			respuesta
 				RespuestaMultiple{
 					alternativas {"asf"}
 					seleccionadas {"lkjjk","ad"}
 				}
 		}
-	}
-	
+	}	
 }

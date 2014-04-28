@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Autoevaluacion.Ejercicio#getEnunciado <em>Enunciado</em>}</li>
  *   <li>{@link Autoevaluacion.Ejercicio#getPuntuacionEj <em>Puntuacion Ej</em>}</li>
- *   <li>{@link Autoevaluacion.Ejercicio#getRespuestas <em>Respuestas</em>}</li>
+ *   <li>{@link Autoevaluacion.Ejercicio#getRespuesta <em>Respuesta</em>}</li>
  *   <li>{@link Autoevaluacion.Ejercicio#getCategoria <em>Categoria</em>}</li>
  *   <li>{@link Autoevaluacion.Ejercicio#getName <em>Name</em>}</li>
  *   <li>{@link Autoevaluacion.Ejercicio#getOrder <em>Order</em>}</li>
@@ -80,30 +80,30 @@ public interface Ejercicio extends EObject {
 	void setPuntuacionEj(double value);
 
 	/**
-	 * Returns the value of the '<em><b>Respuestas</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Respuesta</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Respuestas</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Respuesta</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Respuestas</em>' containment reference.
-	 * @see #setRespuestas(Respuestas)
-	 * @see Autoevaluacion.AutoevaluacionPackage#getEjercicio_Respuestas()
+	 * @return the value of the '<em>Respuesta</em>' containment reference.
+	 * @see #setRespuesta(Respuesta)
+	 * @see Autoevaluacion.AutoevaluacionPackage#getEjercicio_Respuesta()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	Respuestas getRespuestas();
+	Respuesta getRespuesta();
 
 	/**
-	 * Sets the value of the '{@link Autoevaluacion.Ejercicio#getRespuestas <em>Respuestas</em>}' containment reference.
+	 * Sets the value of the '{@link Autoevaluacion.Ejercicio#getRespuesta <em>Respuesta</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Respuestas</em>' containment reference.
-	 * @see #getRespuestas()
+	 * @param value the new value of the '<em>Respuesta</em>' containment reference.
+	 * @see #getRespuesta()
 	 * @generated
 	 */
-	void setRespuestas(Respuestas value);
+	void setRespuesta(Respuesta value);
 
 	/**
 	 * Returns the value of the '<em><b>Categoria</b></em>' attribute.

@@ -69,22 +69,13 @@ public interface AutoevaluacionPackage extends EPackage {
 	int HOJA = 0;
 
 	/**
-	 * The feature id for the '<em><b>Nota</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOJA__NOTA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Ejercicios</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOJA__EJERCICIOS = 1;
+	int HOJA__EJERCICIOS = 0;
 
 	/**
 	 * The feature id for the '<em><b>Puntuacion</b></em>' attribute.
@@ -93,7 +84,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOJA__PUNTUACION = 2;
+	int HOJA__PUNTUACION = 1;
 
 	/**
 	 * The feature id for the '<em><b>Penalizacion</b></em>' attribute.
@@ -102,7 +93,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOJA__PENALIZACION = 3;
+	int HOJA__PENALIZACION = 2;
 
 	/**
 	 * The number of structural features of the '<em>Hoja</em>' class.
@@ -111,7 +102,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOJA_FEATURE_COUNT = 4;
+	int HOJA_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Hoja</em>' class.
@@ -151,13 +142,13 @@ public interface AutoevaluacionPackage extends EPackage {
 	int EJERCICIO__PUNTUACION_EJ = 1;
 
 	/**
-	 * The feature id for the '<em><b>Respuestas</b></em>' containment reference.
+	 * The feature id for the '<em><b>Respuesta</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EJERCICIO__RESPUESTAS = 2;
+	int EJERCICIO__RESPUESTA = 2;
 
 	/**
 	 * The feature id for the '<em><b>Categoria</b></em>' attribute.
@@ -205,14 +196,14 @@ public interface AutoevaluacionPackage extends EPackage {
 	int EJERCICIO_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Autoevaluacion.impl.RespuestasImpl <em>Respuestas</em>}' class.
+	 * The meta object id for the '{@link Autoevaluacion.impl.RespuestaImpl <em>Respuesta</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Autoevaluacion.impl.RespuestasImpl
-	 * @see Autoevaluacion.impl.AutoevaluacionPackageImpl#getRespuestas()
+	 * @see Autoevaluacion.impl.RespuestaImpl
+	 * @see Autoevaluacion.impl.AutoevaluacionPackageImpl#getRespuesta()
 	 * @generated
 	 */
-	int RESPUESTAS = 2;
+	int RESPUESTA = 2;
 
 	/**
 	 * The feature id for the '<em><b>Correctas</b></em>' attribute list.
@@ -221,7 +212,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTAS__CORRECTAS = 0;
+	int RESPUESTA__CORRECTAS = 0;
 
 	/**
 	 * The feature id for the '<em><b>Alternativas</b></em>' attribute list.
@@ -230,7 +221,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTAS__ALTERNATIVAS = 1;
+	int RESPUESTA__ALTERNATIVAS = 1;
 
 	/**
 	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
@@ -239,25 +230,25 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTAS__SELECCIONADAS = 2;
+	int RESPUESTA__SELECCIONADAS = 2;
 
 	/**
-	 * The number of structural features of the '<em>Respuestas</em>' class.
+	 * The number of structural features of the '<em>Respuesta</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTAS_FEATURE_COUNT = 3;
+	int RESPUESTA_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Respuestas</em>' class.
+	 * The number of operations of the '<em>Respuesta</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTAS_OPERATION_COUNT = 0;
+	int RESPUESTA_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Autoevaluacion.impl.RespuestaUnicaImpl <em>Respuesta Unica</em>}' class.
@@ -276,7 +267,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_UNICA__CORRECTAS = RESPUESTAS__CORRECTAS;
+	int RESPUESTA_UNICA__CORRECTAS = RESPUESTA__CORRECTAS;
 
 	/**
 	 * The feature id for the '<em><b>Alternativas</b></em>' attribute list.
@@ -285,7 +276,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_UNICA__ALTERNATIVAS = RESPUESTAS__ALTERNATIVAS;
+	int RESPUESTA_UNICA__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
 
 	/**
 	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
@@ -294,7 +285,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_UNICA__SELECCIONADAS = RESPUESTAS__SELECCIONADAS;
+	int RESPUESTA_UNICA__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
 
 	/**
 	 * The number of structural features of the '<em>Respuesta Unica</em>' class.
@@ -303,7 +294,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_UNICA_FEATURE_COUNT = RESPUESTAS_FEATURE_COUNT + 0;
+	int RESPUESTA_UNICA_FEATURE_COUNT = RESPUESTA_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Respuesta Unica</em>' class.
@@ -312,7 +303,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_UNICA_OPERATION_COUNT = RESPUESTAS_OPERATION_COUNT + 0;
+	int RESPUESTA_UNICA_OPERATION_COUNT = RESPUESTA_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link Autoevaluacion.impl.RespuestaMultipleImpl <em>Respuesta Multiple</em>}' class.
@@ -331,7 +322,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_MULTIPLE__CORRECTAS = RESPUESTAS__CORRECTAS;
+	int RESPUESTA_MULTIPLE__CORRECTAS = RESPUESTA__CORRECTAS;
 
 	/**
 	 * The feature id for the '<em><b>Alternativas</b></em>' attribute list.
@@ -340,7 +331,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_MULTIPLE__ALTERNATIVAS = RESPUESTAS__ALTERNATIVAS;
+	int RESPUESTA_MULTIPLE__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
 
 	/**
 	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
@@ -349,7 +340,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_MULTIPLE__SELECCIONADAS = RESPUESTAS__SELECCIONADAS;
+	int RESPUESTA_MULTIPLE__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
 
 	/**
 	 * The number of structural features of the '<em>Respuesta Multiple</em>' class.
@@ -358,7 +349,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_MULTIPLE_FEATURE_COUNT = RESPUESTAS_FEATURE_COUNT + 0;
+	int RESPUESTA_MULTIPLE_FEATURE_COUNT = RESPUESTA_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Respuesta Multiple</em>' class.
@@ -367,7 +358,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPUESTA_MULTIPLE_OPERATION_COUNT = RESPUESTAS_OPERATION_COUNT + 0;
+	int RESPUESTA_MULTIPLE_OPERATION_COUNT = RESPUESTA_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link Autoevaluacion.impl.TextoLibreImpl <em>Texto Libre</em>}' class.
@@ -386,7 +377,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXTO_LIBRE__CORRECTAS = RESPUESTAS__CORRECTAS;
+	int TEXTO_LIBRE__CORRECTAS = RESPUESTA__CORRECTAS;
 
 	/**
 	 * The feature id for the '<em><b>Alternativas</b></em>' attribute list.
@@ -395,7 +386,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXTO_LIBRE__ALTERNATIVAS = RESPUESTAS__ALTERNATIVAS;
+	int TEXTO_LIBRE__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
 
 	/**
 	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
@@ -404,7 +395,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXTO_LIBRE__SELECCIONADAS = RESPUESTAS__SELECCIONADAS;
+	int TEXTO_LIBRE__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
 
 	/**
 	 * The number of structural features of the '<em>Texto Libre</em>' class.
@@ -413,7 +404,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXTO_LIBRE_FEATURE_COUNT = RESPUESTAS_FEATURE_COUNT + 0;
+	int TEXTO_LIBRE_FEATURE_COUNT = RESPUESTA_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Texto Libre</em>' class.
@@ -422,7 +413,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXTO_LIBRE_OPERATION_COUNT = RESPUESTAS_OPERATION_COUNT + 0;
+	int TEXTO_LIBRE_OPERATION_COUNT = RESPUESTA_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link Autoevaluacion.impl.OrdenacionImpl <em>Ordenacion</em>}' class.
@@ -441,7 +432,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDENACION__CORRECTAS = RESPUESTAS__CORRECTAS;
+	int ORDENACION__CORRECTAS = RESPUESTA__CORRECTAS;
 
 	/**
 	 * The feature id for the '<em><b>Alternativas</b></em>' attribute list.
@@ -450,7 +441,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDENACION__ALTERNATIVAS = RESPUESTAS__ALTERNATIVAS;
+	int ORDENACION__ALTERNATIVAS = RESPUESTA__ALTERNATIVAS;
 
 	/**
 	 * The feature id for the '<em><b>Seleccionadas</b></em>' attribute list.
@@ -459,7 +450,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDENACION__SELECCIONADAS = RESPUESTAS__SELECCIONADAS;
+	int ORDENACION__SELECCIONADAS = RESPUESTA__SELECCIONADAS;
 
 	/**
 	 * The number of structural features of the '<em>Ordenacion</em>' class.
@@ -468,7 +459,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDENACION_FEATURE_COUNT = RESPUESTAS_FEATURE_COUNT + 0;
+	int ORDENACION_FEATURE_COUNT = RESPUESTA_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Ordenacion</em>' class.
@@ -477,7 +468,7 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDENACION_OPERATION_COUNT = RESPUESTAS_OPERATION_COUNT + 0;
+	int ORDENACION_OPERATION_COUNT = RESPUESTA_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link Autoevaluacion.impl.ClasicoImpl <em>Clasico</em>}' class.
@@ -488,15 +479,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 */
 	int CLASICO = 7;
-
-	/**
-	 * The feature id for the '<em><b>Nota</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASICO__NOTA = HOJA__NOTA;
 
 	/**
 	 * The feature id for the '<em><b>Ejercicios</b></em>' containment reference list.
@@ -554,15 +536,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	int WIZARD = 8;
 
 	/**
-	 * The feature id for the '<em><b>Nota</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WIZARD__NOTA = HOJA__NOTA;
-
-	/**
 	 * The feature id for the '<em><b>Ejercicios</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -616,15 +589,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	 * @generated
 	 */
 	int WIZARD_ADAPTATIVO = 9;
-
-	/**
-	 * The feature id for the '<em><b>Nota</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WIZARD_ADAPTATIVO__NOTA = HOJA__NOTA;
 
 	/**
 	 * The feature id for the '<em><b>Ejercicios</b></em>' containment reference list.
@@ -692,17 +656,6 @@ public interface AutoevaluacionPackage extends EPackage {
 	EClass getHoja();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Autoevaluacion.Hoja#getNota <em>Nota</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Nota</em>'.
-	 * @see Autoevaluacion.Hoja#getNota()
-	 * @see #getHoja()
-	 * @generated
-	 */
-	EAttribute getHoja_Nota();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link Autoevaluacion.Hoja#getEjercicios <em>Ejercicios</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -768,15 +721,15 @@ public interface AutoevaluacionPackage extends EPackage {
 	EAttribute getEjercicio_PuntuacionEj();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Autoevaluacion.Ejercicio#getRespuestas <em>Respuestas</em>}'.
+	 * Returns the meta object for the containment reference '{@link Autoevaluacion.Ejercicio#getRespuesta <em>Respuesta</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Respuestas</em>'.
-	 * @see Autoevaluacion.Ejercicio#getRespuestas()
+	 * @return the meta object for the containment reference '<em>Respuesta</em>'.
+	 * @see Autoevaluacion.Ejercicio#getRespuesta()
 	 * @see #getEjercicio()
 	 * @generated
 	 */
-	EReference getEjercicio_Respuestas();
+	EReference getEjercicio_Respuesta();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Autoevaluacion.Ejercicio#getCategoria <em>Categoria</em>}'.
@@ -812,47 +765,47 @@ public interface AutoevaluacionPackage extends EPackage {
 	EAttribute getEjercicio_Order();
 
 	/**
-	 * Returns the meta object for class '{@link Autoevaluacion.Respuestas <em>Respuestas</em>}'.
+	 * Returns the meta object for class '{@link Autoevaluacion.Respuesta <em>Respuesta</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Respuestas</em>'.
-	 * @see Autoevaluacion.Respuestas
+	 * @return the meta object for class '<em>Respuesta</em>'.
+	 * @see Autoevaluacion.Respuesta
 	 * @generated
 	 */
-	EClass getRespuestas();
+	EClass getRespuesta();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link Autoevaluacion.Respuestas#getCorrectas <em>Correctas</em>}'.
+	 * Returns the meta object for the attribute list '{@link Autoevaluacion.Respuesta#getCorrectas <em>Correctas</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Correctas</em>'.
-	 * @see Autoevaluacion.Respuestas#getCorrectas()
-	 * @see #getRespuestas()
+	 * @see Autoevaluacion.Respuesta#getCorrectas()
+	 * @see #getRespuesta()
 	 * @generated
 	 */
-	EAttribute getRespuestas_Correctas();
+	EAttribute getRespuesta_Correctas();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link Autoevaluacion.Respuestas#getAlternativas <em>Alternativas</em>}'.
+	 * Returns the meta object for the attribute list '{@link Autoevaluacion.Respuesta#getAlternativas <em>Alternativas</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Alternativas</em>'.
-	 * @see Autoevaluacion.Respuestas#getAlternativas()
-	 * @see #getRespuestas()
+	 * @see Autoevaluacion.Respuesta#getAlternativas()
+	 * @see #getRespuesta()
 	 * @generated
 	 */
-	EAttribute getRespuestas_Alternativas();
+	EAttribute getRespuesta_Alternativas();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link Autoevaluacion.Respuestas#getSeleccionadas <em>Seleccionadas</em>}'.
+	 * Returns the meta object for the attribute list '{@link Autoevaluacion.Respuesta#getSeleccionadas <em>Seleccionadas</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Seleccionadas</em>'.
-	 * @see Autoevaluacion.Respuestas#getSeleccionadas()
-	 * @see #getRespuestas()
+	 * @see Autoevaluacion.Respuesta#getSeleccionadas()
+	 * @see #getRespuesta()
 	 * @generated
 	 */
-	EAttribute getRespuestas_Seleccionadas();
+	EAttribute getRespuesta_Seleccionadas();
 
 	/**
 	 * Returns the meta object for class '{@link Autoevaluacion.RespuestaUnica <em>Respuesta Unica</em>}'.
@@ -969,14 +922,6 @@ public interface AutoevaluacionPackage extends EPackage {
 		EClass HOJA = eINSTANCE.getHoja();
 
 		/**
-		 * The meta object literal for the '<em><b>Nota</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HOJA__NOTA = eINSTANCE.getHoja_Nota();
-
-		/**
 		 * The meta object literal for the '<em><b>Ejercicios</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1027,12 +972,12 @@ public interface AutoevaluacionPackage extends EPackage {
 		EAttribute EJERCICIO__PUNTUACION_EJ = eINSTANCE.getEjercicio_PuntuacionEj();
 
 		/**
-		 * The meta object literal for the '<em><b>Respuestas</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Respuesta</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EJERCICIO__RESPUESTAS = eINSTANCE.getEjercicio_Respuestas();
+		EReference EJERCICIO__RESPUESTA = eINSTANCE.getEjercicio_Respuesta();
 
 		/**
 		 * The meta object literal for the '<em><b>Categoria</b></em>' attribute feature.
@@ -1059,14 +1004,14 @@ public interface AutoevaluacionPackage extends EPackage {
 		EAttribute EJERCICIO__ORDER = eINSTANCE.getEjercicio_Order();
 
 		/**
-		 * The meta object literal for the '{@link Autoevaluacion.impl.RespuestasImpl <em>Respuestas</em>}' class.
+		 * The meta object literal for the '{@link Autoevaluacion.impl.RespuestaImpl <em>Respuesta</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Autoevaluacion.impl.RespuestasImpl
-		 * @see Autoevaluacion.impl.AutoevaluacionPackageImpl#getRespuestas()
+		 * @see Autoevaluacion.impl.RespuestaImpl
+		 * @see Autoevaluacion.impl.AutoevaluacionPackageImpl#getRespuesta()
 		 * @generated
 		 */
-		EClass RESPUESTAS = eINSTANCE.getRespuestas();
+		EClass RESPUESTA = eINSTANCE.getRespuesta();
 
 		/**
 		 * The meta object literal for the '<em><b>Correctas</b></em>' attribute list feature.
@@ -1074,7 +1019,7 @@ public interface AutoevaluacionPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESPUESTAS__CORRECTAS = eINSTANCE.getRespuestas_Correctas();
+		EAttribute RESPUESTA__CORRECTAS = eINSTANCE.getRespuesta_Correctas();
 
 		/**
 		 * The meta object literal for the '<em><b>Alternativas</b></em>' attribute list feature.
@@ -1082,7 +1027,7 @@ public interface AutoevaluacionPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESPUESTAS__ALTERNATIVAS = eINSTANCE.getRespuestas_Alternativas();
+		EAttribute RESPUESTA__ALTERNATIVAS = eINSTANCE.getRespuesta_Alternativas();
 
 		/**
 		 * The meta object literal for the '<em><b>Seleccionadas</b></em>' attribute list feature.
@@ -1090,7 +1035,7 @@ public interface AutoevaluacionPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESPUESTAS__SELECCIONADAS = eINSTANCE.getRespuestas_Seleccionadas();
+		EAttribute RESPUESTA__SELECCIONADAS = eINSTANCE.getRespuesta_Seleccionadas();
 
 		/**
 		 * The meta object literal for the '{@link Autoevaluacion.impl.RespuestaUnicaImpl <em>Respuesta Unica</em>}' class.

@@ -4,14 +4,11 @@ package Autoevaluacion.impl;
 
 import Autoevaluacion.AutoevaluacionPackage;
 import Autoevaluacion.Ejercicio;
-import Autoevaluacion.Respuestas;
-
+import Autoevaluacion.Respuesta;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
@@ -24,7 +21,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link Autoevaluacion.impl.EjercicioImpl#getEnunciado <em>Enunciado</em>}</li>
  *   <li>{@link Autoevaluacion.impl.EjercicioImpl#getPuntuacionEj <em>Puntuacion Ej</em>}</li>
- *   <li>{@link Autoevaluacion.impl.EjercicioImpl#getRespuestas <em>Respuestas</em>}</li>
+ *   <li>{@link Autoevaluacion.impl.EjercicioImpl#getRespuesta <em>Respuesta</em>}</li>
  *   <li>{@link Autoevaluacion.impl.EjercicioImpl#getCategoria <em>Categoria</em>}</li>
  *   <li>{@link Autoevaluacion.impl.EjercicioImpl#getName <em>Name</em>}</li>
  *   <li>{@link Autoevaluacion.impl.EjercicioImpl#getOrder <em>Order</em>}</li>
@@ -75,14 +72,14 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 	protected double puntuacionEj = PUNTUACION_EJ_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getRespuestas() <em>Respuestas</em>}' containment reference.
+	 * The cached value of the '{@link #getRespuesta() <em>Respuesta</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRespuestas()
+	 * @see #getRespuesta()
 	 * @generated
 	 * @ordered
 	 */
-	protected Respuestas respuestas;
+	protected Respuesta respuesta;
 
 	/**
 	 * The default value of the '{@link #getCategoria() <em>Categoria</em>}' attribute.
@@ -210,8 +207,8 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Respuestas getRespuestas() {
-		return respuestas;
+	public Respuesta getRespuesta() {
+		return respuesta;
 	}
 
 	/**
@@ -219,11 +216,11 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRespuestas(Respuestas newRespuestas, NotificationChain msgs) {
-		Respuestas oldRespuestas = respuestas;
-		respuestas = newRespuestas;
+	public NotificationChain basicSetRespuesta(Respuesta newRespuesta, NotificationChain msgs) {
+		Respuesta oldRespuesta = respuesta;
+		respuesta = newRespuesta;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, AutoevaluacionPackage.EJERCICIO__RESPUESTAS, oldRespuestas, newRespuestas);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, AutoevaluacionPackage.EJERCICIO__RESPUESTA, oldRespuesta, newRespuesta);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -234,18 +231,18 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRespuestas(Respuestas newRespuestas) {
-		if (newRespuestas != respuestas) {
+	public void setRespuesta(Respuesta newRespuesta) {
+		if (newRespuesta != respuesta) {
 			NotificationChain msgs = null;
-			if (respuestas != null)
-				msgs = ((InternalEObject)respuestas).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - AutoevaluacionPackage.EJERCICIO__RESPUESTAS, null, msgs);
-			if (newRespuestas != null)
-				msgs = ((InternalEObject)newRespuestas).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - AutoevaluacionPackage.EJERCICIO__RESPUESTAS, null, msgs);
-			msgs = basicSetRespuestas(newRespuestas, msgs);
+			if (respuesta != null)
+				msgs = ((InternalEObject)respuesta).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - AutoevaluacionPackage.EJERCICIO__RESPUESTA, null, msgs);
+			if (newRespuesta != null)
+				msgs = ((InternalEObject)newRespuesta).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - AutoevaluacionPackage.EJERCICIO__RESPUESTA, null, msgs);
+			msgs = basicSetRespuesta(newRespuesta, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AutoevaluacionPackage.EJERCICIO__RESPUESTAS, newRespuestas, newRespuestas));
+			eNotify(new ENotificationImpl(this, Notification.SET, AutoevaluacionPackage.EJERCICIO__RESPUESTA, newRespuesta, newRespuesta));
 	}
 
 	/**
@@ -319,8 +316,8 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case AutoevaluacionPackage.EJERCICIO__RESPUESTAS:
-				return basicSetRespuestas(null, msgs);
+			case AutoevaluacionPackage.EJERCICIO__RESPUESTA:
+				return basicSetRespuesta(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -337,8 +334,8 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 				return getEnunciado();
 			case AutoevaluacionPackage.EJERCICIO__PUNTUACION_EJ:
 				return getPuntuacionEj();
-			case AutoevaluacionPackage.EJERCICIO__RESPUESTAS:
-				return getRespuestas();
+			case AutoevaluacionPackage.EJERCICIO__RESPUESTA:
+				return getRespuesta();
 			case AutoevaluacionPackage.EJERCICIO__CATEGORIA:
 				return getCategoria();
 			case AutoevaluacionPackage.EJERCICIO__NAME:
@@ -363,8 +360,8 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 			case AutoevaluacionPackage.EJERCICIO__PUNTUACION_EJ:
 				setPuntuacionEj((Double)newValue);
 				return;
-			case AutoevaluacionPackage.EJERCICIO__RESPUESTAS:
-				setRespuestas((Respuestas)newValue);
+			case AutoevaluacionPackage.EJERCICIO__RESPUESTA:
+				setRespuesta((Respuesta)newValue);
 				return;
 			case AutoevaluacionPackage.EJERCICIO__CATEGORIA:
 				setCategoria((String)newValue);
@@ -393,8 +390,8 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 			case AutoevaluacionPackage.EJERCICIO__PUNTUACION_EJ:
 				setPuntuacionEj(PUNTUACION_EJ_EDEFAULT);
 				return;
-			case AutoevaluacionPackage.EJERCICIO__RESPUESTAS:
-				setRespuestas((Respuestas)null);
+			case AutoevaluacionPackage.EJERCICIO__RESPUESTA:
+				setRespuesta((Respuesta)null);
 				return;
 			case AutoevaluacionPackage.EJERCICIO__CATEGORIA:
 				setCategoria(CATEGORIA_EDEFAULT);
@@ -421,8 +418,8 @@ public class EjercicioImpl extends MinimalEObjectImpl.Container implements Ejerc
 				return ENUNCIADO_EDEFAULT == null ? enunciado != null : !ENUNCIADO_EDEFAULT.equals(enunciado);
 			case AutoevaluacionPackage.EJERCICIO__PUNTUACION_EJ:
 				return puntuacionEj != PUNTUACION_EJ_EDEFAULT;
-			case AutoevaluacionPackage.EJERCICIO__RESPUESTAS:
-				return respuestas != null;
+			case AutoevaluacionPackage.EJERCICIO__RESPUESTA:
+				return respuesta != null;
 			case AutoevaluacionPackage.EJERCICIO__CATEGORIA:
 				return CATEGORIA_EDEFAULT == null ? categoria != null : !CATEGORIA_EDEFAULT.equals(categoria);
 			case AutoevaluacionPackage.EJERCICIO__NAME:

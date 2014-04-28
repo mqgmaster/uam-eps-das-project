@@ -1,0 +1,29 @@
+Wizard{
+	puntuacion 1.0
+	penalizacion 0.0
+	
+	ejercicios{
+		Ejercicio "Ejercicio1" {
+			enunciado "asdf"
+			categoria asdf
+			order 1235
+			respuesta
+			RespuestaMultiple{
+				correctas {"asdf","a"}
+				alternativas {"a","s","d"}
+				seleccionadas {"f"}
+			}
+		},
+		Ejercicio 'ads' {
+			enunciado 'asdf'
+			categoria jl
+			order 2
+			respuesta
+				RespuestaMultiple{
+					correctas {"sol1","asfadsf"}
+					alternativas {"asf"}
+					seleccionadas {"lkjjk","ad"}
+				}
+		}
+	}
+}

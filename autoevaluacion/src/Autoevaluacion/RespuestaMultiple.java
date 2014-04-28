@@ -13,5 +13,5 @@ package Autoevaluacion;
  * @model
  * @generated
  */
-public interface RespuestaMultiple extends Respuestas {
+public interface RespuestaMultiple extends Respuesta {
 } // RespuestaMultiple

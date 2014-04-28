@@ -14,5 +14,5 @@ package Autoevaluacion;
  *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot uniqueAnswer='\n\t\t\tcorrectas->size()=1'"
  * @generated
  */
-public interface Ordenacion extends Respuestas {
+public interface Ordenacion extends Respuesta {
 } // Ordenacion

@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TextoLibreImpl extends RespuestasImpl implements TextoLibre {
+public class TextoLibreImpl extends RespuestaImpl implements TextoLibre {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

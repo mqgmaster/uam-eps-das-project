@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class OrdenacionImpl extends RespuestasImpl implements Ordenacion {
+public class OrdenacionImpl extends RespuestaImpl implements Ordenacion {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

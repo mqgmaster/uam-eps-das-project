@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Autoevaluacion.Hoja#getNota <em>Nota</em>}</li>
  *   <li>{@link Autoevaluacion.Hoja#getEjercicios <em>Ejercicios</em>}</li>
  *   <li>{@link Autoevaluacion.Hoja#getPuntuacion <em>Puntuacion</em>}</li>
  *   <li>{@link Autoevaluacion.Hoja#getPenalizacion <em>Penalizacion</em>}</li>
@@ -28,32 +27,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Hoja extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Nota</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Nota</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Nota</em>' attribute.
-	 * @see #setNota(double)
-	 * @see Autoevaluacion.AutoevaluacionPackage#getHoja_Nota()
-	 * @model required="true"
-	 * @generated
-	 */
-	double getNota();
-
-	/**
-	 * Sets the value of the '{@link Autoevaluacion.Hoja#getNota <em>Nota</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Nota</em>' attribute.
-	 * @see #getNota()
-	 * @generated
-	 */
-	void setNota(double value);
-
 	/**
 	 * Returns the value of the '<em><b>Ejercicios</b></em>' containment reference list.
 	 * The list contents are of type {@link Autoevaluacion.Ejercicio}.

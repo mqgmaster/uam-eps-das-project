@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class RespuestaMultipleImpl extends RespuestasImpl implements RespuestaMultiple {
+public class RespuestaMultipleImpl extends RespuestaImpl implements RespuestaMultiple {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

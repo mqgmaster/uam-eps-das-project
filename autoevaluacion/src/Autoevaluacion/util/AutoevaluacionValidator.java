@@ -90,8 +90,8 @@ public class AutoevaluacionValidator extends EObjectValidator {
 				return validateHoja((Hoja)value, diagnostics, context);
 			case AutoevaluacionPackage.EJERCICIO:
 				return validateEjercicio((Ejercicio)value, diagnostics, context);
-			case AutoevaluacionPackage.RESPUESTAS:
-				return validateRespuestas((Respuestas)value, diagnostics, context);
+			case AutoevaluacionPackage.RESPUESTA:
+				return validateRespuesta((Respuesta)value, diagnostics, context);
 			case AutoevaluacionPackage.RESPUESTA_UNICA:
 				return validateRespuestaUnica((RespuestaUnica)value, diagnostics, context);
 			case AutoevaluacionPackage.RESPUESTA_MULTIPLE:
@@ -278,8 +278,8 @@ public class AutoevaluacionValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRespuestas(Respuestas respuestas, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(respuestas, diagnostics, context);
+	public boolean validateRespuesta(Respuesta respuesta, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(respuesta, diagnostics, context);
 	}
 
 	/**

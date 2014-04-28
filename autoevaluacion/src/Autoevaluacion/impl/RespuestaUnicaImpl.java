@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class RespuestaUnicaImpl extends RespuestasImpl implements RespuestaUnica {
+public class RespuestaUnicaImpl extends RespuestaImpl implements RespuestaUnica {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

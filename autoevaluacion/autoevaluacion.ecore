@@ -17,7 +17,6 @@
       <details key="uniqueName" value="&#xA;&#x9;&#x9;&#x9;ejercicios->isUnique(name)"/>
       <details key="uniqueOrder" value="&#xA;&#x9;&#x9;&#x9;ejercicios->isUnique(order)"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nota" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ejercicios" lowerBound="1"
         upperBound="-1" eType="#//Ejercicio" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="puntuacion" lowerBound="1"
@@ -36,14 +35,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="enunciado" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="puntuacionEj" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="respuestas" lowerBound="1"
-        eType="#//Respuestas" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="respuesta" lowerBound="1"
+        eType="#//Respuesta" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="categoria" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Respuestas" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="Respuesta" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="correctas" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternativas" upperBound="-1"
@@ -51,7 +50,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="seleccionadas" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RespuestaUnica" eSuperTypes="#//Respuestas">
+  <eClassifiers xsi:type="ecore:EClass" name="RespuestaUnica" eSuperTypes="#//Respuesta">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="uniqueAnswer"/>
     </eAnnotations>
@@ -59,8 +58,8 @@
       <details key="uniqueAnswer" value="&#xA;&#x9;&#x9;&#x9;correctas->size()=1"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RespuestaMultiple" eSuperTypes="#//Respuestas"/>
-  <eClassifiers xsi:type="ecore:EClass" name="TextoLibre" eSuperTypes="#//Respuestas">
+  <eClassifiers xsi:type="ecore:EClass" name="RespuestaMultiple" eSuperTypes="#//Respuesta"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TextoLibre" eSuperTypes="#//Respuesta">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="posibleAnswers"/>
     </eAnnotations>
@@ -68,7 +67,7 @@
       <details key="posibleAnswers" value="&#xA;&#x9;&#x9;&#x9;correctas->size()>0"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Ordenacion" eSuperTypes="#//Respuestas">
+  <eClassifiers xsi:type="ecore:EClass" name="Ordenacion" eSuperTypes="#//Respuesta">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="uniqueAnswer"/>
     </eAnnotations>

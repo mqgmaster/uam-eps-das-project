@@ -7,7 +7,6 @@
   <foreignModel>autoevaluacion.ecore</foreignModel>
   <genPackages prefix="Autoevaluacion" disposableProviderFactory="true" ecorePackage="autoevaluacion.ecore#/">
     <genClasses ecoreClass="autoevaluacion.ecore#//Hoja">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Hoja/nota"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference autoevaluacion.ecore#//Hoja/ejercicios"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Hoja/puntuacion"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Hoja/penalizacion"/>
@@ -15,15 +14,15 @@
     <genClasses ecoreClass="autoevaluacion.ecore#//Ejercicio">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/enunciado"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/puntuacionEj"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference autoevaluacion.ecore#//Ejercicio/respuestas"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference autoevaluacion.ecore#//Ejercicio/respuesta"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/categoria"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Ejercicio/order"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="autoevaluacion.ecore#//Respuestas">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuestas/correctas"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuestas/alternativas"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuestas/seleccionadas"/>
+    <genClasses image="false" ecoreClass="autoevaluacion.ecore#//Respuesta">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuesta/correctas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuesta/alternativas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute autoevaluacion.ecore#//Respuesta/seleccionadas"/>
     </genClasses>
     <genClasses ecoreClass="autoevaluacion.ecore#//RespuestaUnica"/>
     <genClasses ecoreClass="autoevaluacion.ecore#//RespuestaMultiple"/>

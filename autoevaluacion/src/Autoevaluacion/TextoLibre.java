@@ -14,5 +14,5 @@ package Autoevaluacion;
  *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot posibleAnswers='\n\t\t\tcorrectas->size()>0'"
  * @generated
  */
-public interface TextoLibre extends Respuestas {
+public interface TextoLibre extends Respuesta {
 } // TextoLibre

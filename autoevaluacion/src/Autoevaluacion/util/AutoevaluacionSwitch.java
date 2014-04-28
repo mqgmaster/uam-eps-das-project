@@ -78,37 +78,37 @@ public class AutoevaluacionSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case AutoevaluacionPackage.RESPUESTAS: {
-				Respuestas respuestas = (Respuestas)theEObject;
-				T result = caseRespuestas(respuestas);
+			case AutoevaluacionPackage.RESPUESTA: {
+				Respuesta respuesta = (Respuesta)theEObject;
+				T result = caseRespuesta(respuesta);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case AutoevaluacionPackage.RESPUESTA_UNICA: {
 				RespuestaUnica respuestaUnica = (RespuestaUnica)theEObject;
 				T result = caseRespuestaUnica(respuestaUnica);
-				if (result == null) result = caseRespuestas(respuestaUnica);
+				if (result == null) result = caseRespuesta(respuestaUnica);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case AutoevaluacionPackage.RESPUESTA_MULTIPLE: {
 				RespuestaMultiple respuestaMultiple = (RespuestaMultiple)theEObject;
 				T result = caseRespuestaMultiple(respuestaMultiple);
-				if (result == null) result = caseRespuestas(respuestaMultiple);
+				if (result == null) result = caseRespuesta(respuestaMultiple);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case AutoevaluacionPackage.TEXTO_LIBRE: {
 				TextoLibre textoLibre = (TextoLibre)theEObject;
 				T result = caseTextoLibre(textoLibre);
-				if (result == null) result = caseRespuestas(textoLibre);
+				if (result == null) result = caseRespuesta(textoLibre);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case AutoevaluacionPackage.ORDENACION: {
 				Ordenacion ordenacion = (Ordenacion)theEObject;
 				T result = caseOrdenacion(ordenacion);
-				if (result == null) result = caseRespuestas(ordenacion);
+				if (result == null) result = caseRespuesta(ordenacion);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -168,17 +168,17 @@ public class AutoevaluacionSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Respuestas</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Respuesta</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Respuestas</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Respuesta</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRespuestas(Respuestas object) {
+	public T caseRespuesta(Respuesta object) {
 		return null;
 	}
 

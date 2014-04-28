@@ -76,8 +76,8 @@ public class AutoevaluacionAdapterFactory extends AdapterFactoryImpl {
 				return createEjercicioAdapter();
 			}
 			@Override
-			public Adapter caseRespuestas(Respuestas object) {
-				return createRespuestasAdapter();
+			public Adapter caseRespuesta(Respuesta object) {
+				return createRespuestaAdapter();
 			}
 			@Override
 			public Adapter caseRespuestaUnica(RespuestaUnica object) {
@@ -156,16 +156,16 @@ public class AutoevaluacionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Autoevaluacion.Respuestas <em>Respuestas</em>}'.
+	 * Creates a new adapter for an object of class '{@link Autoevaluacion.Respuesta <em>Respuesta</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Autoevaluacion.Respuestas
+	 * @see Autoevaluacion.Respuesta
 	 * @generated
 	 */
-	public Adapter createRespuestasAdapter() {
+	public Adapter createRespuestaAdapter() {
 		return null;
 	}
 

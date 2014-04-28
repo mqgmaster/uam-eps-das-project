@@ -8,21 +8,18 @@ import Autoevaluacion.Clasico;
 import Autoevaluacion.Ejercicio;
 import Autoevaluacion.Hoja;
 import Autoevaluacion.Ordenacion;
+import Autoevaluacion.Respuesta;
 import Autoevaluacion.RespuestaMultiple;
 import Autoevaluacion.RespuestaUnica;
-import Autoevaluacion.Respuestas;
 import Autoevaluacion.TextoLibre;
 import Autoevaluacion.Wizard;
 import Autoevaluacion.WizardAdaptativo;
-
 import Autoevaluacion.util.AutoevaluacionValidator;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EValidator;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -51,7 +48,7 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass respuestasEClass = null;
+	private EClass respuestaEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,17 +183,8 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHoja_Nota() {
-		return (EAttribute)hojaEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getHoja_Ejercicios() {
-		return (EReference)hojaEClass.getEStructuralFeatures().get(1);
+		return (EReference)hojaEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -205,7 +193,7 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * @generated
 	 */
 	public EAttribute getHoja_Puntuacion() {
-		return (EAttribute)hojaEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)hojaEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -214,7 +202,7 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * @generated
 	 */
 	public EAttribute getHoja_Penalizacion() {
-		return (EAttribute)hojaEClass.getEStructuralFeatures().get(3);
+		return (EAttribute)hojaEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -249,7 +237,7 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEjercicio_Respuestas() {
+	public EReference getEjercicio_Respuesta() {
 		return (EReference)ejercicioEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -285,8 +273,8 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRespuestas() {
-		return respuestasEClass;
+	public EClass getRespuesta() {
+		return respuestaEClass;
 	}
 
 	/**
@@ -294,8 +282,8 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRespuestas_Correctas() {
-		return (EAttribute)respuestasEClass.getEStructuralFeatures().get(0);
+	public EAttribute getRespuesta_Correctas() {
+		return (EAttribute)respuestaEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -303,8 +291,8 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRespuestas_Alternativas() {
-		return (EAttribute)respuestasEClass.getEStructuralFeatures().get(1);
+	public EAttribute getRespuesta_Alternativas() {
+		return (EAttribute)respuestaEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -312,8 +300,8 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRespuestas_Seleccionadas() {
-		return (EAttribute)respuestasEClass.getEStructuralFeatures().get(2);
+	public EAttribute getRespuesta_Seleccionadas() {
+		return (EAttribute)respuestaEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -417,7 +405,6 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 
 		// Create classes and their features
 		hojaEClass = createEClass(HOJA);
-		createEAttribute(hojaEClass, HOJA__NOTA);
 		createEReference(hojaEClass, HOJA__EJERCICIOS);
 		createEAttribute(hojaEClass, HOJA__PUNTUACION);
 		createEAttribute(hojaEClass, HOJA__PENALIZACION);
@@ -425,15 +412,15 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		ejercicioEClass = createEClass(EJERCICIO);
 		createEAttribute(ejercicioEClass, EJERCICIO__ENUNCIADO);
 		createEAttribute(ejercicioEClass, EJERCICIO__PUNTUACION_EJ);
-		createEReference(ejercicioEClass, EJERCICIO__RESPUESTAS);
+		createEReference(ejercicioEClass, EJERCICIO__RESPUESTA);
 		createEAttribute(ejercicioEClass, EJERCICIO__CATEGORIA);
 		createEAttribute(ejercicioEClass, EJERCICIO__NAME);
 		createEAttribute(ejercicioEClass, EJERCICIO__ORDER);
 
-		respuestasEClass = createEClass(RESPUESTAS);
-		createEAttribute(respuestasEClass, RESPUESTAS__CORRECTAS);
-		createEAttribute(respuestasEClass, RESPUESTAS__ALTERNATIVAS);
-		createEAttribute(respuestasEClass, RESPUESTAS__SELECCIONADAS);
+		respuestaEClass = createEClass(RESPUESTA);
+		createEAttribute(respuestaEClass, RESPUESTA__CORRECTAS);
+		createEAttribute(respuestaEClass, RESPUESTA__ALTERNATIVAS);
+		createEAttribute(respuestaEClass, RESPUESTA__SELECCIONADAS);
 
 		respuestaUnicaEClass = createEClass(RESPUESTA_UNICA);
 
@@ -479,17 +466,16 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		respuestaUnicaEClass.getESuperTypes().add(this.getRespuestas());
-		respuestaMultipleEClass.getESuperTypes().add(this.getRespuestas());
-		textoLibreEClass.getESuperTypes().add(this.getRespuestas());
-		ordenacionEClass.getESuperTypes().add(this.getRespuestas());
+		respuestaUnicaEClass.getESuperTypes().add(this.getRespuesta());
+		respuestaMultipleEClass.getESuperTypes().add(this.getRespuesta());
+		textoLibreEClass.getESuperTypes().add(this.getRespuesta());
+		ordenacionEClass.getESuperTypes().add(this.getRespuesta());
 		clasicoEClass.getESuperTypes().add(this.getHoja());
 		wizardEClass.getESuperTypes().add(this.getHoja());
 		wizardAdaptativoEClass.getESuperTypes().add(this.getHoja());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(hojaEClass, Hoja.class, "Hoja", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getHoja_Nota(), ecorePackage.getEDouble(), "nota", null, 1, 1, Hoja.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHoja_Ejercicios(), this.getEjercicio(), null, "ejercicios", null, 1, -1, Hoja.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHoja_Puntuacion(), ecorePackage.getEDouble(), "puntuacion", null, 1, 1, Hoja.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHoja_Penalizacion(), ecorePackage.getEDouble(), "penalizacion", null, 1, 1, Hoja.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -497,15 +483,15 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		initEClass(ejercicioEClass, Ejercicio.class, "Ejercicio", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEjercicio_Enunciado(), ecorePackage.getEString(), "enunciado", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEjercicio_PuntuacionEj(), ecorePackage.getEDouble(), "puntuacionEj", null, 0, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEjercicio_Respuestas(), this.getRespuestas(), null, "respuestas", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEjercicio_Respuesta(), this.getRespuesta(), null, "respuesta", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEjercicio_Categoria(), ecorePackage.getEString(), "categoria", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEjercicio_Name(), ecorePackage.getEString(), "name", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEjercicio_Order(), ecorePackage.getEInt(), "order", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(respuestasEClass, Respuestas.class, "Respuestas", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getRespuestas_Correctas(), ecorePackage.getEString(), "correctas", null, 0, -1, Respuestas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRespuestas_Alternativas(), ecorePackage.getEString(), "alternativas", null, 0, -1, Respuestas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRespuestas_Seleccionadas(), ecorePackage.getEString(), "seleccionadas", null, 0, -1, Respuestas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(respuestaEClass, Respuesta.class, "Respuesta", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRespuesta_Correctas(), ecorePackage.getEString(), "correctas", null, 0, -1, Respuesta.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRespuesta_Alternativas(), ecorePackage.getEString(), "alternativas", null, 0, -1, Respuesta.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRespuesta_Seleccionadas(), ecorePackage.getEString(), "seleccionadas", null, 0, -1, Respuesta.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(respuestaUnicaEClass, RespuestaUnica.class, "RespuestaUnica", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
