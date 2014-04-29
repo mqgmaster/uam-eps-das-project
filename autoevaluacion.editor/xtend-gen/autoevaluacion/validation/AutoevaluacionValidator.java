@@ -3,7 +3,19 @@
  */
 package autoevaluacion.validation;
 
+import Autoevaluacion.AutoevaluacionPackage;
+import Autoevaluacion.Ejercicio;
+import Autoevaluacion.Hoja;
+import Autoevaluacion.Respuesta;
+import Autoevaluacion.Wizard;
+import Autoevaluacion.WizardAdaptativo;
 import autoevaluacion.validation.AbstractAutoevaluacionValidator;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.validation.Check;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
+import org.eclipse.xtext.xbase.lib.StringExtensions;
 
 /**
  * Custom validation rules.
@@ -12,4 +24,90 @@ import autoevaluacion.validation.AbstractAutoevaluacionValidator;
  */
 @SuppressWarnings("all")
 public class AutoevaluacionValidator extends AbstractAutoevaluacionValidator {
+  /**
+   * Lanza un warning si la puntuacion global es negativa
+   */
+  @Check
+  public void puntuacionNegativa(final Hoja h) {
+    double _puntuacion = h.getPuntuacion();
+    boolean _lessThan = (_puntuacion < 0);
+    if (_lessThan) {
+      this.warning("Puntuacion negativa", AutoevaluacionPackage.Literals.HOJA__PUNTUACION);
+    }
+  }
+  
+  /**
+   * Lanza un warning si la penalizacion es negativa
+   */
+  @Check
+  public void penalizacionNegativa(final Hoja h) {
+    double _penalizacion = h.getPenalizacion();
+    boolean _lessThan = (_penalizacion < 0);
+    if (_lessThan) {
+      this.warning("Penalizacion negativa", AutoevaluacionPackage.Literals.HOJA__PENALIZACION);
+    }
+  }
+  
+  /**
+   * Lanza un warning si la puntuacion del ejercicio es negativa
+   */
+  @Check
+  public void puntuacionEjNegativa(final Ejercicio e) {
+    double _puntuacionEj = e.getPuntuacionEj();
+    boolean _lessThan = (_puntuacionEj < 0);
+    if (_lessThan) {
+      this.warning("Puntuacion de ejercicio negativo", AutoevaluacionPackage.Literals.EJERCICIO__PUNTUACION_EJ);
+    }
+  }
+  
+  /**
+   * Lanza un error si no se asigna categoria a los ejercicios de una hoja del tipo Wizard o WizardAdaptativo
+   */
+  @Check
+  public void categoriaWizards(final Ejercicio e) {
+    EObject _eContainer = e.eContainer();
+    Hoja h = ((Hoja) _eContainer);
+    boolean _or = false;
+    if ((h instanceof Wizard)) {
+      _or = true;
+    } else {
+      _or = ((h instanceof Wizard) || (h instanceof WizardAdaptativo));
+    }
+    if (_or) {
+      String _categoria = e.getCategoria();
+      boolean _isNullOrEmpty = StringExtensions.isNullOrEmpty(_categoria);
+      if (_isNullOrEmpty) {
+        this.error("Asigna una categoria al ejercicio para agruparlo", AutoevaluacionPackage.Literals.EJERCICIO__CATEGORIA, "categoriaWizard");
+      }
+    }
+  }
+  
+  /**
+   * Lanza un error si coincide alguna respuesta del array de correctas y alternativas
+   */
+  @Check
+  public void checkAnswers(final Respuesta r) {
+    final EList<String> correctas = r.getCorrectas();
+    final EList<String> alternativas = r.getAlternativas();
+    final Procedure2<String,Integer> _function = new Procedure2<String,Integer>() {
+      public void apply(final String c, final Integer i) {
+        boolean _contains = alternativas.contains(c);
+        if (_contains) {
+          AutoevaluacionValidator.this.error("Alternativas no puede contener respuestas correctas", 
+            AutoevaluacionPackage.Literals.RESPUESTA__ALTERNATIVAS);
+        }
+      }
+    };
+    IterableExtensions.<String>forEach(correctas, _function);
+    final Procedure2<String,Integer> _function_1 = new Procedure2<String,Integer>() {
+      public void apply(final String c, final Integer i) {
+        boolean _contains = correctas.contains(c);
+        if (_contains) {
+          AutoevaluacionValidator.this.error("Correctas no puede contener alternativas", 
+            AutoevaluacionPackage.Literals.RESPUESTA__CORRECTAS);
+        }
+      }
+    };
+    IterableExtensions.<String>forEach(alternativas, _function_1);
+  }
 }

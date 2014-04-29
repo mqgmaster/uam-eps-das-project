@@ -35,11 +35,14 @@ class AutoevaluacionGenerator implements IGenerator {
 			
 		//Genera el Main
 		fsa.generateFile("main/Main.java", Main(resource.contents.head as Hoja));
+		
 		//Genera Answer
 		fsa.generateFile("autoevaluacion/answer/Answer.java", Answer());
 		fsa.generateFile("autoevaluacion/answer/MultipleAnswer.java", MultipleAnswer());
 		fsa.generateFile("autoevaluacion/answer/UniqueAnswer.java", UniqueAnswer());
 		fsa.generateFile("autoevaluacion/answer/WrittenAnswer.java", WrittenAnswer());
+		fsa.generateFile("autoevaluacion/answer/OrdinationAnswer.java", OrdinationAnswer());
+		
 		//Genera Autoevaluacion
 		fsa.generateFile("autoevaluacion/Exercise.java", Exercise());
 		fsa.generateFile("autoevaluacion/ExercisePanel.java", ExercisePanel());
@@ -287,35 +290,119 @@ public class UniqueAnswer extends Answer implements ActionListener {
 	def WrittenAnswer()'''
 package autoevaluacion.answer;
 
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 public class WrittenAnswer extends Answer {
-
 	
+	private final JTextArea textArea = new JTextArea(2,2);
 
 	public WrittenAnswer(String[] correctas, String[] alternativas) {
 		super(correctas, alternativas);
 	}
 
 	@Override
-	public JPanel createComponent() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean corrige() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public JPanel muestraCorreccion() {
-		// TODO Auto-generated method stub
-		return null;
+	public JPanel createComponent(){
+		JPanel panel = new JPanel(new GridLayout(getCorrectas().size(),1));
+		panel.add(textArea);
+		return panel;
 	}
 	
+	@Override
+	public boolean corrige(){
+		return getCorrectas().contains(textArea.getText());
+	}
+	
+	public boolean isAnswered() {
+		return !textArea.getText().trim().isEmpty();
+	}
+	
+	@Override
+	public JPanel muestraCorreccion(){
+		JPanel panel = new JPanel(new GridLayout(2,1));
+		JLabel correcta = new JLabel(getCorrectas().get(0));
+		correcta.setForeground(Color.green);
+		panel.add(correcta);
+		JLabel written = new JLabel(textArea.getText());
+		written.setForeground(Color.red);
+		panel.add(written);
+		return panel;
+	}
 }'''
+
+	def OrdinationAnswer()'''
+package autoevaluacion.answer;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+
+public class OrdinationAnswer extends Answer {
+
+	public OrdinationAnswer(String[] correctas, String[] alternativas) {
+		super(correctas, alternativas);
+	}
+
+	@Override
+	public JPanel createComponent(){
+		ArrayList<String> resp = new ArrayList<String>();
+		resp.addAll(getCorrectas());
+		
+		ButtonGroup group = new ButtonGroup();
+		JPanel panel = new JPanel(new GridLayout(resp.size(),1));
+		for(String r : resp){
+			JRadioButton rb = new JRadioButton(r);
+			rb.setActionCommand(r);
+			rb.addActionListener((ActionListener) this);
+			group.add(rb);
+			panel.add(rb);
+		}
+		
+		return panel;
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		ArrayList<String> selec = new ArrayList<>();
+		selec.add(e.getActionCommand());
+		setSeleccionadas(selec);
+	}
+	
+	@Override
+	public boolean corrige(){
+		if(getSeleccionadas().isEmpty() || getCorrectas().isEmpty())
+			return false;
+		
+		if(getCorrectas().contains(getSeleccionadas().get(0))){
+			return true;
+		}
+		return false;
+	}
+	
+	@Override
+	public JPanel muestraCorreccion(){
+		JPanel panel = new JPanel(new GridLayout(2,1));
+		JLabel correcta = new JLabel(getCorrectas().get(0));
+		correcta.setForeground(Color.green);
+		panel.add(correcta);
+		JLabel seleccionada = new JLabel(getSeleccionadas().get(0));
+		seleccionada.setForeground(Color.red);
+		panel.add(seleccionada);
+		return panel;
+	}
+}
+'''
+
 
 	def Exercise()'''
 package autoevaluacion;
@@ -584,7 +671,7 @@ public class Autoevaluacion extends JFrame {
 		pe.addExercise(new Exercise(
 				"«e.name»", 
 				"«e.enunciado»",
-				«IF e.puntuacionEj.equals(0.0)»
+				«IF e.puntuacionEj.equals(0)»
 				«h.puntuacion»,
 				«ELSE»
 				«e.puntuacionEj»,
@@ -651,7 +738,7 @@ public class Autoevaluacion extends JFrame {
 		p«e.categoria».addExercise(new Exercise(
 				"«e.name»", 
 				"«e.enunciado»", 
-				«IF e.puntuacionEj.naN»
+				«IF e.puntuacionEj.equals(0)»
 				«h.puntuacion»,
 				«ELSE»
 				«e.puntuacionEj»,
@@ -715,7 +802,7 @@ public class Autoevaluacion extends JFrame {
 		
 		//Comienza en la pantalla inicial
 		showPanel(p«categoria.get(0)»);
-		// aÃƒÆ’Ã†€™±adir panel a la ventana
+		// aÃƒÆ’Ã†€™Ãƒ€ ‚¬„¢±adir panel a la ventana
 		getContentPane().add(mainContainer);
 		
 		«ELSEIF h instanceof WizardAdaptativo»

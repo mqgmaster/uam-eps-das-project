@@ -25,15 +25,32 @@ public class Autoevaluacion extends JFrame {
 		this.puntuacionStandard = puntuacionStandard;
 		this.penalizacion = penalizacion;
 		//Crea pantallas
-		final ExercisePanel psda = new ExercisePanel("sda", PanelType.WIZARD);
+		final ExercisePanel pads = new ExercisePanel("ads", PanelType.WIZARD);
+		final ExercisePanel pj = new ExercisePanel("j", PanelType.WIZARD);
 		
 		//Anade ejercicios
-		psda.addExercise(new Exercise(
+		pads.addExercise(new Exercise(
 				"sada", 
 				"sda", 
 				2.2,
-				"sda",
+				"ads",
 				5,
+				new String[]{
+				"asdf"
+				},
+				new String[]{
+				"ASD",
+				"SAD",
+				"sdas"
+				},
+				AnswerType.UNIQUE
+				));
+		pj.addExercise(new Exercise(
+				"sadaa", 
+				"sda", 
+				2.2,
+				"j",
+				3,
 				new String[]{
 				"sdas"
 				},
@@ -45,7 +62,13 @@ public class Autoevaluacion extends JFrame {
 				));
 		
 		//Anade boton siguiente
-		psda.addNextButton("Corregir", new ActionListener() {
+		pads.addNextButton("Proxima", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				showPanel(pj);
+			}
+		});
+		pj.addNextButton("Corregir", new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				Panel panel = createFinalPanel();
@@ -54,11 +77,12 @@ public class Autoevaluacion extends JFrame {
 			}
 		});
 		
-		addExercisePanel(psda);
+		addExercisePanel(pads);
+		addExercisePanel(pj);
 		
 		//Comienza en la pantalla inicial
-		showPanel(psda);
-		// aÃƒÆ’Ã†€™±adir panel a la ventana
+		showPanel(pads);
+		// aÃƒÆ’Ã†€™Ãƒ€ ‚¬„¢±adir panel a la ventana
 		getContentPane().add(mainContainer);
 		
 		

@@ -84,24 +84,25 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cPuntuacionEjKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
 		private final Assignment cPuntuacionEjAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
 		private final RuleCall cPuntuacionEjEDoubleParserRuleCall_5_1_0 = (RuleCall)cPuntuacionEjAssignment_5_1.eContents().get(0);
-		private final Keyword cCategoriaKeyword_6 = (Keyword)cGroup.eContents().get(6);
-		private final Assignment cCategoriaAssignment_7 = (Assignment)cGroup.eContents().get(7);
-		private final RuleCall cCategoriaEStringParserRuleCall_7_0 = (RuleCall)cCategoriaAssignment_7.eContents().get(0);
-		private final Keyword cOrderKeyword_8 = (Keyword)cGroup.eContents().get(8);
-		private final Assignment cOrderAssignment_9 = (Assignment)cGroup.eContents().get(9);
-		private final RuleCall cOrderEIntParserRuleCall_9_0 = (RuleCall)cOrderAssignment_9.eContents().get(0);
-		private final Keyword cRespuestaKeyword_10 = (Keyword)cGroup.eContents().get(10);
-		private final Assignment cRespuestaAssignment_11 = (Assignment)cGroup.eContents().get(11);
-		private final RuleCall cRespuestaRespuestaParserRuleCall_11_0 = (RuleCall)cRespuestaAssignment_11.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_12 = (Keyword)cGroup.eContents().get(12);
+		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
+		private final Keyword cCategoriaKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Assignment cCategoriaAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
+		private final RuleCall cCategoriaEStringParserRuleCall_6_1_0 = (RuleCall)cCategoriaAssignment_6_1.eContents().get(0);
+		private final Keyword cOrderKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Assignment cOrderAssignment_8 = (Assignment)cGroup.eContents().get(8);
+		private final RuleCall cOrderEIntParserRuleCall_8_0 = (RuleCall)cOrderAssignment_8.eContents().get(0);
+		private final Keyword cRespuestaKeyword_9 = (Keyword)cGroup.eContents().get(9);
+		private final Assignment cRespuestaAssignment_10 = (Assignment)cGroup.eContents().get(10);
+		private final RuleCall cRespuestaRespuestaParserRuleCall_10_0 = (RuleCall)cRespuestaAssignment_10.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_11 = (Keyword)cGroup.eContents().get(11);
 		
 		//Ejercicio:
-		//	"Ejercicio" name=EString "{" "enunciado" enunciado=EString ("puntuacionEj" puntuacionEj=EDouble)? "categoria"
-		//	categoria=EString "order" order=EInt "respuesta" respuesta=Respuesta "}";
+		//	"Ejercicio" name=EString "{" "enunciado" enunciado=EString ("puntuacionEj" puntuacionEj=EDouble)? ("categoria"
+		//	categoria=EString)? "order" order=EInt "respuesta" respuesta=Respuesta "}";
 		public ParserRule getRule() { return rule; }
 
-		//"Ejercicio" name=EString "{" "enunciado" enunciado=EString ("puntuacionEj" puntuacionEj=EDouble)? "categoria"
-		//categoria=EString "order" order=EInt "respuesta" respuesta=Respuesta "}"
+		//"Ejercicio" name=EString "{" "enunciado" enunciado=EString ("puntuacionEj" puntuacionEj=EDouble)? ("categoria"
+		//categoria=EString)? "order" order=EInt "respuesta" respuesta=Respuesta "}"
 		public Group getGroup() { return cGroup; }
 
 		//"Ejercicio"
@@ -137,35 +138,38 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 		//EDouble
 		public RuleCall getPuntuacionEjEDoubleParserRuleCall_5_1_0() { return cPuntuacionEjEDoubleParserRuleCall_5_1_0; }
 
+		//("categoria" categoria=EString)?
+		public Group getGroup_6() { return cGroup_6; }
+
 		//"categoria"
-		public Keyword getCategoriaKeyword_6() { return cCategoriaKeyword_6; }
+		public Keyword getCategoriaKeyword_6_0() { return cCategoriaKeyword_6_0; }
 
 		//categoria=EString
-		public Assignment getCategoriaAssignment_7() { return cCategoriaAssignment_7; }
+		public Assignment getCategoriaAssignment_6_1() { return cCategoriaAssignment_6_1; }
 
 		//EString
-		public RuleCall getCategoriaEStringParserRuleCall_7_0() { return cCategoriaEStringParserRuleCall_7_0; }
+		public RuleCall getCategoriaEStringParserRuleCall_6_1_0() { return cCategoriaEStringParserRuleCall_6_1_0; }
 
 		//"order"
-		public Keyword getOrderKeyword_8() { return cOrderKeyword_8; }
+		public Keyword getOrderKeyword_7() { return cOrderKeyword_7; }
 
 		//order=EInt
-		public Assignment getOrderAssignment_9() { return cOrderAssignment_9; }
+		public Assignment getOrderAssignment_8() { return cOrderAssignment_8; }
 
 		//EInt
-		public RuleCall getOrderEIntParserRuleCall_9_0() { return cOrderEIntParserRuleCall_9_0; }
+		public RuleCall getOrderEIntParserRuleCall_8_0() { return cOrderEIntParserRuleCall_8_0; }
 
 		//"respuesta"
-		public Keyword getRespuestaKeyword_10() { return cRespuestaKeyword_10; }
+		public Keyword getRespuestaKeyword_9() { return cRespuestaKeyword_9; }
 
 		//respuesta=Respuesta
-		public Assignment getRespuestaAssignment_11() { return cRespuestaAssignment_11; }
+		public Assignment getRespuestaAssignment_10() { return cRespuestaAssignment_10; }
 
 		//Respuesta
-		public RuleCall getRespuestaRespuestaParserRuleCall_11_0() { return cRespuestaRespuestaParserRuleCall_11_0; }
+		public RuleCall getRespuestaRespuestaParserRuleCall_10_0() { return cRespuestaRespuestaParserRuleCall_10_0; }
 
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_12() { return cRightCurlyBracketKeyword_12; }
+		public Keyword getRightCurlyBracketKeyword_11() { return cRightCurlyBracketKeyword_11; }
 	}
 
 	public class EDoubleElements extends AbstractParserRuleElementFinder {
@@ -1032,8 +1036,8 @@ public class AutoevaluacionGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Ejercicio:
-	//	"Ejercicio" name=EString "{" "enunciado" enunciado=EString ("puntuacionEj" puntuacionEj=EDouble)? "categoria"
-	//	categoria=EString "order" order=EInt "respuesta" respuesta=Respuesta "}";
+	//	"Ejercicio" name=EString "{" "enunciado" enunciado=EString ("puntuacionEj" puntuacionEj=EDouble)? ("categoria"
+	//	categoria=EString)? "order" order=EInt "respuesta" respuesta=Respuesta "}";
 	public EjercicioElements getEjercicioAccess() {
 		return (pEjercicio != null) ? pEjercicio : (pEjercicio = new EjercicioElements());
 	}

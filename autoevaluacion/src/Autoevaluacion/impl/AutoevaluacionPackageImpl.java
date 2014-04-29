@@ -464,7 +464,7 @@ public class AutoevaluacionPackageImpl extends EPackageImpl implements Autoevalu
 		initEAttribute(getEjercicio_Enunciado(), ecorePackage.getEString(), "enunciado", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEjercicio_PuntuacionEj(), ecorePackage.getEDouble(), "puntuacionEj", null, 0, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEjercicio_Respuesta(), this.getRespuesta(), null, "respuesta", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEjercicio_Categoria(), ecorePackage.getEString(), "categoria", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEjercicio_Categoria(), ecorePackage.getEString(), "categoria", null, 0, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEjercicio_Name(), ecorePackage.getEString(), "name", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEjercicio_Order(), ecorePackage.getEInt(), "order", null, 1, 1, Ejercicio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

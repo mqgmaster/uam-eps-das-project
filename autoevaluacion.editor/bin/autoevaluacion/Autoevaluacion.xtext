@@ -17,7 +17,7 @@ Ejercicio returns Ejercicio:
 	'{'
 		'enunciado' enunciado=EString
 		('puntuacionEj' puntuacionEj=EDouble)?
-		'categoria' categoria=EString
+		('categoria' categoria=EString)?
 		'order' order=EInt
 		'respuesta' respuesta=Respuesta
 	'}';

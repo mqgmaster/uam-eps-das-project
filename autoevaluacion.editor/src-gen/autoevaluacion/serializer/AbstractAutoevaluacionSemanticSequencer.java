@@ -103,7 +103,7 @@ public abstract class AbstractAutoevaluacionSemanticSequencer extends AbstractDe
 	 *         name=EString 
 	 *         enunciado=EString 
 	 *         puntuacionEj=EDouble? 
-	 *         categoria=EString 
+	 *         categoria=EString? 
 	 *         order=EInt 
 	 *         respuesta=Respuesta
 	 *     )

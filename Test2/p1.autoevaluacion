@@ -1,12 +1,27 @@
 Wizard {
-	puntuacion 2.0
+	puntuacion 1.0
 	penalizacion 2.23
 	ejercicios {
 		Ejercicio "sada" {
 			enunciado "sda"
 			puntuacionEj 2.2
-			categoria "sda"
+			categoria "ads"
 			order 5
+			respuesta 
+				RespuestaUnica {
+					correctas {
+						"asdf"
+					}
+					alternativas {
+						"ASD","SAD","sdas"
+					}
+				}
+		},
+		Ejercicio "sadaa" {
+			enunciado "sda"
+			puntuacionEj 2.2
+			categoria "j"
+			order 3
 			respuesta 
 				RespuestaUnica {
 					correctas {

@@ -43,6 +43,7 @@ public class AutoevaluacionParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEStringAccess().getAlternatives(), "rule__EString__Alternatives");
 					put(grammarAccess.getEjercicioAccess().getGroup(), "rule__Ejercicio__Group__0");
 					put(grammarAccess.getEjercicioAccess().getGroup_5(), "rule__Ejercicio__Group_5__0");
+					put(grammarAccess.getEjercicioAccess().getGroup_6(), "rule__Ejercicio__Group_6__0");
 					put(grammarAccess.getEDoubleAccess().getGroup(), "rule__EDouble__Group__0");
 					put(grammarAccess.getEDoubleAccess().getGroup_4(), "rule__EDouble__Group_4__0");
 					put(grammarAccess.getClasicoAccess().getGroup(), "rule__Clasico__Group__0");
@@ -75,9 +76,9 @@ public class AutoevaluacionParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEjercicioAccess().getNameAssignment_1(), "rule__Ejercicio__NameAssignment_1");
 					put(grammarAccess.getEjercicioAccess().getEnunciadoAssignment_4(), "rule__Ejercicio__EnunciadoAssignment_4");
 					put(grammarAccess.getEjercicioAccess().getPuntuacionEjAssignment_5_1(), "rule__Ejercicio__PuntuacionEjAssignment_5_1");
-					put(grammarAccess.getEjercicioAccess().getCategoriaAssignment_7(), "rule__Ejercicio__CategoriaAssignment_7");
-					put(grammarAccess.getEjercicioAccess().getOrderAssignment_9(), "rule__Ejercicio__OrderAssignment_9");
-					put(grammarAccess.getEjercicioAccess().getRespuestaAssignment_11(), "rule__Ejercicio__RespuestaAssignment_11");
+					put(grammarAccess.getEjercicioAccess().getCategoriaAssignment_6_1(), "rule__Ejercicio__CategoriaAssignment_6_1");
+					put(grammarAccess.getEjercicioAccess().getOrderAssignment_8(), "rule__Ejercicio__OrderAssignment_8");
+					put(grammarAccess.getEjercicioAccess().getRespuestaAssignment_10(), "rule__Ejercicio__RespuestaAssignment_10");
 					put(grammarAccess.getClasicoAccess().getPuntuacionAssignment_3(), "rule__Clasico__PuntuacionAssignment_3");
 					put(grammarAccess.getClasicoAccess().getPenalizacionAssignment_5(), "rule__Clasico__PenalizacionAssignment_5");
 					put(grammarAccess.getClasicoAccess().getEjerciciosAssignment_8(), "rule__Clasico__EjerciciosAssignment_8");

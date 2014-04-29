@@ -166,10 +166,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:16:7: ( 'categoria' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:16:9: 'categoria'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:16:7: ( 'order' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:16:9: 'order'
             {
-            match("categoria"); 
+            match("order"); 
 
 
             }
@@ -187,10 +187,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:17:7: ( 'order' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:17:9: 'order'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:17:7: ( 'respuesta' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:17:9: 'respuesta'
             {
-            match("order"); 
+            match("respuesta"); 
 
 
             }
@@ -208,11 +208,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:18:7: ( 'respuesta' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:18:9: 'respuesta'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:18:7: ( '}' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:18:9: '}'
             {
-            match("respuesta"); 
-
+            match('}'); 
 
             }
 
@@ -229,10 +228,11 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:19:7: ( '}' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:19:9: '}'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:19:7: ( 'puntuacionEj' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:19:9: 'puntuacionEj'
             {
-            match('}'); 
+            match("puntuacionEj"); 
+
 
             }
 
@@ -249,10 +249,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:20:7: ( 'puntuacionEj' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:20:9: 'puntuacionEj'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:20:7: ( 'categoria' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:20:9: 'categoria'
             {
-            match("puntuacionEj"); 
+            match("categoria"); 
 
 
             }
@@ -582,10 +582,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5748:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5748:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5778:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5778:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5748:11: ( '^' )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5778:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -594,7 +594,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5748:11: '^'
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5778:11: '^'
                     {
                     match('^'); 
 
@@ -612,7 +612,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5748:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5778:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -661,10 +661,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5750:10: ( ( '0' .. '9' )+ )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5750:12: ( '0' .. '9' )+
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5780:10: ( ( '0' .. '9' )+ )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5780:12: ( '0' .. '9' )+
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5750:12: ( '0' .. '9' )+
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5780:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -678,7 +678,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5750:13: '0' .. '9'
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5780:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -710,10 +710,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -731,10 +731,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -750,7 +750,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -766,7 +766,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -791,10 +791,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -810,7 +810,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -826,7 +826,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5752:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5782:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -869,12 +869,12 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5754:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5754:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5784:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5784:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5754:24: ( options {greedy=false; } : . )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5784:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -899,7 +899,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5754:52: .
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5784:52: .
             	    {
             	    matchAny(); 
 
@@ -929,12 +929,12 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -947,7 +947,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -967,7 +967,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
                 }
             } while (true);
 
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:40: ( ( '\\r' )? '\\n' )?
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -976,9 +976,9 @@ public class InternalAutoevaluacionLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:41: ( '\\r' )? '\\n'
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:41: ( '\\r' )? '\\n'
                     {
-                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:41: ( '\\r' )?
+                    // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -987,7 +987,7 @@ public class InternalAutoevaluacionLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5756:41: '\\r'
+                            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5786:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1019,10 +1019,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5758:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5758:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5788:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5788:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5758:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5788:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1076,8 +1076,8 @@ public class InternalAutoevaluacionLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5760:16: ( . )
-            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5760:18: .
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5790:16: ( . )
+            // ../autoevaluacion.editor.ui/src-gen/autoevaluacion/ui/contentassist/antlr/internal/InternalAutoevaluacion.g:5790:18: .
             {
             matchAny(); 
 
@@ -1328,77 +1328,78 @@ public class InternalAutoevaluacionLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\1\33\1\37\1\uffff\3\34\1\uffff\1\34\2\uffff\1\34\1\uffff"+
-        "\5\34\1\31\2\uffff\3\31\2\uffff\1\34\2\uffff\2\34\2\uffff\4\34\1"+
-        "\uffff\2\34\2\uffff\1\34\1\uffff\5\34\5\uffff\43\34\1\150\16\34"+
-        "\1\uffff\4\34\1\174\14\34\1\u0089\1\34\1\uffff\14\34\1\uffff\5\34"+
-        "\1\u009c\1\u009d\1\34\1\u009f\1\u00a0\1\u00a1\7\34\2\uffff\1\u00aa"+
-        "\3\uffff\1\u00ac\5\34\1\u00b2\1\u00b3\1\uffff\1\34\1\uffff\5\34"+
-        "\2\uffff\1\u00ba\1\u00bb\3\34\1\u00bf\2\uffff\3\34\1\uffff\1\34"+
-        "\1\u00c4\2\34\1\uffff\1\34\1\u00c8\1\34\1\uffff\1\u00ca\1\uffff";
+        "\1\uffff\1\33\1\37\1\uffff\2\34\1\uffff\2\34\2\uffff\1\34\1\uffff"+
+        "\5\34\1\31\2\uffff\3\31\2\uffff\1\34\2\uffff\2\34\2\uffff\2\34\1"+
+        "\uffff\4\34\2\uffff\1\34\1\uffff\5\34\5\uffff\41\34\1\146\16\34"+
+        "\1\uffff\6\34\1\174\14\34\1\u0089\1\34\1\uffff\14\34\1\uffff\5\34"+
+        "\1\u009c\1\u009d\1\34\1\u009f\2\34\1\u00a2\1\u00a3\5\34\2\uffff"+
+        "\1\u00aa\1\uffff\1\u00ac\1\34\2\uffff\4\34\1\u00b2\1\u00b3\1\uffff"+
+        "\1\34\1\uffff\5\34\2\uffff\1\u00ba\1\u00bb\3\34\1\u00bf\2\uffff"+
+        "\3\34\1\uffff\1\34\1\u00c4\2\34\1\uffff\1\34\1\u00c8\1\34\1\uffff"+
+        "\1\u00ca\1\uffff";
     static final String DFA12_eofS =
         "\u00cb\uffff";
     static final String DFA12_minS =
-        "\1\0\2\60\1\uffff\1\141\1\162\1\145\1\uffff\1\145\2\uffff\1\154"+
+        "\1\0\2\60\1\uffff\1\162\1\145\1\uffff\1\145\1\141\2\uffff\1\154"+
         "\1\uffff\1\151\1\145\1\154\1\145\1\162\1\101\2\uffff\2\0\1\52\2"+
-        "\uffff\1\145\2\uffff\1\165\1\145\2\uffff\1\164\1\162\1\144\1\163"+
-        "\1\uffff\2\156\2\uffff\1\141\1\uffff\1\172\1\163\1\164\1\170\1\144"+
-        "\5\uffff\1\162\1\156\1\162\1\145\1\162\1\145\1\160\1\164\1\141\1"+
-        "\163\1\141\1\160\1\145\1\164\1\145\3\143\1\147\1\145\1\162\2\165"+
-        "\1\154\1\151\1\162\1\165\1\162\1\157\1\156\3\151\1\157\1\143\1\60"+
-        "\1\145\1\141\1\151\1\143\1\144\1\145\1\156\1\114\1\141\1\143\1\141"+
-        "\1\143\1\162\1\164\1\uffff\1\163\1\143\1\172\1\157\1\60\1\163\1"+
-        "\141\1\151\1\143\1\151\1\144\2\151\1\141\1\164\1\151\1\141\1\60"+
-        "\1\144\1\uffff\2\164\1\142\1\151\3\157\1\141\1\163\1\141\1\157\1"+
-        "\143\1\uffff\2\141\1\151\1\162\1\157\2\60\1\163\3\60\1\156\1\151"+
-        "\1\160\1\115\1\166\1\145\1\156\2\uffff\1\60\3\uffff\1\60\1\157\1"+
-        "\164\1\156\1\165\1\141\2\60\1\uffff\1\152\1\uffff\1\156\1\141\1"+
-        "\151\1\154\1\163\2\uffff\2\60\1\164\1\143\1\164\1\60\2\uffff\1\151"+
-        "\1\141\1\151\1\uffff\1\166\1\60\1\160\1\157\1\uffff\1\154\1\60\1"+
-        "\145\1\uffff\1\60\1\uffff";
+        "\uffff\1\145\2\uffff\1\165\1\145\2\uffff\1\144\1\163\1\uffff\2\156"+
+        "\1\164\1\162\2\uffff\1\141\1\uffff\1\172\1\163\1\164\1\170\1\144"+
+        "\5\uffff\1\162\1\156\1\162\1\145\1\160\1\164\1\141\1\145\1\162\1"+
+        "\163\1\141\1\160\1\145\1\164\1\145\3\143\1\162\2\165\1\154\1\147"+
+        "\1\145\1\151\1\162\1\165\1\162\1\157\1\156\3\151\1\60\1\145\1\141"+
+        "\1\151\1\157\2\143\1\144\1\145\1\156\1\114\1\141\1\143\1\141\1\143"+
+        "\1\uffff\1\163\1\143\1\172\1\162\1\164\1\157\1\60\1\163\1\141\1"+
+        "\151\1\143\1\151\1\144\1\151\1\164\1\151\1\141\1\151\1\141\1\60"+
+        "\1\144\1\uffff\2\164\1\142\1\151\3\157\1\141\1\157\1\143\1\141\1"+
+        "\163\1\uffff\2\141\1\151\1\162\1\157\2\60\1\163\1\60\1\156\1\151"+
+        "\2\60\1\160\1\115\1\166\1\145\1\156\2\uffff\1\60\1\uffff\1\60\1"+
+        "\157\2\uffff\1\164\1\156\1\165\1\141\2\60\1\uffff\1\152\1\uffff"+
+        "\1\156\1\141\1\151\1\154\1\163\2\uffff\2\60\1\164\1\143\1\164\1"+
+        "\60\2\uffff\1\151\1\141\1\151\1\uffff\1\166\1\60\1\160\1\157\1\uffff"+
+        "\1\154\1\60\1\145\1\uffff\1\60\1\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\2\172\1\uffff\1\157\1\162\1\145\1\uffff\1\165\2\uffff"+
+        "\1\uffff\2\172\1\uffff\1\162\1\145\1\uffff\1\165\1\157\2\uffff"+
         "\1\154\1\uffff\1\151\1\145\1\154\1\145\1\162\1\172\2\uffff\2\uffff"+
-        "\1\57\2\uffff\1\145\2\uffff\1\165\1\145\2\uffff\1\164\1\162\1\144"+
-        "\1\163\1\uffff\2\156\2\uffff\1\141\1\uffff\1\172\1\163\1\164\1\170"+
-        "\1\144\5\uffff\1\162\1\156\1\162\1\145\1\162\1\145\1\160\1\164\1"+
-        "\141\1\163\1\141\1\160\1\145\1\164\1\145\3\143\1\147\1\145\1\162"+
-        "\2\165\1\154\1\151\1\162\1\165\1\162\1\157\1\156\3\151\1\157\1\143"+
-        "\1\172\1\145\1\141\1\151\1\143\1\144\1\145\1\156\1\114\1\141\1\143"+
-        "\1\141\1\143\1\162\1\164\1\uffff\1\163\1\143\1\172\1\157\1\172\1"+
-        "\163\1\141\1\151\1\143\1\151\1\144\2\151\1\141\1\164\1\151\1\141"+
-        "\1\172\1\144\1\uffff\2\164\1\142\1\151\3\157\1\141\1\163\1\141\1"+
-        "\157\1\143\1\uffff\2\141\1\151\1\162\1\157\2\172\1\163\3\172\1\156"+
-        "\1\151\1\160\1\125\1\166\1\145\1\156\2\uffff\1\172\3\uffff\1\172"+
-        "\1\157\1\164\1\156\1\165\1\141\2\172\1\uffff\1\152\1\uffff\1\156"+
-        "\1\141\1\151\1\154\1\163\2\uffff\2\172\1\164\1\143\1\164\1\172\2"+
-        "\uffff\1\151\1\141\1\151\1\uffff\1\166\1\172\1\160\1\157\1\uffff"+
-        "\1\154\1\172\1\145\1\uffff\1\172\1\uffff";
+        "\1\57\2\uffff\1\145\2\uffff\1\165\1\145\2\uffff\1\144\1\163\1\uffff"+
+        "\2\156\1\164\1\162\2\uffff\1\141\1\uffff\1\172\1\163\1\164\1\170"+
+        "\1\144\5\uffff\1\162\1\156\1\162\1\145\1\160\1\164\1\141\1\145\1"+
+        "\162\1\163\1\141\1\160\1\145\1\164\1\145\3\143\1\162\2\165\1\154"+
+        "\1\147\1\145\1\151\1\162\1\165\1\162\1\157\1\156\3\151\1\172\1\145"+
+        "\1\141\1\151\1\157\2\143\1\144\1\145\1\156\1\114\1\141\1\143\1\141"+
+        "\1\143\1\uffff\1\163\1\143\1\172\1\162\1\164\1\157\1\172\1\163\1"+
+        "\141\1\151\1\143\1\151\1\144\1\151\1\164\1\151\1\141\1\151\1\141"+
+        "\1\172\1\144\1\uffff\2\164\1\142\1\151\3\157\1\141\1\157\1\143\1"+
+        "\141\1\163\1\uffff\2\141\1\151\1\162\1\157\2\172\1\163\1\172\1\156"+
+        "\1\151\2\172\1\160\1\125\1\166\1\145\1\156\2\uffff\1\172\1\uffff"+
+        "\1\172\1\157\2\uffff\1\164\1\156\1\165\1\141\2\172\1\uffff\1\152"+
+        "\1\uffff\1\156\1\141\1\151\1\154\1\163\2\uffff\2\172\1\164\1\143"+
+        "\1\164\1\172\2\uffff\1\151\1\141\1\151\1\uffff\1\166\1\172\1\160"+
+        "\1\157\1\uffff\1\154\1\172\1\145\1\uffff\1\172\1\uffff";
     static final String DFA12_acceptS =
-        "\3\uffff\1\4\3\uffff\1\11\1\uffff\1\13\1\14\1\uffff\1\21\6\uffff"+
-        "\1\32\1\33\3\uffff\1\37\1\40\1\uffff\1\1\1\32\2\uffff\1\2\1\4\4"+
-        "\uffff\1\11\2\uffff\1\13\1\14\1\uffff\1\21\5\uffff\1\33\1\34\1\35"+
-        "\1\36\1\37\62\uffff\1\7\23\uffff\1\22\14\uffff\1\15\22\uffff\1\3"+
-        "\1\5\1\uffff\1\6\1\25\1\10\10\uffff\1\20\1\uffff\1\16\5\uffff\1"+
-        "\30\1\31\6\uffff\1\12\1\17\3\uffff\1\26\4\uffff\1\24\3\uffff\1\23"+
-        "\1\uffff\1\27";
+        "\3\uffff\1\4\2\uffff\1\10\2\uffff\1\13\1\14\1\uffff\1\21\6\uffff"+
+        "\1\32\1\33\3\uffff\1\37\1\40\1\uffff\1\1\1\32\2\uffff\1\2\1\4\2"+
+        "\uffff\1\10\4\uffff\1\13\1\14\1\uffff\1\21\5\uffff\1\33\1\34\1\35"+
+        "\1\36\1\37\60\uffff\1\6\25\uffff\1\22\14\uffff\1\15\22\uffff\1\3"+
+        "\1\5\1\uffff\1\7\2\uffff\1\12\1\25\6\uffff\1\20\1\uffff\1\16\5\uffff"+
+        "\1\30\1\31\6\uffff\1\11\1\17\3\uffff\1\26\4\uffff\1\24\3\uffff\1"+
+        "\23\1\uffff\1\27";
     static final String DFA12_specialS =
         "\1\1\24\uffff\1\0\1\2\u00b4\uffff}>";
     static final String[] DFA12_transitionS = {
             "\11\31\2\30\2\31\1\30\22\31\1\30\1\31\1\25\4\31\1\26\4\31\1"+
             "\14\1\11\1\12\1\27\12\24\7\31\2\23\1\13\1\23\1\1\11\23\1\21"+
             "\2\23\1\16\1\23\1\20\2\23\1\15\3\23\3\31\1\22\1\23\1\31\1\17"+
-            "\1\23\1\4\1\23\1\2\11\23\1\5\1\10\1\23\1\6\10\23\1\3\1\31\1"+
-            "\7\uff82\31",
+            "\1\23\1\10\1\23\1\2\11\23\1\4\1\7\1\23\1\5\10\23\1\3\1\31\1"+
+            "\6\uff82\31",
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\11\34\1\32\20\34",
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\11\34\1\36\3\34"+
             "\1\35\14\34",
             "",
-            "\1\41\15\uffff\1\42",
-            "\1\43",
-            "\1\44",
+            "\1\41",
+            "\1\42",
             "",
-            "\1\47\17\uffff\1\46",
+            "\1\45\17\uffff\1\44",
+            "\1\46\15\uffff\1\47",
             "",
             "",
             "\1\52",
@@ -1425,9 +1426,9 @@ public class InternalAutoevaluacionLexer extends Lexer {
             "",
             "\1\71",
             "\1\72",
+            "",
             "\1\73",
             "\1\74",
-            "",
             "\1\75",
             "\1\76",
             "",
@@ -1477,9 +1478,9 @@ public class InternalAutoevaluacionLexer extends Lexer {
             "\1\143",
             "\1\144",
             "\1\145",
-            "\1\146",
-            "\1\147",
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+            "\1\147",
+            "\1\150",
             "\1\151",
             "\1\152",
             "\1\153",
@@ -1492,9 +1493,9 @@ public class InternalAutoevaluacionLexer extends Lexer {
             "\1\162",
             "\1\163",
             "\1\164",
+            "",
             "\1\165",
             "\1\166",
-            "",
             "\1\167",
             "\1\170",
             "\1\171",
@@ -1537,10 +1538,10 @@ public class InternalAutoevaluacionLexer extends Lexer {
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
             "\1\u009e",
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
+            "\1\u00a0",
+            "\1\u00a1",
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
-            "\1\u00a2",
-            "\1\u00a3",
             "\1\u00a4",
             "\1\u00a6\7\uffff\1\u00a5",
             "\1\u00a7",
@@ -1550,11 +1551,11 @@ public class InternalAutoevaluacionLexer extends Lexer {
             "",
             "\12\34\7\uffff\32\34\4\uffff\1\34\1\uffff\32\34",
             "",
-            "",
-            "",
             "\12\34\7\uffff\4\34\1\u00ab\25\34\4\uffff\1\34\1\uffff\32"+
             "\34",
             "\1\u00ad",
+            "",
+            "",
             "\1\u00ae",
             "\1\u00af",
             "\1\u00b0",
@@ -1652,15 +1653,15 @@ public class InternalAutoevaluacionLexer extends Lexer {
 
                         else if ( (LA12_0=='{') ) {s = 3;}
 
-                        else if ( (LA12_0=='c') ) {s = 4;}
+                        else if ( (LA12_0=='o') ) {s = 4;}
 
-                        else if ( (LA12_0=='o') ) {s = 5;}
+                        else if ( (LA12_0=='r') ) {s = 5;}
 
-                        else if ( (LA12_0=='r') ) {s = 6;}
+                        else if ( (LA12_0=='}') ) {s = 6;}
 
-                        else if ( (LA12_0=='}') ) {s = 7;}
+                        else if ( (LA12_0=='p') ) {s = 7;}
 
-                        else if ( (LA12_0=='p') ) {s = 8;}
+                        else if ( (LA12_0=='c') ) {s = 8;}
 
                         else if ( (LA12_0=='-') ) {s = 9;}
 

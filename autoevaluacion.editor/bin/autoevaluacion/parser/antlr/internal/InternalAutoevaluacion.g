@@ -257,14 +257,14 @@ ruleEjercicio returns [EObject current=null]
 	    }
 
 )
-))?	otherlv_7='categoria' 
+))?(	otherlv_7='categoria' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getEjercicioAccess().getCategoriaKeyword_6());
+    	newLeafNode(otherlv_7, grammarAccess.getEjercicioAccess().getCategoriaKeyword_6_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getEjercicioAccess().getCategoriaEStringParserRuleCall_7_0()); 
+	        newCompositeNode(grammarAccess.getEjercicioAccess().getCategoriaEStringParserRuleCall_6_1_0()); 
 	    }
 		lv_categoria_8_0=ruleEString		{
 	        if ($current==null) {
@@ -279,14 +279,14 @@ ruleEjercicio returns [EObject current=null]
 	    }
 
 )
-)	otherlv_9='order' 
+))?	otherlv_9='order' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getEjercicioAccess().getOrderKeyword_8());
+    	newLeafNode(otherlv_9, grammarAccess.getEjercicioAccess().getOrderKeyword_7());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getEjercicioAccess().getOrderEIntParserRuleCall_9_0()); 
+	        newCompositeNode(grammarAccess.getEjercicioAccess().getOrderEIntParserRuleCall_8_0()); 
 	    }
 		lv_order_10_0=ruleEInt		{
 	        if ($current==null) {
@@ -303,12 +303,12 @@ ruleEjercicio returns [EObject current=null]
 )
 )	otherlv_11='respuesta' 
     {
-    	newLeafNode(otherlv_11, grammarAccess.getEjercicioAccess().getRespuestaKeyword_10());
+    	newLeafNode(otherlv_11, grammarAccess.getEjercicioAccess().getRespuestaKeyword_9());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getEjercicioAccess().getRespuestaRespuestaParserRuleCall_11_0()); 
+	        newCompositeNode(grammarAccess.getEjercicioAccess().getRespuestaRespuestaParserRuleCall_10_0()); 
 	    }
 		lv_respuesta_12_0=ruleRespuesta		{
 	        if ($current==null) {
@@ -325,7 +325,7 @@ ruleEjercicio returns [EObject current=null]
 )
 )	otherlv_13='}' 
     {
-    	newLeafNode(otherlv_13, grammarAccess.getEjercicioAccess().getRightCurlyBracketKeyword_12());
+    	newLeafNode(otherlv_13, grammarAccess.getEjercicioAccess().getRightCurlyBracketKeyword_11());
     }
 )
 ;

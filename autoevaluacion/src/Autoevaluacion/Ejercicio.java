@@ -116,7 +116,7 @@ public interface Ejercicio extends EObject {
 	 * @return the value of the '<em>Categoria</em>' attribute.
 	 * @see #setCategoria(String)
 	 * @see Autoevaluacion.AutoevaluacionPackage#getEjercicio_Categoria()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	String getCategoria();

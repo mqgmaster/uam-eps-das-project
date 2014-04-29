@@ -1,0 +1,16 @@
+Clasico{
+	puntuacion 2.0
+	penalizacion 0.5
+	
+	ejercicios {
+		Ejercicio "Ejercicio 2" {
+			enunciado"asdf"
+			order 2
+			respuesta
+			RespuestaUnica{
+				correctas {"asdf"}
+				alternativas {"qwer","zxcv"}
+			}
+		}
+	}
+}
