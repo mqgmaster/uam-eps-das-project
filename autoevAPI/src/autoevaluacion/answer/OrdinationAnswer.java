@@ -2,16 +2,17 @@ package autoevaluacion.answer;
 
 import java.awt.Color;
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
-import javax.swing.ButtonGroup;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JRadioButton;
 
 public class OrdinationAnswer extends Answer {
+	
+	private final ArrayList<OrdinationItem> answersList = new ArrayList<>();
 
 	public OrdinationAnswer(String[] correctas, String[] alternativas) {
 		super(correctas, alternativas);
@@ -21,46 +22,63 @@ public class OrdinationAnswer extends Answer {
 	public JPanel createComponent(){
 		ArrayList<String> resp = new ArrayList<String>();
 		resp.addAll(getCorrectas());
+		Collections.shuffle(resp);
 		
-		ButtonGroup group = new ButtonGroup();
-		JPanel panel = new JPanel(new GridLayout(resp.size(),1));
+		OrdinationItem item;
+		JPanel panel = new JPanel(new GridLayout(getCorrectas().size(),1));
+		
 		for(String r : resp){
-			JRadioButton rb = new JRadioButton(r);
-			rb.setActionCommand(r);
-			rb.addActionListener((ActionListener) this);
-			group.add(rb);
-			panel.add(rb);
+			item = new OrdinationItem(r);
+			answersList.add(item);
+			panel.add(item);
 		}
 		
 		return panel;
 	}
 	
-	public void actionPerformed(ActionEvent e) {
-		ArrayList<String> selec = new ArrayList<>();
-		selec.add(e.getActionCommand());
-		setSeleccionadas(selec);
+	@Override
+	public boolean corrige() {
+		Collections.sort(answersList);
+		Set<OrdinationItem> answersSet = new HashSet<>(answersList);
+		if (answersSet.size() != answersList.size()) {
+			return false;
+		}
+		for (int i=0;i<answersList.size();i++) {
+			if (answersList.get(i).getAnswerPosition().isEmpty()) {
+				return false;
+			}
+			if (!answersList.get(i).getAnswerText().equals(getCorrectas().get(i))) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	@Override
-	public boolean corrige(){
-		if(getSeleccionadas().isEmpty() || getCorrectas().isEmpty())
-			return false;
-		
-		if(getCorrectas().contains(getSeleccionadas().get(0))){
-			return true;
+	public boolean isAnswered() {
+		for (OrdinationItem item : answersList) {
+			if (!item.getAnswerPosition().isEmpty()) {
+				return true;
+			}
 		}
 		return false;
 	}
 	
 	@Override
 	public JPanel muestraCorreccion(){
-		JPanel panel = new JPanel(new GridLayout(2,1));
-		JLabel correcta = new JLabel(getCorrectas().get(0));
-		correcta.setForeground(Color.green);
-		panel.add(correcta);
-		JLabel seleccionada = new JLabel(getSeleccionadas().get(0));
-		seleccionada.setForeground(Color.red);
-		panel.add(seleccionada);
+		JPanel panel = new JPanel(new GridLayout(getCorrectas().size(),1));
+		for (int i=0;i<answersList.size();i++) {
+			JLabel correcta = new JLabel(answersList.get(i).getAnswerText());
+			correcta.setForeground(Color.green);
+			panel.add(correcta);
+			JLabel user = new JLabel(getCorrectas().get(i));
+			if (answersList.get(i).getAnswerText().equals(getCorrectas().get(i))) {
+				user.setForeground(Color.green);
+			} else {
+				user.setForeground(Color.red);
+			}
+			panel.add(user);
+		}
 		return panel;
 	}
 }

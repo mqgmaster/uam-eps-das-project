@@ -35,9 +35,9 @@ public class Autoevaluacion extends JFrame {
 				1.0, 
 				"matematica",
 				5,
-				new String[]{"dos", "2"},
+				new String[]{"1","2","3","4","5"},
 				new String[]{"tres","uno","cien"},
-				AnswerType.WRITTEN));
+				AnswerType.ORDINATION));
 		
 		pe.addExercise(new Exercise(
 				"Ejercicio 2", 
@@ -45,9 +45,9 @@ public class Autoevaluacion extends JFrame {
 				1.0, 
 				"matematica", 
 				0, 
-				new String[]{"3"},
+				new String[]{"1","2"},
 				new String[]{"2","1","100"},
-				AnswerType.WRITTEN));
+				AnswerType.ORDINATION));
 		
 	/*	pe2.addExercise(new Exercise(
 				"Ejercicio 3", 
