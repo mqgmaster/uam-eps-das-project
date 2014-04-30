@@ -1,10 +1,11 @@
-Clasico{
+Wizard {
 	puntuacion 1.0
-	penalizacion 0.5
-	
+	penalizacion -0.1
 	ejercicios {
 		Ejercicio "Ejercicio 2" {
 			enunciado "Enunciado 2 respuesta unica"
+			puntuacionEj 2.0
+			categoria "c1"
 			order 2
 			respuesta
 			RespuestaUnica{
@@ -14,6 +15,8 @@ Clasico{
 		},
 		Ejercicio "Ejercicio 4" {
 			enunciado"Enunciado 4 ordenacion"
+			puntuacionEj -0.5
+			categoria "c2"
 			order 4
 			respuesta
 			Ordenacion{
@@ -22,6 +25,7 @@ Clasico{
 		},
 		Ejercicio "Ejercicio 1" {
 			enunciado"Enunciado 1 respuesta multiple"
+			categoria "c2"
 			order 1
 			respuesta
 			RespuestaMultiple{
@@ -31,6 +35,7 @@ Clasico{
 		},
 		Ejercicio "Ejercicio 3" {
 			enunciado"Enunciado 3 texto libre: escribe 'a' o 'b'"
+			categoria "c1"
 			order 3
 			respuesta
 			TextoLibre{

@@ -1,0 +1,76 @@
+WizardAdaptativo{
+	puntuacion 1.0
+	penalizacion 0.1
+	ejercicios {
+		Ejercicio "Ejercicio 2" {
+			enunciado "Enunciado 2 respuesta unica"
+			puntuacionEj 2.0
+			categoria "c1"
+			order 2
+			respuesta
+			RespuestaUnica{
+				correctas {"correcta"}
+				alternativas {"alter1","alter2"}
+			}
+		},
+		Ejercicio "Ejercicio 1" {
+			enunciado"Enunciado 1 respuesta multiple"
+			categoria "c1"
+			order 1
+			respuesta
+			RespuestaMultiple{
+				correctas {"correcta1","correcta2"}
+				alternativas {"altern1","alter2","alter3"}
+			}
+		},
+		Ejercicio "Ejercicio 7" {
+			enunciado "Enunciado 7 respuesta unica"
+			puntuacionEj 2.0
+			categoria "c1"
+			order 7
+			respuesta
+			RespuestaUnica{
+				correctas {"correcta"}
+				alternativas {"alter1","alter2"}
+			}
+		},
+		Ejercicio "Ejercicio 4" {
+			enunciado"Enunciado 4 ordenacion"
+			puntuacionEj 0.5
+			categoria "c2"
+			order 4
+			respuesta
+			Ordenacion{
+				correctas {"1#2#3#4"}
+			}
+		},
+		Ejercicio "Ejercicio 6" {
+			enunciado"Enunciado 6 ordenacion descendente"
+			puntuacionEj 0.5
+			categoria "c2"
+			order 6
+			respuesta
+			Ordenacion{
+				correctas {"4#3#2#1"}
+			}
+		},
+		Ejercicio "Ejercicio 3" {
+			enunciado"Enunciado 3 texto libre: escribe 'a' o 'b'"
+			categoria "c3"
+			order 3
+			respuesta
+			TextoLibre{
+				correctas {"a","b"}
+			}
+		},
+		Ejercicio "Ejercicio 5" {
+			enunciado"Enunciado 5 texto libre: escribe 'asdf' o 'qwer'"
+			categoria "c3"
+			order 5
+			respuesta
+			TextoLibre{
+				correctas {"qwer","asdf"}
+			}
+		}
+	}
+}

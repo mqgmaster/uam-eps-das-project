@@ -25,8 +25,9 @@ public class Autoevaluacion extends JFrame {
 		this.puntuacionStandard = puntuacionStandard;
 		this.penalizacion = penalizacion;
 		//Crea pantallas
-		final ExercisePanel pc1 = new ExercisePanel("c1", PanelType.WIZARD);
-		final ExercisePanel pc2 = new ExercisePanel("c2", PanelType.WIZARD);
+		final ExercisePanel pc1 = new ExercisePanel("c1", PanelType.WIZARD_ADAPTATIVE);
+		final ExercisePanel pc2 = new ExercisePanel("c2", PanelType.WIZARD_ADAPTATIVE);
+		final ExercisePanel pc3 = new ExercisePanel("c3", PanelType.WIZARD_ADAPTATIVE);
 		
 		//Anade ejercicios
 		pc1.addExercise(new Exercise(
@@ -44,27 +45,11 @@ public class Autoevaluacion extends JFrame {
 				},
 				AnswerType.UNIQUE
 				));
-		pc2.addExercise(new Exercise(
-				"Ejercicio 4", 
-				"Enunciado 4 ordenacion", 
-				-0.5,
-				"c2",
-				4,
-				new String[]{
-				"1",
-				"2",
-				"3",
-				"4"
-				},
-				new String[]{
-				},
-				AnswerType.ORDINATION
-				));
-		pc2.addExercise(new Exercise(
+		pc1.addExercise(new Exercise(
 				"Ejercicio 1", 
 				"Enunciado 1 respuesta multiple", 
 				1.0,
-				"c2",
+				"c1",
 				1,
 				new String[]{
 				"correcta1",
@@ -78,14 +63,75 @@ public class Autoevaluacion extends JFrame {
 				AnswerType.MULTIPLE
 				));
 		pc1.addExercise(new Exercise(
+				"Ejercicio 7", 
+				"Enunciado 7 respuesta unica", 
+				2.0,
+				"c1",
+				7,
+				new String[]{
+				"correcta"
+				},
+				new String[]{
+				"alter1",
+				"alter2"
+				},
+				AnswerType.UNIQUE
+				));
+		pc2.addExercise(new Exercise(
+				"Ejercicio 4", 
+				"Enunciado 4 ordenacion", 
+				0.5,
+				"c2",
+				4,
+				new String[]{
+				"1",
+				"2",
+				"3",
+				"4"
+				},
+				new String[]{
+				},
+				AnswerType.ORDINATION
+				));
+		pc2.addExercise(new Exercise(
+				"Ejercicio 6", 
+				"Enunciado 6 ordenacion descendente", 
+				0.5,
+				"c2",
+				6,
+				new String[]{
+				"4",
+				"3",
+				"2",
+				"1"
+				},
+				new String[]{
+				},
+				AnswerType.ORDINATION
+				));
+		pc3.addExercise(new Exercise(
 				"Ejercicio 3", 
 				"Enunciado 3 texto libre: escribe 'a' o 'b'", 
 				1.0,
-				"c1",
+				"c3",
 				3,
 				new String[]{
 				"a",
 				"b"
+				},
+				new String[]{
+				},
+				AnswerType.WRITTEN
+				));
+		pc3.addExercise(new Exercise(
+				"Ejercicio 5", 
+				"Enunciado 5 texto libre: escribe 'asdf' o 'qwer'", 
+				1.0,
+				"c3",
+				5,
+				new String[]{
+				"qwer",
+				"asdf"
 				},
 				new String[]{
 				},
@@ -99,7 +145,13 @@ public class Autoevaluacion extends JFrame {
 				showPanel(pc2);
 			}
 		});
-		pc2.addNextButton("Corregir", new ActionListener() {
+		pc2.addNextButton("Proxima", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				showPanel(pc3);
+			}
+		});
+		pc3.addNextButton("Corregir", new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				Panel panel = createFinalPanel();
@@ -110,6 +162,7 @@ public class Autoevaluacion extends JFrame {
 		
 		addExercisePanel(pc1);
 		addExercisePanel(pc2);
+		addExercisePanel(pc3);
 		
 		//Comienza en la pantalla inicial
 		showPanel(pc1);

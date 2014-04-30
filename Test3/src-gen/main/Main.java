@@ -5,7 +5,7 @@ import autoevaluacion.Autoevaluacion;
 public class Main {
 	
 	public static void main(String[] args){
-		Autoevaluacion autoevaluacion = new Autoevaluacion(1.0,-0.1);
+		Autoevaluacion autoevaluacion = new Autoevaluacion(1.0,0.1);
 		autoevaluacion.mostrar();
 	}
 }

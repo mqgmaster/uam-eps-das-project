@@ -24,17 +24,16 @@ public class Autoevaluacion extends JFrame {
 		super ("Autoevaluacion");
 		this.puntuacionStandard = puntuacionStandard;
 		this.penalizacion = penalizacion;
-		//Crea pantallas
-		final ExercisePanel pc1 = new ExercisePanel("c1", PanelType.WIZARD);
-		final ExercisePanel pc2 = new ExercisePanel("c2", PanelType.WIZARD);
+		//Crea una pantalla
+		final ExercisePanel pe = new ExercisePanel("clasico", PanelType.CLASSIC);
 		
 		//Anade ejercicios
-		pc1.addExercise(new Exercise(
+		pe.addExercise(new Exercise(
 				"Ejercicio 2", 
-				"Enunciado 2 respuesta unica", 
-				2.0,
-				"c1",
-				2,
+				"Enunciado 2 respuesta unica",
+				1.0,
+				"",
+				2, 
 				new String[]{
 				"correcta"
 				},
@@ -42,14 +41,15 @@ public class Autoevaluacion extends JFrame {
 				"alter1",
 				"alter2"
 				},
+				
 				AnswerType.UNIQUE
 				));
-		pc2.addExercise(new Exercise(
+		pe.addExercise(new Exercise(
 				"Ejercicio 4", 
-				"Enunciado 4 ordenacion", 
-				-0.5,
-				"c2",
-				4,
+				"Enunciado 4 ordenacion",
+				1.0,
+				"",
+				4, 
 				new String[]{
 				"1",
 				"2",
@@ -58,14 +58,15 @@ public class Autoevaluacion extends JFrame {
 				},
 				new String[]{
 				},
+				
 				AnswerType.ORDINATION
 				));
-		pc2.addExercise(new Exercise(
+		pe.addExercise(new Exercise(
 				"Ejercicio 1", 
-				"Enunciado 1 respuesta multiple", 
+				"Enunciado 1 respuesta multiple",
 				1.0,
-				"c2",
-				1,
+				"",
+				1, 
 				new String[]{
 				"correcta1",
 				"correcta2"
@@ -75,31 +76,27 @@ public class Autoevaluacion extends JFrame {
 				"alter2",
 				"alter3"
 				},
+				
 				AnswerType.MULTIPLE
 				));
-		pc1.addExercise(new Exercise(
+		pe.addExercise(new Exercise(
 				"Ejercicio 3", 
-				"Enunciado 3 texto libre: escribe 'a' o 'b'", 
+				"Enunciado 3 texto libre: escribe 'a' o 'b'",
 				1.0,
-				"c1",
-				3,
+				"",
+				3, 
 				new String[]{
 				"a",
 				"b"
 				},
 				new String[]{
 				},
+				
 				AnswerType.WRITTEN
 				));
 		
-		//Anade boton siguiente
-		pc1.addNextButton("Proxima", new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				showPanel(pc2);
-			}
-		});
-		pc2.addNextButton("Corregir", new ActionListener() {
+		//Anade el boton de correccion
+		pe.addNextButton("Corregir", new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				Panel panel = createFinalPanel();
@@ -108,13 +105,13 @@ public class Autoevaluacion extends JFrame {
 			}
 		});
 		
-		addExercisePanel(pc1);
-		addExercisePanel(pc2);
+		addExercisePanel(pe);
 		
 		//Comienza en la pantalla inicial
-		showPanel(pc1);
+		showPanel(pe);
 		// anadir panel a la ventana
 		getContentPane().add(mainContainer);
+		
 		
 		
 	}
