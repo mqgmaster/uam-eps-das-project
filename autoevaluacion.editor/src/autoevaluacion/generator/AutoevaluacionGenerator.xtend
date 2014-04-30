@@ -42,6 +42,7 @@ class AutoevaluacionGenerator implements IGenerator {
 		fsa.generateFile("autoevaluacion/answer/UniqueAnswer.java", UniqueAnswer());
 		fsa.generateFile("autoevaluacion/answer/WrittenAnswer.java", WrittenAnswer());
 		fsa.generateFile("autoevaluacion/answer/OrdinationAnswer.java", OrdinationAnswer());
+		fsa.generateFile("autoevaluacion/answer/OrdinationItem.java", OrdinationItem());
 		
 		//Genera Autoevaluacion
 		fsa.generateFile("autoevaluacion/Exercise.java", Exercise());
@@ -113,13 +114,21 @@ public abstract class Answer {
 	public void setSeleccionadas(ArrayList<String> seleccionadas) {
 		this.seleccionadas = seleccionadas;
 	}
+	
+	public boolean isAnswered() {
+		if(seleccionadas.isEmpty())
+			return false;
+		return true;
+	}
+	
 	public abstract JPanel createComponent();
 	public abstract boolean corrige();
 	public abstract JPanel muestraCorreccion();
-}'''
+}
+'''
 
 	def MultipleAnswer()'''
-	package autoevaluacion.answer;
+package autoevaluacion.answer;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -209,7 +218,8 @@ public class MultipleAnswer extends Answer implements ActionListener {
 		}
 		return panel;
 	}
-}'''
+}
+'''
 
 	def UniqueAnswer()'''
 package autoevaluacion.answer;
@@ -339,16 +349,17 @@ package autoevaluacion.answer;
 
 import java.awt.Color;
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
-import javax.swing.ButtonGroup;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JRadioButton;
 
 public class OrdinationAnswer extends Answer {
+	
+	private final ArrayList<OrdinationItem> answersList = new ArrayList<>();
 
 	public OrdinationAnswer(String[] correctas, String[] alternativas) {
 		super(correctas, alternativas);
@@ -358,50 +369,115 @@ public class OrdinationAnswer extends Answer {
 	public JPanel createComponent(){
 		ArrayList<String> resp = new ArrayList<String>();
 		resp.addAll(getCorrectas());
+		Collections.shuffle(resp);
 		
-		ButtonGroup group = new ButtonGroup();
-		JPanel panel = new JPanel(new GridLayout(resp.size(),1));
+		OrdinationItem item;
+		JPanel panel = new JPanel(new GridLayout(getCorrectas().size(),1));
+		
 		for(String r : resp){
-			JRadioButton rb = new JRadioButton(r);
-			rb.setActionCommand(r);
-			rb.addActionListener((ActionListener) this);
-			group.add(rb);
-			panel.add(rb);
+			item = new OrdinationItem(r);
+			answersList.add(item);
+			panel.add(item);
 		}
 		
 		return panel;
 	}
 	
-	public void actionPerformed(ActionEvent e) {
-		ArrayList<String> selec = new ArrayList<>();
-		selec.add(e.getActionCommand());
-		setSeleccionadas(selec);
+	@Override
+	public boolean corrige() {
+		Collections.sort(answersList);
+		Set<OrdinationItem> answersSet = new HashSet<>(answersList);
+		if (answersSet.size() != answersList.size()) {
+			return false;
+		}
+		for (int i=0;i<answersList.size();i++) {
+			if (answersList.get(i).getAnswerPosition().isEmpty()) {
+				return false;
+			}
+			if (!answersList.get(i).getAnswerText().equals(getCorrectas().get(i))) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	@Override
-	public boolean corrige(){
-		if(getSeleccionadas().isEmpty() || getCorrectas().isEmpty())
-			return false;
-		
-		if(getCorrectas().contains(getSeleccionadas().get(0))){
-			return true;
+	public boolean isAnswered() {
+		for (OrdinationItem item : answersList) {
+			if (!item.getAnswerPosition().isEmpty()) {
+				return true;
+			}
 		}
 		return false;
 	}
 	
 	@Override
 	public JPanel muestraCorreccion(){
-		JPanel panel = new JPanel(new GridLayout(2,1));
-		JLabel correcta = new JLabel(getCorrectas().get(0));
-		correcta.setForeground(Color.green);
-		panel.add(correcta);
-		JLabel seleccionada = new JLabel(getSeleccionadas().get(0));
-		seleccionada.setForeground(Color.red);
-		panel.add(seleccionada);
+		JPanel panel = new JPanel(new GridLayout(getCorrectas().size(),1));
+		for (int i=0;i<answersList.size();i++) {
+			JLabel correcta = new JLabel(answersList.get(i).getAnswerText());
+			correcta.setForeground(Color.green);
+			panel.add(correcta);
+			JLabel user = new JLabel(getCorrectas().get(i));
+			if (answersList.get(i).getAnswerText().equals(getCorrectas().get(i))) {
+				user.setForeground(Color.green);
+			} else {
+				user.setForeground(Color.red);
+			}
+			panel.add(user);
+		}
 		return panel;
 	}
-}
-'''
+}'''
+
+	def OrdinationItem()'''
+package autoevaluacion.answer;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+@SuppressWarnings("serial")
+public class OrdinationItem extends JPanel implements Comparable<OrdinationItem> {
+	
+	private final JTextArea answerPosition = new JTextArea(1,2);
+	private final JLabel answerLabel = new JLabel();
+	
+	public OrdinationItem(String answerText) {
+		super();
+		this.answerLabel.setText(answerText);
+		this.add(answerPosition);
+		this.add(answerLabel);
+	}
+
+	@Override
+	public int compareTo(OrdinationItem another) {
+		return this.getAnswerPosition().compareTo(another.getAnswerPosition());
+	}
+	
+	@Override
+	public boolean equals(Object another) {
+		if (another instanceof OrdinationItem) {
+			if (((OrdinationItem) another).getAnswerPosition().equals(this.getAnswerPosition())) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.getAnswerPosition().hashCode();
+	}
+
+	public String getAnswerPosition() {
+		return answerPosition.getText();
+	}
+	
+	public String getAnswerText() {
+		return answerLabel.getText();
+	}
+}'''
 
 
 	def Exercise()'''
@@ -414,6 +490,7 @@ import javax.swing.JPanel;
 
 import autoevaluacion.answer.Answer;
 import autoevaluacion.answer.MultipleAnswer;
+import autoevaluacion.answer.OrdinationAnswer;
 import autoevaluacion.answer.UniqueAnswer;
 import autoevaluacion.answer.WrittenAnswer;
 import autoevaluacion.answer.Answer.AnswerType;
@@ -445,9 +522,9 @@ public class Exercise implements Comparable<Exercise> {
 		case WRITTEN:
 			this.respuestas = new WrittenAnswer(correctas, alternativas);
 			break;
-		/*case Ordenacion:
-			this.respuestas = new Ordenacion(correctas, alternativas);
-			break;*/
+		case ORDINATION:
+			this.respuestas = new OrdinationAnswer(correctas, alternativas);
+			break;
 		default:
 			
 		}
@@ -492,15 +569,14 @@ public class Exercise implements Comparable<Exercise> {
 	}
 	
 	public boolean isAnswered(){
-		if(respuestas.getSeleccionadas().isEmpty())
-			return false;
-		return true;
+		return respuestas.isAnswered();
 	}
 	
 	public boolean isCorrect() {
 		return respuestas.corrige();
 	}
-}'''
+}
+'''
 
 	def ExercisePanel()'''
 package autoevaluacion;
@@ -549,7 +625,7 @@ public class ExercisePanel extends Panel {
 				showAllExercises();
 				break;
 			case WIZARD_ADAPTATIVE:
-				showRamdomExercise();
+				showNewExercise();
 		}
 		
 		super.setupView();
@@ -561,7 +637,7 @@ public class ExercisePanel extends Panel {
 			exercisesContainer.add(e.createComponent());
 	}
 	
-	private boolean showRamdomExercise() {
+	private boolean showNewExercise() {
 		for (int i=0; i<exercises.size(); i++) {
 			if (!answeredExercises.contains(i)) {
 				exercisesContainer.add(exercises.get(i).createComponent());
@@ -595,7 +671,7 @@ public class ExercisePanel extends Panel {
 							action.actionPerformed(e);
 						} else {
 							ExercisePanel.this.clearExercisesView();
-							if (!ExercisePanel.this.showRamdomExercise()) {
+							if (!ExercisePanel.this.showNewExercise()) {
 								action.actionPerformed(e);
 							}
 						}
@@ -603,7 +679,8 @@ public class ExercisePanel extends Panel {
 				});
 		}
 	}
-}'''
+}
+'''
 
 	def Panel()'''
 package autoevaluacion;
@@ -632,10 +709,9 @@ public class Panel extends JPanel {
 		button.addActionListener(action);
 	}
 
-}
-'''	
+}'''	
 
-	def compile(Hoja h, ArrayList categoria)'''
+	def compile(Hoja h, ArrayList<String> categoria)'''
 package autoevaluacion;
 
 import java.awt.CardLayout;
@@ -671,7 +747,7 @@ public class Autoevaluacion extends JFrame {
 		pe.addExercise(new Exercise(
 				"«e.name»", 
 				"«e.enunciado»",
-				«IF e.puntuacionEj.equals(0)»
+				«IF e.puntuacionEj.equals(0.0)»
 				«h.puntuacion»,
 				«ELSE»
 				«e.puntuacionEj»,
@@ -679,6 +755,15 @@ public class Autoevaluacion extends JFrame {
 				"«e.categoria»",
 				«e.order», 
 				new String[]{
+				«IF e.respuesta instanceof Ordenacion»
+				«FOR s : e.respuesta.correctas.get(0).split("#")»
+				«IF e.respuesta.correctas.get(0).split("#").indexOf(s) == e.respuesta.correctas.get(0).split("#").size-1»
+				"«s»"
+				«ELSE»
+				"«s»",
+				«ENDIF»
+				«ENDFOR»
+				«ELSE»
 				«FOR c : e.respuesta.correctas»
 				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»
 				"«c»"
@@ -686,6 +771,7 @@ public class Autoevaluacion extends JFrame {
 				"«c»",
 				«ENDIF»
 				«ENDFOR»
+				«ENDIF»
 				},
 				new String[]{
 				«FOR a : e.respuesta.alternativas»
@@ -710,7 +796,7 @@ public class Autoevaluacion extends JFrame {
 		«ENDFOR»
 		
 		//Anade el boton de correccion
-		pe2.addNextButton("Corregir", new ActionListener() {
+		pe.addNextButton("Corregir", new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				Panel panel = createFinalPanel();
@@ -738,7 +824,7 @@ public class Autoevaluacion extends JFrame {
 		p«e.categoria».addExercise(new Exercise(
 				"«e.name»", 
 				"«e.enunciado»", 
-				«IF e.puntuacionEj.equals(0)»
+				«IF e.puntuacionEj.equals(0.0)»
 				«h.puntuacion»,
 				«ELSE»
 				«e.puntuacionEj»,
@@ -746,6 +832,15 @@ public class Autoevaluacion extends JFrame {
 				"«e.categoria»",
 				«e.order»,
 				new String[]{
+				«IF e.respuesta instanceof Ordenacion»
+				«FOR s : e.respuesta.correctas.get(0).split("#")»
+				«IF e.respuesta.correctas.get(0).split("#").indexOf(s) == e.respuesta.correctas.get(0).split("#").size-1»
+				"«s»"
+				«ELSE»
+				"«s»",
+				«ENDIF»
+				«ENDFOR»
+				«ELSE»
 				«FOR c : e.respuesta.correctas»
 				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»
 				"«c»"
@@ -753,6 +848,7 @@ public class Autoevaluacion extends JFrame {
 				"«c»",
 				«ENDIF»
 				«ENDFOR»
+				«ENDIF»
 				},
 				new String[]{
 				«FOR a : e.respuesta.alternativas»
@@ -802,7 +898,7 @@ public class Autoevaluacion extends JFrame {
 		
 		//Comienza en la pantalla inicial
 		showPanel(p«categoria.get(0)»);
-		// aÃƒÆ’Ã†€™Ãƒ€ ‚¬„¢±adir panel a la ventana
+		// anadir panel a la ventana
 		getContentPane().add(mainContainer);
 		
 		«ELSEIF h instanceof WizardAdaptativo»
@@ -816,7 +912,7 @@ public class Autoevaluacion extends JFrame {
 		p«e.categoria».addExercise(new Exercise(
 				"«e.name»", 
 				"«e.enunciado»", 
-				«IF e.puntuacionEj.naN»
+				«IF e.puntuacionEj.equals(0.0)»
 				«h.puntuacion»,
 				«ELSE»
 				«e.puntuacionEj»,
@@ -824,6 +920,15 @@ public class Autoevaluacion extends JFrame {
 				"«e.categoria»",
 				«e.order»,
 				new String[]{
+				«IF e.respuesta instanceof Ordenacion»
+				«FOR s : e.respuesta.correctas.get(0).split("#")»
+				«IF e.respuesta.correctas.get(0).split("#").indexOf(s) == e.respuesta.correctas.get(0).split("#").size-1»
+				"«s»"
+				«ELSE»
+				"«s»",
+				«ENDIF»
+				«ENDFOR»
+				«ELSE»
 				«FOR c : e.respuesta.correctas»
 				«IF e.respuesta.correctas.indexOf(c) == e.respuesta.correctas.size-1»
 				"«c»"
@@ -831,6 +936,7 @@ public class Autoevaluacion extends JFrame {
 				"«c»",
 				«ENDIF»
 				«ENDFOR»
+				«ENDIF»
 				},
 				new String[]{
 				«FOR a : e.respuesta.alternativas»

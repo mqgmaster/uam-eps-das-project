@@ -14,6 +14,7 @@ import Autoevaluacion.TextoLibre;
 import Autoevaluacion.Wizard;
 import Autoevaluacion.WizardAdaptativo;
 import java.util.ArrayList;
+import java.util.List;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -21,6 +22,7 @@ import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.xbase.lib.CollectionLiterals;
+import org.eclipse.xtext.xbase.lib.Conversions;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
@@ -63,6 +65,8 @@ public class AutoevaluacionGenerator implements IGenerator {
     fsa.generateFile("autoevaluacion/answer/WrittenAnswer.java", _WrittenAnswer);
     CharSequence _OrdinationAnswer = this.OrdinationAnswer();
     fsa.generateFile("autoevaluacion/answer/OrdinationAnswer.java", _OrdinationAnswer);
+    CharSequence _OrdinationItem = this.OrdinationItem();
+    fsa.generateFile("autoevaluacion/answer/OrdinationItem.java", _OrdinationItem);
     CharSequence _Exercise = this.Exercise();
     fsa.generateFile("autoevaluacion/Exercise.java", _Exercise);
     CharSequence _ExercisePanel = this.ExercisePanel();
@@ -228,6 +232,25 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("}");
     _builder.newLine();
     _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public boolean isAnswered() {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("if(seleccionadas.isEmpty())");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("return false;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return true;");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
     _builder.append("public abstract JPanel createComponent();");
     _builder.newLine();
     _builder.append("\t");
@@ -237,12 +260,12 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("public abstract JPanel muestraCorreccion();");
     _builder.newLine();
     _builder.append("}");
+    _builder.newLine();
     return _builder;
   }
   
   public CharSequence MultipleAnswer() {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("\t");
     _builder.append("package autoevaluacion.answer;");
     _builder.newLine();
     _builder.newLine();
@@ -488,6 +511,7 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("}");
     _builder.newLine();
     _builder.append("}");
+    _builder.newLine();
     return _builder;
   }
   
@@ -814,23 +838,26 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.newLine();
     _builder.append("import java.awt.GridLayout;");
     _builder.newLine();
-    _builder.append("import java.awt.event.ActionEvent;");
-    _builder.newLine();
-    _builder.append("import java.awt.event.ActionListener;");
-    _builder.newLine();
     _builder.append("import java.util.ArrayList;");
     _builder.newLine();
+    _builder.append("import java.util.Collections;");
     _builder.newLine();
-    _builder.append("import javax.swing.ButtonGroup;");
+    _builder.append("import java.util.HashSet;");
+    _builder.newLine();
+    _builder.append("import java.util.Set;");
+    _builder.newLine();
     _builder.newLine();
     _builder.append("import javax.swing.JLabel;");
     _builder.newLine();
     _builder.append("import javax.swing.JPanel;");
     _builder.newLine();
-    _builder.append("import javax.swing.JRadioButton;");
-    _builder.newLine();
     _builder.newLine();
     _builder.append("public class OrdinationAnswer extends Answer {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private final ArrayList<OrdinationItem> answersList = new ArrayList<>();");
     _builder.newLine();
     _builder.newLine();
     _builder.append("\t");
@@ -856,30 +883,29 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("resp.addAll(getCorrectas());");
     _builder.newLine();
     _builder.append("\t\t");
+    _builder.append("Collections.shuffle(resp);");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("ButtonGroup group = new ButtonGroup();");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("JPanel panel = new JPanel(new GridLayout(resp.size(),1));");
+    _builder.append("OrdinationItem item;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("JPanel panel = new JPanel(new GridLayout(getCorrectas().size(),1));");
+    _builder.newLine();
+    _builder.append("\t\t");
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("for(String r : resp){");
     _builder.newLine();
     _builder.append("\t\t\t");
-    _builder.append("JRadioButton rb = new JRadioButton(r);");
+    _builder.append("item = new OrdinationItem(r);");
     _builder.newLine();
     _builder.append("\t\t\t");
-    _builder.append("rb.setActionCommand(r);");
+    _builder.append("answersList.add(item);");
     _builder.newLine();
     _builder.append("\t\t\t");
-    _builder.append("rb.addActionListener((ActionListener) this);");
-    _builder.newLine();
-    _builder.append("\t\t\t");
-    _builder.append("group.add(rb);");
-    _builder.newLine();
-    _builder.append("\t\t\t");
-    _builder.append("panel.add(rb);");
+    _builder.append("panel.add(item);");
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("}");
@@ -895,16 +921,52 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("\t");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("public void actionPerformed(ActionEvent e) {");
+    _builder.append("@Override");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public boolean corrige() {");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("ArrayList<String> selec = new ArrayList<>();");
+    _builder.append("Collections.sort(answersList);");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("selec.add(e.getActionCommand());");
+    _builder.append("Set<OrdinationItem> answersSet = new HashSet<>(answersList);");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("setSeleccionadas(selec);");
+    _builder.append("if (answersSet.size() != answersList.size()) {");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("return false;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("for (int i=0;i<answersList.size();i++) {");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("if (answersList.get(i).getAnswerPosition().isEmpty()) {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("return false;");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("if (!answersList.get(i).getAnswerText().equals(getCorrectas().get(i))) {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("return false;");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return true;");
     _builder.newLine();
     _builder.append("\t");
     _builder.append("}");
@@ -915,21 +977,19 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("@Override");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("public boolean corrige(){");
+    _builder.append("public boolean isAnswered() {");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("if(getSeleccionadas().isEmpty() || getCorrectas().isEmpty())");
+    _builder.append("for (OrdinationItem item : answersList) {");
     _builder.newLine();
     _builder.append("\t\t\t");
-    _builder.append("return false;");
+    _builder.append("if (!item.getAnswerPosition().isEmpty()) {");
     _builder.newLine();
-    _builder.append("\t\t");
-    _builder.newLine();
-    _builder.append("\t\t");
-    _builder.append("if(getCorrectas().contains(getSeleccionadas().get(0))){");
-    _builder.newLine();
-    _builder.append("\t\t\t");
+    _builder.append("\t\t\t\t");
     _builder.append("return true;");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("}");
@@ -949,25 +1009,43 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("public JPanel muestraCorreccion(){");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("JPanel panel = new JPanel(new GridLayout(2,1));");
+    _builder.append("JPanel panel = new JPanel(new GridLayout(getCorrectas().size(),1));");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("JLabel correcta = new JLabel(getCorrectas().get(0));");
+    _builder.append("for (int i=0;i<answersList.size();i++) {");
     _builder.newLine();
-    _builder.append("\t\t");
+    _builder.append("\t\t\t");
+    _builder.append("JLabel correcta = new JLabel(answersList.get(i).getAnswerText());");
+    _builder.newLine();
+    _builder.append("\t\t\t");
     _builder.append("correcta.setForeground(Color.green);");
     _builder.newLine();
-    _builder.append("\t\t");
+    _builder.append("\t\t\t");
     _builder.append("panel.add(correcta);");
     _builder.newLine();
-    _builder.append("\t\t");
-    _builder.append("JLabel seleccionada = new JLabel(getSeleccionadas().get(0));");
+    _builder.append("\t\t\t");
+    _builder.append("JLabel user = new JLabel(getCorrectas().get(i));");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("if (answersList.get(i).getAnswerText().equals(getCorrectas().get(i))) {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("user.setForeground(Color.green);");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("} else {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("user.setForeground(Color.red);");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("panel.add(user);");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("seleccionada.setForeground(Color.red);");
-    _builder.newLine();
-    _builder.append("\t\t");
-    _builder.append("panel.add(seleccionada);");
+    _builder.append("}");
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("return panel;");
@@ -976,7 +1054,131 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("}");
     _builder.newLine();
     _builder.append("}");
+    return _builder;
+  }
+  
+  public CharSequence OrdinationItem() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("package autoevaluacion.answer;");
     _builder.newLine();
+    _builder.newLine();
+    _builder.append("import javax.swing.JLabel;");
+    _builder.newLine();
+    _builder.append("import javax.swing.JPanel;");
+    _builder.newLine();
+    _builder.append("import javax.swing.JTextArea;");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("@SuppressWarnings(\"serial\")");
+    _builder.newLine();
+    _builder.append("public class OrdinationItem extends JPanel implements Comparable<OrdinationItem> {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private final JTextArea answerPosition = new JTextArea(1,2);");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("private final JLabel answerLabel = new JLabel();");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public OrdinationItem(String answerText) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("super();");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.answerLabel.setText(answerText);");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.add(answerPosition);");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("this.add(answerLabel);");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("@Override");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public int compareTo(OrdinationItem another) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return this.getAnswerPosition().compareTo(another.getAnswerPosition());");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("@Override");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public boolean equals(Object another) {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("if (another instanceof OrdinationItem) {");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("if (((OrdinationItem) another).getAnswerPosition().equals(this.getAnswerPosition())) {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
+    _builder.append("return true;");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return false;");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("@Override");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public int hashCode() {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return this.getAnswerPosition().hashCode();");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public String getAnswerPosition() {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return answerPosition.getText();");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public String getAnswerText() {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("return answerLabel.getText();");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("}");
     return _builder;
   }
   
@@ -996,6 +1198,8 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("import autoevaluacion.answer.Answer;");
     _builder.newLine();
     _builder.append("import autoevaluacion.answer.MultipleAnswer;");
+    _builder.newLine();
+    _builder.append("import autoevaluacion.answer.OrdinationAnswer;");
     _builder.newLine();
     _builder.append("import autoevaluacion.answer.UniqueAnswer;");
     _builder.newLine();
@@ -1083,13 +1287,13 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("break;");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("/*case Ordenacion:");
+    _builder.append("case ORDINATION:");
     _builder.newLine();
     _builder.append("\t\t\t");
-    _builder.append("this.respuestas = new Ordenacion(correctas, alternativas);");
+    _builder.append("this.respuestas = new OrdinationAnswer(correctas, alternativas);");
     _builder.newLine();
     _builder.append("\t\t\t");
-    _builder.append("break;*/");
+    _builder.append("break;");
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("default:");
@@ -1214,13 +1418,7 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("public boolean isAnswered(){");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("if(respuestas.getSeleccionadas().isEmpty())");
-    _builder.newLine();
-    _builder.append("\t\t\t");
-    _builder.append("return false;");
-    _builder.newLine();
-    _builder.append("\t\t");
-    _builder.append("return true;");
+    _builder.append("return respuestas.isAnswered();");
     _builder.newLine();
     _builder.append("\t");
     _builder.append("}");
@@ -1237,6 +1435,7 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("}");
     _builder.newLine();
     _builder.append("}");
+    _builder.newLine();
     return _builder;
   }
   
@@ -1359,7 +1558,7 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("case WIZARD_ADAPTATIVE:");
     _builder.newLine();
     _builder.append("\t\t\t\t");
-    _builder.append("showRamdomExercise();");
+    _builder.append("showNewExercise();");
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("}");
@@ -1391,7 +1590,7 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("\t");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("private boolean showRamdomExercise() {");
+    _builder.append("private boolean showNewExercise() {");
     _builder.newLine();
     _builder.append("\t\t");
     _builder.append("for (int i=0; i<exercises.size(); i++) {");
@@ -1489,7 +1688,7 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("ExercisePanel.this.clearExercisesView();");
     _builder.newLine();
     _builder.append("\t\t\t\t\t\t\t");
-    _builder.append("if (!ExercisePanel.this.showRamdomExercise()) {");
+    _builder.append("if (!ExercisePanel.this.showNewExercise()) {");
     _builder.newLine();
     _builder.append("\t\t\t\t\t\t\t\t");
     _builder.append("action.actionPerformed(e);");
@@ -1513,6 +1712,7 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.append("}");
     _builder.newLine();
     _builder.append("}");
+    _builder.newLine();
     return _builder;
   }
   
@@ -1579,11 +1779,10 @@ public class AutoevaluacionGenerator implements IGenerator {
     _builder.newLine();
     _builder.newLine();
     _builder.append("}");
-    _builder.newLine();
     return _builder;
   }
   
-  public CharSequence compile(final Hoja h, final ArrayList categoria) {
+  public CharSequence compile(final Hoja h, final ArrayList<String> categoria) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("package autoevaluacion;");
     _builder.newLine();
@@ -1677,7 +1876,7 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.newLineIfNotEmpty();
             {
               double _puntuacionEj = e.getPuntuacionEj();
-              boolean _equals = Double.valueOf(_puntuacionEj).equals(Integer.valueOf(0));
+              boolean _equals = Double.valueOf(_puntuacionEj).equals(Double.valueOf(0.0));
               if (_equals) {
                 _builder.append("\t\t");
                 _builder.append("\t\t");
@@ -1713,31 +1912,74 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.newLine();
             {
               Respuesta _respuesta = e.getRespuesta();
-              EList<String> _correctas = _respuesta.getCorrectas();
-              for(final String c : _correctas) {
+              if ((_respuesta instanceof Ordenacion)) {
                 {
                   Respuesta _respuesta_1 = e.getRespuesta();
-                  EList<String> _correctas_1 = _respuesta_1.getCorrectas();
-                  int _indexOf = _correctas_1.indexOf(c);
-                  Respuesta _respuesta_2 = e.getRespuesta();
-                  EList<String> _correctas_2 = _respuesta_2.getCorrectas();
-                  int _size = _correctas_2.size();
-                  int _minus = (_size - 1);
-                  boolean _equals_1 = (_indexOf == _minus);
-                  if (_equals_1) {
-                    _builder.append("\t\t");
-                    _builder.append("\t\t");
-                    _builder.append("\"");
-                    _builder.append(c, "\t\t\t\t");
-                    _builder.append("\"");
-                    _builder.newLineIfNotEmpty();
-                  } else {
-                    _builder.append("\t\t");
-                    _builder.append("\t\t");
-                    _builder.append("\"");
-                    _builder.append(c, "\t\t\t\t");
-                    _builder.append("\",");
-                    _builder.newLineIfNotEmpty();
+                  EList<String> _correctas = _respuesta_1.getCorrectas();
+                  String _get = _correctas.get(0);
+                  String[] _split = _get.split("#");
+                  for(final String s : _split) {
+                    {
+                      Respuesta _respuesta_2 = e.getRespuesta();
+                      EList<String> _correctas_1 = _respuesta_2.getCorrectas();
+                      String _get_1 = _correctas_1.get(0);
+                      String[] _split_1 = _get_1.split("#");
+                      int _indexOf = ((List<String>)Conversions.doWrapArray(_split_1)).indexOf(s);
+                      Respuesta _respuesta_3 = e.getRespuesta();
+                      EList<String> _correctas_2 = _respuesta_3.getCorrectas();
+                      String _get_2 = _correctas_2.get(0);
+                      String[] _split_2 = _get_2.split("#");
+                      int _size = ((List<String>)Conversions.doWrapArray(_split_2)).size();
+                      int _minus = (_size - 1);
+                      boolean _equals_1 = (_indexOf == _minus);
+                      if (_equals_1) {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(s, "\t\t\t\t");
+                        _builder.append("\"");
+                        _builder.newLineIfNotEmpty();
+                      } else {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(s, "\t\t\t\t");
+                        _builder.append("\",");
+                        _builder.newLineIfNotEmpty();
+                      }
+                    }
+                  }
+                }
+              } else {
+                {
+                  Respuesta _respuesta_4 = e.getRespuesta();
+                  EList<String> _correctas_3 = _respuesta_4.getCorrectas();
+                  for(final String c : _correctas_3) {
+                    {
+                      Respuesta _respuesta_5 = e.getRespuesta();
+                      EList<String> _correctas_4 = _respuesta_5.getCorrectas();
+                      int _indexOf_1 = _correctas_4.indexOf(c);
+                      Respuesta _respuesta_6 = e.getRespuesta();
+                      EList<String> _correctas_5 = _respuesta_6.getCorrectas();
+                      int _size_1 = _correctas_5.size();
+                      int _minus_1 = (_size_1 - 1);
+                      boolean _equals_2 = (_indexOf_1 == _minus_1);
+                      if (_equals_2) {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(c, "\t\t\t\t");
+                        _builder.append("\"");
+                        _builder.newLineIfNotEmpty();
+                      } else {
+                        _builder.append("\t\t");
+                        _builder.append("\t\t");
+                        _builder.append("\"");
+                        _builder.append(c, "\t\t\t\t");
+                        _builder.append("\",");
+                        _builder.newLineIfNotEmpty();
+                      }
+                    }
                   }
                 }
               }
@@ -1751,19 +1993,19 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.append("new String[]{");
             _builder.newLine();
             {
-              Respuesta _respuesta_3 = e.getRespuesta();
-              EList<String> _alternativas = _respuesta_3.getAlternativas();
+              Respuesta _respuesta_7 = e.getRespuesta();
+              EList<String> _alternativas = _respuesta_7.getAlternativas();
               for(final String a : _alternativas) {
                 {
-                  Respuesta _respuesta_4 = e.getRespuesta();
-                  EList<String> _alternativas_1 = _respuesta_4.getAlternativas();
-                  int _indexOf_1 = _alternativas_1.indexOf(a);
-                  Respuesta _respuesta_5 = e.getRespuesta();
-                  EList<String> _alternativas_2 = _respuesta_5.getAlternativas();
-                  int _size_1 = _alternativas_2.size();
-                  int _minus_1 = (_size_1 - 1);
-                  boolean _equals_2 = (_indexOf_1 == _minus_1);
-                  if (_equals_2) {
+                  Respuesta _respuesta_8 = e.getRespuesta();
+                  EList<String> _alternativas_1 = _respuesta_8.getAlternativas();
+                  int _indexOf_2 = _alternativas_1.indexOf(a);
+                  Respuesta _respuesta_9 = e.getRespuesta();
+                  EList<String> _alternativas_2 = _respuesta_9.getAlternativas();
+                  int _size_2 = _alternativas_2.size();
+                  int _minus_2 = (_size_2 - 1);
+                  boolean _equals_3 = (_indexOf_2 == _minus_2);
+                  if (_equals_3) {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("\"");
@@ -1789,29 +2031,29 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.append("\t\t");
             _builder.newLine();
             {
-              Respuesta _respuesta_6 = e.getRespuesta();
-              if ((_respuesta_6 instanceof RespuestaUnica)) {
+              Respuesta _respuesta_10 = e.getRespuesta();
+              if ((_respuesta_10 instanceof RespuestaUnica)) {
                 _builder.append("\t\t");
                 _builder.append("\t\t");
                 _builder.append("AnswerType.UNIQUE");
                 _builder.newLine();
               } else {
-                Respuesta _respuesta_7 = e.getRespuesta();
-                if ((_respuesta_7 instanceof RespuestaMultiple)) {
+                Respuesta _respuesta_11 = e.getRespuesta();
+                if ((_respuesta_11 instanceof RespuestaMultiple)) {
                   _builder.append("\t\t");
                   _builder.append("\t\t");
                   _builder.append("AnswerType.MULTIPLE");
                   _builder.newLine();
                 } else {
-                  Respuesta _respuesta_8 = e.getRespuesta();
-                  if ((_respuesta_8 instanceof TextoLibre)) {
+                  Respuesta _respuesta_12 = e.getRespuesta();
+                  if ((_respuesta_12 instanceof TextoLibre)) {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("AnswerType.WRITTEN");
                     _builder.newLine();
                   } else {
-                    Respuesta _respuesta_9 = e.getRespuesta();
-                    if ((_respuesta_9 instanceof Ordenacion)) {
+                    Respuesta _respuesta_13 = e.getRespuesta();
+                    if ((_respuesta_13 instanceof Ordenacion)) {
                       _builder.append("\t\t");
                       _builder.append("\t\t");
                       _builder.append("AnswerType.ORDINATION");
@@ -1833,7 +2075,7 @@ public class AutoevaluacionGenerator implements IGenerator {
         _builder.append("//Anade el boton de correccion");
         _builder.newLine();
         _builder.append("\t\t");
-        _builder.append("pe2.addNextButton(\"Corregir\", new ActionListener() {");
+        _builder.append("pe.addNextButton(\"Corregir\", new ActionListener() {");
         _builder.newLine();
         _builder.append("\t\t");
         _builder.append("\t");
@@ -1891,7 +2133,7 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.append("//Crea pantallas");
           _builder.newLine();
           {
-            for(final Object c_1 : categoria) {
+            for(final String c_1 : categoria) {
               _builder.append("\t\t");
               _builder.append("final ExercisePanel p");
               _builder.append(c_1, "\t\t");
@@ -1931,8 +2173,8 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.newLineIfNotEmpty();
               {
                 double _puntuacionEj_2 = e_1.getPuntuacionEj();
-                boolean _equals_3 = Double.valueOf(_puntuacionEj_2).equals(Integer.valueOf(0));
-                if (_equals_3) {
+                boolean _equals_4 = Double.valueOf(_puntuacionEj_2).equals(Double.valueOf(0.0));
+                if (_equals_4) {
                   _builder.append("\t\t");
                   _builder.append("\t\t");
                   double _puntuacion_1 = h.getPuntuacion();
@@ -1966,32 +2208,75 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append("new String[]{");
               _builder.newLine();
               {
-                Respuesta _respuesta_10 = e_1.getRespuesta();
-                EList<String> _correctas_3 = _respuesta_10.getCorrectas();
-                for(final String c_2 : _correctas_3) {
+                Respuesta _respuesta_14 = e_1.getRespuesta();
+                if ((_respuesta_14 instanceof Ordenacion)) {
                   {
-                    Respuesta _respuesta_11 = e_1.getRespuesta();
-                    EList<String> _correctas_4 = _respuesta_11.getCorrectas();
-                    int _indexOf_2 = _correctas_4.indexOf(c_2);
-                    Respuesta _respuesta_12 = e_1.getRespuesta();
-                    EList<String> _correctas_5 = _respuesta_12.getCorrectas();
-                    int _size_2 = _correctas_5.size();
-                    int _minus_2 = (_size_2 - 1);
-                    boolean _equals_4 = (_indexOf_2 == _minus_2);
-                    if (_equals_4) {
-                      _builder.append("\t\t");
-                      _builder.append("\t\t");
-                      _builder.append("\"");
-                      _builder.append(c_2, "\t\t\t\t");
-                      _builder.append("\"");
-                      _builder.newLineIfNotEmpty();
-                    } else {
-                      _builder.append("\t\t");
-                      _builder.append("\t\t");
-                      _builder.append("\"");
-                      _builder.append(c_2, "\t\t\t\t");
-                      _builder.append("\",");
-                      _builder.newLineIfNotEmpty();
+                    Respuesta _respuesta_15 = e_1.getRespuesta();
+                    EList<String> _correctas_6 = _respuesta_15.getCorrectas();
+                    String _get_3 = _correctas_6.get(0);
+                    String[] _split_3 = _get_3.split("#");
+                    for(final String s_1 : _split_3) {
+                      {
+                        Respuesta _respuesta_16 = e_1.getRespuesta();
+                        EList<String> _correctas_7 = _respuesta_16.getCorrectas();
+                        String _get_4 = _correctas_7.get(0);
+                        String[] _split_4 = _get_4.split("#");
+                        int _indexOf_3 = ((List<String>)Conversions.doWrapArray(_split_4)).indexOf(s_1);
+                        Respuesta _respuesta_17 = e_1.getRespuesta();
+                        EList<String> _correctas_8 = _respuesta_17.getCorrectas();
+                        String _get_5 = _correctas_8.get(0);
+                        String[] _split_5 = _get_5.split("#");
+                        int _size_3 = ((List<String>)Conversions.doWrapArray(_split_5)).size();
+                        int _minus_3 = (_size_3 - 1);
+                        boolean _equals_5 = (_indexOf_3 == _minus_3);
+                        if (_equals_5) {
+                          _builder.append("\t\t");
+                          _builder.append("\t\t");
+                          _builder.append("\"");
+                          _builder.append(s_1, "\t\t\t\t");
+                          _builder.append("\"");
+                          _builder.newLineIfNotEmpty();
+                        } else {
+                          _builder.append("\t\t");
+                          _builder.append("\t\t");
+                          _builder.append("\"");
+                          _builder.append(s_1, "\t\t\t\t");
+                          _builder.append("\",");
+                          _builder.newLineIfNotEmpty();
+                        }
+                      }
+                    }
+                  }
+                } else {
+                  {
+                    Respuesta _respuesta_18 = e_1.getRespuesta();
+                    EList<String> _correctas_9 = _respuesta_18.getCorrectas();
+                    for(final String c_2 : _correctas_9) {
+                      {
+                        Respuesta _respuesta_19 = e_1.getRespuesta();
+                        EList<String> _correctas_10 = _respuesta_19.getCorrectas();
+                        int _indexOf_4 = _correctas_10.indexOf(c_2);
+                        Respuesta _respuesta_20 = e_1.getRespuesta();
+                        EList<String> _correctas_11 = _respuesta_20.getCorrectas();
+                        int _size_4 = _correctas_11.size();
+                        int _minus_4 = (_size_4 - 1);
+                        boolean _equals_6 = (_indexOf_4 == _minus_4);
+                        if (_equals_6) {
+                          _builder.append("\t\t");
+                          _builder.append("\t\t");
+                          _builder.append("\"");
+                          _builder.append(c_2, "\t\t\t\t");
+                          _builder.append("\"");
+                          _builder.newLineIfNotEmpty();
+                        } else {
+                          _builder.append("\t\t");
+                          _builder.append("\t\t");
+                          _builder.append("\"");
+                          _builder.append(c_2, "\t\t\t\t");
+                          _builder.append("\",");
+                          _builder.newLineIfNotEmpty();
+                        }
+                      }
                     }
                   }
                 }
@@ -2005,19 +2290,19 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append("new String[]{");
               _builder.newLine();
               {
-                Respuesta _respuesta_13 = e_1.getRespuesta();
-                EList<String> _alternativas_3 = _respuesta_13.getAlternativas();
+                Respuesta _respuesta_21 = e_1.getRespuesta();
+                EList<String> _alternativas_3 = _respuesta_21.getAlternativas();
                 for(final String a_1 : _alternativas_3) {
                   {
-                    Respuesta _respuesta_14 = e_1.getRespuesta();
-                    EList<String> _alternativas_4 = _respuesta_14.getAlternativas();
-                    int _indexOf_3 = _alternativas_4.indexOf(a_1);
-                    Respuesta _respuesta_15 = e_1.getRespuesta();
-                    EList<String> _alternativas_5 = _respuesta_15.getAlternativas();
-                    int _size_3 = _alternativas_5.size();
-                    int _minus_3 = (_size_3 - 1);
-                    boolean _equals_5 = (_indexOf_3 == _minus_3);
-                    if (_equals_5) {
+                    Respuesta _respuesta_22 = e_1.getRespuesta();
+                    EList<String> _alternativas_4 = _respuesta_22.getAlternativas();
+                    int _indexOf_5 = _alternativas_4.indexOf(a_1);
+                    Respuesta _respuesta_23 = e_1.getRespuesta();
+                    EList<String> _alternativas_5 = _respuesta_23.getAlternativas();
+                    int _size_5 = _alternativas_5.size();
+                    int _minus_5 = (_size_5 - 1);
+                    boolean _equals_7 = (_indexOf_5 == _minus_5);
+                    if (_equals_7) {
                       _builder.append("\t\t");
                       _builder.append("\t\t");
                       _builder.append("\"");
@@ -2040,29 +2325,29 @@ public class AutoevaluacionGenerator implements IGenerator {
               _builder.append("},");
               _builder.newLine();
               {
-                Respuesta _respuesta_16 = e_1.getRespuesta();
-                if ((_respuesta_16 instanceof RespuestaUnica)) {
+                Respuesta _respuesta_24 = e_1.getRespuesta();
+                if ((_respuesta_24 instanceof RespuestaUnica)) {
                   _builder.append("\t\t");
                   _builder.append("\t\t");
                   _builder.append("AnswerType.UNIQUE");
                   _builder.newLine();
                 } else {
-                  Respuesta _respuesta_17 = e_1.getRespuesta();
-                  if ((_respuesta_17 instanceof RespuestaMultiple)) {
+                  Respuesta _respuesta_25 = e_1.getRespuesta();
+                  if ((_respuesta_25 instanceof RespuestaMultiple)) {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("AnswerType.MULTIPLE");
                     _builder.newLine();
                   } else {
-                    Respuesta _respuesta_18 = e_1.getRespuesta();
-                    if ((_respuesta_18 instanceof TextoLibre)) {
+                    Respuesta _respuesta_26 = e_1.getRespuesta();
+                    if ((_respuesta_26 instanceof TextoLibre)) {
                       _builder.append("\t\t");
                       _builder.append("\t\t");
                       _builder.append("AnswerType.WRITTEN");
                       _builder.newLine();
                     } else {
-                      Respuesta _respuesta_19 = e_1.getRespuesta();
-                      if ((_respuesta_19 instanceof Ordenacion)) {
+                      Respuesta _respuesta_27 = e_1.getRespuesta();
+                      if ((_respuesta_27 instanceof Ordenacion)) {
                         _builder.append("\t\t");
                         _builder.append("\t\t");
                         _builder.append("AnswerType.ORDINATION");
@@ -2084,13 +2369,13 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.append("//Anade boton siguiente");
           _builder.newLine();
           {
-            for(final Object c_3 : categoria) {
+            for(final String c_3 : categoria) {
               {
-                int _indexOf_4 = categoria.indexOf(c_3);
-                int _size_4 = categoria.size();
-                int _minus_4 = (_size_4 - 1);
-                boolean _equals_6 = (_indexOf_4 == _minus_4);
-                if (_equals_6) {
+                int _indexOf_6 = categoria.indexOf(c_3);
+                int _size_6 = categoria.size();
+                int _minus_6 = (_size_6 - 1);
+                boolean _equals_8 = (_indexOf_6 == _minus_6);
+                if (_equals_8) {
                   _builder.append("\t\t");
                   _builder.append("p");
                   _builder.append(c_3, "\t\t");
@@ -2140,10 +2425,10 @@ public class AutoevaluacionGenerator implements IGenerator {
                   _builder.append("\t\t");
                   _builder.append("\t\t");
                   _builder.append("showPanel(p");
-                  int _indexOf_5 = categoria.indexOf(c_3);
-                  int _plus = (_indexOf_5 + 1);
-                  Object _get = categoria.get(_plus);
-                  _builder.append(_get, "\t\t\t\t");
+                  int _indexOf_7 = categoria.indexOf(c_3);
+                  int _plus = (_indexOf_7 + 1);
+                  String _get_6 = categoria.get(_plus);
+                  _builder.append(_get_6, "\t\t\t\t");
                   _builder.append(");");
                   _builder.newLineIfNotEmpty();
                   _builder.append("\t\t");
@@ -2160,7 +2445,7 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.append("\t\t");
           _builder.newLine();
           {
-            for(final Object c_4 : categoria) {
+            for(final String c_4 : categoria) {
               _builder.append("\t\t");
               _builder.append("addExercisePanel(p");
               _builder.append(c_4, "\t\t");
@@ -2175,12 +2460,12 @@ public class AutoevaluacionGenerator implements IGenerator {
           _builder.newLine();
           _builder.append("\t\t");
           _builder.append("showPanel(p");
-          Object _get_1 = categoria.get(0);
-          _builder.append(_get_1, "\t\t");
+          String _get_7 = categoria.get(0);
+          _builder.append(_get_7, "\t\t");
           _builder.append(");");
           _builder.newLineIfNotEmpty();
           _builder.append("\t\t");
-          _builder.append("// aÃƒÆ’Ã†€™Ãƒ€ ‚¬„¢±adir panel a la ventana");
+          _builder.append("// anadir panel a la ventana");
           _builder.newLine();
           _builder.append("\t\t");
           _builder.append("getContentPane().add(mainContainer);");
@@ -2193,7 +2478,7 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.append("//Crea pantallas");
             _builder.newLine();
             {
-              for(final Object c_5 : categoria) {
+              for(final String c_5 : categoria) {
                 _builder.append("\t\t");
                 _builder.append("final ExercisePanel p");
                 _builder.append(c_5, "\t\t");
@@ -2233,8 +2518,8 @@ public class AutoevaluacionGenerator implements IGenerator {
                 _builder.newLineIfNotEmpty();
                 {
                   double _puntuacionEj_4 = e_2.getPuntuacionEj();
-                  boolean _isNaN = Double.valueOf(_puntuacionEj_4).isNaN();
-                  if (_isNaN) {
+                  boolean _equals_9 = Double.valueOf(_puntuacionEj_4).equals(Double.valueOf(0.0));
+                  if (_equals_9) {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     double _puntuacion_2 = h.getPuntuacion();
@@ -2268,32 +2553,75 @@ public class AutoevaluacionGenerator implements IGenerator {
                 _builder.append("new String[]{");
                 _builder.newLine();
                 {
-                  Respuesta _respuesta_20 = e_2.getRespuesta();
-                  EList<String> _correctas_6 = _respuesta_20.getCorrectas();
-                  for(final String c_6 : _correctas_6) {
+                  Respuesta _respuesta_28 = e_2.getRespuesta();
+                  if ((_respuesta_28 instanceof Ordenacion)) {
                     {
-                      Respuesta _respuesta_21 = e_2.getRespuesta();
-                      EList<String> _correctas_7 = _respuesta_21.getCorrectas();
-                      int _indexOf_6 = _correctas_7.indexOf(c_6);
-                      Respuesta _respuesta_22 = e_2.getRespuesta();
-                      EList<String> _correctas_8 = _respuesta_22.getCorrectas();
-                      int _size_5 = _correctas_8.size();
-                      int _minus_5 = (_size_5 - 1);
-                      boolean _equals_7 = (_indexOf_6 == _minus_5);
-                      if (_equals_7) {
-                        _builder.append("\t\t");
-                        _builder.append("\t\t");
-                        _builder.append("\"");
-                        _builder.append(c_6, "\t\t\t\t");
-                        _builder.append("\"");
-                        _builder.newLineIfNotEmpty();
-                      } else {
-                        _builder.append("\t\t");
-                        _builder.append("\t\t");
-                        _builder.append("\"");
-                        _builder.append(c_6, "\t\t\t\t");
-                        _builder.append("\",");
-                        _builder.newLineIfNotEmpty();
+                      Respuesta _respuesta_29 = e_2.getRespuesta();
+                      EList<String> _correctas_12 = _respuesta_29.getCorrectas();
+                      String _get_8 = _correctas_12.get(0);
+                      String[] _split_6 = _get_8.split("#");
+                      for(final String s_2 : _split_6) {
+                        {
+                          Respuesta _respuesta_30 = e_2.getRespuesta();
+                          EList<String> _correctas_13 = _respuesta_30.getCorrectas();
+                          String _get_9 = _correctas_13.get(0);
+                          String[] _split_7 = _get_9.split("#");
+                          int _indexOf_8 = ((List<String>)Conversions.doWrapArray(_split_7)).indexOf(s_2);
+                          Respuesta _respuesta_31 = e_2.getRespuesta();
+                          EList<String> _correctas_14 = _respuesta_31.getCorrectas();
+                          String _get_10 = _correctas_14.get(0);
+                          String[] _split_8 = _get_10.split("#");
+                          int _size_7 = ((List<String>)Conversions.doWrapArray(_split_8)).size();
+                          int _minus_7 = (_size_7 - 1);
+                          boolean _equals_10 = (_indexOf_8 == _minus_7);
+                          if (_equals_10) {
+                            _builder.append("\t\t");
+                            _builder.append("\t\t");
+                            _builder.append("\"");
+                            _builder.append(s_2, "\t\t\t\t");
+                            _builder.append("\"");
+                            _builder.newLineIfNotEmpty();
+                          } else {
+                            _builder.append("\t\t");
+                            _builder.append("\t\t");
+                            _builder.append("\"");
+                            _builder.append(s_2, "\t\t\t\t");
+                            _builder.append("\",");
+                            _builder.newLineIfNotEmpty();
+                          }
+                        }
+                      }
+                    }
+                  } else {
+                    {
+                      Respuesta _respuesta_32 = e_2.getRespuesta();
+                      EList<String> _correctas_15 = _respuesta_32.getCorrectas();
+                      for(final String c_6 : _correctas_15) {
+                        {
+                          Respuesta _respuesta_33 = e_2.getRespuesta();
+                          EList<String> _correctas_16 = _respuesta_33.getCorrectas();
+                          int _indexOf_9 = _correctas_16.indexOf(c_6);
+                          Respuesta _respuesta_34 = e_2.getRespuesta();
+                          EList<String> _correctas_17 = _respuesta_34.getCorrectas();
+                          int _size_8 = _correctas_17.size();
+                          int _minus_8 = (_size_8 - 1);
+                          boolean _equals_11 = (_indexOf_9 == _minus_8);
+                          if (_equals_11) {
+                            _builder.append("\t\t");
+                            _builder.append("\t\t");
+                            _builder.append("\"");
+                            _builder.append(c_6, "\t\t\t\t");
+                            _builder.append("\"");
+                            _builder.newLineIfNotEmpty();
+                          } else {
+                            _builder.append("\t\t");
+                            _builder.append("\t\t");
+                            _builder.append("\"");
+                            _builder.append(c_6, "\t\t\t\t");
+                            _builder.append("\",");
+                            _builder.newLineIfNotEmpty();
+                          }
+                        }
                       }
                     }
                   }
@@ -2307,19 +2635,19 @@ public class AutoevaluacionGenerator implements IGenerator {
                 _builder.append("new String[]{");
                 _builder.newLine();
                 {
-                  Respuesta _respuesta_23 = e_2.getRespuesta();
-                  EList<String> _alternativas_6 = _respuesta_23.getAlternativas();
+                  Respuesta _respuesta_35 = e_2.getRespuesta();
+                  EList<String> _alternativas_6 = _respuesta_35.getAlternativas();
                   for(final String a_2 : _alternativas_6) {
                     {
-                      Respuesta _respuesta_24 = e_2.getRespuesta();
-                      EList<String> _alternativas_7 = _respuesta_24.getAlternativas();
-                      int _indexOf_7 = _alternativas_7.indexOf(a_2);
-                      Respuesta _respuesta_25 = e_2.getRespuesta();
-                      EList<String> _alternativas_8 = _respuesta_25.getAlternativas();
-                      int _size_6 = _alternativas_8.size();
-                      int _minus_6 = (_size_6 - 1);
-                      boolean _equals_8 = (_indexOf_7 == _minus_6);
-                      if (_equals_8) {
+                      Respuesta _respuesta_36 = e_2.getRespuesta();
+                      EList<String> _alternativas_7 = _respuesta_36.getAlternativas();
+                      int _indexOf_10 = _alternativas_7.indexOf(a_2);
+                      Respuesta _respuesta_37 = e_2.getRespuesta();
+                      EList<String> _alternativas_8 = _respuesta_37.getAlternativas();
+                      int _size_9 = _alternativas_8.size();
+                      int _minus_9 = (_size_9 - 1);
+                      boolean _equals_12 = (_indexOf_10 == _minus_9);
+                      if (_equals_12) {
                         _builder.append("\t\t");
                         _builder.append("\t\t");
                         _builder.append("\"");
@@ -2342,29 +2670,29 @@ public class AutoevaluacionGenerator implements IGenerator {
                 _builder.append("},");
                 _builder.newLine();
                 {
-                  Respuesta _respuesta_26 = e_2.getRespuesta();
-                  if ((_respuesta_26 instanceof RespuestaUnica)) {
+                  Respuesta _respuesta_38 = e_2.getRespuesta();
+                  if ((_respuesta_38 instanceof RespuestaUnica)) {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("AnswerType.UNIQUE");
                     _builder.newLine();
                   } else {
-                    Respuesta _respuesta_27 = e_2.getRespuesta();
-                    if ((_respuesta_27 instanceof RespuestaMultiple)) {
+                    Respuesta _respuesta_39 = e_2.getRespuesta();
+                    if ((_respuesta_39 instanceof RespuestaMultiple)) {
                       _builder.append("\t\t");
                       _builder.append("\t\t");
                       _builder.append("AnswerType.MULTIPLE");
                       _builder.newLine();
                     } else {
-                      Respuesta _respuesta_28 = e_2.getRespuesta();
-                      if ((_respuesta_28 instanceof TextoLibre)) {
+                      Respuesta _respuesta_40 = e_2.getRespuesta();
+                      if ((_respuesta_40 instanceof TextoLibre)) {
                         _builder.append("\t\t");
                         _builder.append("\t\t");
                         _builder.append("AnswerType.WRITTEN");
                         _builder.newLine();
                       } else {
-                        Respuesta _respuesta_29 = e_2.getRespuesta();
-                        if ((_respuesta_29 instanceof Ordenacion)) {
+                        Respuesta _respuesta_41 = e_2.getRespuesta();
+                        if ((_respuesta_41 instanceof Ordenacion)) {
                           _builder.append("\t\t");
                           _builder.append("\t\t");
                           _builder.append("AnswerType.ORDINATION");
@@ -2386,13 +2714,13 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.append("//Anade boton siguiente");
             _builder.newLine();
             {
-              for(final Object c_7 : categoria) {
+              for(final String c_7 : categoria) {
                 {
-                  int _indexOf_8 = categoria.indexOf(c_7);
-                  int _size_7 = categoria.size();
-                  int _minus_7 = (_size_7 - 1);
-                  boolean _equals_9 = (_indexOf_8 == _minus_7);
-                  if (_equals_9) {
+                  int _indexOf_11 = categoria.indexOf(c_7);
+                  int _size_10 = categoria.size();
+                  int _minus_10 = (_size_10 - 1);
+                  boolean _equals_13 = (_indexOf_11 == _minus_10);
+                  if (_equals_13) {
                     _builder.append("\t\t");
                     _builder.append("p");
                     _builder.append(c_7, "\t\t");
@@ -2442,10 +2770,10 @@ public class AutoevaluacionGenerator implements IGenerator {
                     _builder.append("\t\t");
                     _builder.append("\t\t");
                     _builder.append("showPanel(p");
-                    int _indexOf_9 = categoria.indexOf(c_7);
-                    int _plus_1 = (_indexOf_9 + 1);
-                    Object _get_2 = categoria.get(_plus_1);
-                    _builder.append(_get_2, "\t\t\t\t");
+                    int _indexOf_12 = categoria.indexOf(c_7);
+                    int _plus_1 = (_indexOf_12 + 1);
+                    String _get_11 = categoria.get(_plus_1);
+                    _builder.append(_get_11, "\t\t\t\t");
                     _builder.append(");");
                     _builder.newLineIfNotEmpty();
                     _builder.append("\t\t");
@@ -2462,7 +2790,7 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.append("\t\t");
             _builder.newLine();
             {
-              for(final Object c_8 : categoria) {
+              for(final String c_8 : categoria) {
                 _builder.append("\t\t");
                 _builder.append("addExercisePanel(p");
                 _builder.append(c_8, "\t\t");
@@ -2477,8 +2805,8 @@ public class AutoevaluacionGenerator implements IGenerator {
             _builder.newLine();
             _builder.append("\t\t");
             _builder.append("showPanel(p");
-            Object _get_3 = categoria.get(0);
-            _builder.append(_get_3, "\t\t");
+            String _get_12 = categoria.get(0);
+            _builder.append(_get_12, "\t\t");
             _builder.append(");");
             _builder.newLineIfNotEmpty();
             _builder.append("\t\t");
